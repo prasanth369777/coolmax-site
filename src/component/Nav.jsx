@@ -23,6 +23,12 @@ export default function Header() {
     { label: "Contact", href: "#contact" },
   ];
 
+  const socialLinks = [
+    { icon: FaFacebookF, href: "https://facebook.com" },
+    { icon: FaInstagram, href: "https://instagram.com" },
+    { icon: FaLinkedinIn, href: "https://linkedin.com" },
+  ];
+
   return (
     <header className="sticky top-0 z-50">
       {/* GLASS NAV BAR */}
@@ -66,12 +72,15 @@ export default function Header() {
               <MagnifyingGlassIcon className="w-4 h-4 absolute right-4 top-2.5 text-gray-900" />
             </div>
 
-            {/* SOCIAL ICONS (BLACK) */}
+            {/* SOCIAL ICONS */}
             <div className="flex gap-2">
-              {[FaFacebookF, FaInstagram, FaLinkedinIn].map((Icon, i) => (
+              {socialLinks.map(({ icon: Icon, href }, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Social link"
                   className="p-2 rounded-full bg-white/10 hover:bg-indigo-500 transition"
                 >
                   <Icon className="text-black text-sm" />
@@ -80,7 +89,7 @@ export default function Header() {
             </div>
           </div>
 
-          {/* MOBILE TOGGLE (BLACK) */}
+          {/* MOBILE TOGGLE */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="lg:hidden text-black"
@@ -109,12 +118,15 @@ export default function Header() {
               </a>
             ))}
 
-            {/* MOBILE SOCIAL ICONS (BLACK) */}
+            {/* MOBILE SOCIAL ICONS */}
             <div className="flex gap-4 pt-4">
-              {[FaFacebookF, FaInstagram, FaLinkedinIn].map((Icon, i) => (
+              {socialLinks.map(({ icon: Icon, href }, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Social link"
                   className="p-2 rounded-full bg-white/10 hover:bg-indigo-500 transition"
                 >
                   <Icon className="text-black" />
