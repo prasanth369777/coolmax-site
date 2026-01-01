@@ -1,43 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- ================= BASIC ================= -->
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+
+    <!-- ================= TITLE ================= -->
+    <title>Cool Max | Premium Scenting Solutions for Homes & Businesses</title>
+
+    <!-- ================= PRIMARY SEO ================= -->
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Cool Max provides premium scent diffusers and fragrance solutions for homes, hotels, offices, retail spaces, HVAC systems, and automobiles across UAE & Qatar."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta
+      name="keywords"
+      content="scent diffuser, fragrance solutions, HVAC scenting, hotel scent marketing, car scent diffuser, office fragrance, Cool Max scent"
+    />
+    <meta name="author" content="Cool Max Scent Solutions" />
+    <meta name="robots" content="index, follow" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
+    <!-- ================= THEME ================= -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- ================= FAVICONS ================= -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+
+    <!-- ================= PWA ================= -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- ================= OPEN GRAPH (FACEBOOK, LINKEDIN) ================= -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cool Max | Premium Scenting Solutions" />
+    <meta
+      property="og:description"
+      content="Transform spaces with intelligent scent solutions for homes, hotels, offices, and commercial environments."
+    />
+    <meta property="og:url" content="https://www.coolmaxscent.com/" />
+    <meta property="og:image" content="%PUBLIC_URL%/seo/og-image.jpg" />
+    <meta property="og:site_name" content="Cool Max" />
+
+    <!-- ================= TWITTER ================= -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cool Max | Premium Scenting Solutions" />
+    <meta
+      name="twitter:description"
+      content="Smart scent diffusers and fragrance systems for modern environments."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/seo/twitter-image.jpg" />
+
+    <!-- ================= CANONICAL ================= -->
+    <link rel="canonical" href="https://www.coolmaxscent.com/" />
+
+    <!-- ================= PERFORMANCE ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Example font (optional) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ================= STRUCTURED DATA (JSON-LD) ================= -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Cool Max Scent Solutions",
+        "url": "https://www.coolmaxscent.com",
+        "logo": "https://www.coolmaxscent.com/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/coolmax",
+          "https://www.instagram.com/coolmax",
+          "https://www.linkedin.com/company/coolmax"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+971522286401",
+          "contactType": "customer service",
+          "areaServed": ["AE", "QA"],
+          "availableLanguage": ["English"]
+        }
+      }
+    </script>
+
+    <!-- ================= GOOGLE ANALYTICS (OPTIONAL) ================= -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX');
+    </script>
     -->
-    <title>React App</title>
+
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- ================= ROOT ================= -->
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
