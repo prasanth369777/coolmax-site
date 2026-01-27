@@ -71,7 +71,7 @@ export default function Footer() {
             <ul className="space-y-4">
               {['Car Scent Diffusers', 'Lobby & HVAC Systems', 'Wall Mount Diffusers', 'Room Atmosphere Solutions', 'Automatic Dispensers'].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors flex items-center gap-2 group">
+                  <a href="" className="text-gray-400 hover:text-blue-500 transition-colors flex items-center gap-2 group">
                      <span className="w-0 group-hover:w-2 h-[1px] bg-blue-500 transition-all duration-300"></span>
                     {item}
                   </a>
@@ -112,7 +112,7 @@ export default function Footer() {
             {/* Social Icons (Moved here for better balance) */}
             <div className="flex gap-4 mt-8">
               {[FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-blue-500 hover:border-blue-500 transition-all duration-300">
+                <a key={i} href="" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-blue-500 hover:border-blue-500 transition-all duration-300">
                   <Icon className="text-sm" />
                 </a>
               ))}
@@ -125,9 +125,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-xs text-gray-600 uppercase tracking-wider">
           <p>© {new Date().getFullYear()} Cool Max Scent Solutions. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-blue-500 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-blue-500 transition-colors">Terms & Conditions</a>
-            <a href="#" className="hover:text-blue-500 transition-colors">Cookie Policy</a>
+            <a href="" className="hover:text-blue-500 transition-colors">Privacy Policy</a>
+            <a href="" className="hover:text-blue-500 transition-colors">Terms & Conditions</a>
+            <a href="" className="hover:text-blue-500 transition-colors">Cookie Policy</a>
           </div>
         </div>
 

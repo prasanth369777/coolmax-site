@@ -8,7 +8,6 @@ import {
   HomeIcon,
   TruckIcon,
   ArrowRightIcon,
-  WrenchScrewdriverIcon,
   // New Icons for the Bottom Section
   MapPinIcon,
   SwatchIcon,

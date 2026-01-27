@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRightIcon, PlayCircleIcon, CheckBadgeIcon, SparklesIcon } from "@heroicons/react/24/solid";
+import { ArrowRightIcon, PlayCircleIcon, SparklesIcon } from "@heroicons/react/24/solid";
 
 // Ensure you have these assets
 import Hero1 from "../../src/asset/hero/A70D_converted.webp"; 

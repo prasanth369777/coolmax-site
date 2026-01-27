@@ -91,7 +91,7 @@ export default function SolutionsSection() {
 
               {/* Subtle 'Learn More' Link */}
               <a
-                href="#"
+                href="/contact"
                 className="mt-auto flex items-center gap-2 text-sm font-medium text-gray-900 group-hover:underline decoration-indigo-600 underline-offset-4"
               >
                 Learn more

@@ -240,7 +240,7 @@ export default function Header() {
                                             {item.items.map((sub, i) => (
                                                 <a 
                                                     key={i} 
-                                                    href="#" 
+                                                    href="/" 
                                                     className="block py-2 text-sm text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200"
                                                 >
                                                     {sub}

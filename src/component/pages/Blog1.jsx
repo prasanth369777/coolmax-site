@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRightIcon, CalendarDaysIcon, ClockIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon, CalendarDaysIcon} from "@heroicons/react/24/outline";
 
 const blogPosts = [
   {
@@ -60,7 +60,7 @@ export default function BlogSection() {
               Latest Insights
             </h2>
           </div>
-          <a href="#" className="hidden md:flex items-center gap-2 text-sm font-semibold text-gray-900 hover:text-indigo-600 transition-colors">
+          <a href="/blog" className="hidden md:flex items-center gap-2 text-sm font-semibold text-gray-900 hover:text-indigo-600 transition-colors">
             View Archive <ArrowRightIcon className="w-4 h-4" />
           </a>
         </div>
@@ -135,7 +135,7 @@ export default function BlogSection() {
                     {post.excerpt}
                   </p>
 
-                  <a href="#" className="text-sm font-semibold text-gray-900 flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <a href="/blog" className="text-sm font-semibold text-gray-900 flex items-center gap-1 group-hover:gap-2 transition-all">
                     Read <ArrowRightIcon className="w-3 h-3" />
                   </a>
                 </div>
@@ -161,7 +161,7 @@ export default function BlogSection() {
 
         {/* Mobile View All */}
         <div className="mt-12 text-center md:hidden">
-            <a href="#" className="inline-block px-8 py-3 bg-white border border-gray-300 rounded-full font-semibold text-gray-900 shadow-sm">
+            <a href="/blog" className="inline-block px-8 py-3 bg-white border border-gray-300 rounded-full font-semibold text-gray-900 shadow-sm">
                 View All Articles
             </a>
         </div>
