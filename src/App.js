@@ -1,37 +1,66 @@
-// src/App.jsx
-import React from "react";
-import Nav from './component/Nav';
-import Home from "./component/hero";
-import AboutUs from "./component/aboutus";
-import Products from "./component/Products";
-import Clientsscroll from "./component/clientsscroll";
-import Categories from "./component/categories";
-import Testimonials from "./component/Testimonials";
-import TalkToExpert from "./component/TalkToExpert";
-import Dragscrollp from "./component/Dragscrollp";
-import FAQSection from "./component/Frequently";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+
+// --- IMPORT COMPONENTS ---
+// Note: adjusting paths assuming App.js is directly in src/
+import Nav from './component/Nav'; 
 import Footer from "./component/Footer";
-import WhatsAppFloating  from "./component/WhatsAppFloating";
-import Gallery from "./component/Gallery";
-import Banner from "./component/banner";
+import WhatsAppFloating from "./component/WhatsAppFloating";
+import AboutUs from "./component/aboutus";
+import SolutionsSection from "./component/Solutions";
+import Products from "./component/Products";
+import AromaOils from "./component/AromaOils";
+import IndustriesWeServe from "./component/IndustriesWeServe";
+import Blog from "./component/blog";
+import TalkToExpert from "./component/TalkToExpert";
+// Page Components
+import Homepage from "./component/pages/Homepage"; // Update path if you moved it to pages folder
+
+// --- HELPER: SCROLL TO TOP ---
+// (This fixes the 'ScrollToTop is not defined' error)
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
+// --- HELPER: PRODUCT PAGE GROUP ---
+// (This fixes the 'ProductPage is not defined' error)
+const ProductPage = () => (
+  <>
+    <Products />
+    <AromaOils /> 
+  </>
+);
+
 function App() {
   return (
-    <div>
-      <Banner />
+    <Router>
+      <ScrollToTop />
+      
+      {/* Navbar visible on all pages */}
       <Nav />
-      <Home />
+      
+      {/* Floating Button visible on all pages */}
       <WhatsAppFloating />
-      <Clientsscroll/>
-      <AboutUs />
-      <Products />
-      <Categories />
-       <Dragscrollp />
-       <Gallery />
-      <Testimonials />
-      <TalkToExpert />
-      <FAQSection />
+
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/solutions" element={<SolutionsSection />} />
+        <Route path="/products" element={<ProductPage />} />
+        <Route path="/industries" element={<IndustriesWeServe />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<TalkToExpert />} />
+      </Routes>
+
+      {/* Footer visible on all pages */}
       <Footer />
-    </div>
+    </Router>
   );
 }
 
