@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRightIcon, CalendarDaysIcon} from "@heroicons/react/24/outline";
+import { ArrowRightIcon, CalendarDaysIcon } from "@heroicons/react/24/outline";
 
 const blogPosts = [
   {
@@ -69,36 +69,36 @@ export default function BlogSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           
           {/* FEATURED POST (Left Column) */}
-          <article className="group relative h-full flex flex-col">
-            <div className="relative w-full h-[400px] lg:h-[500px] overflow-hidden rounded-2xl">
+          <article className="group relative h-full flex flex-col cursor-pointer">
+            <div className="relative w-full h-[400px] lg:h-[500px] overflow-hidden rounded-2xl shadow-lg">
               <img
                 src={blogPosts[0].image}
                 alt={blogPosts[0].title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity duration-500" />
               
               {/* Floating Badge */}
-              <div className="absolute top-4 left-4">
-                <span className="px-4 py-1.5 bg-white/20 backdrop-blur-md border border-white/30 text-white text-xs font-bold uppercase tracking-wider rounded-full">
+              <div className="absolute top-6 left-6">
+                <span className="px-4 py-1.5 bg-white/20 backdrop-blur-md border border-white/30 text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-sm">
                   {blogPosts[0].category}
                 </span>
               </div>
 
               {/* Text Overlay for Featured */}
               <div className="absolute bottom-0 left-0 p-8 w-full">
-                <div className="flex items-center gap-4 text-gray-200 text-sm mb-3">
+                <div className="flex items-center gap-4 text-gray-300 text-sm mb-3 font-medium">
                     <span className="flex items-center gap-1"><CalendarDaysIcon className="w-4 h-4"/> {blogPosts[0].date}</span>
                     <span className="w-1 h-1 bg-gray-400 rounded-full"></span>
                     <span>{blogPosts[0].readTime}</span>
                 </div>
-                <h3 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4 leading-tight">
+                <h3 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4 leading-tight group-hover:text-indigo-200 transition-colors">
                     {blogPosts[0].title}
                 </h3>
-                <p className="text-gray-200 line-clamp-2 max-w-xl text-lg mb-6">
+                <p className="text-gray-200 line-clamp-2 max-w-xl text-lg mb-6 font-light leading-relaxed">
                     {blogPosts[0].excerpt}
                 </p>
-                <span className="inline-flex items-center gap-2 text-white font-semibold border-b border-white/30 pb-1 group-hover:border-white transition-colors">
+                <span className="inline-flex items-center gap-2 text-white font-semibold border-b border-white/30 pb-1 group-hover:border-white transition-all group-hover:gap-3">
                     Read Full Story <ArrowRightIcon className="w-4 h-4" />
                 </span>
               </div>
@@ -106,12 +106,12 @@ export default function BlogSection() {
           </article>
 
           {/* SIDE LIST (Right Column) */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 h-full justify-between">
             {blogPosts.slice(1).map((post) => (
-              <article key={post.id} className="group flex flex-col sm:flex-row gap-6 items-start">
+              <article key={post.id} className="group flex flex-col sm:flex-row gap-6 items-start cursor-pointer border-b border-gray-100 pb-8 last:border-0 last:pb-0">
                 
                 {/* Thumbnail */}
-                <div className="w-full sm:w-48 h-48 sm:h-32 flex-shrink-0 rounded-xl overflow-hidden relative">
+                <div className="w-full sm:w-48 h-48 sm:h-32 flex-shrink-0 rounded-xl overflow-hidden relative shadow-sm">
                   <img 
                     src={post.image} 
                     alt={post.title} 
@@ -121,36 +121,36 @@ export default function BlogSection() {
 
                 {/* Content */}
                 <div className="flex-1 min-w-0 py-1">
-                  <div className="flex items-center gap-3 text-xs font-medium text-indigo-600 mb-2">
-                    <span className="uppercase tracking-wider">{post.category}</span>
-                    <span className="text-gray-300">•</span>
-                    <span className="text-gray-400 font-normal">{post.date}</span>
+                  <div className="flex items-center gap-3 text-xs font-bold text-indigo-600 mb-2 uppercase tracking-wide">
+                    <span>{post.category}</span>
+                    <span className="text-gray-300 font-light">•</span>
+                    <span className="text-gray-400 font-medium normal-case">{post.date}</span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 font-serif group-hover:text-indigo-700 transition-colors line-clamp-2">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 font-serif group-hover:text-indigo-700 transition-colors line-clamp-2 leading-snug">
                     {post.title}
                   </h3>
                   
-                  <p className="text-sm text-gray-500 leading-relaxed line-clamp-2 mb-3">
+                  <p className="text-sm text-gray-600 leading-relaxed line-clamp-2 mb-3">
                     {post.excerpt}
                   </p>
 
-                  <a href="/blog" className="text-sm font-semibold text-gray-900 flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Read <ArrowRightIcon className="w-3 h-3" />
-                  </a>
+                  <div className="flex items-center gap-2 text-sm font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors">
+                    Read <ArrowRightIcon className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                  </div>
                 </div>
               </article>
             ))}
             
-            {/* Newsletter CTA Block */}
-            <div className="mt-auto bg-gray-900 rounded-2xl p-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
-                <div>
-                    <h4 className="text-white font-bold text-lg mb-1">Subscribe to our newsletter</h4>
-                    <p className="text-gray-400 text-sm">Get the latest scent trends delivered.</p>
+            {/* Newsletter CTA Block (Integrated into the list flow) */}
+            <div className="mt-4 bg-white border border-gray-200 rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
+                <div className="text-center sm:text-left">
+                    <h4 className="text-gray-900 font-bold text-lg mb-1 font-serif">Subscribe to our journal</h4>
+                    <p className="text-gray-500 text-sm">Get the latest scent trends delivered.</p>
                 </div>
-                <div className="flex w-full sm:w-auto">
-                    <input type="email" placeholder="Email address" className="bg-gray-800 text-white text-sm px-4 py-3 rounded-l-lg focus:outline-none focus:ring-1 focus:ring-indigo-500 w-full" />
-                    <button className="bg-indigo-600 text-white px-6 py-3 rounded-r-lg text-sm font-bold hover:bg-indigo-500 transition-colors">
+                <div className="flex w-full sm:w-auto shadow-sm rounded-lg overflow-hidden border border-gray-200 focus-within:border-indigo-500 transition-colors">
+                    <input type="email" placeholder="Email address" className="bg-white text-gray-900 text-sm px-4 py-3 focus:outline-none w-full placeholder:text-gray-400" />
+                    <button className="bg-indigo-600 text-white px-6 py-3 text-sm font-bold hover:bg-indigo-700 transition-colors">
                         Join
                     </button>
                 </div>
@@ -161,7 +161,7 @@ export default function BlogSection() {
 
         {/* Mobile View All */}
         <div className="mt-12 text-center md:hidden">
-            <a href="/blog" className="inline-block px-8 py-3 bg-white border border-gray-300 rounded-full font-semibold text-gray-900 shadow-sm">
+            <a href="/blog" className="inline-block px-8 py-3 bg-white border border-gray-300 rounded-full font-semibold text-gray-900 shadow-sm hover:shadow-md transition-shadow">
                 View All Articles
             </a>
         </div>

@@ -19,12 +19,12 @@ const navigation = [
     type: "dropdown",
     cols: 1, 
     items: [
-      { label: "Scent Marketing Strategy", href: "/solutions" },
-      { label: "Commercial Aroma Diffusion", href: "/solutions" },
-      { label: "HVAC Scenting Solutions", href: "/solutions" },
-      { label: "Washroom Hygiene Solutions", href: "/solutions" },
-      { label: "Car & Personal Space Scenting", href: "/solutions" },
-      { label: "Maintenance & Refill Support", href: "/solutions" },
+     { label: "Scent Marketing Strategy", href: "/scent-marketing" },
+      { label: "Commercial Aroma Diffusion", href: "/commercial-diffusion" },
+      { label: "HVAC Scenting Solutions", href: "/hvac-scenting" },
+      { label: "Washroom Hygiene Solutions", href: "/washroom-hygiene" },
+      { label: "Car & Personal Space Scenting", href: "/car-scenting" },
+      { label: "Maintenance & Refill Support", href: "/Maintenance" },
     ],
   },
   {

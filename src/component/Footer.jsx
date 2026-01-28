@@ -1,63 +1,79 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
-  FaTwitter,
+  FaWhatsapp
 } from "react-icons/fa";
-import { HiArrowLongRight } from "react-icons/hi2";
+import { 
+  EnvelopeIcon, 
+  PhoneIcon, 
+  MapPinIcon, 
+  ArrowLongRightIcon 
+} from "@heroicons/react/24/outline";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#050505] text-white pt-24 pb-10 px-6 lg:px-12 overflow-hidden border-t border-white/5">
+    <footer className="relative bg-[#020617] text-slate-300 pt-16 pb-8 overflow-hidden font-sans selection:bg-indigo-500 selection:text-white border-t border-white/5">
 
-      {/* ================= BACKGROUND TEXTURE ================= */}
-      <div className="absolute inset-0 opacity-[0.02] pointer-events-none" 
-           style={{ backgroundImage: `url("https://www.transparenttextures.com/patterns/stardust.png")` }}>
+      {/* ================= BACKGROUND ATMOSPHERE ================= */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:100px_100px] opacity-20" />
+        <div className="absolute bottom-0 left-0 w-[800px] h-[500px] bg-indigo-900/20 rounded-full blur-[150px] mix-blend-screen" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-900/10 rounded-full blur-[150px] mix-blend-screen" />
       </div>
 
-      <div className="max-w-[1600px] mx-auto relative z-10">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12 relative z-10">
         
-        {/* ================= TOP SECTION: BRAND & NEWSLETTER ================= */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-12 pb-16 border-b border-white/10">
+        {/* ================= 1. HEADER & NEWSLETTER ================= */}
+        <div className="grid lg:grid-cols-2 gap-10 mb-12 items-end">
           
-          {/* Brand Block */}
-          <div className="max-w-md">
-            <h2 className="text-4xl font-serif font-bold tracking-tight text-white mb-6">
-              COOL <span className="text-blue-500">MAX</span>
+          {/* Brand Statement */}
+          <div className="max-w-2xl">
+            <h2 className="text-5xl md:text-7xl font-serif text-white tracking-tighter mb-4 leading-[0.9]">
+              COOL <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400 italic">MAX</span>
             </h2>
-            <p className="text-gray-400 font-light leading-relaxed text-lg">
-              Architects of atmosphere. We curate premium olfactory experiences for the world's most distinguished spaces.
+            <p className="text-base text-slate-400 font-light leading-relaxed max-w-lg">
+              Architects of atmosphere. Curating premium olfactory experiences for distinguished spaces.
             </p>
           </div>
 
-          {/* Newsletter Input */}
-          <div className="w-full lg:w-auto min-w-[350px]">
-            <h3 className="text-sm font-bold uppercase tracking-widest text-blue-500 mb-4">Subscribe to our journal</h3>
-            <div className="relative group">
-              <input 
-                type="email" 
-                placeholder="Enter your email address" 
-                className="w-full bg-transparent border-b border-white/20 py-3 pr-12 text-white placeholder:text-gray-600 focus:outline-none focus:border-blue-500 transition-all"
-              />
-              <button className="absolute right-0 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-blue-500 hover:text-white transition-colors">
-                <HiArrowLongRight className="w-6 h-6" />
-              </button>
+          {/* Premium Newsletter Card (Compacted) */}
+          <div className="bg-white/[0.03] backdrop-blur-xl border border-white/10 p-6 rounded-3xl relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/20 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-indigo-500/30 transition-all duration-500"></div>
+            
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <h3 className="text-lg font-serif text-white">Join our Journal</h3>
+                <p className="text-slate-400 text-xs">Latest trends in scent marketing.</p>
+              </div>
+              
+              <div className="relative flex-1 max-w-md">
+                <input 
+                  type="email" 
+                  placeholder="Email address" 
+                  className="w-full bg-[#020617]/50 border border-white/10 rounded-full py-3 px-5 text-sm text-white placeholder:text-slate-600 focus:outline-none focus:border-indigo-500 transition-all"
+                />
+                <button className="absolute right-1 top-1 bg-white text-[#020617] p-2 rounded-full hover:bg-indigo-50 transition-colors">
+                  <ArrowLongRightIcon className="w-4 h-4" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* ================= MIDDLE SECTION: LINKS GRID ================= */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 py-16">
+        {/* ================= 2. LINKS & LOCATIONS GRID ================= */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 border-t border-white/10 pt-10 mb-10">
           
-          {/* COLUMN 1: NAVIGATION */}
-          <div>
-            <h3 className="text-lg font-serif italic text-white mb-6">Company</h3>
-            <ul className="space-y-4">
+          {/* NAV LINKS */}
+          <div className="md:col-span-3">
+            <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-indigo-400 mb-6">Company</h4>
+            <ul className="space-y-3 text-sm">
               {['About Cool Max', 'Our Technology', 'Fragrance Innovation', 'Industries We Serve', 'Sustainability'].map((item) => (
                 <li key={item}>
-                  <a href="/contact" className="text-gray-400 hover:text-blue-500 transition-colors flex items-center gap-2 group">
-                    <span className="w-0 group-hover:w-2 h-[1px] bg-blue-500 transition-all duration-300"></span>
+                  <a href="/about" className="text-slate-400 hover:text-white transition-all font-medium flex items-center gap-2 group">
+                    <span className="w-0 h-px bg-indigo-500 group-hover:w-3 transition-all duration-300"></span>
                     {item}
                   </a>
                 </li>
@@ -65,14 +81,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* COLUMN 2: PRODUCTS */}
-          <div>
-            <h3 className="text-lg font-serif italic text-white mb-6">Collections</h3>
-            <ul className="space-y-4">
-              {['Car Scent Diffusers', 'Lobby & HVAC Systems', 'Wall Mount Diffusers', 'Room Atmosphere Solutions', 'Automatic Dispensers'].map((item) => (
+          <div className="md:col-span-3">
+            <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-indigo-400 mb-6">Collections</h4>
+            <ul className="space-y-3 text-sm">
+              {['Car Scent Diffusers', 'Lobby & HVAC Systems', 'Wall Mount Diffusers', 'Room Solutions', 'Automatic Dispensers'].map((item) => (
                 <li key={item}>
-                  <a href="/contact" className="text-gray-400 hover:text-blue-500 transition-colors flex items-center gap-2 group">
-                     <span className="w-0 group-hover:w-2 h-[1px] bg-blue-500 transition-all duration-300"></span>
+                  <a href="/products" className="text-slate-400 hover:text-white transition-all font-medium flex items-center gap-2 group">
+                    <span className="w-0 h-px bg-indigo-500 group-hover:w-3 transition-all duration-300"></span>
                     {item}
                   </a>
                 </li>
@@ -80,61 +95,80 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* COLUMN 3: UAE OFFICE */}
-          <div>
-            <h3 className="text-lg font-serif italic text-white mb-6">UAE Headquarters</h3>
-            <div className="space-y-4 text-gray-400 font-light">
-              <p className="leading-relaxed">
-                Waha Al Reem Office,<br />
-                Muweilah – Sharjah,<br />
-                United Arab Emirates
-              </p>
-              <div className="pt-2 space-y-2">
-                <a href="mailto:secretary@coolmaxscent.com" className="block hover:text-blue-500 transition-colors">secretary@coolmaxscent.com</a>
-                <a href="tel:+971522286401" className="block hover:text-blue-500 transition-colors">+971 52 228 6401</a>
+          {/* LOCATIONS (Compacted) */}
+          <div className="md:col-span-6 grid sm:grid-cols-2 gap-6">
+            {/* UAE */}
+            <div className="bg-[#0B0F19] rounded-2xl p-6 border border-white/5 hover:border-indigo-500/30 transition-colors group">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-1.5 bg-indigo-500/10 rounded-lg text-indigo-400"><MapPinIcon className="w-4 h-4"/></div>
+                <h4 className="text-sm font-bold text-white">UAE Headquarters</h4>
               </div>
-            </div>
-          </div>
-
-          {/* COLUMN 4: QATAR OFFICE */}
-          <div>
-            <h3 className="text-lg font-serif italic text-white mb-6">Qatar Branch</h3>
-            <div className="space-y-4 text-gray-400 font-light">
-              <p className="leading-relaxed">
-                Doha, Qatar
-              </p>
-              <div className="pt-2 space-y-2">
-                <a href="mailto:salesqatar@coolmaxscent.com" className="block hover:text-blue-500 transition-colors">salesqatar@coolmaxscent.com</a>
-                <a href="tel:+97466043446" className="block hover:text-blue-500 transition-colors">+974 66 043 446</a>
-              </div>
-            </div>
-            
-            {/* Social Icons (Moved here for better balance) */}
-            <div className="flex gap-4 mt-8">
-              {[FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter].map((Icon, i) => (
-                <a key={i} href="/contact" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-blue-500 hover:border-blue-500 transition-all duration-300">
-                  <Icon className="text-sm" />
+              <div className="space-y-3 text-xs text-slate-400">
+                <p className="leading-relaxed">Waha Al Reem Office, Muweilah – Sharjah</p>
+                <div className="h-px w-full bg-white/5"></div>
+                <a href="mailto:secretary@coolmaxscent.com" className="flex items-center gap-2 hover:text-indigo-300 transition-colors">
+                  <EnvelopeIcon className="w-3 h-3"/> secretary@coolmaxscent.com
                 </a>
-              ))}
+                <a href="tel:+971522286401" className="flex items-center gap-2 hover:text-indigo-300 transition-colors">
+                  <PhoneIcon className="w-3 h-3"/> +971 52 228 6401
+                </a>
+              </div>
+            </div>
+
+            {/* QATAR */}
+            <div className="bg-[#0B0F19] rounded-2xl p-6 border border-white/5 hover:border-indigo-500/30 transition-colors group">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-1.5 bg-indigo-500/10 rounded-lg text-indigo-400"><MapPinIcon className="w-4 h-4"/></div>
+                <h4 className="text-sm font-bold text-white">Qatar Branch</h4>
+              </div>
+              <div className="space-y-3 text-xs text-slate-400">
+                <p className="leading-relaxed">Doha, Qatar</p>
+                <div className="h-px w-full bg-white/5"></div>
+                <a href="mailto:salesqatar@coolmaxscent.com" className="flex items-center gap-2 hover:text-indigo-300 transition-colors">
+                  <EnvelopeIcon className="w-3 h-3"/> salesqatar@coolmaxscent.com
+                </a>
+                <a href="tel:+97466043446" className="flex items-center gap-2 hover:text-indigo-300 transition-colors">
+                  <PhoneIcon className="w-3 h-3"/> +974 66 043 446
+                </a>
+              </div>
             </div>
           </div>
 
         </div>
 
-        {/* ================= BOTTOM: COPYRIGHT ================= */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-xs text-gray-600 uppercase tracking-wider">
-          <p>© {new Date().getFullYear()} Cool Max Scent Solutions. All rights reserved.</p>
-          <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="/contact" className="hover:text-blue-500 transition-colors">Privacy Policy</a>
-            <a href="/conatct" className="hover:text-blue-500 transition-colors">Terms & Conditions</a>
-            <a href="/contact" className="hover:text-blue-500 transition-colors">Cookie Policy</a>
+        {/* ================= 3. FOOTER BOTTOM ================= */}
+        <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-white/10">
+          
+          <div className="flex gap-3 mb-4 md:mb-0">
+            {[FaWhatsapp, FaInstagram, FaLinkedinIn, FaFacebookF].map((Icon, i) => (
+              <motion.a 
+                key={i} 
+                whileHover={{ y: -2 }}
+                href="/contact" 
+                className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-white hover:text-black transition-all duration-300"
+              >
+                <Icon className="text-xs" />
+              </motion.a>
+            ))}
           </div>
+
+          <div className="text-center md:text-right">
+            <p className="text-[10px] text-slate-500 uppercase tracking-wider font-medium mb-1">
+              © {new Date().getFullYear()} Cool Max General Trading.
+            </p>
+            <div className="flex gap-4 justify-center md:justify-end text-[10px] text-slate-600 font-medium">
+              <a href="/contact" className="hover:text-indigo-400 transition-colors">Privacy</a>
+              <a href="/contact" className="hover:text-indigo-400 transition-colors">Terms</a>
+              <a href="/contact" className="hover:text-indigo-400 transition-colors">Sitemap</a>
+            </div>
+          </div>
+
         </div>
 
       </div>
       
-      {/* Decorative Large Text Background */}
-      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 text-[15vw] font-black text-white/[0.02] pointer-events-none whitespace-nowrap select-none font-serif">
+      {/* Decorative Large Text (Reduced Size & Position) */}
+      <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 text-[10vw] font-serif font-black text-white/[0.02] pointer-events-none whitespace-nowrap select-none z-0">
         COOL MAX
       </div>
     </footer>
