@@ -4,12 +4,10 @@ import {
   CubeIcon, 
   SpeakerWaveIcon, 
   ArrowDownTrayIcon, 
-  ChevronRightIcon,
   TagIcon,
   SparklesIcon,
   SwatchIcon,
-  MinusIcon,
-  PlusIcon
+ 
 } from "@heroicons/react/24/outline";
 
 /* ================= IMAGE IMPORTS ================= */
