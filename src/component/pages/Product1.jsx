@@ -5,16 +5,12 @@ import {
   SpeakerWaveIcon, 
   ArrowDownTrayIcon, 
   TagIcon,
-
   SwatchIcon,
   BoltIcon,
   BeakerIcon,
-
 } from "@heroicons/react/24/outline";
 
-/* ================= IMAGE IMPORTS (Placeholders reused for demo) ================= */
-// NOTE: Ideally, you should import unique images for all 30 products. 
-// I am reusing the imports you provided to ensure the code runs immediately.
+/* ================= IMAGE IMPORTS ================= */
 import M10Black from "../../asset/productimg/Model M10/M10 - 1.jpeg";
 import M10White from "../../asset/productimg/Model M10/M10 - 2.jpeg";
 import Q500Black from "../../asset/productimg/Model Q500/Model Q500 - 1.jpeg";
@@ -34,7 +30,7 @@ import VS160White from "../../asset/productimg/Model VS160/Model VS160 - 1.jpeg"
 import DSQBlack from "../../asset/productimg/Model DSQ1010-1/Model DSQ1010-1 (1).jpeg";
 import DSQWhite from "../../asset/productimg/Model DSQ1010-1/Model DSQ1010-1 (2).jpeg";
 
-/* ================= DATA STRUCTURE (6 Categories x 5 Products) ================= */
+/* ================= DATA STRUCTURE ================= */
 const categoryData = [
   {
     id: "home",
@@ -259,13 +255,11 @@ export default function ProductDetail() {
   const [activeProduct, setActiveProduct] = useState(categoryData[0].products[0]);
   const [activeVariant, setActiveVariant] = useState(categoryData[0].products[0].variants[0]);
 
-  // When category changes, reset active product to the first in that category
   useEffect(() => {
     setActiveProduct(activeCategory.products[0]);
     setActiveVariant(activeCategory.products[0].variants[0]);
   }, [activeCategory]);
 
-  // When product changes, reset variant to the first one
   const handleProductChange = (product) => {
     setActiveProduct(product);
     setActiveVariant(product.variants[0]);
@@ -274,31 +268,32 @@ export default function ProductDetail() {
   return (
     <section className="relative py-24 bg-[#F8FAFC] font-sans overflow-hidden min-h-screen text-slate-600">
       
-      {/* ================= BACKGROUND TEXTURE ================= */}
+      {/* BACKGROUND TEXTURE */}
       <div className="absolute inset-0 opacity-[0.4]" 
            style={{ backgroundImage: 'radial-gradient(#cbd5e1 1px, transparent 1px)', backgroundSize: '32px 32px' }}>
       </div>
 
       <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12">
         
-        {/* --- HEADER --- */}
+        {/* HEADER */}
         <div className="mb-12 text-center max-w-3xl mx-auto">
            <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-xs mb-4 block">
-              Product Catalogue 2026
+             Product Catalogue 2026
            </span>
            <h3 className="text-4xl md:text-6xl font-serif text-slate-900 mb-6">
-              Precision Air <span className="italic text-blue-700">Treatment</span>
+             Precision Air <span className="italic text-blue-700">Treatment</span>
            </h3>
         </div>
 
-        {/* --- CATEGORY TABS --- */}
-        <div className="flex justify-center mb-16 overflow-x-auto pb-4 no-scrollbar">
-           <div className="bg-white/80 backdrop-blur-md p-2 rounded-full border border-slate-200 shadow-sm flex gap-2">
+        {/* --- CATEGORY TABS: Updated for two-column mobile grid --- */}
+        <div className="flex justify-center mb-16">
+          <div className="bg-white/80 backdrop-blur-md p-2 rounded-3xl md:rounded-full border border-slate-200 shadow-sm w-full md:w-auto">
+            <div className="grid grid-cols-2 md:flex md:flex-nowrap gap-2">
               {categoryData.map((cat) => (
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 whitespace-nowrap ${
+                  className={`px-4 md:px-6 py-3 rounded-2xl md:rounded-full text-[10px] md:text-sm font-bold uppercase tracking-wider transition-all duration-300 text-center ${
                     activeCategory.id === cat.id 
                     ? "bg-slate-900 text-white shadow-lg" 
                     : "text-slate-500 hover:bg-slate-100"
@@ -307,15 +302,15 @@ export default function ProductDetail() {
                   {cat.label}
                 </button>
               ))}
-           </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          {/* ================= SIDEBAR: PRODUCT LIST ================= */}
+          {/* SIDEBAR: PRODUCT LIST */}
           <aside className="lg:col-span-3 lg:sticky lg:top-24 z-20">
             <div className="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50">
-              
               <div className="p-6 border-b border-slate-100 flex items-center justify-between bg-slate-50">
                 <span className="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
                   <TagIcon className="w-4 h-4" /> Models
@@ -325,7 +320,7 @@ export default function ProductDetail() {
                 </span>
               </div>
 
-              <div className="max-h-[600px] overflow-y-auto custom-scrollbar p-3 space-y-2 bg-white">
+              <div className="max-h-[300px] lg:max-h-[600px] overflow-y-auto custom-scrollbar p-3 space-y-2 bg-white">
                 {activeCategory.products.map((product) => (
                   <button
                     key={product.id}
@@ -353,21 +348,19 @@ export default function ProductDetail() {
             </div>
           </aside>
 
-          {/* ================= MAIN DISPLAY ================= */}
+          {/* MAIN DISPLAY */}
           <div className="lg:col-span-9 grid grid-cols-1 xl:grid-cols-2 gap-12 xl:gap-24">
             
-            {/* --- Left: Image Stage --- */}
+            {/* Left: Image Stage */}
             <div className="relative flex flex-col items-center">
                <motion.div 
-                 key={activeProduct.id} // Re-animate on product change
+                 key={activeProduct.id}
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.5 }}
                  className="relative w-full aspect-[4/5] bg-white rounded-[3rem] border border-slate-200 flex items-center justify-center overflow-hidden p-12 shadow-2xl shadow-slate-200/50"
                >
-                 {/* Glow Background */}
                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] bg-blue-50 rounded-full blur-3xl opacity-60" />
-
                  <AnimatePresence mode="wait">
                    <motion.img
                      key={activeVariant.img}
@@ -380,8 +373,6 @@ export default function ProductDetail() {
                      className="relative z-10 w-full h-full object-contain drop-shadow-xl mix-blend-multiply"
                    />
                  </AnimatePresence>
-                 
-                 {/* Series Badge */}
                  <div className="absolute top-8 right-8 px-4 py-2 bg-white/90 backdrop-blur border border-slate-100 rounded-lg shadow-sm">
                     <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">
                       {activeCategory.label}
@@ -412,9 +403,8 @@ export default function ProductDetail() {
                </div>
             </div>
 
-            {/* --- Right: Specs & Info --- */}
+            {/* Right: Specs & Info */}
             <div className="flex flex-col justify-center pt-4">
-              
               <div className="mb-10">
                 <div className="flex items-center gap-3 mb-4">
                     <span className="h-px w-12 bg-blue-600"></span>
@@ -428,9 +418,7 @@ export default function ProductDetail() {
                 </p>
               </div>
 
-              {/* Detailed Spec Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 mb-12 border-t border-slate-200 pt-8">
-                 
                  <div className="flex flex-col gap-1">
                     <div className="flex items-center gap-2 text-slate-400 mb-1">
                        <CubeIcon className="w-4 h-4" />
@@ -438,7 +426,6 @@ export default function ProductDetail() {
                     </div>
                     <span className="text-xl font-serif text-slate-900">{activeProduct.specs.coverage}</span>
                  </div>
-
                  <div className="flex flex-col gap-1">
                     <div className="flex items-center gap-2 text-slate-400 mb-1">
                        <SpeakerWaveIcon className="w-4 h-4" />
@@ -446,7 +433,6 @@ export default function ProductDetail() {
                     </div>
                     <span className="text-xl font-serif text-slate-900">{activeProduct.specs.noise}</span>
                  </div>
-
                  <div className="flex flex-col gap-1">
                     <div className="flex items-center gap-2 text-slate-400 mb-1">
                        <BeakerIcon className="w-4 h-4" />
@@ -454,7 +440,6 @@ export default function ProductDetail() {
                     </div>
                     <span className="text-xl font-serif text-slate-900">{activeProduct.specs.tank}</span>
                  </div>
-
                  <div className="flex flex-col gap-1">
                     <div className="flex items-center gap-2 text-slate-400 mb-1">
                        <BoltIcon className="w-4 h-4" />
@@ -462,33 +447,27 @@ export default function ProductDetail() {
                     </div>
                     <span className="text-xl font-serif text-slate-900">{activeProduct.specs.voltage}</span>
                  </div>
-
               </div>
 
-              {/* Actions */}
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-4 bg-slate-900 text-white font-bold uppercase tracking-widest text-xs rounded-full hover:bg-blue-600 transition-all duration-300 shadow-xl shadow-slate-300/50 hover:shadow-blue-500/30 hover:-translate-y-1">
-                   Get Quote
+                    Get Quote
                 </button>
                 <button className="px-8 py-4 bg-white border border-slate-200 text-slate-600 font-bold uppercase tracking-widest text-xs rounded-full hover:border-slate-400 hover:text-slate-900 transition-colors flex items-center gap-2">
                    <ArrowDownTrayIcon className="w-4 h-4" />
                    Spec Sheet
                 </button>
               </div>
-
             </div>
-
           </div>
         </div>
       </div>
       
-      {/* Refined Scrollbar Styles */}
       <style>{`
         .custom-scrollbar::-webkit-scrollbar { width: 4px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-        /* Hide scrollbar for tabs */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
       `}</style>

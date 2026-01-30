@@ -12,9 +12,9 @@ export default function FloatingContactButtons() {
     <div
       className="
         fixed z-[100] flex flex-col items-end gap-4
-        bottom-4 right-4
-        sm:bottom-6 sm:right-6
-        lg:bottom-8 lg:right-8
+        bottom-8 right-4
+        sm:bottom-10 sm:right-6
+        lg:bottom-12 lg:right-8
         pb-safe
       "
     >
@@ -30,15 +30,17 @@ export default function FloatingContactButtons() {
         className="group relative flex items-center justify-end"
       >
         {/* Tooltip (Desktop only) */}
-        <span className="
-          hidden sm:block
-          absolute right-14 px-3 py-1.5
-          bg-white text-slate-800 text-xs font-bold rounded-lg shadow-lg
-          opacity-0 translate-x-4
-          group-hover:opacity-100 group-hover:translate-x-0
-          transition-all duration-300
-          whitespace-nowrap
-        ">
+        <span
+          className="
+            hidden sm:block
+            absolute right-14 px-3 py-1.5
+            bg-white text-slate-800 text-xs font-bold rounded-lg shadow-lg
+            opacity-0 translate-x-4
+            group-hover:opacity-100 group-hover:translate-x-0
+            transition-all duration-300
+            whitespace-nowrap
+          "
+        >
           Chat on WhatsApp
         </span>
 
@@ -79,15 +81,17 @@ export default function FloatingContactButtons() {
         className="group relative flex items-center justify-end"
       >
         {/* Tooltip (Desktop only) */}
-        <span className="
-          hidden sm:block
-          absolute right-14 px-3 py-1.5
-          bg-white text-slate-800 text-xs font-bold rounded-lg shadow-lg
-          opacity-0 translate-x-4
-          group-hover:opacity-100 group-hover:translate-x-0
-          transition-all duration-300
-          whitespace-nowrap
-        ">
+        <span
+          className="
+            hidden sm:block
+            absolute right-14 px-3 py-1.5
+            bg-white text-slate-800 text-xs font-bold rounded-lg shadow-lg
+            opacity-0 translate-x-4
+            group-hover:opacity-100 group-hover:translate-x-0
+            transition-all duration-300
+            whitespace-nowrap
+          "
+        >
           Call Now
         </span>
 

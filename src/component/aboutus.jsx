@@ -32,7 +32,7 @@ const staggerContainer = {
 
 export default function AboutUs() {
   return (
-    <section id="about" className="relative bg-[#020617] overflow-hidden font-sans selection:bg-indigo-500 selection:text-white text-slate-300 mt-16">
+    <section id="about" className="relative bg-[#020617] overflow-hidden font-sans selection:bg-indigo-500 selection:text-white text-slate-300">
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -55,7 +55,7 @@ export default function AboutUs() {
           {/* Ambient Glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-indigo-500/10 blur-[100px] rounded-full pointer-events-none" />
 
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-950/20 backdrop-blur-md mb-8 shadow-[0_0_20px_rgba(99,102,241,0.3)] relative z-10">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-950/20 backdrop-blur-md mb-8 shadow-[0_0_20px_rgba(99,102,241,0.3)] relative z-10 mt-16">
             <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse"></span>
             <span className="text-indigo-200 text-xs font-bold tracking-widest uppercase">
               About Cool Max
