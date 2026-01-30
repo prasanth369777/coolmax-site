@@ -193,7 +193,7 @@ export default function Header() {
                 {/* Social Icons (Desktop) */}
                 <div className="hidden lg:flex items-center gap-3 border-r border-white/10 pr-4 mr-1">
                     {[FaFacebookF, FaInstagram, FaWhatsapp].map((Icon, i) => (
-                        <a key={i} href="#" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
+                        <a key={i} href="/contact" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
                             <Icon size={14} />
                         </a>
                     ))}
