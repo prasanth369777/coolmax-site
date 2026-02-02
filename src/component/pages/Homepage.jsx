@@ -8,7 +8,7 @@ import AromaOils1 from "../pages/AromaOils1";
 import Industries1 from "../../component/pages/industries1";
 import Blog1 from "../pages/Blog1";
 import Testimonials from "../Testimonials"; // Fixed 'Testimonials is not defined'
-import TalkToExpert from "../TalkToExpert"; // Fixed 'TalkToExpert is not defined'
+import Contact1 from "../../component/pages/contact1"; // Fixed 'TalkToExpert is not defined'
 import Clear1 from "../pages/clear1";
 
 
@@ -29,7 +29,7 @@ export default function Homepage() {
       <Blog1 />
       <Clear1 />
       <Testimonials />
-      <TalkToExpert />
+      <Contact1 />
     </div>
   );
 }

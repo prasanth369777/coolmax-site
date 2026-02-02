@@ -1,61 +1,88 @@
 import React, { useState } from "react";
-import { ArrowRightIcon, ShoppingBagIcon, SparklesIcon} from "@heroicons/react/24/solid";
+import { ArrowRightIcon, ShoppingBagIcon, SparklesIcon } from "@heroicons/react/24/solid";
 
-// ================= IMAGE IMPORTS =================
-import ProdHome from "../../asset/hero/vs-160_converted.webp"; 
-import ProdComm from "../../asset/hero/q3000pro_converted.webp"; 
-import ProdWall from "../../asset/hero/m45_converted.webp"; 
-import ProdHVAC from "../../asset/hero/m41-b_converted.webp"; 
-import ProdFloor from "../../asset/hero/a500_converted.webp"; 
-import ProdCar from "../../asset/hero/Q-500_converted.webp"; 
+// ================= IMAGE ASSETS =================
+import DriveMist1 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/1.webp";
+import DriveMist2 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/2.webp";
+import DriveMist3 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/3.webp";
+import DriveMist4 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/4.webp";
+
+
+
+import ZenBoxMini1 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/1.webp";
+import ZenBoxMini2 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/2.webp";
+import ZenBoxMini3 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/3.webp";
+import ZenBoxMini4 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/4.webp";
+
+
+import CeilAirPro1 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/1.webp";
+import CeilAirPro2 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/2.webp";
+import CeilAirPro3 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/3.webp";
+import CeilAirPro4 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/4.webp";
+
+import Titan1 from "../../asset/productimg/CMwebpimg/Titan Diffuser/1.webp";
+import Titan2 from "../../asset/productimg/CMwebpimg/Titan Diffuser/2.webp";
+import Titan3 from "../../asset/productimg/CMwebpimg/Titan Diffuser/3.webp";
+import Titan4 from "../../asset/productimg/CMwebpimg/Titan Diffuser/4.webp";
+
+import AirPulse1501 from "../../asset/productimg/CMwebpimg/AirPulse 150/1.webp";
+import AirPulse1502 from "../../asset/productimg/CMwebpimg/AirPulse 150/2.webp";
+import AirPulse1503 from "../../asset/productimg/CMwebpimg/AirPulse 150/3.webp";
+import AirPulse1504 from "../../asset/productimg/CMwebpimg/AirPulse 150/4.webp";
+
+import AeroPillar1 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/1.webp";
+import AeroPillar2 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/2.webp";
+import AeroPillar3 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/3.webp";
+import AeroPillar4 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/4.webp";
+
 
 const categories = [
   { 
     id: 1, 
     title: "Home & Small Space Aroma Diffusers", 
     tag: "Personal", 
-    img: ProdHome, 
-    gallery: [ProdHome, ProdHVAC, ProdWall, ProdCar],
+    img: ZenBoxMini1, 
+    gallery: [ZenBoxMini1, ZenBoxMini2, ZenBoxMini3, ZenBoxMini4],
     desc: "Compact and efficient home diffuser machines that are ideal for bedrooms, living rooms, small offices, and personal spaces. These systems deliver controlled fragrance without being too strong." 
   },
   { 
     id: 2, 
     title: "Wall-Mounted & Ceiling Aroma Diffusers", 
     tag: "Discreet", 
-    img: ProdWall, 
-    gallery: [ProdWall, ProdHome, ProdComm, ProdFloor],
+    img: CeilAirPro1, 
+    gallery: [CeilAirPro1, CeilAirPro2, CeilAirPro3, CeilAirPro4],
     desc: "Perfect for corridors, washrooms, elevators, and common areas. These aroma scent diffusers are discreet, space-saving, and designed for continuous use." 
   },
   { 
     id: 3, 
     title: "Commercial Aroma Diffusers", 
     tag: "Professional", 
-    img: ProdComm, 
-    gallery: [ProdComm, ProdHVAC, ProdFloor, ProdWall],
+    img: Titan1, 
+    gallery: [Titan1, Titan2, Titan3, Titan4],
     desc: "Professional-grade commercial scent machines suitable for offices, clinics, gyms, and retail stores, ensuring consistent fragrance throughout working hours." 
   },
   { 
     id: 4, 
     title: "Floor-Standing Aroma Diffusers", 
     tag: "Luxury", 
-    img: ProdFloor, 
-    gallery: [ProdFloor, ProdComm, ProdHome, ProdHVAC],
+    img: AeroPillar1, 
+    gallery: [AeroPillar1, AeroPillar2, AeroPillar3, AeroPillar4],
     desc: "Elegant and powerful scent air machines designed for hotel lobbies, showrooms, and premium interiors where both performance and appearance matter." 
   },
   { 
     id: 5, 
     title: "Large Area & HVAC Aroma Diffusers", 
     tag: "Industrial", 
-    img: ProdHVAC, 
-    gallery: [ProdHVAC, ProdComm, ProdFloor, ProdWall],
+    img: AirPulse1501, 
+    gallery: [AirPulse1501, AirPulse1502, AirPulse1503, AirPulse1504],
     desc: "High-capacity HVAC scent diffusers and hotel scent diffuser systems designed for large spaces ranging from 3,000 m³ to 15,000 m³." 
   },
   { 
     id: 6, 
     title: "Car Aroma Diffusers", 
     tag: "On-the-go", 
-    img: ProdCar, 
-    gallery: [ProdCar, ProdHome, ProdWall, ProdHVAC],
+    img: DriveMist1, 
+    gallery: [DriveMist1, DriveMist2, DriveMist3, DriveMist4],
     desc: "Portable scent machines for home and car that keep vehicle interiors fresh and pleasant." 
   },
 ];
@@ -173,7 +200,7 @@ function ProductCard({ cat }) {
 
         <div className="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
           <a href="/contact" className="w-full py-4 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-blue-600 transition-all shadow-lg">
-             <ShoppingBagIcon className="w-4 h-4" /> Quick Inquiry
+              <ShoppingBagIcon className="w-4 h-4" /> Quick Inquiry
           </a>
         </div>
       </div>

@@ -13,11 +13,11 @@ import {
   ChatBubbleBottomCenterTextIcon
 } from "@heroicons/react/24/outline";
 
-/* ================= IMAGE IMPORTS ================= */
-import D100Black from "../../asset/productimg/Model D100/Model D100 - 1.jpeg"; 
-import M41BBlack from "../../asset/productimg/Model M41-B/Model M41-B - 1.jpeg"; 
-import VS160Black from "../../asset/productimg/Model VS160/Model VS160 - 2.jpeg"; 
-import H11Black from "../../asset/productimg/Model H11-A-2026/Model H11-A-2026 - 1.jpeg"; 
+/* ================= IMAGE ASSETS ================= */
+import AeroBlackPro from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/1.webp";
+import AirPulse150 from "../../asset/productimg/CMwebpimg/AirPulse 150/1.webp";
+import ZenBoxMini from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/1.webp";
+import DriveMist from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/1.webp";
 
 const ProcessAndInsights = () => {
   return (
@@ -85,7 +85,6 @@ const ProcessAndInsights = () => {
                     </p>
                 </div>
                 
-                {/* Visual Decorative Line */}
                 <div className="mt-8 h-1 w-12 bg-slate-100 group-hover:w-full group-hover:bg-blue-500 transition-all duration-500 rounded-full" />
               </motion.div>
             ))}
@@ -102,7 +101,7 @@ const ProcessAndInsights = () => {
              <div>
                 <div className="flex items-center gap-2 mb-4">
                     <SparklesIcon className="w-4 h-4 text-blue-500" />
-                    <span className="text-xs font-bold uppercase tracking-widest text-blue-600">Blog & Resources</span>
+                    <span className="text-xs font-bold uppercase tracking-widest text-blue-600">Resources</span>
                 </div>
                 <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-4">
                   Insights from the World of <br/> <span className="text-blue-600 italic">Scent Marketing.</span>
@@ -115,12 +114,12 @@ const ProcessAndInsights = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
-             {[
-               { title: "Choosing the right scent diffuser machine", img: D100Black, icon: CpuChipIcon },
-               { title: "Benefits of HVAC scent diffusers", img: M41BBlack, icon: BuildingOfficeIcon },
-               { title: "How scent impacts customer experience", img: VS160Black, icon: SparklesIcon },
-               { title: "Selecting the best home fragrance system", img: H11Black, icon: HomeModernIcon }
-             ].map((item, idx) => (
+              {[
+                { title: "Choosing the right scent diffuser machine", img: AeroBlackPro, icon: CpuChipIcon },
+                { title: "Benefits of HVAC scent diffusers", img: AirPulse150, icon: BuildingOfficeIcon },
+                { title: "How scent impacts customer experience", img: ZenBoxMini, icon: SparklesIcon },
+                { title: "Selecting the best home fragrance system", img: DriveMist, icon: HomeModernIcon }
+              ].map((item, idx) => (
                <motion.div 
                  key={idx}
                  initial={{ opacity: 0 }}
@@ -129,19 +128,17 @@ const ProcessAndInsights = () => {
                  transition={{ delay: idx * 0.1 }}
                  className="group cursor-pointer"
                >
-                 {/* Image Container */}
-                 <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-slate-50 mb-6 border border-slate-100">
+                 <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-[#F8FAFC] mb-6 border border-slate-100">
                     <img 
                       src={item.img} 
                       alt={item.title} 
-                      className="w-full h-full object-contain p-8 mix-blend-multiply opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" 
+                      className="w-full h-full object-contain p-8 mix-blend-multiply opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" 
                     />
                     <div className="absolute top-4 right-4 p-2 bg-white rounded-full shadow-sm text-slate-400 group-hover:text-blue-600 transition-colors">
                         <item.icon className="w-4 h-4" />
                     </div>
                  </div>
 
-                 {/* Text */}
                  <h3 className="text-xl font-serif text-slate-900 leading-snug mb-3 group-hover:text-blue-600 transition-colors">
                    {item.title}
                  </h3>
@@ -149,7 +146,7 @@ const ProcessAndInsights = () => {
                     Read More <ArrowLongRightIcon className="w-4 h-4" />
                  </span>
                </motion.div>
-             ))}
+              ))}
           </div>
 
           <div className="mt-16 text-center">
@@ -165,13 +162,10 @@ const ProcessAndInsights = () => {
       <section className="relative py-24 px-6">
         <div className="max-w-[1400px] mx-auto">
           
-          {/* Deep Blue Background */}
           <div className="relative bg-[#0F172A] rounded-[3rem] p-12 md:p-24 overflow-hidden text-center shadow-2xl shadow-blue-900/20">
               
-             {/* Abstract Blue shapes in background */}
              <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-blue-600 rounded-full blur-[120px] pointer-events-none opacity-20" />
              <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-cyan-500 rounded-full blur-[100px] pointer-events-none opacity-20" />
-             {/* Grain Texture */}
              <div className="absolute inset-0 opacity-10 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] pointer-events-none mix-blend-overlay"></div>
 
              <div className="relative z-10 max-w-4xl mx-auto">

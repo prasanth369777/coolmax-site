@@ -31,7 +31,7 @@ const navigation = [
   },
   {
     name: "Aroma Oils",
-    href: "/aroma-oils", // Now clickable
+    href: "/aromas", // Now clickable
     type: "dropdown",
     cols: 2,
     items: [
@@ -59,21 +59,8 @@ const navigation = [
       { label: "Maintenance & Refill Support", href: "/Maintenance" },
     ],
   },
-  {
-    name: "Industries",
-    href: "/industries", // Now clickable
-    type: "dropdown",
-    cols: 1,
-    items: [
-      { label: "Offices & Corporate", href: "/industries" },
-      { label: "Hotels & Hospitality", href: "/industries" },
-      { label: "Hospitals & Clinics", href: "/industries" },
-      { label: "Schools & Education", href: "/industries" },
-      { label: "Retail & Showrooms", href: "/industries" },
-      { label: "Restaurants & Cafes", href: "/industries" },
-      { label: "Malls & Commercial", href: "/industries" },
-    ],
-  },
+
+  { name: "Industries", href: "/industries", type: "link" },
   { name: "About", href: "/about", type: "link" },
   { name: "Blog", href: "/blog", type: "link" },
 ];
