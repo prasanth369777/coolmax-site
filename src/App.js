@@ -29,7 +29,7 @@ import Floorstanding from "./component/productpage/Floor-StandingAromaDiffusers"
 import Largearea from "./component/productpage/LargeareaDiffusers";
 import Passivenopower from "./component/productpage/Passive-No-PowerDiffusers";
 import WallmountedD from "./component/productpage/Wall-Mounted&CeilingAromaDiffusers";
-
+import Scrollup from "./component/scrolluparrow";
 // --- HELPER: SCROLL TO TOP ---
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -57,6 +57,7 @@ function App() {
       {/* Navbar visible on all pages */}
       <Nav />
       <WhatsAppFloating />
+      <Scrollup />
 
       <Routes>
         {/* --- MAIN PAGES --- */}

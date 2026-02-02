@@ -1,208 +1,180 @@
 import React from "react";
-import { ArrowRightIcon, CalendarDaysIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
+import { motion } from "framer-motion";
+import { ArrowRightIcon, CalendarDaysIcon, EnvelopeIcon, TagIcon } from "@heroicons/react/24/outline";
 
+/* ================= UPDATED DATA STRUCTURE (5 ITEMS) ================= */
 const blogPosts = [
   {
     id: 1,
-    title: "The Psychology of Scent in Retail",
-    excerpt: "Discover how the right fragrance can increase customer dwell time, boost sales, and create lasting emotional connections with your brand.",
-    category: "Featured",
-    date: "Mar 15, 2025",
+    title: "The Psychology of Scent in Luxury Retail",
+    excerpt: "Discover how the right fragrance can increase customer dwell time, boost sales, and create lasting emotional connections.",
+    category: "Business Strategy",
+    date: "Mar 15, 2026",
     readTime: "5 min read",
     image: "https://images.unsplash.com/photo-1555529771-835f59fc5efe?q=80&w=900",
-    isFeatured: true,
+    productLink: "View Commercial Range"
   },
   {
     id: 2,
-    title: "HVAC Scenting: A Complete Guide",
-    excerpt: "Integrating scent diffusion into central air systems for uniform coverage.",
-    category: "Technology",
-    date: "Mar 10, 2025",
+    title: "HVAC Scenting: A Complete Architectural Guide",
+    excerpt: "Integrating scent diffusion into central air systems for uniform, invisible coverage across sprawling commercial spaces.",
+    category: "Installation",
+    date: "Mar 10, 2026",
     readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1504384308090-c54be3855463?q=80&w=900",
+    image: "https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?q=80&w=900",
+    productLink: "Explore HVAC Units"
   },
   {
     id: 3,
-    title: "Top 5 Fragrance Trends for Hotels",
-    excerpt: "Explore the trending olfactory notes defining luxury hospitality.",
+    title: "Top 5 Fragrance Trends for Luxury Hotels",
+    excerpt: "Explore the trending olfactory notes defining luxury hospitality and guest experience for the 2026 season.",
     category: "Hospitality",
-    date: "Feb 28, 2025",
+    date: "Feb 28, 2026",
     readTime: "4 min",
     image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=900",
+    productLink: "Hotel Collection"
   },
   {
     id: 4,
-    title: "The Science of Memory",
-    excerpt: "Why specific scents trigger vivid memories and how brands leverage this.",
-    category: "Science",
-    date: "Feb 15, 2025",
+    title: "Cold-Air Nebulization: The Future of Diffusion",
+    excerpt: "Why heat-free technology is essential for preserving the therapeutic properties and purity of essential oils.",
+    category: "Technology",
+    date: "Feb 15, 2026",
     readTime: "6 min",
-    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=900",
+    image: "https://images.unsplash.com/photo-1555529771-835f59fc5efe?q=80&w=900",
+    productLink: "View Tech Specs"
+  },
+  {
+    id: 5,
+    title: "Designing a Signature Scent for Your Home",
+    excerpt: "A guide to selecting base and top notes that reflect your interior design aesthetic and personal style.",
+    category: "Lifestyle",
+    date: "Feb 05, 2026",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?q=80&w=900",
+    productLink: "Shop Home Range"
   },
 ];
 
-export default function BlogSection() {
+export default function EcommerceBlog() {
   return (
-    <section id="blog" className="relative py-28 px-6 bg-[#F8FAFC] overflow-hidden font-sans text-slate-600">
+    <section id="blog" className="relative py-24 bg-white overflow-hidden font-sans text-slate-600">
       
-      {/* Background Texture */}
-      <div className="absolute inset-0 opacity-[0.4]" 
-           style={{ backgroundImage: 'radial-gradient(#cbd5e1 1px, transparent 1px)', backgroundSize: '32px 32px' }}>
-      </div>
-
-      <div className="relative max-w-[1400px] mx-auto">
+      <div className="relative max-w-[1600px] mx-auto px-6 lg:px-12">
         
-        {/* --- Section Header --- */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-slate-200 pb-8">
-          <div>
-            <div className="flex items-center gap-3 mb-3">
-                <div className="h-px w-8 bg-blue-600"></div>
-                {/* Sans-Serif for the eyebrow tag for contrast */}
-                <span className="text-blue-600 font-sans font-bold tracking-[0.2em] uppercase text-xs">
-                    The Scent Journal
-                </span>
-            </div>
-            {/* Serif Heading for Editorial Look */}
-            <h2 className="text-4xl md:text-5xl font-serif font-medium text-slate-900 leading-tight">
-              Latest <span className="italic text-blue-700">Insights</span>
+        {/* Header Section */}
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div className="max-w-2xl">
+            <h2 className="text-5xl md:text-7xl font-black text-slate-900 leading-[0.9] tracking-tighter mb-6">
+              Scenting <span className="text-blue-600 italic font-serif font-light">Academy</span>
             </h2>
+            <p className="text-lg text-slate-500 font-medium font-sans">
+              Expert advice on scent marketing, technology, and creating the perfect atmosphere for your brand or home.
+            </p>
           </div>
-          <a href="/blog" className="hidden md:flex items-center gap-2 px-6 py-3 border border-slate-200 rounded-full text-sm font-semibold text-slate-900 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300 group">
-            View Archive <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
+          <button className="px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold text-xs uppercase tracking-[0.2em] hover:bg-blue-600 transition-all shadow-xl shadow-slate-200">
+            Browse All Articles
+          </button>
         </div>
 
-        {/* --- Editorial Grid --- */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-          
-          {/* FEATURED POST */}
-          <div className="lg:col-span-7 h-full">
-            <article className="group relative h-full min-h-[500px] rounded-[2rem] overflow-hidden shadow-2xl shadow-blue-900/10 cursor-pointer">
-              {/* Background Image */}
-              <img
-                src={blogPosts[0].image}
-                alt={blogPosts[0].title}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-              />
-              
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent opacity-90" />
-              
-              {/* Content Container */}
-              <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
-                 
-                 {/* Top Badge */}
-                 <div className="absolute top-8 left-8">
-                   <span className="px-4 py-2 bg-blue-600 text-white text-xs font-bold uppercase tracking-widest rounded-lg shadow-lg">
-                     {blogPosts[0].category}
-                   </span>
-                 </div>
-
-                 <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                    {/* Meta Data */}
-                    <div className="flex items-center gap-4 text-blue-100 text-xs font-medium mb-4 opacity-90 tracking-wide">
-                        <span className="flex items-center gap-2"><CalendarDaysIcon className="w-4 h-4"/> {blogPosts[0].date}</span>
-                        <span className="w-1 h-1 bg-blue-400 rounded-full"></span>
-                        <span>{blogPosts[0].readTime}</span>
-                    </div>
-
-                    {/* Headline: Serif */}
-                    <h3 className="text-3xl md:text-5xl font-serif font-medium text-white mb-6 leading-tight">
-                        {blogPosts[0].title}
-                    </h3>
-                    
-                    {/* Excerpt: Sans-Serif */}
-                    <p className="text-slate-200 text-lg line-clamp-2 max-w-xl font-light leading-relaxed mb-8 opacity-90">
-                        {blogPosts[0].excerpt}
-                    </p>
-                    
-                    <span className="inline-flex items-center gap-3 text-white font-bold tracking-wide border-b border-blue-500 pb-1 hover:text-blue-400 transition-colors">
-                        Read Full Story <ArrowRightIcon className="w-4 h-4" />
-                    </span>
-                 </div>
-              </div>
-            </article>
-          </div>
-
-          {/* SIDE LIST */}
-          <div className="lg:col-span-5 flex flex-col justify-between h-full gap-8">
-            
-            {/* List Items */}
-            <div className="flex flex-col gap-6">
-                {blogPosts.slice(1).map((post) => (
-                <article key={post.id} className="group flex gap-5 items-start cursor-pointer p-4 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-slate-100">
-                    
-                    {/* Thumbnail */}
-                    <div className="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0 rounded-xl overflow-hidden relative bg-slate-200">
-                    <img 
-                        src={post.image} 
-                        alt={post.title} 
-                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                    />
-                    </div>
-
-                    {/* Content */}
-                    <div className="flex-1 py-1">
-                        {/* Meta Data */}
-                        <div className="flex items-center gap-2 text-[10px] font-bold text-blue-600 mb-2 uppercase tracking-wide">
-                            <span>{post.category}</span>
-                            <span className="text-slate-300">•</span>
-                            <span className="text-slate-400">{post.date}</span>
-                        </div>
-                        
-                        {/* Title: Serif */}
-                        <h3 className="text-xl font-serif text-slate-900 mb-2 leading-tight group-hover:text-blue-700 transition-colors">
-                            {post.title}
-                        </h3>
-                        
-                        {/* Excerpt: Sans */}
-                        <p className="text-xs text-slate-500 leading-relaxed line-clamp-2 mb-3 hidden sm:block font-normal">
-                            {post.excerpt}
-                        </p>
-
-                        <div className="flex items-center gap-2 text-xs font-bold text-slate-900 group-hover:text-blue-600 transition-colors uppercase tracking-wider">
-                            Read <ArrowRightIcon className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
-                        </div>
-                    </div>
-                </article>
-                ))}
-            </div>
-            
-            {/* Newsletter CTA Block */}
-            <div className="relative bg-[#1e3a8a] rounded-2xl p-8 overflow-hidden text-white shadow-xl shadow-blue-900/20">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
-                
-                <div className="relative z-10">
-                    <div className="flex items-center gap-3 mb-4">
-                        <div className="p-2 bg-white/10 rounded-lg backdrop-blur-sm">
-                            <EnvelopeIcon className="w-6 h-6 text-blue-200" />
-                        </div>
-                        <h4 className="font-serif font-medium text-xl">Subscribe to our journal</h4>
-                    </div>
-                    
-                    <p className="text-blue-200 text-sm mb-6 font-light">Get the latest scent trends delivered.</p>
-                    
-                    <div className="flex shadow-lg rounded-lg overflow-hidden">
-                        <input type="email" placeholder="Email address" className="bg-white text-slate-900 text-sm px-4 py-3 focus:outline-none w-full placeholder:text-slate-400 font-medium" />
-                        <button className="bg-blue-500 text-white px-6 py-3 text-sm font-bold hover:bg-blue-400 transition-colors uppercase tracking-wider">
-                            Join
-                        </button>
-                    </div>
+        {/* --- Product-Driven Blog Grid --- */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {blogPosts.map((post) => (
+            <motion.article 
+              key={post.id}
+              whileHover={{ y: -10 }}
+              className="group flex flex-col bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden transition-all duration-500 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)]"
+            >
+              {/* Image Container */}
+              <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute top-6 left-6">
+                  <span className="px-3 py-1.5 bg-white/90 backdrop-blur rounded-full text-[10px] font-black uppercase tracking-widest text-blue-600 shadow-sm">
+                    {post.category}
+                  </span>
                 </div>
-            </div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-slate-900/20 backdrop-blur-[2px]">
+                   <button className="px-6 py-3 bg-white text-slate-900 rounded-full text-xs font-bold shadow-2xl flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                     Read Article <ArrowRightIcon className="w-4 h-4" />
+                   </button>
+                </div>
+              </div>
 
-          </div>
+              {/* Content Area */}
+              <div className="p-8 flex flex-col flex-1">
+                <div className="flex items-center gap-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 font-sans">
+                  <span className="flex items-center gap-1.5"><CalendarDaysIcon className="w-3.5 h-3.5"/> {post.date}</span>
+                  <span className="w-1 h-1 bg-slate-300 rounded-full"></span>
+                  <span>{post.readTime}</span>
+                </div>
 
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-blue-600 transition-colors font-serif">
+                  {post.title}
+                </h3>
+                
+                <p className="text-slate-500 text-sm leading-relaxed mb-8 line-clamp-3 font-sans font-normal">
+                  {post.excerpt}
+                </p>
+
+                {/* Footer with Product Link */}
+                <div className="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
+                   <div className="flex items-center gap-2 text-blue-600 font-bold text-[11px] uppercase tracking-widest font-sans">
+                      <TagIcon className="w-4 h-4" />
+                      {post.productLink}
+                   </div>
+                   <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                      <ArrowRightIcon className="w-4 h-4" />
+                   </div>
+                </div>
+              </div>
+            </motion.article>
+          ))}
         </div>
 
-        {/* Mobile View All Button */}
-        <div className="mt-12 text-center md:hidden">
-            <a href="/blog" className="inline-block px-8 py-3 bg-slate-900 text-white rounded-full font-bold text-sm shadow-lg hover:bg-blue-700 transition-colors w-full">
-                View All Articles
-            </a>
+        {/* Newsletter Section */}
+        <div className="mt-24 bg-slate-50 rounded-[3rem] p-10 md:p-20 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-12">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100/50 rounded-full blur-[100px] -mr-48 -mt-48" />
+          
+          <div className="relative z-10 max-w-xl text-center lg:text-left">
+            <div className="flex justify-center lg:justify-start mb-6">
+              <div className="p-4 bg-white rounded-2xl shadow-sm">
+                <EnvelopeIcon className="w-8 h-8 text-blue-600" />
+              </div>
+            </div>
+            <h3 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tighter mb-4 font-sans uppercase">
+              Join the <span className="text-blue-600">Scent List</span>
+            </h3>
+            <p className="text-slate-500 font-medium font-sans">
+              Get exclusive offers, new fragrance alerts, and scenting tips delivered weekly.
+            </p>
+          </div>
+
+          <div className="relative z-10 w-full max-w-md">
+            <div className="flex p-2 bg-white rounded-3xl shadow-2xl shadow-slate-200">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="flex-1 px-6 py-4 bg-transparent text-slate-900 text-sm focus:outline-none font-bold placeholder:font-normal font-sans" 
+              />
+              <button className="bg-slate-900 text-white px-8 py-4 rounded-2xl text-xs font-bold hover:bg-blue-600 transition-all uppercase tracking-widest font-sans">
+                Subscribe
+              </button>
+            </div>
+          </div>
         </div>
 
       </div>
+
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+        
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+      `}</style>
     </section>
   );
 }

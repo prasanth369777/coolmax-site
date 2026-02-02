@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ArrowLongRightIcon, SparklesIcon } from "@heroicons/react/24/solid";
+import { ArrowRightIcon, ShoppingBagIcon, SparklesIcon} from "@heroicons/react/24/solid";
 
 // ================= IMAGE IMPORTS =================
 import ProdHome from "../../asset/hero/vs-160_converted.webp"; 
@@ -9,101 +9,115 @@ import ProdHVAC from "../../asset/hero/m41-b_converted.webp";
 import ProdFloor from "../../asset/hero/a500_converted.webp"; 
 import ProdCar from "../../asset/hero/Q-500_converted.webp"; 
 
-// ================= DATA STRUCTURE =================
 const categories = [
-  {
-    id: 1,
-    title: "Home & Small Space Aroma Diffusers",
-    desc: "Compact and efficient home diffuser machines that are ideal for bedrooms, living rooms, small offices, and personal spaces. These systems deliver controlled fragrance without being too strong.",
-    gallery: [ProdHome, ProdHVAC, ProdComm, ProdFloor] 
+  { 
+    id: 1, 
+    title: "Home & Small Space Aroma Diffusers", 
+    tag: "Personal", 
+    img: ProdHome, 
+    gallery: [ProdHome, ProdHVAC, ProdWall, ProdCar],
+    desc: "Compact and efficient home diffuser machines that are ideal for bedrooms, living rooms, small offices, and personal spaces. These systems deliver controlled fragrance without being too strong." 
   },
-  {
-    id: 2,
-    title: "Wall-Mounted & Ceiling Aroma Diffusers",
-    desc: "Perfect for corridors, washrooms, elevators, and common areas. These aroma scent diffusers are discreet, space-saving, and designed for continuous use.",
-    gallery: [ProdWall, ProdHVAC, ProdComm, ProdFloor]
+  { 
+    id: 2, 
+    title: "Wall-Mounted & Ceiling Aroma Diffusers", 
+    tag: "Discreet", 
+    img: ProdWall, 
+    gallery: [ProdWall, ProdHome, ProdComm, ProdFloor],
+    desc: "Perfect for corridors, washrooms, elevators, and common areas. These aroma scent diffusers are discreet, space-saving, and designed for continuous use." 
   },
-  {
-    id: 3,
-    title: "Commercial Aroma Diffusers",
-    desc: "Professional-grade commercial scent machines suitable for offices, clinics, gyms, and retail stores, ensuring consistent fragrance throughout working hours.",
-    gallery: [ProdHome, ProdHVAC, ProdComm, ProdFloor]
+  { 
+    id: 3, 
+    title: "Commercial Aroma Diffusers", 
+    tag: "Professional", 
+    img: ProdComm, 
+    gallery: [ProdComm, ProdHVAC, ProdFloor, ProdWall],
+    desc: "Professional-grade commercial scent machines suitable for offices, clinics, gyms, and retail stores, ensuring consistent fragrance throughout working hours." 
   },
-  {
-    id: 4,
-    title: "Floor-Standing Aroma Diffusers",
-    desc: "Elegant and powerful scent air machines designed for hotel lobbies, showrooms, and premium interiors where both performance and appearance matter.",
-    gallery: [ProdHome, ProdHVAC, ProdComm, ProdFloor]
+  { 
+    id: 4, 
+    title: "Floor-Standing Aroma Diffusers", 
+    tag: "Luxury", 
+    img: ProdFloor, 
+    gallery: [ProdFloor, ProdComm, ProdHome, ProdHVAC],
+    desc: "Elegant and powerful scent air machines designed for hotel lobbies, showrooms, and premium interiors where both performance and appearance matter." 
   },
-  {
-    id: 5,
-    title: "Large Area & HVAC Aroma Diffusers",
-    desc: "High-capacity HVAC scent diffusers and hotel scent diffuser systems designed for large spaces ranging from 3,000 m³ to 15,000 m³.",
-    gallery: [ProdHome, ProdHVAC, ProdComm, ProdFloor]
+  { 
+    id: 5, 
+    title: "Large Area & HVAC Aroma Diffusers", 
+    tag: "Industrial", 
+    img: ProdHVAC, 
+    gallery: [ProdHVAC, ProdComm, ProdFloor, ProdWall],
+    desc: "High-capacity HVAC scent diffusers and hotel scent diffuser systems designed for large spaces ranging from 3,000 m³ to 15,000 m³." 
   },
-  {
-    id: 6,
-    title: "Car Aroma Diffusers",
-    desc: "Portable scent machines for home and car that keep vehicle interiors fresh and pleasant.",
-    gallery: [ProdHome, ProdHVAC, ProdCar, ProdFloor]
+  { 
+    id: 6, 
+    title: "Car Aroma Diffusers", 
+    tag: "On-the-go", 
+    img: ProdCar, 
+    gallery: [ProdCar, ProdHome, ProdWall, ProdHVAC],
+    desc: "Portable scent machines for home and car that keep vehicle interiors fresh and pleasant." 
   },
 ];
 
-export default function Products() {
+export default function EcommerceProducts() {
   return (
-    <section className="relative w-full py-32 bg-[#02040a] text-white overflow-hidden" id="products">
+    <section className="relative w-full py-24 bg-[#FDFDFD] text-slate-900 overflow-hidden" id="products">
       
-      {/* ================= AMBIENT BACKGROUND ================= */}
-      <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none animate-pulse" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[40vw] h-[40vw] bg-cyan-900/20 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
-           style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }} 
-      />
+      {/* Background Decor */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-slate-50 skew-x-[-12deg] translate-x-32 pointer-events-none" />
 
-      <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12">
+      <div className="relative z-10 max-w-[1600px] mx-auto px-6 lg:px-12">
         
-        {/* ================= HEADER ================= */}
-        <div className="mb-32 max-w-5xl mx-auto text-center md:text-left">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 backdrop-blur-md mb-6">
-             <SparklesIcon className="w-4 h-4 text-blue-400" />
-             <span className="text-blue-200 text-xs font-bold tracking-widest uppercase">
-               Our Collection
-             </span>
+        {/* --- SECTION HEADER --- */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20 border-b border-slate-100 pb-12">
+          <div className="max-w-4xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/5 border border-blue-600/10 mb-6">
+              <SparklesIcon className="w-4 h-4 text-blue-600" />
+              <span className="text-blue-600 text-[10px] font-black uppercase tracking-widest">Cool Max 2026 Collection</span>
+            </div>
+            <h2 className="text-5xl md:text-7xl font-serif leading-[0.9] tracking-tighter mb-6">
+              Aroma Diffusers for <br /> 
+              <span className="text-blue-600 italic font-light">Every Space</span>
+            </h2>
+            <div className="space-y-4">
+               <p className="text-2xl font-medium text-slate-800">From Small Rooms to Large Commercial Areas</p>
+               <p className="text-slate-500 text-lg font-medium max-w-2xl leading-relaxed">
+                 Cool Max offers a wide range of scent diffuser machines designed to suit different environments and coverage requirements. Our product range includes:
+               </p>
+            </div>
           </div>
           
-          <h2 className="text-4xl md:text-6xl font-medium text-white mb-6 tracking-tight leading-tight">
-            Aroma Diffusers for <br className="hidden md:block"/> 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-white to-cyan-200">
-              Every Space
-            </span>
-          </h2>
-          
-          <div className="space-y-4">
-            <p className="text-xl text-white font-normal">
-              From Small Rooms to Large Commercial Areas
-            </p>
-            <p className="text-lg text-slate-400 leading-relaxed max-w-3xl mx-auto md:mx-0 font-light">
-              Cool Max offers a wide range of scent diffuser machines designed to suit different environments and coverage requirements. Our product range includes:
-            </p>
+          <div className="flex items-center gap-4">
+            <button className="px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold text-xs uppercase tracking-widest hover:bg-blue-600 transition-all shadow-xl">
+              Explore All Categories
+            </button>
           </div>
         </div>
 
-        {/* ================= LIST ================= */}
-        <div className="flex flex-col gap-32">
-          {categories.map((cat, index) => (
-            <ProductCard key={cat.id} data={cat} index={index} />
+        {/* --- ECOMMERCE GRID --- */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {categories.map((cat) => (
+            <ProductCard key={cat.id} cat={cat} />
           ))}
         </div>
 
-        {/* ================= BOTTOM BUTTON ================= */}
-        <div className="mt-32 text-center">
-            <a href="/contact" className="inline-block group relative px-10 py-5 bg-white text-black rounded-full font-bold overflow-hidden transition-all hover:scale-105 duration-300 shadow-[0_0_40px_-10px_rgba(56,189,248,0.3)]">
-                <span className="relative z-10 flex items-center gap-3 text-sm tracking-widest uppercase">
-                    Explore All Diffuser Categories
-                    <ArrowLongRightIcon className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-200 to-cyan-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </a>
+        {/* --- FINAL CATEGORY CALL --- */}
+        <div className="mt-20 text-center">
+            <p className="text-slate-400 font-bold text-xs uppercase tracking-[0.3em] mb-8">
+                Explore all diffuser categories and find the right solution for your space.
+            </p>
+        </div>
+
+        {/* --- CALL TO ACTION --- */}
+        <div className="mt-12 bg-slate-900 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/20 rounded-full blur-[100px]" />
+          <h3 className="text-3xl md:text-5xl font-serif text-white mb-8 relative z-10 leading-tight">
+            Need a Custom Scent <br /> <span className="italic text-blue-400 font-light">Solution for Your Business?</span>
+          </h3>
+          <a href="/contact" className="inline-flex items-center gap-4 px-10 py-5 bg-white text-slate-900 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-blue-600 hover:text-white transition-all relative z-10">
+            Request Professional Quote <ArrowRightIcon className="w-5 h-5" />
+          </a>
         </div>
 
       </div>
@@ -111,77 +125,58 @@ export default function Products() {
   );
 }
 
-// ================= PRODUCT CARD COMPONENT =================
-function ProductCard({ data, index }) {
-    const isEven = index % 2 === 0;
-    const [activeImage, setActiveImage] = useState(data.gallery[0]);
+function ProductCard({ cat }) {
+  const [activeImg, setActiveImg] = useState(cat.img);
 
-    return (
-        <div className={`flex flex-col lg:flex-row gap-12 lg:gap-20 items-center ${isEven ? '' : 'lg:flex-row-reverse'}`} id={`category-${data.id}`}>
-            
-            {/* --- IMAGE SECTION --- */}
-            <div className="w-full lg:w-3/5 relative group">
-                <div className="relative aspect-[4/3] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl bg-slate-900">
-                    <img 
-                        src={activeImage} 
-                        alt={data.title} 
-                        className="w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:scale-105 opacity-90 group-hover:opacity-100"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
-                    
-                    {/* THUMBNAILS */}
-                    <div className="absolute bottom-6 left-6 flex gap-3 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100 z-20">
-                        {data.gallery.map((img, i) => (
-                             <button 
-                                key={i} 
-                                onClick={() => setActiveImage(img)} 
-                                className={`w-16 h-12 rounded-lg border overflow-hidden backdrop-blur-md transition-all cursor-pointer hover:scale-110 ${
-                                    activeImage === img ? "border-blue-400 opacity-100 ring-2 ring-blue-500/50" : "border-white/30 opacity-60 hover:opacity-100"
-                                }`}
-                             >
-                                <img src={img} alt="thumb" className="w-full h-full object-cover" />
-                             </button>
-                        ))}
-                    </div>
-                </div>
-                <div className={`absolute -z-10 w-full h-full top-4 ${isEven ? 'left-4' : 'right-4'} rounded-[2rem] border border-white/5 bg-white/[0.02]`} />
-            </div>
-
-            {/* --- TEXT SECTION --- */}
-            <div className="w-full lg:w-2/5 relative">
-                <div className="absolute -top-20 -left-10 text-[120px] font-bold text-white/[0.03] select-none pointer-events-none font-serif">
-                    0{data.id}
-                </div>
-
-                <div className="relative z-10">
-                    <div className="flex items-center gap-3 mb-6">
-                        <div className="h-px w-8 bg-blue-500" />
-                        <span className="text-blue-400 text-xs font-bold uppercase tracking-widest">
-                             Series {data.id}
-                        </span>
-                    </div>
-
-                    <h3 className="text-3xl lg:text-4xl font-medium text-white mb-6 leading-tight">
-                        {data.title}
-                    </h3>
-
-                    <p className="text-lg text-slate-400 leading-relaxed mb-8 font-light">
-                        {data.desc}
-                    </p>
-
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        {/* === UPDATED BUTTON === */}
-                        <a 
-                            href="/contact" 
-                            className="px-8 py-4 rounded-full border border-blue-500/30 text-white font-medium text-xs uppercase tracking-widest hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 group/btn shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)]"
-                        >
-                            Contact
-                            <ArrowLongRightIcon className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-
+  return (
+    <div className="group relative bg-white rounded-[2.5rem] border border-slate-100 p-8 transition-all duration-500 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.08)] flex flex-col">
+      
+      {/* Image Stage */}
+      <div className="relative aspect-square bg-[#F8FAFC] rounded-3xl overflow-hidden flex flex-col items-center justify-center p-8 mb-8 group-hover:bg-white transition-colors">
+        <div className="absolute top-6 left-6">
+          <span className="px-3 py-1 bg-white shadow-sm border border-slate-100 rounded-full text-[9px] font-black uppercase tracking-widest text-blue-600">
+            {cat.tag}
+          </span>
         </div>
-    );
+        
+        <img 
+          src={activeImg} 
+          alt={cat.title} 
+          className="w-full h-2/3 object-contain mix-blend-multiply transition-transform duration-700 group-hover:scale-105"
+        />
+
+        {/* 4-Image Sub-Gallery */}
+        <div className="mt-6 flex gap-2 z-10">
+          {cat.gallery.map((thumb, i) => (
+            <button
+              key={i}
+              onMouseEnter={() => setActiveImg(thumb)}
+              className={`w-12 h-12 rounded-xl border-2 transition-all p-1 bg-white ${
+                activeImg === thumb ? "border-blue-500 scale-110 shadow-md" : "border-transparent opacity-60 hover:opacity-100"
+              }`}
+            >
+              <img src={thumb} className="w-full h-full object-contain mix-blend-multiply" alt="variant" />
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Content Area */}
+      <div className="flex-1 flex flex-col">
+        <h3 className="text-2xl font-serif font-medium text-slate-900 group-hover:text-blue-600 transition-colors mb-4 leading-tight">
+          {cat.title}
+        </h3>
+        
+        <p className="text-slate-500 text-sm leading-relaxed mb-8">
+          {cat.desc}
+        </p>
+
+        <div className="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
+          <a href="/contact" className="w-full py-4 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-blue-600 transition-all shadow-lg">
+             <ShoppingBagIcon className="w-4 h-4" /> Quick Inquiry
+          </a>
+        </div>
+      </div>
+    </div>
+  );
 }

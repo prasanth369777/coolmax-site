@@ -10,16 +10,17 @@ import Blog1 from "../pages/Blog1";
 import Testimonials from "../Testimonials"; // Fixed 'Testimonials is not defined'
 import TalkToExpert from "../TalkToExpert"; // Fixed 'TalkToExpert is not defined'
 import Clear1 from "../pages/clear1";
-import WhatsAppFloating from "../WhatsAppFloating";
+
 
 export default function Homepage() {
   return (
     <div>
       {/* Note: You usually don't need Nav/Footer here if they are already in App.js */}
       <HeroSection />
-      <WhatsAppFloating />
-      <Clientsscroll />
+    
+    
       <Product1 />
+        <Clientsscroll />
       <About1 />
       <Solution1/>
       

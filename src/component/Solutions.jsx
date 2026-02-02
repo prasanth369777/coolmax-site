@@ -52,7 +52,7 @@ export default function SolutionsSection() {
   return (
     <section className="py-24 bg-gray-50 text-gray-900" id="solutions">
       {/* --- Changed max-w-7xl to max-w-[1600px] --- */}
-      <div className="max-w-[1600px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12 mt-16">
         
         {/* --- Header Section --- */}
         <div className="mb-20 max-w-3xl">
