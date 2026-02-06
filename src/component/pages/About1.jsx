@@ -12,15 +12,14 @@ import {
 import AboutImg from "../../asset/about/about1.png";
 
 export default function AboutUs() {
+  const whatsappNumber = "971522286401";
+
   return (
     <section className="relative min-h-screen bg-[#020617] text-slate-300 font-sans selection:bg-indigo-500 selection:text-white overflow-hidden">
       
       {/* ================= ARCHITECTURAL GRID BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
-        {/* Subtle Grid Lines */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:6rem_6rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
-        
-        {/* Ambient Glows */}
         <div className="absolute top-[-20%] left-[-10%] w-[1000px] h-[1000px] bg-indigo-950/20 rounded-full blur-[120px]" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[800px] h-[800px] bg-blue-900/10 rounded-full blur-[120px]" />
       </div>
@@ -29,8 +28,6 @@ export default function AboutUs() {
 
         {/* ================= 1. HERO ARCHITECTURE ================= */}
         <div className="flex flex-col items-center text-center mb-32 relative">
-          
-          {/* Vertical Line Decoration */}
           <div className="h-24 w-px bg-gradient-to-b from-transparent via-indigo-500 to-transparent mb-8"></div>
 
           <motion.div 
@@ -69,7 +66,6 @@ export default function AboutUs() {
         {/* ================= 2. SPLIT STRUCTURE ================= */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 border-y border-white/10 mb-32">
           
-          {/* Left: Image (Full Height) */}
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -82,8 +78,6 @@ export default function AboutUs() {
               className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-out"
             />
             <div className="absolute inset-0 bg-[#020617]/40 mix-blend-multiply transition-opacity group-hover:opacity-0"></div>
-            
-            {/* Overlay Text */}
             <div className="absolute bottom-8 left-8 right-8">
                <div className="bg-black/50 backdrop-blur-xl p-6 border border-white/10">
                   <p className="text-white font-serif text-xl italic">"Scent is the most intense form of memory."</p>
@@ -91,7 +85,6 @@ export default function AboutUs() {
             </div>
           </motion.div>
 
-          {/* Right: Content (Padding) */}
           <div className="lg:col-span-7 p-10 md:p-20 flex flex-col justify-center bg-white/[0.01]">
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
@@ -115,7 +108,6 @@ export default function AboutUs() {
                 </p>
               </div>
 
-              {/* Stats Grid */}
               <div className="grid grid-cols-2 gap-12 mt-16 pt-12 border-t border-white/10">
                 <div>
                   <h4 className="text-5xl font-serif text-white mb-2">500+</h4>
@@ -134,7 +126,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* ================= 3. EXPERTISE (Architectural Grid) ================= */}
+        {/* ================= 3. EXPERTISE ================= */}
         <div className="mb-40">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-white/10 pb-8">
             <div>
@@ -147,10 +139,8 @@ export default function AboutUs() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 border border-white/10">
-            {/* Card 1 */}
             <div className="md:col-span-2 bg-[#020617] p-12 group hover:bg-[#050a25] transition-colors relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/5 rounded-full blur-3xl group-hover:bg-indigo-500/10 transition-all"></div>
-              
               <div className="relative z-10">
                 <div className="mb-8 p-3 bg-white/5 w-fit border border-white/10"><BuildingLibraryIcon className="w-8 h-8 text-indigo-400"/></div>
                 <h3 className="text-3xl font-serif text-white mb-4">Commercial Scent Strategy</h3>
@@ -164,26 +154,23 @@ export default function AboutUs() {
               </div>
             </div>
 
-            {/* Card 2 */}
             <div className="bg-[#020617] p-12 group hover:bg-[#050a25] transition-colors relative border-l border-white/10">
               <div className="mb-8 p-3 bg-white/5 w-fit border border-white/10"><ChartBarIcon className="w-8 h-8 text-blue-400"/></div>
               <h3 className="text-2xl font-serif text-white mb-4">Ongoing Maintenance</h3>
               <p className="text-slate-400 leading-relaxed mb-12">
                 A scent machine is only as good as its service. We provide refill plans, cleaning, and technical calibration to ensure 24/7 uptime.
               </p>
-              <button className="text-sm font-bold uppercase tracking-widest text-indigo-300 flex items-center gap-2 group-hover:text-white transition-colors">
+              <a href="/Maintenance" className="text-sm font-bold uppercase tracking-widest text-indigo-300 flex items-center gap-2 group-hover:text-white transition-colors">
                 View Plans <ArrowRightIcon className="w-4 h-4" />
-              </button>
+              </a>
             </div>
 
-            {/* Card 3 */}
             <div className="bg-[#020617] p-12 group hover:bg-[#050a25] transition-colors border-t border-white/10">
               <div className="mb-6"><LightBulbIcon className="w-8 h-8 text-cyan-400"/></div>
               <h3 className="text-2xl font-serif text-white mb-3">Residential Systems</h3>
               <p className="text-slate-400 text-sm leading-relaxed">Discreet, quiet, and effective home diffusers that blend into your decor.</p>
             </div>
 
-            {/* Card 4 */}
             <div className="md:col-span-2 bg-[#020617] p-12 group hover:bg-[#050a25] transition-colors border-t border-l border-white/10">
               <div className="flex items-start gap-6">
                 <div className="mb-6"><SparklesIcon className="w-8 h-8 text-purple-400"/></div>
@@ -196,7 +183,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* ================= 4. VALUES (Minimalist Block) ================= */}
+        {/* ================= 4. VALUES ================= */}
         <div className="mb-32">
           <div className="border border-white/10 bg-white/[0.02] p-10 md:p-24 relative overflow-hidden">
             <div className="grid md:grid-cols-2 gap-16 md:gap-32 relative z-10">
@@ -222,7 +209,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* ================= 5. CTA (Centered) ================= */}
+        {/* ================= 5. CTA (REDIRECTIONS ADDED) ================= */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -233,12 +220,20 @@ export default function AboutUs() {
             Ready to transform <br/> <span className="italic text-indigo-400">your space?</span>
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <button className="w-full sm:w-auto px-12 py-5 bg-white text-[#020617] font-bold text-lg uppercase tracking-widest hover:bg-indigo-50 transition-all flex items-center justify-center gap-2">
+            <a 
+              href={`https://wa.me/${whatsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-12 py-5 bg-white text-[#020617] font-bold text-lg uppercase tracking-widest hover:bg-indigo-50 transition-all flex items-center justify-center gap-2"
+            >
               Get a Free Consultation <ArrowRightIcon className="w-5 h-5" />
-            </button>
-            <button className="w-full sm:w-auto px-12 py-5 bg-transparent text-white border border-white/20 font-bold text-lg uppercase tracking-widest hover:bg-white/5 transition-all">
+            </a>
+            <a 
+              href="/contact"
+              className="w-full sm:w-auto px-12 py-5 bg-transparent text-white border border-white/20 font-bold text-lg uppercase tracking-widest hover:bg-white/5 transition-all"
+            >
               View Product Catalog
-            </button>
+            </a>
           </div>
         </motion.div>
 

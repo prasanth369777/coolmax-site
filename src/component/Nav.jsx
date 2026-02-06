@@ -16,7 +16,7 @@ const navigation = [
   { name: "Home", href: "/", type: "link" },
   {
     name: "Products",
-    href: "/products", // Now clickable
+    href: "/products",
     type: "dropdown",
     cols: 2,
     items: [
@@ -31,7 +31,7 @@ const navigation = [
   },
   {
     name: "Aroma Oils",
-    href: "/aromas", // Now clickable
+    href: "/aromas",
     type: "dropdown",
     cols: 2,
     items: [
@@ -47,7 +47,7 @@ const navigation = [
   },
   {
     name: "Solutions",
-    href: "/solution", // Now clickable
+    href: "/solution",
     type: "dropdown",
     cols: 1,
     items: [
@@ -59,7 +59,6 @@ const navigation = [
       { label: "Maintenance & Refill Support", href: "/Maintenance" },
     ],
   },
-
   { name: "Industries", href: "/industries", type: "link" },
   { name: "About", href: "/about", type: "link" },
   { name: "Blog", href: "/blog", type: "link" },
@@ -81,7 +80,6 @@ export default function Header() {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "auto";
   }, [mobileMenuOpen]);
 
-  // Social Media Links Data
   const socialLinks = [
     { icon: FaFacebookF, href: "https://www.facebook.com/coolmaxscent" },
     { icon: FaInstagram, href: "https://www.instagram.com/coolmaxscent/" },
@@ -118,7 +116,7 @@ export default function Header() {
                 <Link
                   to={item.href || "/"}
                   className={`relative px-4 py-2.5 rounded-full flex items-center gap-2 text-[13px] font-bold uppercase tracking-wider transition-all duration-300 ${
-                    activeDropdown === idx ? "text-white bg-blue-500/60" : "text-slate-600 hover:text-blue-500"
+                    activeDropdown === idx ? "text-white bg-blue-500/60" : "text-slate-600 hover:text-blue-900"
                   }`}
                 >
                   {item.name}
@@ -145,9 +143,9 @@ export default function Header() {
                         ))}
                       </div>
                       <Link to={item.href} className="bg-black/40 px-6 py-3 border-t border-white/5 flex items-center justify-between hover:bg-blue-600/10 transition-colors group/all">
-                        <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest group-hover/all:text-blue-500">View All {item.name}</span>
+                        <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest group-all:text-blue-500">View All {item.name}</span>
                         <span className="flex items-center gap-1.5">
-                          <SparklesIcon className="w-3.5 h-3.5 text-blue-500/60 group-hover/all:text-blue-400" />
+                          <SparklesIcon className="w-3.5 h-3.5 text-blue-500/60 group-all:text-blue-400" />
                         </span>
                       </Link>
                     </div>
@@ -180,8 +178,9 @@ export default function Header() {
               <PhoneIcon className="w-3.5 h-3.5" />
               <span>Get Quote</span>
             </Link>
-            <button onClick={() => setMobileMenuOpen(true)} className={`xl:hidden p-2 rounded-full transition-colors ${scrolled ? "bg-white/5 text-white" : "text-white"}`}>
-              <Bars3Icon className="w-6 h-6 stroke-2" />
+            {/* UPDATED HAMBURGER COLOR TO BLUE */}
+            <button onClick={() => setMobileMenuOpen(true)} className="xl:hidden p-2 rounded-full transition-colors text-blue-500">
+              <Bars3Icon className="w-6 h-6 stroke-2 stroke-blue-500" />
             </button>
           </div>
         </div>

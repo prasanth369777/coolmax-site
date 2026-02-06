@@ -35,7 +35,6 @@ import NaturalFragrance2 from "../../asset/productimg/CMwebpimg/Natural Fragranc
 import VentoCar1 from "../../asset/productimg/CMwebpimg/VentoCar/1.webp";
 import VentoCar2 from "../../asset/productimg/CMwebpimg/VentoCar/2.webp";
 
-/* ================= PRODUCT LIST (20 UNIQUE WITH HOVER PAIRS) ================= */
 const productList = [
   { id: 1, name: "DriveScent", model: "H11-A", cat: "Car Aroma Diffusers", path: "/product/drivemist", images: [DriveMist1, DriveMist2] },
   { id: 2, name: "NovaCar Diffuser", model: "DA1004", cat: "Car Aroma Diffusers", path: "/product/novacar", images: [NovaCar1, NovaCar2] },
@@ -74,7 +73,8 @@ export default function ArchitectStore() {
 
   return (
     <div className="flex flex-col lg:flex-row min-h-screen bg-[#FAF9F6] text-slate-900 font-sans pt-16">
-      {/* --- SIDEBAR --- */}
+      
+      {/* --- DESKTOP SIDEBAR --- */}
       <aside className="hidden lg:flex w-72 flex-col border-r border-slate-200/50 sticky top-16 h-[calc(100vh-64px)] bg-white z-20">
         <div className="p-8 pb-4">
           <h1 className="text-xl font-black tracking-tighter uppercase italic">COOLMAX<span className="text-blue-600">.</span></h1>
@@ -83,35 +83,82 @@ export default function ArchitectStore() {
         <div className="px-6 py-4">
           <div className="relative">
             <MagnifyingGlassIcon className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
-            <input type="text" placeholder="Search catalogue..." className="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-100 rounded-lg text-[11px] focus:outline-none ring-blue-500/20" value={search} onChange={(e) => setSearch(e.target.value)} />
+            <input 
+              type="text" 
+              placeholder="Search catalogue..." 
+              className="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-100 rounded-lg text-[11px] focus:outline-none ring-1 ring-transparent focus:ring-blue-500/20" 
+              value={search} 
+              onChange={(e) => setSearch(e.target.value)} 
+            />
           </div>
         </div>
         <nav className="flex-1 px-4 py-2 space-y-0.5 overflow-y-auto no-scrollbar">
           {categories.map(cat => (
-            <button key={cat} onClick={() => setActiveCat(cat)} className={`w-full flex items-center gap-3 py-3 px-4 rounded-xl text-[10px] font-bold uppercase tracking-wider transition-all relative ${activeCat === cat ? "text-blue-600 bg-blue-50/50" : "text-slate-500 hover:text-slate-900"}`}>
+            <button 
+              key={cat} 
+              onClick={() => setActiveCat(cat)} 
+              className={`w-full flex items-center gap-3 py-3 px-4 rounded-xl text-[10px] font-bold uppercase tracking-wider transition-all relative ${activeCat === cat ? "text-blue-600 bg-blue-50/50" : "text-slate-500 hover:text-slate-900"}`}
+            >
               <span className="truncate">{cat}</span>
             </button>
           ))}
         </nav>
       </aside>
 
+      {/* --- MOBILE CATEGORY NAV & SEARCH --- */}
+      <div className="lg:hidden sticky top-16 z-30 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div className="px-4 pt-4 pb-2">
+           <div className="relative">
+              <MagnifyingGlassIcon className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+              <input 
+                type="text" 
+                placeholder="Search products..." 
+                className="w-full pl-10 pr-4 py-2.5 bg-slate-100/50 border-none rounded-xl text-xs focus:outline-none focus:ring-2 ring-blue-500/20" 
+                value={search} 
+                onChange={(e) => setSearch(e.target.value)} 
+              />
+           </div>
+        </div>
+        <div className="flex overflow-x-auto no-scrollbar px-4 py-3 gap-2">
+          {categories.map(cat => (
+            <button 
+              key={cat} 
+              onClick={() => setActiveCat(cat)} 
+              className={`whitespace-nowrap px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-widest transition-all border ${activeCat === cat ? "bg-blue-600 border-blue-600 text-white shadow-md shadow-blue-500/20" : "bg-white border-slate-200 text-slate-500"}`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* --- MAIN CONTENT --- */}
-      <main className="flex-1 p-5 lg:p-10 overflow-y-auto">
-        <header className="mb-10">
-          <h2 className="text-4xl md:text-6xl font-serif leading-[1.1] mb-2 tracking-tight">All <span className="italic text-slate-300 font-light">Products.</span></h2>
-          <div className="flex items-center gap-4">
-             <span className="h-px w-10 bg-blue-600"></span>
-             <p className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">{activeCat} — {filtered.length} Units</p>
+      <main className="flex-1 p-4 lg:p-10">
+        <header className="mb-6 lg:mb-10 text-left">
+          <h2 className="text-3xl md:text-6xl font-serif leading-[1.1] mb-2 tracking-tight">
+            All <span className="italic text-slate-300 font-light">Products.</span>
+          </h2>
+          <div className="flex items-center gap-3">
+             <span className="h-px w-6 lg:w-10 bg-blue-600"></span>
+             <p className="text-[9px] lg:text-[10px] font-black uppercase tracking-[0.2em] text-blue-600">
+               {activeCat} — {filtered.length} Units
+             </p>
           </div>
         </header>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 lg:gap-6">
           <AnimatePresence mode="popLayout">
             {filtered.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </AnimatePresence>
         </div>
+
+        {filtered.length === 0 && (
+          <div className="py-20 text-center">
+            <p className="text-slate-400 text-xs font-bold uppercase tracking-widest">No products found in this category.</p>
+          </div>
+        )}
       </main>
     </div>
   );
@@ -119,18 +166,22 @@ export default function ArchitectStore() {
 
 function ProductCard({ product }) {
   return (
-    <motion.div layout className="group relative flex flex-col">
-      <div className="relative aspect-square bg-white rounded-[1.2rem] lg:rounded-[2rem] border border-slate-100 flex items-center justify-center p-4 lg:p-8 transition-all duration-700 group-hover:shadow-xl group-hover:-translate-y-1 overflow-hidden">
+    <motion.div 
+      layout
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      className="group relative flex flex-col"
+    >
+      <div className="relative aspect-square bg-white rounded-[1.2rem] lg:rounded-[2.5rem] border border-slate-100 flex items-center justify-center p-3 lg:p-8 transition-all duration-700 group-hover:shadow-2xl group-hover:shadow-blue-500/5 group-hover:-translate-y-1 overflow-hidden">
         
-        {/* IMAGE SWAP LOGIC */}
+        {/* IMAGE SWAP */}
         <div className="relative w-full h-full">
-            {/* Primary Image */}
             <img 
               src={product.images[0]} 
               alt={product.name} 
               className="w-full h-full object-contain transition-opacity duration-700 opacity-100 group-hover:opacity-0"
             />
-            {/* Hover Image */}
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                 <img 
                   src={product.images[1]} 
@@ -140,24 +191,29 @@ function ProductCard({ product }) {
             </div>
         </div>
 
-        {/* REDIRECT LINK */}
+        {/* REDIRECT LINK - Visible on hover on desktop, always there but styled for touch on mobile */}
         <Link 
           to={product.path} 
-          className="absolute bottom-3 right-3 lg:bottom-5 lg:right-5 w-8 h-8 lg:w-10 lg:h-10 bg-slate-900 text-white rounded-full flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 hover:bg-blue-600 z-10 shadow-lg"
+          className="absolute bottom-2 right-2 lg:bottom-5 lg:right-5 w-7 h-7 lg:w-11 lg:h-11 bg-slate-900 text-white rounded-full flex items-center justify-center lg:opacity-0 lg:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 hover:bg-blue-600 z-10 shadow-lg"
         >
-          <ArrowUpRightIcon className="w-4 h-4 lg:w-5 lg:h-5" />
+          <ArrowUpRightIcon className="w-3.5 h-3.5 lg:w-5 lg:h-5" />
         </Link>
 
-        <div className="absolute top-3 right-3 lg:top-5 lg:right-5">
-          <span className="text-[6px] lg:text-[8px] font-black text-slate-300 uppercase tracking-widest group-hover:text-slate-900 transition-colors">
+        {/* MODEL TAG */}
+        <div className="absolute top-2 right-3 lg:top-6 lg:right-6">
+          <span className="text-[5px] lg:text-[8px] font-black text-slate-300 uppercase tracking-widest group-hover:text-blue-600 transition-colors bg-slate-50/50 lg:bg-transparent px-1 rounded">
             {product.model}
           </span>
         </div>
       </div>
 
-      <div className="mt-3 px-1 lg:px-2">
-        <h3 className="text-[10px] lg:text-sm font-serif text-slate-900 mb-0.5 group-hover:text-blue-600 transition-colors leading-tight line-clamp-1">{product.name}</h3>
-        <p className="text-[7px] lg:text-[9px] font-black uppercase tracking-widest text-slate-400">{product.cat}</p>
+      <div className="mt-2.5 lg:mt-4 px-1">
+        <h3 className="text-[10px] lg:text-base font-serif text-slate-900 mb-0.5 group-hover:text-blue-600 transition-colors leading-tight line-clamp-1">
+          {product.name}
+        </h3>
+        <p className="text-[6px] lg:text-[10px] font-black uppercase tracking-[0.15em] text-slate-400">
+          {product.cat}
+        </p>
       </div>
     </motion.div>
   );
