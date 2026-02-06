@@ -62,14 +62,14 @@ export default function AboutUs() {
             </span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white mb-8 leading-[1.1] tracking-tight relative z-10">
+          <h1 className="text-5xl md:text-7xl lg:text-7xl font-serif text-white mb-8 leading-[1.1] tracking-tight relative z-10">
             Your Trusted Partner for <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-purple-300 to-white italic">
               Professional Scent Solutions
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-slate-400 font-light leading-relaxed max-w-4xl mx-auto mb-10 relative z-10">
+          <p className="text-xl md:text-2xl text-slate-400 font-light leading-relaxed max-w-8xl mx-auto mb-10 relative z-10">
             Cool Max General Trading is a Dubai-based company providing professional scent diffuser machines and fragrance solutions for homes and commercial spaces across the UAE. Since 2020, we have been supporting businesses with reliable home fragrance systems, commercial scent machines, and HVAC scent diffuser solutions designed for consistent performance.
           </p>
           

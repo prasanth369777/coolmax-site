@@ -4,7 +4,8 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
-  FaWhatsapp
+  FaWhatsapp,
+  FaYoutube
 } from "react-icons/fa";
 import { 
   EnvelopeIcon, 
@@ -140,16 +141,60 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-white/10">
           
           <div className="flex gap-3 mb-4 md:mb-0">
-            {[FaWhatsapp, FaInstagram, FaLinkedinIn, FaFacebookF].map((Icon, i) => (
-              <motion.a 
-                key={i} 
-                whileHover={{ y: -2 }}
-                href="/contact" 
-                className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-white hover:text-black transition-all duration-300"
-              >
-                <Icon className="text-xs" />
-              </motion.a>
-            ))}
+            {/* WHATSAPP */}
+            <motion.a 
+              whileHover={{ y: -2 }}
+              href="https://wa.me/971522286401" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-white hover:text-black transition-all duration-300"
+            >
+              <FaWhatsapp className="text-xs" />
+            </motion.a>
+
+            {/* INSTAGRAM */}
+            <motion.a 
+              whileHover={{ y: -2 }}
+              href="https://www.instagram.com/coolmaxscent/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-white hover:text-black transition-all duration-300"
+            >
+              <FaInstagram className="text-xs" />
+            </motion.a>
+
+            {/* LINKEDIN */}
+            <motion.a 
+              whileHover={{ y: -2 }}
+              href="https://www.linkedin.com/company/cool-max-scent/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-white hover:text-black transition-all duration-300"
+            >
+              <FaLinkedinIn className="text-xs" />
+            </motion.a>
+
+            {/* FACEBOOK */}
+            <motion.a 
+              whileHover={{ y: -2 }}
+              href="https://www.facebook.com/coolmaxscent" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-white hover:text-black transition-all duration-300"
+            >
+              <FaFacebookF className="text-xs" />
+            </motion.a>
+
+            {/* YOUTUBE */}
+            <motion.a 
+              whileHover={{ y: -2 }}
+              href="https://www.youtube.com/@coolmaxscent" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-white hover:text-black transition-all duration-300"
+            >
+              <FaYoutube className="text-xs" />
+            </motion.a>
           </div>
 
           <div className="text-center md:text-right">

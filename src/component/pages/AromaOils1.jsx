@@ -114,12 +114,7 @@ export default function EcommerceProducts() {
                </p>
             </div>
           </div>
-          
-          <div className="flex items-center gap-4">
-            <button className="px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold text-xs uppercase tracking-widest hover:bg-blue-600 transition-all shadow-xl">
-              Explore All Categories
-            </button>
-          </div>
+        
         </div>
 
         {/* --- ECOMMERCE GRID --- */}

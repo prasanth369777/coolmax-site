@@ -8,247 +8,270 @@ import {
   AcademicCapIcon, 
   ShoppingBagIcon, 
   FaceSmileIcon, 
-  ClockIcon, 
-  WrenchScrewdriverIcon,
-  CheckCircleIcon,
-  ArrowRightIcon,
  
+  ArrowRightIcon,
+  ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/outline";
 
-// --- IMAGE IMPORTS ---
-import HeroImg from "../../asset/hero/hero2.webp"; 
-import FeatureImg1 from "../../asset/hero/hero2.webp"; // For "Why Critical?" section
-import FeatureImg2 from "../../asset/hero/hero2.webp"; // For "What is it?" section
-import TextureImg from "../../asset/hero/hero2.webp"; // For "Why Choose Us" background
+// --- UPDATED IMAGE IMPORTS ---
+import HeroImg from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/1.webp"; 
+import FeatureImg1 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/2.webp"; 
+import FeatureImg2 from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/2.webp"; 
+
 
 export default function WashroomHygienePage() {
+  const whatsappNumber = "971522286401";
+
   return (
-    <div className="relative min-h-screen bg-[#020617] text-slate-300 font-sans selection:bg-teal-500 selection:text-white overflow-hidden">
+    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-teal-100 overflow-hidden">
       
-      {/* ================= GLOBAL BACKGROUND ================= */}
+      {/* ================= GLOBAL BACKGROUND (White/Grey) ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-[-10%] left-[-10%] w-[800px] h-[800px] bg-teal-900/10 rounded-full blur-[120px] mix-blend-screen" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-cyan-900/10 rounded-full blur-[120px] mix-blend-screen" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:80px_80px] opacity-30" />
+        <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-slate-100/50 rounded-full blur-[150px]" />
+        <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-teal-50/50 rounded-full blur-[120px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.01)_1px,transparent_1px)] bg-[size:100px_100px]" />
       </div>
 
-      {/* CHANGED: Increased max-width to 1600px */}
-      <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 pb-32">
+      <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-16">
 
-        {/* ================= HERO SECTION ================= */}
-        <section className="min-h-[85vh] flex flex-col justify-center items-center text-center pt-24 relative">
+        {/* ================= NEW HERO SECTION (SPLIT: TEXT LEFT, IMAGE RIGHT) ================= */}
+        <section className="min-h-screen flex flex-col lg:flex-row items-center pt-32 lg:pt-0 gap-16 text-left">
           
-          {/* Ambient Light */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-teal-500/10 blur-[100px] rounded-full pointer-events-none" />
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="relative z-10 max-w-5xl"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-teal-500/30 bg-teal-950/20 backdrop-blur-md mb-8 shadow-[0_0_20px_rgba(20,184,166,0.3)]">
-              <SparklesIcon className="w-4 h-4 text-teal-400" />
-              <span className="text-teal-200 text-xs font-bold tracking-widest uppercase">
-                Clean & Fresh
-              </span>
-            </div>
-            
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white tracking-tight mb-8 leading-[1.1]">
-              Washroom Hygiene <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-cyan-300 to-white italic">
-                Solutions in UAE
-              </span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mx-auto border-t border-white/10 pt-8 mt-8 mb-12">
-              Professional Odor Control & Air Freshening for Commercial Washrooms
-            </p>
-
-            {/* --- IMAGE 1: HERO VISUAL --- */}
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="relative w-full max-w-3xl mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-teal-900/50"
+          {/* LEFT: TEXT CONTENT */}
+          <div className="lg:w-1/2 flex flex-col items-start z-20">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent z-10"></div>
+              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-teal-50 border border-teal-100 mb-8 shadow-sm">
+                <SparklesIcon className="w-4 h-4 text-teal-600" />
+                <span className="text-teal-700 text-[10px] font-black uppercase tracking-[0.3em] font-sans">
+                  Clean & Fresh
+                </span>
+              </div>
+              
+              <h1 className="text-6xl md:text-8xl lg:text-7xl xl:text-9xl font-serif text-slate-900 tracking-tighter mb-8 leading-[0.95]">
+                Washroom <br />
+                <span className="italic text-slate-400 font-light pr-2">Hygiene</span> <br />
+                Solutions.
+              </h1>
+              
+              <p className="text-xl md:text-2xl text-slate-500 font-light max-w-xl mb-10 leading-relaxed font-sans">
+                Professional Odor Control & Air Freshening for Commercial Washrooms.
+              </p>
+
+              <div className="p-8 bg-slate-50 border border-slate-200 rounded-[2.5rem] mb-10 max-w-xl shadow-sm">
+                <p className="text-base text-slate-600 leading-relaxed italic font-sans">
+                  Cool Max Scent provides professional washroom hygiene solutions in UAE designed to maintain clean, fresh, and odor-free washrooms in commercial environments.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-4 font-sans">
+                <a href="#explore" className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-teal-600 transition-all shadow-xl">
+                  View Systems
+                </a>
+                <a 
+                  href={`https://wa.me/${whatsappNumber}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-10 py-5 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3"
+                >
+                  <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Us
+                </a>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* RIGHT: IMAGE STAGE (HIGH VISIBILITY) */}
+          <div className="lg:w-1/2 relative flex items-center justify-center w-full">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              className="relative w-full aspect-square max-w-[600px] p-8"
+            >
+              <div className="absolute inset-0 bg-gradient-to-tr from-slate-100 to-white rounded-[4rem] shadow-inner border border-slate-50" />
               <img 
                 src={HeroImg} 
-                alt="Washroom Hygiene" 
-                className="w-full h-auto object-cover opacity-90 hover:scale-105 transition-transform duration-700" 
+                alt="Washroom Hygiene Solution" 
+                className="w-full h-full object-contain relative z-10 drop-shadow-[0_50px_50px_rgba(0,0,0,0.1)] hover:scale-105 transition-transform duration-700" 
               />
+              <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-2/3 h-12 bg-slate-900/5 blur-3xl rounded-full" />
             </motion.div>
-
-          </motion.div>
+          </div>
         </section>
 
-        {/* ================= SECTION 1: INTRO (Editorial Layout) ================= */}
-        <section className="py-24 border-t border-white/5">
+        {/* ================= SECTION 1: INTRO (Editorial) ================= */}
+        <section className="py-24 border-t border-slate-100 font-sans" id="explore">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-5xl mx-auto text-lg md:text-xl leading-relaxed text-slate-300 space-y-8"
+            className="max-w-5xl mx-auto text-lg md:text-xl leading-relaxed text-slate-600 space-y-10 text-left"
           >
-            <p className="first-letter:text-6xl first-letter:font-serif first-letter:text-teal-400 first-letter:float-left first-letter:mr-4 first-letter:leading-none text-justify">
+            <p className="first-letter:text-7xl first-letter:font-serif first-letter:text-teal-600 first-letter:float-left first-letter:mr-4 first-letter:leading-none text-justify">
               Washrooms are one of the most frequently used and closely judged areas in any facility. A poorly maintained washroom can negatively impact user perception, hygiene confidence, and brand image. At Cool Max Scent, we provide professional washroom hygiene solutions in UAE designed to maintain clean, fresh, and odor-free washrooms in commercial and institutional environments.
             </p>
-            <div className="p-8 bg-gradient-to-r from-teal-900/10 to-transparent border-l-2 border-teal-500 rounded-r-2xl">
-              <p className="italic text-teal-100">
+            <div className="p-8 bg-slate-50 border-l-4 border-teal-600 rounded-r-3xl shadow-sm">
+              <p className="italic text-slate-500 font-light">
                 Our washroom hygiene systems combine advanced scent diffuser machines, professional air freshening technology, and reliable service support to ensure consistent freshness throughout the day. From offices and schools to hospitals, malls, and restaurants, Cool Max helps businesses maintain washroom environments that meet modern hygiene expectations.
               </p>
             </div>
           </motion.div>
         </section>
 
-        {/* ================= SECTION 2: WHY CRITICAL? (Glass Card) ================= */}
+        {/* ================= SECTION 2: WHY CRITICAL? ================= */}
         <section className="py-24">
-          <div className="bg-white/[0.02] border border-white/5 rounded-[3rem] p-10 md:p-20 relative overflow-hidden backdrop-blur-sm">
+          <div className="bg-slate-50 border border-slate-100 rounded-[4rem] p-10 md:p-20 overflow-hidden relative shadow-sm text-left font-sans">
             <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
-              <div>
-                <h2 className="text-4xl md:text-5xl font-serif text-white mb-8">Why Washroom Hygiene Is Critical for Businesses</h2>
-                <p className="text-slate-400 mb-10 text-lg leading-relaxed">
-                  Washrooms directly influence how people perceive cleanliness and professionalism. Even well-designed facilities can leave a negative impression if odors are not properly managed.
+              <motion.div 
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+              >
+                <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-8 tracking-tighter">Why Washroom Hygiene Is Critical</h2>
+                <p className="text-slate-500 mb-10 text-lg font-light leading-relaxed">
+                  Washrooms directly influence how people perceive cleanliness and professionalism. Odors must be properly managed to maintain a positive facility image.
                 </p>
                 
                 <div className="space-y-4">
                   {[
-                    { title: "First Impressions Matter", desc: "A fresh-smelling washroom immediately reassures users about hygiene standards. Using professional commercial scent diffusers ensures washrooms remain pleasant even during peak usage." },
-                    { title: "Supports Health & Comfort", desc: "Effective washroom hygiene helps reduce unpleasant odors and supports a cleaner indoor environment, contributing to overall comfort." },
-                    { title: "Reflects Brand Responsibility", desc: "For offices, hotels, malls, and public facilities, washroom hygiene reflects how much attention a business gives to user experience and care." }
+                    { title: "First Impressions", desc: "A fresh-smelling washroom immediately reassures users about hygiene standards. Using professional diffusers ensures washrooms remain pleasant even during peak usage." },
+                    { title: "Health & Comfort", desc: "Effective washroom hygiene helps reduce unpleasant odors and supports a cleaner indoor environment, contributing to overall comfort." },
+                    { title: "Brand Responsibility", desc: "For hotels, malls, and public facilities, washroom hygiene reflects how much attention a business gives to user experience and care." }
                   ].map((item, idx) => (
-                    <div key={idx} className="p-6 bg-teal-950/20 rounded-2xl border border-teal-500/10 hover:bg-teal-950/30 transition-colors">
-                      <h3 className="text-lg font-bold text-teal-200 mb-2 font-serif">{item.title}</h3>
-                      <p className="text-sm text-slate-400">{item.desc}</p>
+                    <div key={idx} className="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+                      <h3 className="text-lg font-bold text-teal-600 mb-2 font-serif">{item.title}</h3>
+                      <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
                     </div>
                   ))}
                 </div>
-              </div>
+              </motion.div>
               
-              {/* --- IMAGE 2: FEATURE VISUAL --- */}
-              <div className="relative h-[600px] bg-gradient-to-tr from-teal-900/10 to-transparent rounded-[2.5rem] border border-white/5 flex items-center justify-center overflow-hidden">
-                 <img src={FeatureImg1} alt="Hygiene Standards" className="w-full h-full object-cover opacity-80" />
-                 <div className="absolute inset-0 bg-teal-900/10 mix-blend-overlay"></div>
-                 <div className="absolute bottom-8 left-8 right-8">
-                   <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl flex items-center gap-4">
-                      <div className="p-3 bg-teal-500/20 rounded-full">
-                        <ShieldCheckIcon className="w-6 h-6 text-teal-300" />
-                      </div>
-                      <p className="text-white font-serif text-lg">Maintaining professional standards.</p>
-                   </div>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="relative h-[600px] rounded-[3rem] border border-white overflow-hidden shadow-2xl group"
+              >
+                 <img src={FeatureImg1} alt="Hygiene Standards" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
+                 <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-slate-900/80 to-transparent">
+                    <div className="bg-white/90 backdrop-blur-md p-6 rounded-2xl flex items-center gap-4">
+                       <div className="p-3 bg-teal-600 rounded-xl">
+                         <ShieldCheckIcon className="w-6 h-6 text-white" />
+                       </div>
+                       <p className="text-slate-900 font-serif text-lg">Maintaining professional standards.</p>
+                    </div>
                  </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>
 
-        {/* ================= SECTION 3: WHAT IS IT? (Feature List) ================= */}
-        <section className="py-24 bg-white/[0.015]">
-          <div className="max-w-6xl mx-auto px-6 text-center">
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-10">What Are Washroom Hygiene Solutions?</h2>
-            
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div>
-                <p className="text-slate-400 mb-12 text-lg text-left">
-                  Washroom hygiene solutions involve the use of professional air scent machines, aroma scent diffusers, and odor control systems designed specifically for high-traffic restroom environments. Unlike basic sprays or consumer air fresheners, these systems are:
-                </p>
-                
-                <div className="grid grid-cols-2 gap-6 mb-12 text-left">
-                  {["Automated", "Long-lasting", "Consistent", "Designed for commercial usage"].map((tag, i) => (
-                    <div key={i} className="py-4 px-6 bg-teal-900/20 border border-teal-500/20 rounded-xl text-teal-200 font-bold text-sm uppercase tracking-wider shadow-lg shadow-teal-900/10">
+        {/* ================= SECTION 3: WHAT ARE THEY? ================= */}
+        <section className="py-24">
+          <div className="grid lg:grid-cols-12 gap-12 items-center text-left font-sans">
+            <div className="lg:col-span-5">
+                <motion.div 
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    className="relative h-[550px] rounded-[4rem] overflow-hidden border border-slate-100 shadow-xl"
+                >
+                    <img src={FeatureImg2} alt="Washroom Visual" className="w-full h-full object-cover" />
+                </motion.div>
+            </div>
+
+            <div className="lg:col-span-7">
+                <div className="mb-12">
+                    <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-6 tracking-tighter leading-none">Hygiene Solutions</h2>
+                    <p className="text-slate-500 text-xl font-light leading-relaxed max-w-xl">
+                      Professional air scent machines and aroma diffusers designed specifically for high-traffic restroom environments.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4 mb-10">
+                  {["Automated", "Long-lasting", "Consistent", "Commercial Usage"].map((tag, i) => (
+                    <div key={i} className="py-4 px-6 bg-slate-50 border border-slate-200 rounded-2xl text-teal-600 font-black text-[10px] lg:text-xs uppercase tracking-[0.2em] text-center shadow-sm">
                       {tag}
                     </div>
                   ))}
                 </div>
                 
-                <p className="text-slate-500 text-sm italic text-left">
-                  At Cool Max, our washroom hygiene solutions are tailored to different washroom sizes, usage levels, and environments to ensure reliable performance.
+                <p className="text-slate-400 text-sm italic border-l-4 border-slate-100 pl-6">
+                  At Cool Max, our solutions are tailored to different washroom sizes and usage levels to ensure reliable performance.
                 </p>
-              </div>
-
-              {/* --- IMAGE 3: CONTEXT VISUAL --- */}
-              <div className="relative h-[500px] rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl">
-                 <img src={FeatureImg2} alt="Commercial Washroom" className="w-full h-full object-cover opacity-80" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent"></div>
-              </div>
             </div>
           </div>
         </section>
 
-        {/* ================= SECTION 4: OUR SOLUTIONS (Feature Cards) ================= */}
-        <section className="py-24 border-t border-white/5">
-          <div className="text-center max-w-4xl mx-auto mb-20">
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Our Washroom Hygiene Solutions at Cool Max</h2>
-            <p className="text-slate-400 text-lg">
-              Cool Max offers a complete range of washroom hygiene and air freshening solutions suitable for commercial and institutional settings.
-            </p>
+        {/* ================= SECTION 4: OUR SOLUTIONS ================= */}
+        <section className="py-24 border-t border-slate-100 font-sans">
+          <div className="mb-24 text-center max-w-4xl mx-auto">
+            <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-teal-600 mb-6">Expert Systems</h2>
+            <h3 className="text-4xl md:text-7xl font-serif text-slate-900 tracking-tighter leading-none">Our Solutions</h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              { title: "Professional Washroom Air Freshening Systems", desc: "We supply commercial scent diffuser machines designed to neutralize unpleasant odors and release controlled fragrance at set intervals, ensuring continuous freshness." },
-              { title: "Wall-Mounted & Compact Diffusers", desc: "Our home diffuser machines adapted for washroom use are discreet, space-saving, and ideal for cubicles, corridors, and common restroom areas." },
-              { title: "Battery-Operated & Low-Maintenance Systems", desc: "Many of our washroom solutions use battery-powered scent air machines, reducing installation complexity and maintenance effort." },
-              { title: "Consistent Fragrance Control", desc: "Our systems allow controlled scent release, preventing overpowering smells while maintaining freshness throughout operating hours." }
+              { title: "Washroom Air Freshening", desc: "Commercial scent diffuser machines designed to neutralize odors and release controlled fragrance at set intervals." },
+              { title: "Wall-Mounted & Compact", desc: "Discreet, space-saving diffusers adapted for washroom use—ideal for cubicles, corridors, and common restroom areas." },
+              { title: "Low-Maintenance Systems", desc: "Many washroom solutions use battery-powered scent air machines, reducing installation complexity and maintenance effort." },
+              { title: "Consistent Scent Control", desc: "Systems allowing controlled scent release, preventing overpowering smells while maintaining freshness throughout operating hours." }
             ].map((sol, idx) => (
               <motion.div 
                 key={idx}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="group relative p-10 bg-white/[0.02] border border-white/5 rounded-3xl hover:border-teal-500/40 transition-all overflow-hidden"
+                whileHover={{ y: -10 }}
+                className="group relative p-12 bg-slate-50 border border-slate-100 rounded-[3rem] hover:bg-white hover:border-teal-200 transition-all shadow-sm hover:shadow-xl"
               >
-                <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
-                  <SparklesIcon className="w-24 h-24 text-teal-500" />
+                <div className="absolute top-6 right-6 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                  <SparklesIcon className="w-16 h-16 text-teal-600" />
                 </div>
-                <h3 className="text-xl font-bold text-teal-100 mb-4 font-serif">{sol.title}</h3>
-                <p className="text-base text-slate-400 leading-relaxed">{sol.desc}</p>
+                <h3 className="text-2xl font-bold text-slate-900 mb-6 font-serif leading-snug">{sol.title}</h3>
+                <p className="text-base text-slate-500 leading-relaxed font-light">{sol.desc}</p>
               </motion.div>
             ))}
           </div>
         </section>
 
-        {/* ================= SECTION 5: WHERE USED (Bento Grid) ================= */}
-        <section className="py-24">
-          <h2 className="text-4xl md:text-5xl font-serif text-white mb-10 text-center">Where Our Washroom Hygiene Solutions Are Used</h2>
-          <p className="text-slate-400 text-center mb-16 text-lg">Our washroom hygiene solutions are trusted across a wide range of facilities in the UAE.</p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* ================= SECTION 5: SPACES SERVED ================= */}
+        <section className="py-24 font-sans text-center">
+          <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-16 tracking-tighter leading-none">Spaces We Serve</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: <BuildingOfficeIcon className="w-6 h-6"/>, title: "Offices & Corporate Buildings", desc: "Maintain professional washrooms that reflect workplace hygiene standards and employee comfort." },
-              { icon: <BeakerIcon className="w-6 h-6"/>, title: "Hospitals & Clinics", desc: "Support cleanliness and comfort with subtle fragrance solutions suitable for sensitive healthcare environments." },
-              { icon: <AcademicCapIcon className="w-6 h-6"/>, title: "Schools & Educational Institutions", desc: "Ensure fresh and hygienic washrooms for students, staff, and visitors." },
-              { icon: <ShoppingBagIcon className="w-6 h-6"/>, title: "Shopping Malls & Retail Stores", desc: "Handle high foot traffic with reliable odor control systems that operate throughout the day." },
-              { icon: <FaceSmileIcon className="w-6 h-6"/>, title: "Restaurants & Food Chains", desc: "Neutralize washroom odors effectively while maintaining a clean and welcoming environment." },
-              { icon: <SparklesIcon className="w-6 h-6"/>, title: "Hotels & Hospitality", desc: "Complement hotel air freshener machines and hotel scent diffusers with dedicated washroom hygiene solutions." },
+              { icon: <BuildingOfficeIcon />, title: "Offices & Corporate", desc: "Reflecting workplace hygiene standards and employee comfort." },
+              { icon: <BeakerIcon />, title: "Hospitals & Clinics", desc: "Subtle fragrance solutions suitable for clinical healthcare environments." },
+              { icon: <AcademicCapIcon />, title: "Educational Institutions", desc: "Ensuring fresh and hygienic washrooms for students and staff." },
+              { icon: <ShoppingBagIcon />, title: "Retail & Malls", desc: "Reliable odor control systems that operate throughout the day." },
+              { icon: <FaceSmileIcon />, title: "Restaurants & Chains", desc: "Neutralize odors while maintaining a welcoming environment." },
+              { icon: <SparklesIcon />, title: "Hotels & Hospitality", desc: "Complementing premium scenting with dedicated hygiene solutions." },
             ].map((space, i) => (
-              <div key={i} className="p-8 bg-[#0B0F19] border border-white/5 rounded-3xl hover:border-teal-500/30 transition-all group">
-                <div className="w-12 h-12 bg-teal-900/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
-                  {React.cloneElement(space.icon, { className: "w-6 h-6 text-teal-400 group-hover:text-white" })}
+              <div key={i} className="p-10 rounded-[3rem] bg-slate-50 border border-slate-100 hover:bg-white hover:border-teal-200 transition-all group shadow-sm">
+                <div className="w-14 h-14 bg-white text-teal-600 border border-slate-100 rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-teal-600 group-hover:text-white transition-all">
+                  {React.cloneElement(space.icon, { className: "w-7 h-7" })}
                 </div>
-                <h3 className="text-lg font-bold text-white mb-3 font-serif">{space.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{space.desc}</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-4 font-serif">{space.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed font-light">{space.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* ================= SECTION 6: COMPARISON TABLE ================= */}
-        <section className="py-24">
-          <h2 className="text-3xl md:text-4xl font-serif text-white mb-16 text-center">Difference Between Washroom Hygiene Systems & Regular Air Fresheners</h2>
+        {/* ================= SECTION 6: COMPARISON ================= */}
+        <section className="py-24 font-sans">
+          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-16 text-center tracking-tighter leading-none">Professional Matrix</h2>
           
-          <div className="overflow-hidden bg-white/[0.02] rounded-[2rem] border border-white/10 backdrop-blur-sm shadow-2xl max-w-5xl mx-auto">
+          <div className="overflow-hidden bg-white border border-slate-100 rounded-[3rem] shadow-2xl max-w-5xl mx-auto">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="border-b border-white/10 text-xs uppercase tracking-widest text-slate-500 bg-black/20">
-                  <th className="p-6 font-medium">Feature</th>
-                  <th className="p-6 font-medium">Regular Air Freshener</th>
-                  <th className="p-6 font-bold text-teal-400">Professional Washroom Hygiene</th>
+                <tr className="border-b border-slate-100 text-[10px] uppercase tracking-[0.2em] text-slate-400 bg-slate-50 font-black">
+                  <th className="p-8">Comparison Matrix</th>
+                  <th className="p-8">Regular Air Freshener</th>
+                  <th className="p-8 text-teal-600">Professional Hygiene</th>
                 </tr>
               </thead>
-              <tbody className="text-slate-300">
+              <tbody className="text-slate-700">
                 {[
                   { feature: "Coverage", reg: "Limited", pro: "Designed for washrooms" },
                   { feature: "Duration", reg: "Short-term", pro: "Continuous" },
@@ -256,161 +279,88 @@ export default function WashroomHygienePage() {
                   { feature: "Maintenance", reg: "Frequent replacement", pro: "Scheduled service" },
                   { feature: "Suitability", reg: "Home use", pro: "Commercial environments" },
                 ].map((row, idx) => (
-                  <tr key={idx} className="border-b border-white/5 hover:bg-white/[0.02] transition-colors">
-                    <td className="p-6 font-serif text-slate-400">{row.feature}</td>
-                    <td className="p-6 text-slate-500">{row.reg}</td>
-                    <td className="p-6 text-white font-medium bg-teal-500/5 border-l border-teal-500/10">{row.pro}</td>
+                  <tr key={idx} className="border-b border-slate-50 hover:bg-slate-50 transition-colors">
+                    <td className="p-8 font-serif text-slate-400 text-lg">{row.feature}</td>
+                    <td className="p-8 text-slate-500">{row.reg}</td>
+                    <td className="p-8 text-teal-600 font-bold">{row.pro}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-center mt-10 text-slate-400 text-sm font-medium">
-            Professional washroom hygiene systems are essential for facilities that require consistent odor control without manual intervention.
-          </p>
         </section>
 
-        {/* ================= SECTION 7 & 9: TECH & BENEFITS ================= */}
-        <section className="py-24 grid lg:grid-cols-2 gap-12">
-          
-          {/* Tech */}
-          <div className="bg-gradient-to-br from-teal-900/20 to-cyan-900/10 rounded-[2.5rem] border border-teal-500/20 p-12">
-            <h2 className="text-2xl font-serif text-white mb-8">Technology Behind Our Washroom Hygiene Systems</h2>
-            <p className="text-slate-400 mb-8 text-sm leading-relaxed">Cool Max uses reliable aroma scent diffuser and air scent machine technologies specifically suited for washroom environments.</p>
-            <ul className="space-y-4">
-              {[
-                "Controlled fragrance release", 
-                "Low-noise operation", 
-                "Efficient oil consumption", 
-                "Adjustable timing and intensity", 
-                "Durable components for high-traffic use"
-              ].map((tech, i) => (
-                <li key={i} className="flex items-center gap-4 text-teal-100 text-sm font-medium">
-                  <div className="w-8 h-8 rounded-full bg-teal-500/20 flex items-center justify-center text-teal-400">
-                    <WrenchScrewdriverIcon className="w-4 h-4" />
-                  </div>
-                  {tech}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-8 text-xs text-slate-500 italic border-t border-white/10 pt-4">These systems are designed to work reliably even in demanding environments with frequent usage.</p>
-          </div>
-
-          {/* Benefits */}
-          <div className="bg-white/[0.03] rounded-[2.5rem] border border-white/10 p-12">
-            <h2 className="text-2xl font-serif text-white mb-8">Benefits of Professional Washroom Hygiene Solutions</h2>
-            <ul className="space-y-4">
-              {[
-                "Continuous odor control", 
-                "Improved user comfort and confidence", 
-                "Reduced manual effort", 
-                "Suitable for high-traffic environments", 
-                "Cost-effective long-term operation", 
-                "Professional and discreet appearance"
-              ].map((ben, i) => (
-                <li key={i} className="flex items-center gap-4 text-slate-300 text-sm">
-                  <CheckCircleIcon className="w-5 h-5 text-green-500" /> {ben}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-8 text-xs text-slate-500 italic border-t border-white/10 pt-4">A well-maintained washroom supports overall facility hygiene and user satisfaction.</p>
-          </div>
-        </section>
-
-        {/* ================= SECTION 8: IMPLEMENTATION (Step Cards) ================= */}
-        <section className="py-24">
-          <h2 className="text-4xl font-serif text-white mb-16 text-center">How We Implement Washroom Hygiene Solutions</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        {/* ================= SECTION 8: IMPLEMENTATION ================= */}
+        <section className="py-24 text-left font-sans">
+          <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-20 tracking-tighter text-center">Deployment</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {[
-              { step: "01", title: "Site Assessment", desc: "We assess washroom size, ventilation, foot traffic, and usage patterns." },
-              { step: "02", title: "Solution Recommendation", desc: "We recommend the most suitable commercial scent diffuser or washroom air freshening system." },
-              { step: "03", title: "Installation & Setup", desc: "Our team installs and configures the system for optimal fragrance distribution." },
-              { step: "04", title: "Maintenance & Refill Support", desc: "We provide ongoing refill and service support to ensure uninterrupted freshness." }
+              { step: "01", title: "Assessment", desc: "We evaluate washroom size, foot traffic, and patterns." },
+              { step: "02", title: "Solution", desc: "We recommend the most suitable air freshening system." },
+              { step: "03", title: "Installation", desc: "Our team installs the system for optimal distribution." },
+              { step: "04", title: "Support", desc: "Ongoing refill support to ensure uninterrupted freshness." }
             ].map((proc, idx) => (
-              <div key={idx} className="group relative p-8 border-t-2 border-teal-500 bg-white/[0.02] hover:bg-white/[0.04] transition-colors">
-                <span className="text-5xl font-black text-white/5 absolute top-4 right-4 group-hover:text-teal-500/10 transition-colors">{proc.step}</span>
-                <h3 className="text-xl font-bold text-white mb-4 mt-2 font-serif">{proc.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{proc.desc}</p>
+              <div key={idx} className="p-10 rounded-[3rem] bg-slate-50 border border-slate-100 hover:bg-white hover:border-teal-200 transition-all group">
+                <span className="text-5xl font-serif text-slate-200 group-hover:text-teal-100 transition-colors duration-500 mb-6 block">{proc.step}</span>
+                <h4 className="text-lg font-black uppercase tracking-tight text-slate-900 mb-4">{proc.title}</h4>
+                <p className="text-sm text-slate-500 leading-relaxed font-light">{proc.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* ================= SECTION 10 & 11: WHY CHOOSE & WHEN UPGRADE ================= */}
+        {/* ================= SECTION 10: WHY CHOOSE ================= */}
         <section className="py-24">
-          {/* --- IMAGE 4: TEXTURE BACKGROUND --- */}
-          <div className="bg-gradient-to-r from-[#0B0F19] to-black rounded-[3rem] p-10 md:p-20 border border-white/10 text-center relative overflow-hidden">
-            
-            {/* Background Texture Image */}
-            <div className="absolute inset-0 opacity-20 mix-blend-overlay">
-                <img src={TextureImg} alt="" className="w-full h-full object-cover grayscale" />
-            </div>
-
+          <div className="bg-slate-900 rounded-[5rem] p-16 md:p-32 text-center relative overflow-hidden shadow-2xl">
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px]" />
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-serif text-white mb-8">Why Choose Cool Max for Washroom Hygiene Solutions in UAE?</h2>
-              <p className="text-slate-400 mb-12 max-w-3xl mx-auto text-lg">Businesses across the UAE trust Cool Max for our dependable washroom hygiene solutions and service-driven approach. We focus on providing washroom hygiene solutions that are practical, consistent, and suitable for real-world usage.</p>
-              
-              <div className="flex flex-wrap justify-center gap-4 mb-16">
+              <h2 className="text-4xl md:text-7xl font-serif text-white mb-10 tracking-tighter leading-none">Why Cool Max UAE?</h2>
+              <div className="flex flex-wrap justify-center gap-4 mb-16 font-sans">
                 {[
-                  "UAE-based service and support", 
-                  "Professional-grade commercial scent machines", 
+                  "UAE-based service team", 
+                  "Professional-grade systems", 
                   "Scalable solutions", 
-                  "Easy-to-maintain systems", 
-                  "Reliable refill programs"
+                  "Easy-to-maintain", 
+                  "Reliable refills"
                 ].map((reason, i) => (
-                  <span key={i} className="px-6 py-2.5 rounded-full bg-teal-900/20 text-teal-200 text-sm border border-teal-500/20 backdrop-blur-sm">
-                    {reason}
-                  </span>
+                  <div key={i} className="px-8 py-4 rounded-2xl bg-white/5 border border-white/10 text-white text-[11px] font-black uppercase tracking-widest flex items-center gap-3 backdrop-blur-md">
+                    <ShieldCheckIcon className="w-5 h-5 text-teal-400"/> {reason}
+                  </div>
                 ))}
               </div>
-
-              <div className="border-t border-white/10 pt-16">
-                <h3 className="text-2xl font-serif text-white mb-8">When Should You Upgrade Your Washroom Hygiene System?</h3>
-                <p className="text-slate-400 mb-10">You should consider professional washroom hygiene solutions if:</p>
-                <div className="grid md:grid-cols-3 gap-8 text-left max-w-5xl mx-auto">
-                    {[
-                      "Washrooms experience frequent odor issues",
-                      "Foot traffic is high throughout the day",
-                      "Manual air fresheners are ineffective",
-                      "You want automated, consistent freshness",
-                      "Hygiene perception is important for your brand"
-                    ].map((item,i) => (
-                      <div key={i} className="flex items-center gap-4 text-slate-300 text-sm font-medium">
-                        <div className="w-8 h-8 rounded-lg bg-teal-500/10 flex items-center justify-center text-teal-400 flex-shrink-0">
-                          <ClockIcon className="w-5 h-5" />
-                        </div>
-                        {item}
-                      </div>
-                    ))}
-                </div>
-                <p className="text-slate-500 mt-12 text-sm italic">Professional washroom hygiene systems offer a reliable solution for maintaining freshness without constant attention.</p>
-              </div>
+              <p className="text-2xl font-serif italic text-white/50 max-w-2xl mx-auto">"Businesses across the UAE trust Cool Max for dependable hygiene solutions and service-driven excellence."</p>
             </div>
           </div>
         </section>
 
-        {/* ================= SECTION 12: CTA (Premium) ================= */}
-        <section className="pt-20 pb-32 text-center border-t border-white/5">
+        {/* ================= SECTION 12: CTA ================= */}
+        <section className="py-32 text-center relative font-sans">
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="max-w-4xl mx-auto pt-20"
+            className="max-w-5xl mx-auto relative z-10"
           >
-            <h2 className="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight">Let’s Improve Washroom <br/> <span className="italic text-teal-400">Hygiene in Your Facility</span></h2>
-            <p className="text-xl text-slate-400 mb-10 leading-relaxed font-light">
-              Whether you manage an office, hospital, school, restaurant, or commercial facility, Cool Max offers reliable washroom hygiene solutions in UAE designed to meet your needs. Our team will help you choose the right scent diffuser machine, install it professionally, and provide ongoing support to ensure consistent performance.
+            <h2 className="text-5xl md:text-8xl font-serif text-slate-900 mb-10 tracking-tighter leading-none">
+              Washroom <br /> <span className="italic text-teal-600 font-light">Hygiene Excellence</span>
+            </h2>
+            <p className="text-2xl text-slate-500 mb-12 max-w-4xl mx-auto font-light leading-relaxed">
+              Whether you manage an office, hospital, restaurant, or commercial facility, Cool Max offers reliable washroom hygiene solutions in UAE. Our team handles the service—so you can focus on your business.
             </p>
             
-            <p className="text-teal-300 font-bold mb-12 uppercase tracking-[0.2em] text-sm">
-              Looking for dependable washroom hygiene and air freshening solutions in UAE?
-            </p>
-            
-            <a href="/contact" className="group relative inline-flex items-center gap-3 px-12 py-6 bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-bold text-lg rounded-full overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_-10px_rgba(20,184,166,0.6)]">
-              <span className="relative z-10 flex items-center gap-2">Contact Cool Max Today <ArrowRightIcon className="w-5 h-5" /></span>
-              <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <a href="/contact" className="w-full sm:w-auto px-16 py-8 bg-slate-900 text-white font-black text-xs uppercase tracking-[0.3em] rounded-3xl overflow-hidden transition-all hover:bg-teal-600 hover:shadow-2xl flex items-center justify-center gap-3">
+                Contact Cool Max Today <ArrowRightIcon className="w-5 h-5" />
+              </a>
+              <a 
+                href={`https://wa.me/${whatsappNumber}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-16 py-8 bg-[#25D366] text-white font-black text-xs uppercase tracking-[0.3em] rounded-3xl overflow-hidden transition-all hover:bg-[#128C7E] hover:shadow-2xl flex items-center justify-center gap-3 shadow-xl"
+              >
+                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert
+              </a>
+            </div>
           </motion.div>
         </section>
 

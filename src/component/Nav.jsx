@@ -8,7 +8,7 @@ import {
   SparklesIcon,
   ArrowRightIcon,
 } from "@heroicons/react/24/outline";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 import Logo from "../../src/asset/hero/coll-logo.png";
 
 /* ---------------- NAV DATA ---------------- */
@@ -47,7 +47,7 @@ const navigation = [
   },
   {
     name: "Solutions",
-    href: "/solutions", // Now clickable
+    href: "/solution", // Now clickable
     type: "dropdown",
     cols: 1,
     items: [
@@ -80,6 +80,14 @@ export default function Header() {
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "auto";
   }, [mobileMenuOpen]);
+
+  // Social Media Links Data
+  const socialLinks = [
+    { icon: FaFacebookF, href: "https://www.facebook.com/coolmaxscent" },
+    { icon: FaInstagram, href: "https://www.instagram.com/coolmaxscent/" },
+    { icon: FaLinkedinIn, href: "https://www.linkedin.com/company/cool-max-scent/" },
+    { icon: FaWhatsapp, href: "https://wa.me/971522286401" }
+  ];
 
   return (
     <>
@@ -138,7 +146,9 @@ export default function Header() {
                       </div>
                       <Link to={item.href} className="bg-black/40 px-6 py-3 border-t border-white/5 flex items-center justify-between hover:bg-blue-600/10 transition-colors group/all">
                         <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest group-hover/all:text-blue-500">View All {item.name}</span>
-                        <SparklesIcon className="w-3.5 h-3.5 text-blue-500/60 group-hover/all:text-blue-400" />
+                        <span className="flex items-center gap-1.5">
+                          <SparklesIcon className="w-3.5 h-3.5 text-blue-500/60 group-hover/all:text-blue-400" />
+                        </span>
                       </Link>
                     </div>
                   </div>
@@ -150,8 +160,16 @@ export default function Header() {
           {/* RIGHT ACTIONS */}
           <div className="flex items-center gap-4">
             <div className="hidden lg:flex items-center gap-3 border-r border-white/10 pr-4 mr-1">
-              {[FaFacebookF, FaInstagram, FaWhatsapp].map((Icon, i) => (
-                <a key={i} href="/contact" className="text-slate-400 hover:text-blue-400 transition-colors hover:scale-110 transform duration-200"><Icon size={14} /></a>
+              {socialLinks.map((item, i) => (
+                <a 
+                  key={i} 
+                  href={item.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-slate-400 hover:text-blue-400 transition-colors hover:scale-110 transform duration-200"
+                >
+                  <item.icon size={14} />
+                </a>
               ))}
             </div>
             <Link

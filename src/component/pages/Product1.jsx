@@ -35,24 +35,28 @@ import NaturalFragrance2 from "../../asset/productimg/CMwebpimg/Natural Fragranc
 import VentoCar1 from "../../asset/productimg/CMwebpimg/VentoCar/1.webp";
 import VentoCar2 from "../../asset/productimg/CMwebpimg/VentoCar/2.webp";
 
-/* ================= PRODUCT LIST (16 UNIQUE WITH HOVER PAIRS) ================= */
+/* ================= PRODUCT LIST (20 UNIQUE WITH HOVER PAIRS) ================= */
 const productList = [
-  { id: 1, name: "DriveMist Car Aroma", model: "H11-A", cat: "Car Aroma Diffusers", path: "/product/drivemist", images: [DriveMist1, DriveMist2] },
+  { id: 1, name: "DriveScent", model: "H11-A", cat: "Car Aroma Diffusers", path: "/product/drivemist", images: [DriveMist1, DriveMist2] },
   { id: 2, name: "NovaCar Diffuser", model: "DA1004", cat: "Car Aroma Diffusers", path: "/product/novacar", images: [NovaCar1, NovaCar2] },
   { id: 3, name: "AutoLux Aroma", model: "H19", cat: "Car Aroma Diffusers", path: "/product/autolux", images: [AeroBlackPro2, AeroBlackPro1] },
   { id: 4, name: "VentoCar Pro", model: "V-2026", cat: "Car Aroma Diffusers", path: "/product/ventocar", images: [VentoCar1, VentoCar2] },
   { id: 5, name: "OpalMist Clock", model: "U2", cat: "Desktop & Small Space", path: "/product/opalmist", images: [AeroCube1, AeroCube2] },
-  { id: 6, name: "AromaDesk Aroma", model: "H10-A", cat: "Desktop & Small Space", path: "/product/deskmist", images: [DeskScent1, DeskScent2] },
+  { id: 6, name: "AromaDesk", model: "H10-A", cat: "Desktop & Small Space", path: "/product/deskmist", images: [DeskScent1, DeskScent2] },
   { id: 7, name: "ZenBox Mini", model: "D50mini", cat: "Desktop & Small Space", path: "/product/zenbox-mini", images: [ZenBoxMini1, ZenBoxMini2] },
   { id: 8, name: "LuxePanel Smart", model: "OV-5", cat: "Desktop & Small Space", path: "/product/luxepanel", images: [LuxePanel1, LuxePanel2] },
   { id: 9, name: "CeilAir Pro Aroma", model: "M45", cat: "Wall-Mounted & Ceiling", path: "/product/ceilair", images: [CeilAirPro1, CeilAirPro2] },
   { id: 10, name: "AeroBlack Med", model: "Q500", cat: "Commercial Aroma Diffusers", path: "/product/aeroblack-med", images: [Titan1, Titan2] },
-  { id: 11, name: "MistBox X Commercial", model: "OV-10", cat: "Commercial Aroma Diffusers", path: "/product/mistbox", images: [AeroBlackPro1, AeroBlackPro2] },
+  { id: 11, name: "MistBox X", model: "OV-10", cat: "Commercial Aroma Diffusers", path: "/product/mistbox", images: [AeroBlackPro1, AeroBlackPro2] },
   { id: 12, name: "AirPulse 150 HVAC", model: "VS-160", cat: "Large Area & HVAC", path: "/product/airpulse", images: [AirPulse1501, AirPulse1502] },
   { id: 13, name: "AeroPillar Floor", model: "F-Air", cat: "Floor-Standing Aroma Diffusers", path: "/product/aeropillar", images: [AeroPillar1, AeroPillar2] },
   { id: 14, name: "AirPole Pro Floor", model: "G-Air", cat: "Floor-Standing Aroma Diffusers", path: "/product/airpole", images: [AirPolePro1, AirPolePro2] },
   { id: 15, name: "NanoPillar Diffuser", model: "A500", cat: "Floor-Standing Aroma Diffusers", path: "/product/nanopillar", images: [NanoPillar1, NanoPillar2] },
   { id: 16, name: "NaturalFlow Passive", model: "M10", cat: "Passive / No-Power", path: "/product/naturalflow", images: [NaturalFragrance1, NaturalFragrance2] },
+  { id: 17, name: "AeroCube Pro", model: "M41-B", cat: "Desktop & Small Space", path: "/product/aerocube", images: [AeroCube2, AeroCube1] },
+  { id: 18, name: "Titan Industrial", model: "A700", cat: "Floor-Standing Aroma Diffusers", path: "/product/titan", images: [Titan2, Titan1] },
+  { id: 19, name: "CeilAir Elite", model: "M41", cat: "Wall-Mounted & Ceiling", path: "/product/ceilair-elite", images: [CeilAirPro2, CeilAirPro1] },
+  { id: 20, name: "MistBox XL", model: "OV-20", cat: "Commercial Aroma Diffusers", path: "/product/mistbox-xl", images: [AeroBlackPro2, AirPulse1501] },
 ];
 
 const categories = ["All Systems", "Car Aroma Diffusers", "Desktop & Small Space", "Wall-Mounted & Ceiling", "Commercial Aroma Diffusers", "Large Area & HVAC", "Floor-Standing Aroma Diffusers", "Passive / No-Power"];
@@ -94,7 +98,7 @@ export default function ArchitectStore() {
       {/* --- MAIN CONTENT --- */}
       <main className="flex-1 p-5 lg:p-10 overflow-y-auto">
         <header className="mb-10">
-          <h2 className="text-4xl md:text-6xl font-serif leading-[1.1] mb-2 tracking-tight">The <span className="italic text-slate-300 font-light">New</span> <br /> Standards.</h2>
+          <h2 className="text-4xl md:text-6xl font-serif leading-[1.1] mb-2 tracking-tight">All <span className="italic text-slate-300 font-light">Products.</span></h2>
           <div className="flex items-center gap-4">
              <span className="h-px w-10 bg-blue-600"></span>
              <p className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-600">{activeCat} — {filtered.length} Units</p>
@@ -153,7 +157,7 @@ function ProductCard({ product }) {
 
       <div className="mt-3 px-1 lg:px-2">
         <h3 className="text-[10px] lg:text-sm font-serif text-slate-900 mb-0.5 group-hover:text-blue-600 transition-colors leading-tight line-clamp-1">{product.name}</h3>
-        <p className="text-[7px] lg:text-[9px] font-black uppercase tracking-widest text-slate-400">{product.cat.split(' ')[0]}</p>
+        <p className="text-[7px] lg:text-[9px] font-black uppercase tracking-widest text-slate-400">{product.cat}</p>
       </div>
     </motion.div>
   );

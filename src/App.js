@@ -50,7 +50,7 @@ import AirPole from "./component/separateproducts/AirPole Pro Diffuser";
 import NanoPillar from "./component/separateproducts/NanoPillar Diffuser";
 import NaturalFlow from "./component/separateproducts/Natural Fragrance Diffuser";
 import Titan from "./component/separateproducts/Titan Diffuser";
-
+import Solution from "./component/Solutionpage/Solution";
 // --- HELPER: SCROLL TO TOP ---
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -85,6 +85,7 @@ function App() {
         <Route path="/industries" element={<IndustriesWeServe />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<TalkToExpert />} />
+          <Route path="/solution" element={<Solution />} />
         
         {/* --- SOLUTION ROUTES --- */}
         <Route path="/scent-marketing" element={<ScentMarketingPage />} />

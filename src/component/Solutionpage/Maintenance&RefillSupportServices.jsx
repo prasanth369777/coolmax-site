@@ -6,392 +6,341 @@ import {
   ClipboardDocumentCheckIcon, 
   ClockIcon, 
   CheckBadgeIcon,
-  CalendarDaysIcon,
+
   Cog6ToothIcon,
   ArrowRightIcon,
   ShieldCheckIcon,
-  BeakerIcon
+  BeakerIcon,
+  ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/outline";
 
-// --- IMAGE IMPORTS ---
-import HeroImg from "../../asset/hero/hero2.webp"; 
-import FeatureImg1 from "../../asset/hero/hero2.webp"; // For "Why it matters" section
-import FeatureImg2 from "../../asset/hero/hero2.webp"; // For "What Is It" section
-import TextureImg from "../../asset/hero/hero2.webp"; // For "Branding/Support" background
+// --- IMAGE ASSETS ---
+import HeroImg from "../../asset/productimg/CMwebpimg/AirPulse 150/1.webp"; 
+import FeatureImg1 from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/1.webp"; 
+import FeatureImg2 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/2.webp"; 
+
 
 export default function MaintenancePage() {
+  const whatsappNumber = "971522286401";
+
   return (
-    <div className="relative min-h-screen bg-[#020617] text-slate-300 font-sans selection:bg-emerald-500 selection:text-white overflow-hidden">
+    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-emerald-100 overflow-hidden">
       
-      {/* ================= GLOBAL BACKGROUND ================= */}
+      {/* ================= GLOBAL BACKGROUND (White/Grey) ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-[-10%] right-[20%] w-[800px] h-[800px] bg-emerald-900/10 rounded-full blur-[120px] mix-blend-screen" />
-        <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-teal-900/10 rounded-full blur-[120px] mix-blend-screen" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:80px_80px] opacity-30" />
+        <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-slate-100/50 rounded-full blur-[150px]" />
+        <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-emerald-50/30 rounded-full blur-[120px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.01)_1px,transparent_1px)] bg-[size:100px_100px]" />
       </div>
 
-      {/* CHANGED: Increased max-width to 1600px */}
-      <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 pb-32">
+      <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-16">
 
-        {/* ================= HERO SECTION ================= */}
-        <section className="min-h-[85vh] flex flex-col justify-center items-center text-center pt-24 relative">
+        {/* ================= NEW HERO SECTION (SPLIT: TEXT LEFT, IMAGE RIGHT) ================= */}
+        <section className="min-h-screen flex flex-col lg:flex-row items-center pt-32 lg:pt-0 gap-16 text-left">
           
-          {/* Ambient Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-emerald-500/10 blur-[100px] rounded-full pointer-events-none" />
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="relative z-10 max-w-5xl"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-950/20 backdrop-blur-md mb-8 shadow-[0_0_20px_rgba(16,185,129,0.3)]">
-              <WrenchScrewdriverIcon className="w-4 h-4 text-emerald-400" />
-              <span className="text-emerald-200 text-xs font-bold tracking-widest uppercase">
-                Reliable Ongoing Care
-              </span>
-            </div>
-            
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white tracking-tight mb-8 leading-[1.1]">
-              Maintenance & <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-300 to-white italic">
-                Refill Support Services
-              </span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mx-auto border-t border-white/10 pt-8 mt-8 mb-12">
-              Reliable Ongoing Care for Scent & Hygiene Systems in UAE
-            </p>
-
-            {/* --- IMAGE 1: HERO VISUAL --- */}
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-emerald-900/50"
+          {/* LEFT: TEXT CONTENT */}
+          <div className="lg:w-1/2 flex flex-col items-start z-20">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent z-10"></div>
+              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 mb-8 shadow-sm">
+                <WrenchScrewdriverIcon className="w-4 h-4 text-emerald-600" />
+                <span className="text-emerald-700 text-[10px] font-black uppercase tracking-[0.3em] font-sans">
+                  Reliable Ongoing Care
+                </span>
+              </div>
+              
+              <h1 className="text-6xl md:text-8xl lg:text-7xl xl:text-9xl font-serif text-slate-900 tracking-tighter mb-8 leading-[0.95]">
+                Maintenance & <br />
+                <span className="italic text-slate-400 font-light pr-2">Refill Support</span> <br />
+                Services.
+              </h1>
+              
+              <p className="text-xl md:text-2xl text-slate-500 font-light max-w-xl mb-10 leading-relaxed font-sans">
+                Reliable Ongoing Care for Scent & Hygiene Systems in UAE
+              </p>
+
+              <div className="p-8 bg-slate-50 border border-slate-200 rounded-[2.5rem] mb-10 max-w-xl shadow-sm">
+                <p className="text-base text-slate-600 leading-relaxed italic font-sans">
+                  Professional maintenance and refill support services in UAE ensure your scent diffuser machines and hygiene systems operate reliably every day.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-4 font-sans">
+                <a href="#explore" className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-emerald-600 transition-all shadow-xl">
+                  Our Services
+                </a>
+                <a 
+                  href={`https://wa.me/${whatsappNumber}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-10 py-5 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3"
+                >
+                  <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Support
+                </a>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* RIGHT: IMAGE STAGE (HIGH VISIBILITY) */}
+          <div className="lg:w-1/2 relative flex items-center justify-center w-full">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              className="relative w-full aspect-square max-w-[600px] p-8"
+            >
+              <div className="absolute inset-0 bg-gradient-to-tr from-slate-100 to-white rounded-[4rem] shadow-inner border border-slate-50" />
               <img 
                 src={HeroImg} 
-                alt="Maintenance & Support" 
-                className="w-full h-auto object-cover opacity-90 hover:scale-105 transition-transform duration-700" 
+                alt="System Maintenance Support" 
+                className="w-full h-full object-contain relative z-10 drop-shadow-[0_50px_50px_rgba(0,0,0,0.1)] hover:scale-105 transition-transform duration-700" 
               />
+              <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-2/3 h-12 bg-emerald-900/5 blur-3xl rounded-full" />
             </motion.div>
-
-          </motion.div>
+          </div>
         </section>
 
-        {/* ================= SECTION 1: INTRO (Editorial Layout) ================= */}
-        <section className="py-24 border-t border-white/5">
+        {/* ================= SECTION 1: INTRO (Editorial) ================= */}
+        <section className="py-24 border-t border-slate-100 font-sans" id="explore">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-5xl mx-auto text-lg md:text-xl leading-relaxed text-slate-300 space-y-8"
+            className="max-w-5xl mx-auto text-lg md:text-xl leading-relaxed text-slate-600 space-y-10 text-left"
           >
-            <p className="first-letter:text-6xl first-letter:font-serif first-letter:text-emerald-400 first-letter:float-left first-letter:mr-4 first-letter:leading-none text-justify">
+            <p className="first-letter:text-7xl first-letter:font-serif first-letter:text-emerald-600 first-letter:float-left first-letter:mr-4 first-letter:leading-none text-justify">
               Installing a scent system is only the first step. To maintain consistent fragrance quality, system performance, and hygiene standards, regular maintenance and timely refilling are essential. At Cool Max Scent, we provide professional maintenance and refill support services in UAE to ensure your scent diffuser machines, commercial scent machines, and hygiene systems operate reliably every day.
             </p>
-            <div className="p-8 bg-gradient-to-r from-emerald-900/10 to-transparent border-l-2 border-emerald-500 rounded-r-2xl">
-              <p className="italic text-emerald-100">
+            <div className="p-8 bg-slate-50 border-l-4 border-emerald-600 rounded-r-3xl shadow-sm">
+              <p className="italic text-slate-500 font-light">
                 Our maintenance and refill programs are designed for businesses that value consistency, efficiency, and peace of mind. Whether you use a home scent diffuser, a commercial scent diffuser, or an HVAC scent diffuser, Cool Max ensures your system continues to deliver the right fragrance at the right intensity—without disruption.
               </p>
             </div>
           </motion.div>
         </section>
 
-        {/* ================= SECTION 2: WHY IT MATTERS (Glass Card) ================= */}
+        {/* ================= SECTION 2: WHY IT MATTERS ================= */}
         <section className="py-24">
-          <div className="bg-white/[0.02] border border-white/5 rounded-[3rem] p-10 md:p-20 relative overflow-hidden backdrop-blur-sm">
-            <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
-              <div>
-                <h2 className="text-4xl md:text-5xl font-serif text-white mb-8">Why Maintenance & Refill Support Matters</h2>
-                <p className="text-slate-400 mb-10 text-lg leading-relaxed">
+          <div className="bg-slate-50 border border-slate-100 rounded-[4rem] p-10 md:p-20 overflow-hidden relative shadow-sm text-left font-sans">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+              <motion.div 
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+              >
+                <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-8 tracking-tighter">Why Maintenance & Refill Support Matters</h2>
+                <p className="text-slate-500 mb-10 text-lg font-light leading-relaxed">
                   Scent systems are often overlooked once installed, but without proper care, performance can decline over time.
                 </p>
                 
-                <div className="space-y-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
-                    { title: "Consistent Fragrance Experience", desc: "Regular maintenance ensures your aroma scent diffuser delivers the same balanced fragrance day after day." },
-                    { title: "Avoids System Downtime", desc: "Scheduled servicing prevents issues such as clogging, uneven diffusion, or system failure." },
-                    { title: "Cost Efficiency", desc: "Proper upkeep extends equipment lifespan and reduces the need for premature replacements." },
-                    { title: "Professional Standards", desc: "For hotels, offices, malls, and healthcare facilities, reliable scenting reflects professionalism and operational discipline." }
+                    { title: "Fragrance Quality", desc: "Regular maintenance ensures your diffuser delivers the same balanced fragrance day after day." },
+                    { title: "Avoid Downtime", desc: "Scheduled servicing prevents issues such as clogging, uneven diffusion, or system failure." },
+                    { title: "Cost Efficiency", desc: "Proper upkeep extends equipment lifespan and reduces the need for replacements." },
+                    { title: "Professionalism", desc: "For hotels and malls, reliable scenting reflects professionalism and operational discipline." }
                   ].map((item, idx) => (
-                    <div key={idx} className="p-6 bg-emerald-950/20 rounded-2xl border border-emerald-500/10 hover:bg-emerald-950/30 transition-colors">
-                      <h3 className="text-lg font-bold text-emerald-200 mb-2 font-serif">{item.title}</h3>
-                      <p className="text-sm text-slate-400">{item.desc}</p>
+                    <div key={idx} className="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+                      <h3 className="text-lg font-bold text-emerald-600 mb-2 font-serif leading-tight">{item.title}</h3>
+                      <p className="text-xs text-slate-500 leading-relaxed">{item.desc}</p>
                     </div>
                   ))}
                 </div>
-              </div>
+              </motion.div>
               
-              {/* --- IMAGE 2: FEATURE VISUAL --- */}
-              <div className="relative h-[600px] bg-gradient-to-tr from-emerald-900/10 to-transparent rounded-[2.5rem] border border-white/5 flex items-center justify-center overflow-hidden">
-                 <img src={FeatureImg1} alt="Technician Service" className="w-full h-full object-cover opacity-80" />
-                 <div className="absolute inset-0 bg-emerald-900/10 mix-blend-overlay"></div>
-                 <div className="absolute bottom-8 left-8 right-8">
-                   <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl flex items-center gap-4">
-                      <div className="p-3 bg-emerald-500/20 rounded-full">
-                        <ArrowPathIcon className="w-6 h-6 text-emerald-300 animate-spin-slow" />
-                      </div>
-                      <p className="text-white font-serif text-lg">Continuous performance through expert care.</p>
-                   </div>
-                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ================= SECTION 3: WHAT IS IT? (Feature List) ================= */}
-        <section className="py-24 bg-white/[0.015]">
-          <div className="max-w-6xl mx-auto px-6">
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-10 text-center">What Is Maintenance & Refill Support?</h2>
-            
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div>
-                <p className="text-slate-400 text-lg leading-relaxed mb-8">
-                  Maintenance and refill support involves ongoing service care for scent and hygiene systems. At Cool Max, we offer structured maintenance programs designed to suit different environments and usage levels.
-                </p>
-                <div className="p-6 bg-[#0B0F19] rounded-xl border-l-4 border-emerald-500 mb-8">
-                  <p className="text-emerald-100 font-medium italic">
-                    We ensure your systems perform at their best, always.
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  {[
-                    "Replacing fragrance oils or refills",
-                    "Cleaning and inspecting diffuser components",
-                    "Checking system settings and performance",
-                    "Adjusting fragrance intensity as needed",
-                    "Preventive maintenance to avoid breakdowns"
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-4 p-5 bg-white/[0.03] rounded-2xl border border-white/5 hover:border-emerald-500/30 transition-all">
-                      <CheckBadgeIcon className="w-6 h-6 text-emerald-500 flex-shrink-0" />
-                      <span className="text-slate-300 text-sm font-medium">{item}</span>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="relative h-[600px] rounded-[3rem] border border-white overflow-hidden shadow-2xl group"
+              >
+                 <img src={FeatureImg1} alt="Diffuser Servicing" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
+                 <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-slate-900/80 to-transparent">
+                    <div className="bg-white/90 backdrop-blur-md p-6 rounded-2xl flex items-center gap-4">
+                       <div className="p-3 bg-emerald-600 rounded-xl shadow-lg">
+                         <ArrowPathIcon className="w-6 h-6 text-white" />
+                       </div>
+                       <p className="text-slate-900 font-serif text-lg">Continuous performance through expert care.</p>
                     </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* --- IMAGE 3: CONTEXT VISUAL --- */}
-              <div className="relative h-[600px] rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl">
-                 <img src={FeatureImg2} alt="Refill Process" className="w-full h-full object-cover opacity-80" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent"></div>
-              </div>
+                 </div>
+              </motion.div>
             </div>
           </div>
         </section>
 
-        {/* ================= SECTION 4: OUR SERVICES (Bento Grid) ================= */}
+        {/* ================= SECTION 3: WHAT IS IT? ================= */}
         <section className="py-24">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Our Maintenance & Refill Support Services</h2>
+          <div className="grid lg:grid-cols-12 gap-12 items-center text-left font-sans">
+            <div className="lg:col-span-5">
+                <motion.div 
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    className="relative h-[650px] rounded-[4rem] overflow-hidden border border-slate-100 shadow-xl"
+                >
+                    <img src={FeatureImg2} alt="Refill Support" className="w-full h-full object-cover" />
+                </motion.div>
+            </div>
+
+            <div className="lg:col-span-7">
+                <div className="mb-12">
+                    <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-6 tracking-tighter leading-none">Operational Care</h2>
+                    <p className="text-slate-500 text-xl font-light leading-relaxed max-w-xl">
+                      Maintenance and refill support involves ongoing service care for scent and hygiene systems. At Cool Max, we offer structured maintenance programs designed to suit your usage levels.
+                    </p>
+                </div>
+
+                <div className="space-y-4">
+                    {[
+                      "Replacing fragrance oils or refills",
+                      "Cleaning and inspecting diffuser components",
+                      "Checking system settings and performance",
+                      "Adjusting fragrance intensity as needed",
+                      "Preventive maintenance to avoid breakdowns"
+                    ].map((item, i) => (
+                    <motion.div 
+                        key={i}
+                        className="flex items-center gap-4 p-5 bg-slate-50 border border-slate-100 hover:border-emerald-200 rounded-[2rem] transition-all duration-300 shadow-sm"
+                    >
+                        <CheckBadgeIcon className="w-6 h-6 text-emerald-500 flex-shrink-0" />
+                        <span className="text-slate-700 text-sm font-bold uppercase tracking-wider">{item}</span>
+                    </motion.div>
+                    ))}
+                </div>
+            </div>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        </section>
+
+        {/* ================= SECTION 4: OUR SERVICES ================= */}
+        <section className="py-24 border-t border-slate-100 font-sans">
+          <div className="mb-24 text-center max-w-4xl mx-auto">
+            <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-emerald-600 mb-6">Expert Services</h2>
+            <h3 className="text-4xl md:text-7xl font-serif text-slate-900 tracking-tighter leading-none">Maintenance Support</h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Scheduled Fragrance Refills", desc: "We provide timely refilling of fragrance oils for commercial scent machines, hotel scent machines, and home fragrance systems, ensuring uninterrupted operation.", icon: <BeakerIcon className="w-6 h-6"/> },
-              { title: "System Inspection & Cleaning", desc: "Our technicians inspect and clean diffuser components to maintain optimal diffusion and prevent residue buildup.", icon: <ClipboardDocumentCheckIcon className="w-6 h-6"/> },
-              { title: "Performance Monitoring", desc: "We check fragrance output, coverage consistency, and system settings to ensure even distribution across the space.", icon: <ClockIcon className="w-6 h-6"/> },
-              { title: "Intensity Adjustment", desc: "Fragrance intensity can be adjusted based on seasonal needs, foot traffic, or space usage.", icon: <ArrowPathIcon className="w-6 h-6"/> },
-              { title: "Replacement of Consumables", desc: "Where required, we replace consumable parts to maintain system efficiency and reliability.", icon: <Cog6ToothIcon className="w-6 h-6"/> }
+              { title: "Scheduled Refills", desc: "We provide timely refilling of fragrance oils for commercial, hotel, and home systems, ensuring uninterrupted operation.", icon: <BeakerIcon /> },
+              { title: "Inspection & Cleaning", desc: "Our technicians inspect and clean diffuser components to maintain optimal diffusion and prevent residue buildup.", icon: <ClipboardDocumentCheckIcon /> },
+              { title: "Performance Monitoring", desc: "We check fragrance output, coverage consistency, and system settings to ensure even distribution.", icon: <ClockIcon /> },
+              { title: "Intensity Adjustment", desc: "Fragrance intensity can be adjusted based on seasonal needs, foot traffic, or space usage.", icon: <ArrowPathIcon /> },
+              { title: "Consumable Replacement", desc: "Where required, we replace consumable parts to maintain system efficiency and reliability.", icon: <Cog6ToothIcon /> }
             ].map((srv, idx) => (
               <motion.div 
                 key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="group p-10 bg-gradient-to-b from-white/[0.02] to-transparent border border-white/5 hover:border-emerald-500/30 rounded-[2rem] transition-all duration-500 hover:bg-white/[0.03] hover:-translate-y-2"
+                whileHover={{ y: -10 }}
+                className="group p-10 bg-slate-50 border border-slate-100 rounded-[3rem] hover:bg-white hover:border-emerald-200 transition-all text-left shadow-sm hover:shadow-xl"
               >
-                <div className="w-14 h-14 bg-emerald-900/20 text-emerald-400 flex items-center justify-center rounded-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-all shadow-lg shadow-emerald-900/10">
-                  {srv.icon}
+                <div className="w-16 h-16 bg-white text-emerald-600 flex items-center justify-center rounded-2xl mb-8 shadow-sm border border-slate-100 group-hover:bg-emerald-600 group-hover:text-white transition-all">
+                  {React.cloneElement(srv.icon, { className: "w-8 h-8" })}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 font-serif">{srv.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{srv.desc}</p>
+                <h3 className="text-xl font-black uppercase tracking-tight text-slate-900 mb-4">{srv.title}</h3>
+                <p className="text-sm text-slate-500 leading-relaxed font-light">{srv.desc}</p>
               </motion.div>
             ))}
           </div>
         </section>
 
-        {/* ================= SECTION 5: SYSTEMS COVERED (Interactive Tags) ================= */}
-        <section className="py-24 border-t border-white/5">
-          <div className="text-center max-w-4xl mx-auto mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-8">Systems Covered Under Our Maintenance Support</h2>
-            <p className="text-slate-400 text-lg">Our maintenance and refill support covers a wide range of scenting solutions.</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* ================= SECTION 5: SYSTEMS COVERED ================= */}
+        <section className="py-24 font-sans text-center">
+          <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-16 tracking-tighter leading-none">Systems Covered</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
-              { title: "Commercial Scent Diffusers", desc: "Regular servicing ensures commercial scent diffusers operate efficiently in offices, retail spaces, and public facilities." },
-              { title: "HVAC Scent Diffuser Systems", desc: "We maintain HVAC scent diffuser systems to ensure smooth integration with air-conditioning systems and consistent fragrance distribution." },
-              { title: "Hotel Scent Machines", desc: "For hospitality environments, our support ensures hotel scent diffusers maintain a consistent guest experience." },
-              { title: "Home & Personal Space Diffusers", desc: "We also support home diffuser machines and scent machines for home, ensuring reliable performance." },
+              { title: "Commercial Scent Diffusers", desc: "Regular servicing ensures diffusers operate efficiently in offices, retail spaces, and public facilities." },
+              { title: "HVAC Scent Diffuser Systems", desc: "We maintain systems to ensure smooth integration with AC and consistent fragrance distribution." },
+              { title: "Hotel Scent Machines", desc: "For hospitality environments, our support ensures machines maintain a consistent guest experience." },
+              { title: "Home & Personal Diffusers", desc: "We also support home diffuser machines and scent machines for home, ensuring reliable performance." },
               { title: "Washroom Hygiene Systems", desc: "Our services include maintenance of washroom air freshening and hygiene systems in high-traffic areas." },
             ].map((sys, i) => (
-              <div key={i} className="p-8 bg-[#0B0F19] border border-white/5 rounded-3xl hover:border-emerald-500/30 transition-all group">
-                <h3 className="text-lg font-bold text-white mb-3 font-serif group-hover:text-emerald-300 transition-colors">{sys.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{sys.desc}</p>
+              <div key={i} className="p-10 bg-slate-50 border border-slate-100 rounded-[3rem] hover:bg-white hover:border-emerald-200 transition-all shadow-sm">
+                <h3 className="text-lg font-black uppercase tracking-tight text-slate-900 mb-4">{sys.title}</h3>
+                <p className="text-sm text-slate-500 leading-relaxed font-light">{sys.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* ================= SECTION 6: PROCESS (Step Cards) ================= */}
-        <section className="py-24">
-          <h2 className="text-4xl font-serif text-white mb-16 text-center">How Our Maintenance Process Works</h2>
-          
-          <div className="space-y-6 max-w-4xl mx-auto">
+        {/* ================= SECTION 8: PLANS ================= */}
+        <section className="py-24 border-t border-slate-100 font-sans">
+          <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-20 tracking-tighter text-center">Operational Service Flow</h2>
+          <div className="max-w-4xl mx-auto space-y-6">
             {[
-              { step: "01", title: "Service Scheduling", desc: "We plan maintenance visits based on usage levels and client requirements." },
-              { step: "02", title: "On-Site Inspection", desc: "Our technicians inspect the scent air machine, check oil levels, and review system performance." },
-              { step: "03", title: "Refill & Cleaning", desc: "Fragrance refills are replaced, and internal components are cleaned as required." },
-              { step: "04", title: "System Optimization", desc: "Settings are adjusted to maintain balanced fragrance intensity." },
-              { step: "05", title: "Reporting & Recommendations", desc: "We provide feedback and suggestions to improve performance or efficiency." }
+              { step: "01", title: "Scheduling", desc: "We plan maintenance visits based on usage levels and client requirements." },
+              { step: "02", title: "Site Inspection", desc: "Technicians inspect the machine, check oil levels, and review performance." },
+              { step: "03", title: "Refill & Cleaning", desc: "Fragrance refills are replaced, and internal components are cleaned." },
+              { step: "04", title: "Optimization", desc: "Settings are adjusted to maintain balanced fragrance intensity." },
+              { step: "05", title: "Reporting", desc: "We provide feedback and suggestions to improve performance or efficiency." }
             ].map((proc, idx) => (
-              <div key={idx} className="flex flex-col md:flex-row gap-8 p-8 border border-white/5 bg-white/[0.02] rounded-3xl hover:border-emerald-500/30 transition-colors group items-start">
-                <span className="text-5xl font-black text-white/5 group-hover:text-emerald-500/10 transition-colors">{proc.step}</span>
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-2 font-serif">{proc.title}</h3>
-                  <p className="text-base text-slate-400 leading-relaxed">{proc.desc}</p>
+              <motion.div 
+                key={idx} 
+                className="flex flex-col md:flex-row gap-10 items-center p-10 rounded-[3rem] border border-slate-100 bg-slate-50 hover:bg-white hover:border-emerald-200 transition-all group"
+              >
+                <span className="text-6xl font-serif text-slate-200 group-hover:text-emerald-100 transition-colors duration-500">{proc.step}</span>
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-2xl font-black uppercase tracking-tight text-slate-900 mb-2">{proc.title}</h3>
+                  <p className="text-lg text-slate-500 font-light">{proc.desc}</p>
                 </div>
-              </div>
+                <ArrowRightIcon className="w-8 h-8 text-slate-300 group-hover:translate-x-2 group-hover:text-emerald-600 transition-all hidden md:block" />
+              </motion.div>
             ))}
           </div>
         </section>
 
-        {/* ================= SECTION 7 & 9: BENEFITS & WHY CHOOSE US ================= */}
-        <section className="py-24 grid lg:grid-cols-2 gap-12">
-          
-          {/* Benefits */}
-          <div className="bg-gradient-to-br from-emerald-900/20 to-teal-900/10 rounded-[2.5rem] border border-emerald-500/20 p-12">
-            <h2 className="text-3xl font-serif text-white mb-8">Benefits of Cool Max Maintenance & Refill Support</h2>
-            <ul className="space-y-5">
-              {[
-                "Consistent fragrance quality",
-                "Reduced system downtime",
-                "Longer equipment lifespan",
-                "Predictable operating costs",
-                "Professional service handling",
-                "Peace of mind for facility managers"
-              ].map((ben, i) => (
-                <li key={i} className="flex items-center gap-4 text-emerald-100 font-medium">
-                  <div className="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-emerald-500/30">
-                    <CheckBadgeIcon className="w-4 h-4 text-white" />
-                  </div>
-                  {ben}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-10 text-xs text-slate-400 italic border-t border-emerald-500/20 pt-6">Regular maintenance ensures your scent system remains a reliable part of your environment, not a concern.</p>
-          </div>
-
-          {/* Why Choose Us */}
-          <div className="bg-white/[0.02] rounded-[2.5rem] border border-white/10 p-12">
-            <h2 className="text-3xl font-serif text-white mb-8">Why Choose Cool Max in UAE?</h2>
-            <ul className="space-y-5">
-              {[
-                "UAE-based service team",
-                "Experience across multiple industries",
-                "Support for all scent machine types",
-                "Reliable refill scheduling",
-                "Transparent service process"
-              ].map((reason, i) => (
-                <li key={i} className="flex items-center gap-4 text-slate-300">
-                  <ShieldCheckIcon className="w-5 h-5 text-emerald-400" /> {reason}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-10 text-xs text-emerald-300 font-bold border-t border-white/10 pt-6 uppercase tracking-widest">We focus on long-term partnerships, not one-time installations.</p>
-          </div>
-        </section>
-
-        {/* ================= SECTION 8: PLANS (Feature Cards) ================= */}
+        {/* ================= SECTION 9: WHY COOL MAX ================= */}
         <section className="py-24">
-          <h2 className="text-3xl md:text-4xl font-serif text-white mb-6 text-center">Maintenance Plans for Different Business Needs</h2>
-          <p className="text-slate-400 text-center mb-16 max-w-2xl mx-auto text-lg">Our flexible plans ensure businesses pay only for what they need.</p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-10 border border-white/10 rounded-[2rem] bg-white/[0.02] hover:bg-white/[0.04] transition-all">
-              <div className="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center mb-6 border border-white/10"><CalendarDaysIcon className="w-6 h-6 text-white"/></div>
-              <h3 className="text-xl font-bold text-white mb-3 font-serif">Monthly Service Plans</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">Ideal for high-traffic environments such as malls, hotels, and hospitals.</p>
-            </div>
-            <div className="p-10 border border-white/10 rounded-[2rem] bg-white/[0.02] hover:bg-white/[0.04] transition-all">
-              <div className="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center mb-6 border border-white/10"><CalendarDaysIcon className="w-6 h-6 text-white"/></div>
-              <h3 className="text-xl font-bold text-white mb-3 font-serif">Quarterly Service Plans</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">Suitable for offices, clinics, and medium-use facilities.</p>
-            </div>
-            <div className="p-10 border border-emerald-500/30 rounded-[2rem] bg-emerald-900/10 hover:bg-emerald-900/20 transition-all relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-500/10 blur-[40px] rounded-full" />
-              <div className="w-12 h-12 bg-emerald-500/20 rounded-2xl flex items-center justify-center mb-6 border border-emerald-500/20"><WrenchScrewdriverIcon className="w-6 h-6 text-emerald-400"/></div>
-              <h3 className="text-xl font-bold text-white mb-3 font-serif">Customized Schedules</h3>
-              <p className="text-emerald-100/80 text-sm leading-relaxed">We tailor service frequency based on space size, usage, and system type.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* ================= SECTION 10 & 11: WHEN TO CONSIDER & BRANDING ================= */}
-        <section className="py-24 border-t border-white/5">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl font-serif text-white mb-8">When Should You Consider Professional Maintenance Support?</h2>
-              <p className="text-slate-400 mb-8 text-lg">You should consider maintenance and refill support if:</p>
-              <ul className="space-y-4">
+          <div className="bg-slate-900 rounded-[5rem] p-16 md:p-32 text-center relative overflow-hidden shadow-2xl">
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px]" />
+            <div className="relative z-10">
+              <h2 className="text-4xl md:text-7xl font-serif text-white mb-10 tracking-tighter leading-none">Why Choose Cool Max?</h2>
+              <div className="flex flex-wrap justify-center gap-4 mb-16 font-sans">
                 {[
-                  "Fragrance intensity has reduced",
-                  "Systems are operating inconsistently",
-                  "Manual refills are becoming inconvenient",
-                  "Hygiene standards are critical",
-                  "You want predictable service and cost control"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-4 text-slate-300">
-                    <ArrowRightIcon className="w-5 h-5 text-emerald-500" /> {item}
-                  </li>
+                  "UAE-based service team", 
+                  "Multi-industry experience", 
+                  "Support for all machine types", 
+                  "Reliable refill scheduling", 
+                  "Transparent process"
+                ].map((reason, i) => (
+                  <div key={i} className="px-8 py-4 rounded-2xl bg-white/5 border border-white/10 text-white text-[11px] font-black uppercase tracking-widest flex items-center gap-3 backdrop-blur-md">
+                    <ShieldCheckIcon className="w-5 h-5 text-emerald-400"/> {reason}
+                  </div>
                 ))}
-              </ul>
-              <p className="mt-8 text-sm text-slate-500 italic border-l-2 border-white/10 pl-4">Professional support ensures your scent system continues to perform as intended.</p>
-            </div>
-            
-            {/* --- IMAGE 4: TEXTURE BACKGROUND --- */}
-            <div className="flex flex-col justify-center p-12 bg-gradient-to-tr from-[#0B0F19] to-black rounded-[2.5rem] border border-white/10 relative overflow-hidden">
-              
-              {/* Background Texture Image */}
-              <div className="absolute inset-0 opacity-20 mix-blend-overlay">
-                  <img src={TextureImg} alt="" className="w-full h-full object-cover grayscale" />
               </div>
-
-              <h2 className="text-3xl font-serif text-white mb-6 relative z-10">Supporting Your Brand Through Consistent Scenting</h2>
-              <p className="text-slate-400 leading-relaxed mb-6 relative z-10">
-                A scent system is part of your environment identity. With proper maintenance, your home fragrance system, commercial scent machine, or HVAC scent diffuser continues to support comfort, hygiene, and brand perception.
-              </p>
-              <p className="text-emerald-400 font-bold text-lg relative z-10">
-                Cool Max ensures your scenting investment delivers long-term value.
-              </p>
+              <p className="text-2xl font-serif italic text-white/50 max-w-2xl mx-auto">"We focus on long-term partnerships, ensuring your scent system remains a reliable part of your environment."</p>
             </div>
           </div>
         </section>
 
-        {/* ================= SECTION 12: CTA (Premium) ================= */}
-        <section className="pt-20 pb-32 text-center">
+        {/* ================= SECTION 12: CTA ================= */}
+        <section className="py-32 text-center relative font-sans">
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="max-w-4xl mx-auto pt-20"
+            className="max-w-5xl mx-auto relative z-10"
           >
-            <h2 className="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight">Let’s Keep Your Scent Systems <br/> <span className="italic text-emerald-400">Running Smoothly</span></h2>
-            <p className="text-xl text-slate-400 mb-10 leading-relaxed font-light">
-              Whether you manage a hotel, office, hospital, school, or commercial facility, Cool Max provides dependable maintenance and refill support services in UAE to keep your scent and hygiene systems operating at their best.
-              Our team handles the service—so you can focus on your business.
+            <h2 className="text-5xl md:text-8xl font-serif text-slate-900 mb-10 tracking-tighter leading-none">
+              Let’s Keep Your Systems <br /> <span className="italic text-emerald-600 font-light">Running Smoothly</span>
+            </h2>
+            <p className="text-2xl text-slate-500 mb-12 max-w-4xl mx-auto font-light leading-relaxed">
+              Whether you manage a hotel, office, hospital, or commercial facility, Cool Max provides dependable maintenance and refill support services in UAE to keep your systems operating at their best.
             </p>
-            <p className="text-emerald-300 font-bold mb-12 uppercase tracking-[0.2em] text-sm">
-              Looking for reliable maintenance and refill support in UAE?
-            </p>
-            <a href="/contact" className="group relative inline-flex items-center gap-3 px-12 py-6 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-bold text-lg rounded-full overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_-10px_rgba(16,185,129,0.5)]">
-              <span className="relative z-10 flex items-center gap-2">Contact Cool Max Today <ArrowRightIcon className="w-5 h-5" /></span>
-              <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-            </a>
+            
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <a href="/contact" className="w-full sm:w-auto px-16 py-8 bg-slate-900 text-white font-black text-xs uppercase tracking-[0.3em] rounded-3xl overflow-hidden transition-all hover:bg-emerald-600 hover:shadow-2xl flex items-center justify-center gap-3">
+                Contact Cool Max Today <ArrowRightIcon className="w-5 h-5" />
+              </a>
+              <a 
+                href={`https://wa.me/${whatsappNumber}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-16 py-8 bg-[#25D366] text-white font-black text-xs uppercase tracking-[0.3em] rounded-3xl overflow-hidden transition-all hover:bg-[#128C7E] hover:shadow-2xl flex items-center justify-center gap-3 shadow-xl"
+              >
+                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Support
+              </a>
+            </div>
           </motion.div>
         </section>
 
