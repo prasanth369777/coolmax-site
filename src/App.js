@@ -40,6 +40,31 @@ import FruityFragrances from "./component/Aromaoilspage/Fruity Fragrances";
 import FoodBeverageFragrances from "./component/Aromaoilspage/Food & Beverage Fragrances";
 import PremiumCollection from "./component/Aromaoilspage/Premium Collection";
 
+// --- AROMA DETAILED PAGE IMPORTS ---
+import AddressAromaOilDetail from "./component/Aromaoilspage/detailedpage/AddressAromaOil";
+import ArabianBakhourAromaOil from "./component/Aromaoilspage/detailedpage/ArabianBakhourAromaOil";
+import ArabianPeninsulaAromaOil from "./component/Aromaoilspage/detailedpage/ArabianPeninsulaAromaOil";
+import BrownOrchidAromaOil from "./component/Aromaoilspage/detailedpage/BrownOrchidAromaOil";
+import ClassicAromaOil from "./component/Aromaoilspage/detailedpage/ClassicAromaOil";
+import CrystalAromaOil from "./component/Aromaoilspage/detailedpage/CrystalAromaOil";
+import EmaarAromaOil from "./component/Aromaoilspage/detailedpage/EmaarAromaOil";
+import EnglishLavenderAromaOil from "./component/Aromaoilspage/detailedpage/EnglishLavenderAromaOil";
+import EventAromaOil from "./component/Aromaoilspage/detailedpage/EventAromaOil";
+import FloralAromaOil from "./component/Aromaoilspage/detailedpage/FloralAromaOil";
+import ForYouAromaOil from "./component/Aromaoilspage/detailedpage/ForYouAromaOil";
+import GoldAromaOil from "./component/Aromaoilspage/detailedpage/GoldAromaOil";
+import HarmonyAromaOil from "./component/Aromaoilspage/detailedpage/HarmonyAromaOil";
+import LavenderAromaOil from "./component/Aromaoilspage/detailedpage/LavenderAromaOil";
+import LotusFlowerAromaOil from "./component/Aromaoilspage/detailedpage/LotusFlowerAromaOil";
+import PassionAromaOil from "./component/Aromaoilspage/detailedpage/PassionAromaOil";
+import ScentsNaturalAromaOil from "./component/Aromaoilspage/detailedpage/ScentsNaturalAromaOil";
+import SplendorAromaOil from "./component/Aromaoilspage/detailedpage/SplendorAromaOil";
+import StoryAromaOil from "./component/Aromaoilspage/detailedpage/StoryAromaOil";
+import TajSunsetAromaOil from "./component/Aromaoilspage/detailedpage/TajSunsetAromaOil";
+import TrueCoffeeAromaOil from "./component/Aromaoilspage/detailedpage/TrueCoffeeAromaOil";
+import TuscanLeatherAromaOil from "./component/Aromaoilspage/detailedpage/TuscanLeatherAromaOil";
+import WhiteTeaAromaOil from "./component/Aromaoilspage/detailedpage/WhiteTeaAromaOil";
+
 // --- SEPARATE INDIVIDUAL PRODUCT IMPORTS (16 UNIQUE) ---
 import AeroBlackMed from "./component/separateproducts/AeroBlack Med Diffuser";
 import DriveMist from "./component/separateproducts/DriveScent Diffuser";
@@ -49,6 +74,7 @@ import VentoCar from "./component/separateproducts/VentoCar Diffuser";
 import OpalMist from "./component/separateproducts/OpalMist Clock Diffuser";
 import DeskMist from "./component/separateproducts/AromaDesk Diffuser";
 import ZenBoxMini from "./component/separateproducts/ZenBox Mini Diffuser";
+import Titan from "./component/separateproducts/Titan Diffuser";
 import LuxePanel from "./component/separateproducts/LuxePanel Diffuser";
 import CeilAir from "./component/separateproducts/CeilAir Pro Diffuser";
 import MistBox from "./component/separateproducts/MistBox X Diffuser";
@@ -57,8 +83,8 @@ import AeroPillar from "./component/separateproducts/AeroPillar Diffuser";
 import AirPole from "./component/separateproducts/AirPole Pro Diffuser";
 import NanoPillar from "./component/separateproducts/NanoPillar Diffuser";
 import NaturalFlow from "./component/separateproducts/Natural Fragrance Diffuser";
-import Titan from "./component/separateproducts/Titan Diffuser";
 import Solution from "./component/Solutionpage/Solution";
+
 // --- HELPER: SCROLL TO TOP ---
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -93,7 +119,7 @@ function App() {
         <Route path="/industries" element={<IndustriesWeServe />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<TalkToExpert />} />
-          <Route path="/solution" element={<Solution />} />
+        <Route path="/solution" element={<Solution />} />
         
         {/* --- SOLUTION ROUTES --- */}
         <Route path="/scent-marketing" element={<ScentMarketingPage />} />
@@ -112,16 +138,13 @@ function App() {
         <Route path="/passive-diffusers" element={<Passivenopower />} />
         <Route path="/wall-mounted-diffusers" element={<WallmountedD />} />
 
-
- {/* --- PRODUCT CATEGORY ROUTES --- */}
+        {/* --- AROMA CATEGORY ROUTES --- */}
         <Route path="/Oriental-Fragrances" element={<OrientalFragrances />} />
         <Route path="/Fresh-Fragrances" element={<FreshFragrances />} />
         <Route path="/Perfumers-Choice" element={<PerfumersChoice />} />
         <Route path="/Fruity-Fragrances" element={<FruityFragrances />} />
         <Route path="/Food-BeverageFragrances" element={<FoodBeverageFragrances />} />
         <Route path="/Premium-Collection" element={<PremiumCollection />} />
-
-
         
         {/* --- INDIVIDUAL PRODUCT ROUTES (16+ UNIQUE PATHS) --- */}
         <Route path="/product/aeroblack-med" element={<AeroBlackMed />} />
@@ -141,6 +164,31 @@ function App() {
         <Route path="/product/nanopillar" element={<NanoPillar />} />
         <Route path="/product/naturalflow" element={<NaturalFlow />} />
         <Route path="/product/titan" element={<Titan />} />
+
+        {/* --- AROMA DETAILED PAGES ROUTES --- */}
+        <Route path="/aroma/address" element={<AddressAromaOilDetail/>} />
+        <Route path="/aroma/arabian-bakhour" element={<ArabianBakhourAromaOil/>} />
+        <Route path="/aroma/arabian-peninsula" element={<ArabianPeninsulaAromaOil/>} />
+        <Route path="/aroma/brown-orchid" element={<BrownOrchidAromaOil/>} />
+        <Route path="/aroma/classic" element={<ClassicAromaOil/>} />
+        <Route path="/aroma/crystal" element={<CrystalAromaOil/>} />
+        <Route path="/aroma/emaar" element={<EmaarAromaOil/>} />
+        <Route path="/aroma/english-lavender" element={<EnglishLavenderAromaOil/>} />
+        <Route path="/aroma/event" element={<EventAromaOil/>} />
+        <Route path="/aroma/floral" element={<FloralAromaOil/>} />
+        <Route path="/aroma/for-you" element={<ForYouAromaOil/>} />
+        <Route path="/aroma/gold" element={<GoldAromaOil/>} />
+        <Route path="/aroma/harmony" element={<HarmonyAromaOil/>} />
+        <Route path="/aroma/lavender" element={<LavenderAromaOil/>} />
+        <Route path="/aroma/lotus-flower" element={<LotusFlowerAromaOil/>} />
+        <Route path="/aroma/passion" element={<PassionAromaOil/>} />
+        <Route path="/aroma/scents-natural" element={<ScentsNaturalAromaOil/>} />
+        <Route path="/aroma/splendor" element={<SplendorAromaOil/>} />
+        <Route path="/aroma/story" element={<StoryAromaOil/>} />
+        <Route path="/aroma/taj-sunset" element={<TajSunsetAromaOil/>} />
+        <Route path="/aroma/true-coffee" element={<TrueCoffeeAromaOil/>} />
+        <Route path="/aroma/tuscan-leather" element={<TuscanLeatherAromaOil/>} />
+        <Route path="/aroma/white-tea" element={<WhiteTeaAromaOil/>} />
 
       </Routes>
 
