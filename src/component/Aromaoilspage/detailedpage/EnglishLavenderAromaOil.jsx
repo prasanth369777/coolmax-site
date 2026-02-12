@@ -14,7 +14,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORT ---
-import P6 from "../../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/1.webp"; 
+import P6 from "../../../asset/productimg/CMwebpimg/AeroMax Pro/2.webp"; 
 
 const EnglishLavenderAromaOilDetail = () => {
   // Redirection Links

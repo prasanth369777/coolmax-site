@@ -18,10 +18,10 @@ import {
 } from "@heroicons/react/24/outline";
 
 /* ================= IMAGE ASSETS ================= */
-import LuxePanel1 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser/1.webp";
-import LuxePanel2 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser/2.webp";
-import LuxePanel3 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser/3.webp";
-import LuxePanel4 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser/4.webp";
+import LuxePanel1 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser wtc/1.webp";
+import LuxePanel2 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser wtc/2.webp";
+import LuxePanel3 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser wtc/3.webp";
+import LuxePanel4 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser wtc/4.webp";
 
 const LuxePanelPage = () => {
   const [activeImg, setActiveImg] = useState(LuxePanel1);

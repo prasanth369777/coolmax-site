@@ -15,7 +15,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORT ---
-import P1 from "../../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion/4.webp"; 
+import P1 from "../../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/4.webp"; 
 
 const AddressAromaOilDetail = () => {
   // Redirection Links

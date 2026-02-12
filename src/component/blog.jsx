@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRightIcon, CalendarDaysIcon, ClockIcon, SparklesIcon } from "@heroicons/react/24/outline";
 
 // --- Mapped Product Images for the Hero Visual ---
-import HeroBlogImg from "../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/1.webp"; 
+import HeroBlogImg from "../asset/productimg/CMwebpimg/AeroMax Pro/3.webp"; 
 
 const blogPosts = [
   {

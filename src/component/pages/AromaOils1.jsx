@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 import { ArrowRightIcon, ShoppingBagIcon, SparklesIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom"; // Added for internal redirection
 
 // ================= IMAGE ASSETS =================
-import DriveMist1 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/1.webp";
-import DriveMist2 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/2.webp";
-import DriveMist3 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/3.webp";
-import DriveMist4 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/4.webp";
-
-
+import DriveMist1 from "../../asset/productimg/CMwebpimg/AromaDesk/1.webp";
+import DriveMist2 from "../../asset/productimg/CMwebpimg/AromaDesk/2.webp";
+import DriveMist3 from "../../asset/productimg/CMwebpimg/AromaDesk/3.webp";
+import DriveMist4 from "../../asset/productimg/CMwebpimg/AromaDesk/4.webp";
 
 import ZenBoxMini1 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/1.webp";
 import ZenBoxMini2 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/2.webp";
 import ZenBoxMini3 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/3.webp";
 import ZenBoxMini4 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/4.webp";
-
 
 import CeilAirPro1 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/1.webp";
 import CeilAirPro2 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/2.webp";
@@ -43,6 +41,7 @@ const categories = [
     tag: "Personal", 
     img: ZenBoxMini1, 
     gallery: [ZenBoxMini1, ZenBoxMini2, ZenBoxMini3, ZenBoxMini4],
+    path: "/desktop-small-diffusers", // Appropriate page redirection
     desc: "Compact and efficient home diffuser machines that are ideal for bedrooms, living rooms, small offices, and personal spaces. These systems deliver controlled fragrance without being too strong." 
   },
   { 
@@ -51,6 +50,7 @@ const categories = [
     tag: "Discreet", 
     img: CeilAirPro1, 
     gallery: [CeilAirPro1, CeilAirPro2, CeilAirPro3, CeilAirPro4],
+    path: "/wall-mounted-diffusers", // Appropriate page redirection
     desc: "Perfect for corridors, washrooms, elevators, and common areas. These aroma scent diffusers are discreet, space-saving, and designed for continuous use." 
   },
   { 
@@ -59,6 +59,7 @@ const categories = [
     tag: "Professional", 
     img: Titan1, 
     gallery: [Titan1, Titan2, Titan3, Titan4],
+    path: "/commercial-diffusers", // Appropriate page redirection
     desc: "Professional-grade commercial scent machines suitable for offices, clinics, gyms, and retail stores, ensuring consistent fragrance throughout working hours." 
   },
   { 
@@ -67,6 +68,7 @@ const categories = [
     tag: "Luxury", 
     img: AeroPillar1, 
     gallery: [AeroPillar1, AeroPillar2, AeroPillar3, AeroPillar4],
+    path: "/floor-standing-diffusers", // Appropriate page redirection
     desc: "Elegant and powerful scent air machines designed for hotel lobbies, showrooms, and premium interiors where both performance and appearance matter." 
   },
   { 
@@ -75,6 +77,7 @@ const categories = [
     tag: "Industrial", 
     img: AirPulse1501, 
     gallery: [AirPulse1501, AirPulse1502, AirPulse1503, AirPulse1504],
+    path: "/large-area-diffusers", // Appropriate page redirection
     desc: "High-capacity HVAC scent diffusers and hotel scent diffuser systems designed for large spaces ranging from 3,000 m³ to 15,000 m³." 
   },
   { 
@@ -83,6 +86,7 @@ const categories = [
     tag: "On-the-go", 
     img: DriveMist1, 
     gallery: [DriveMist1, DriveMist2, DriveMist3, DriveMist4],
+    path: "/car-diffusers", // Appropriate page redirection
     desc: "Portable scent machines for home and car that keep vehicle interiors fresh and pleasant." 
   },
 ];
@@ -137,9 +141,9 @@ export default function EcommerceProducts() {
           <h3 className="text-3xl md:text-5xl font-serif text-white mb-8 relative z-10 leading-tight">
             Need a Custom Scent <br /> <span className="italic text-blue-400 font-light">Solution for Your Business?</span>
           </h3>
-          <a href="/contact" className="inline-flex items-center gap-4 px-10 py-5 bg-white text-slate-900 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-blue-600 hover:text-white transition-all relative z-10">
+          <Link to="/solutions" className="inline-flex items-center gap-4 px-10 py-5 bg-white text-slate-900 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-blue-600 hover:text-white transition-all relative z-10">
             Request Professional Quote <ArrowRightIcon className="w-5 h-5" />
-          </a>
+          </Link>
         </div>
 
       </div>
@@ -194,9 +198,9 @@ function ProductCard({ cat }) {
         </p>
 
         <div className="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
-          <a href="/contact" className="w-full py-4 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-blue-600 transition-all shadow-lg">
-              <ShoppingBagIcon className="w-4 h-4" /> Quick Inquiry
-          </a>
+          <Link to={cat.path} className="w-full py-4 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-blue-600 transition-all shadow-lg">
+              <ShoppingBagIcon className="w-4 h-4" /> View Category Details
+          </Link>
         </div>
       </div>
     </div>

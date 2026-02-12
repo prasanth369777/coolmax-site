@@ -17,19 +17,19 @@ import {
 import AeroBlackPro from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/1.webp";
 import AirPulse150 from "../../asset/productimg/CMwebpimg/AirPulse 150/1.webp";
 import ZenBoxMini from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/1.webp";
-import DriveMist from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/1.webp";
+import DriveMist from "../../asset/productimg/CMwebpimg/AeroMax Pro/1.webp";
 
 const ProcessAndInsights = () => {
   return (
     <div className="bg-[#F8FAFC] font-sans selection:bg-blue-200 selection:text-blue-900 overflow-hidden text-slate-600">
       
       {/* ================= SECTION 1: HOW IT WORKS ================= */}
-      <section className="relative py-24 lg:py-32 px-6">
+      <section className="relative py-24 lg:py-16 px-6">
         
         <div className="max-w-[1400px] mx-auto relative z-10">
           
           {/* Header */}
-          <div className="text-center max-w-3xl mx-auto mb-20">
+          <div className="text-center max-w-3xl mx-auto mb-10">
             <span className="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-600 text-xs font-bold uppercase tracking-[0.2em] mb-6">
               The Process
             </span>

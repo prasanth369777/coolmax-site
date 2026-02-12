@@ -4,61 +4,134 @@ import { Link } from "react-router-dom";
 import { MagnifyingGlassIcon, ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 /* ================= IMAGE ASSETS ================= */
-import DriveMist1 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/1.webp";
-import DriveMist2 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/2.webp";
-import NovaCar1 from "../../asset/productimg/CMwebpimg/NovaCar Diffuser/1.webp";
-import NovaCar2 from "../../asset/productimg/CMwebpimg/NovaCar Diffuser/2.webp";
-import AeroBlackPro1 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/1.webp";
-import AeroBlackPro2 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/2.webp";
-import AeroCube1 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/1.webp";
-import AeroCube2 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/2.webp";
-import DeskScent1 from "../../asset/productimg/CMwebpimg/DeskScent/1.webp";
-import DeskScent2 from "../../asset/productimg/CMwebpimg/DeskScent/2.webp";
-import ZenBoxMini1 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/1.webp";
-import ZenBoxMini2 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/2.webp";
-import LuxePanel1 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser/1.webp";
-import LuxePanel2 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser/2.webp";
-import CeilAirPro1 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/1.webp";
-import CeilAirPro2 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/2.webp";
-import Titan1 from "../../asset/productimg/CMwebpimg/Titan Diffuser/1.webp";
-import Titan2 from "../../asset/productimg/CMwebpimg/Titan Diffuser/2.webp";
-import AirPulse1501 from "../../asset/productimg/CMwebpimg/AirPulse 150/1.webp";
-import AirPulse1502 from "../../asset/productimg/CMwebpimg/AirPulse 150/2.webp";
-import AeroPillar1 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/1.webp";
-import AeroPillar2 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/2.webp";
-import AirPolePro1 from "../../asset/productimg/CMwebpimg/Air pole Pro Floor Diffuser/1.webp";
-import AirPolePro2 from "../../asset/productimg/CMwebpimg/Air pole Pro Floor Diffuser/2.webp";
-import NanoPillar1 from "../../asset/productimg/CMwebpimg/NanoPillar Diffuser/1.webp";
-import NanoPillar2 from "../../asset/productimg/CMwebpimg/NanoPillar Diffuser/2.webp";
-import NaturalFragrance1 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion/1.webp";
-import NaturalFragrance2 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion/2.webp";
+
+// 1. Vento Car (H11-B-2026)
 import VentoCar1 from "../../asset/productimg/CMwebpimg/VentoCar/1.webp";
 import VentoCar2 from "../../asset/productimg/CMwebpimg/VentoCar/2.webp";
 
+// 2. DriveScent (H11-A-2026)
+import DriveScent1 from "../../asset/productimg/CMwebpimg/DriveScent/1.webp";
+import DriveScent2 from "../../asset/productimg/CMwebpimg/DriveScent/2.webp";
+
+// 3. DeskScent (H19)
+import DeskScent1 from "../../asset/productimg/CMwebpimg/DeskScent/1.webp";
+import DeskScent2 from "../../asset/productimg/CMwebpimg/DeskScent/2.webp";
+
+// 4. NovaCarDiffuser (DA1004-2026)
+import NovaCar1 from "../../asset/productimg/CMwebpimg/NovaCar Diffuser/1.webp";
+import NovaCar2 from "../../asset/productimg/CMwebpimg/NovaCar Diffuser/2.webp";
+
+// 5. AeroBlack Med diffuser (Q500)
+import AeroBlackMed1 from "../../asset/productimg/CMwebpimg/AeroBlack Med diffuser/1.webp";
+import AeroBlackMed2 from "../../asset/productimg/CMwebpimg/AeroBlack Med diffuser/2.webp";
+
+// 6. MistBox X Diffuser (OV-10)
+import MistBoxX1 from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/1.webp";
+import MistBoxX2 from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/2.webp";
+
+// 7. AeroCube Diffuser (M41-B)
+import AeroCube1 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/1.webp";
+import AeroCube2 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/2.webp";
+
+// 8. ZenBox Mini Diffuser (D50mini)
+import ZenBoxMini1 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/1.webp";
+import ZenBoxMini2 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/2.webp";
+
+// 9. AromaDesk (H10-A-2026)
+import AromaDesk1 from "../../asset/productimg/CMwebpimg/AromaDesk/1.webp";
+import AromaDesk2 from "../../asset/productimg/CMwebpimg/AromaDesk/2.webp";
+
+// 10. LuxePanel Diffuser (OV-5/5Pro)
+import LuxePanel1 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser wtc/1.webp";
+import LuxePanel2 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser wtc/2.webp";
+
+// 11. OpalMist Clock Diffuser (U2)
+import OpalMist1 from "../../asset/productimg/CMwebpimg/OpalMist Clock Diffuser/1.webp";
+import OpalMist2 from "../../asset/productimg/CMwebpimg/OpalMist Clock Diffuser/2.webp";
+
+// 12. NanoPillar Diffuser (A500)
+import NanoPillar1 from "../../asset/productimg/CMwebpimg/NanoPillar Diffuser/1.webp";
+import NanoPillar2 from "../../asset/productimg/CMwebpimg/NanoPillar Diffuser/2.webp";
+
+// 13. Titan Diffuser (A700)
+import Titan1 from "../../asset/productimg/CMwebpimg/Titan Diffuser/1.webp";
+import Titan2 from "../../asset/productimg/CMwebpimg/Titan Diffuser/2.webp";
+
+// 14. AeroPillar Diffuser (F-Air)
+import AeroPillar1 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/1.webp";
+import AeroPillar2 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/2.webp";
+
+// 15. AirPole Pro Diffuser (G-Air)
+import AirPolePro1 from "../../asset/productimg/CMwebpimg/Air pole Pro Floor Diffuser/1.webp";
+import AirPolePro2 from "../../asset/productimg/CMwebpimg/Air pole Pro Floor Diffuser/2.webp";
+
+// 16. AeroBlack Pro Diffuser (Q3000Pro)
+import AeroBlackPro1 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/1.webp";
+import AeroBlackPro2 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/2.webp";
+
+// 17. AirPulse 150 (VS-160)
+import AirPulse1501 from "../../asset/productimg/CMwebpimg/AirPulse 150/1.webp";
+import AirPulse1502 from "../../asset/productimg/CMwebpimg/AirPulse 150/2.webp";
+
+// 18. Natural Fragrance Diffusion (M10)
+import NaturalFragrance1 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/1.webp";
+import NaturalFragrance2 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/2.webp";
+
+// 19. CeilAir Pro Diffuser (M45)
+import CeilAirPro1 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/1.webp";
+import CeilAirPro2 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/2.webp";
+
+// 20. AeroMax Pro (A315L)
+import AeroMaxPro1 from "../../asset/productimg/CMwebpimg/AeroMax Pro/1.webp";
+import AeroMaxPro2 from "../../asset/productimg/CMwebpimg/AeroMax Pro/2.webp";
+
 const productList = [
-  { id: 1, name: "DriveScent", model: "H11-A", cat: "Car Aroma Diffusers", path: "/product/drivemist", images: [DriveMist1, DriveMist2] },
-  { id: 2, name: "NovaCar Diffuser", model: "DA1004", cat: "Car Aroma Diffusers", path: "/product/novacar", images: [NovaCar1, NovaCar2] },
-  { id: 3, name: "AutoLux Aroma", model: "H19", cat: "Car Aroma Diffusers", path: "/product/autolux", images: [AeroBlackPro2, AeroBlackPro1] },
-  { id: 4, name: "VentoCar Pro", model: "V-2026", cat: "Car Aroma Diffusers", path: "/product/ventocar", images: [VentoCar1, VentoCar2] },
-  { id: 5, name: "OpalMist Clock", model: "U2", cat: "Desktop & Small Space", path: "/product/opalmist", images: [AeroCube1, AeroCube2] },
-  { id: 6, name: "AromaDesk", model: "H10-A", cat: "Desktop & Small Space", path: "/product/deskmist", images: [DeskScent1, DeskScent2] },
-  { id: 7, name: "ZenBox Mini", model: "D50mini", cat: "Desktop & Small Space", path: "/product/zenbox-mini", images: [ZenBoxMini1, ZenBoxMini2] },
-  { id: 8, name: "LuxePanel Smart", model: "OV-5", cat: "Desktop & Small Space", path: "/product/luxepanel", images: [LuxePanel1, LuxePanel2] },
-  { id: 9, name: "CeilAir Pro Aroma", model: "M45", cat: "Wall-Mounted & Ceiling", path: "/product/ceilair", images: [CeilAirPro1, CeilAirPro2] },
-  { id: 10, name: "AeroBlack Med", model: "Q500", cat: "Commercial Aroma Diffusers", path: "/product/aeroblack-med", images: [Titan1, Titan2] },
-  { id: 11, name: "MistBox X", model: "OV-10", cat: "Commercial Aroma Diffusers", path: "/product/mistbox", images: [AeroBlackPro1, AeroBlackPro2] },
-  { id: 12, name: "AirPulse 150 HVAC", model: "VS-160", cat: "Large Area & HVAC", path: "/product/airpulse", images: [AirPulse1501, AirPulse1502] },
-  { id: 13, name: "AeroPillar Floor", model: "F-Air", cat: "Floor-Standing Aroma Diffusers", path: "/product/aeropillar", images: [AeroPillar1, AeroPillar2] },
-  { id: 14, name: "AirPole Pro Floor", model: "G-Air", cat: "Floor-Standing Aroma Diffusers", path: "/product/airpole", images: [AirPolePro1, AirPolePro2] },
-  { id: 15, name: "NanoPillar Diffuser", model: "A500", cat: "Floor-Standing Aroma Diffusers", path: "/product/nanopillar", images: [NanoPillar1, NanoPillar2] },
-  { id: 16, name: "NaturalFlow Passive", model: "M10", cat: "Passive / No-Power", path: "/product/naturalflow", images: [NaturalFragrance1, NaturalFragrance2] },
-  { id: 17, name: "AeroCube Pro", model: "M41-B", cat: "Desktop & Small Space", path: "/product/aerocube", images: [AeroCube2, AeroCube1] },
-  { id: 18, name: "Titan Industrial", model: "A700", cat: "Floor-Standing Aroma Diffusers", path: "/product/titan", images: [Titan2, Titan1] },
-  { id: 19, name: "CeilAir Elite", model: "M41", cat: "Wall-Mounted & Ceiling", path: "/product/ceilair-elite", images: [CeilAirPro2, CeilAirPro1] },
-  { id: 20, name: "MistBox XL", model: "OV-20", cat: "Commercial Aroma Diffusers", path: "/product/mistbox-xl", images: [AeroBlackPro2, AirPulse1501] },
+  // --- CAR AROMA DIFFUSERS ---
+  { id: 1, name: "Vento Car", model: "H11-B-2026", cat: "Car Aroma Diffusers", path: "/product/ventocar", images: [VentoCar1, VentoCar2] },
+  { id: 2, name: "DriveScent", model: "H11-A-2026", cat: "Car Aroma Diffusers", path: "/product/drivemist", images: [DriveScent1, DriveScent2] },
+  { id: 3, name: "DeskScent", model: "H19", cat: "Car Aroma Diffusers", path: "/product/autolux", images: [DeskScent1, DeskScent2] },
+  { id: 4, name: "NovaCarDiffuser", model: "DA1004-2026", cat: "Car Aroma Diffusers", path: "/product/novacar", images: [NovaCar1, NovaCar2] },
+
+  // --- COMMERCIAL AROMA DIFFUSERS ---
+  { id: 5, name: "AeroBlack Med diffuser", model: "Q500", cat: "Commercial Aroma Diffusers", path: "/product/aeroblack-med", images: [AeroBlackMed1, AeroBlackMed2] },
+  { id: 6, name: "MistBox X Diffuser", model: "OV-10", cat: "Commercial Aroma Diffusers", path: "/product/mistbox", images: [MistBoxX1, MistBoxX2] },
+
+  // --- DESKTOP & SMALL SPACE AROMA DIFFUSERS ---
+  { id: 7, name: "AeroCube Diffuser", model: "M41-B", cat: "Desktop & Small Space Aroma Diffusers", path: "/product/aerocube", images: [AeroCube1, AeroCube2] },
+  { id: 8, name: "ZenBox Mini Diffuser", model: "D50mini", cat: "Desktop & Small Space Aroma Diffusers", path: "/product/zenbox-mini", images: [ZenBoxMini1, ZenBoxMini2] },
+  { id: 9, name: "AromaDesk", model: "H10-A-2026", cat: "Desktop & Small Space Aroma Diffusers", path: "/product/deskmist", images: [AromaDesk1, AromaDesk2] },
+  { id: 10, name: "LuxePanel Diffuser", model: "OV-5/5Pro", cat: "Desktop & Small Space Aroma Diffusers", path: "/product/luxepanel", images: [LuxePanel1, LuxePanel2] },
+  { id: 11, name: "OpalMist Clock Diffuser", model: "U2", cat: "Desktop & Small Space Aroma Diffusers", path: "/product/opalmist", images: [OpalMist1, OpalMist2] },
+
+  // --- FLOOR-STANDING AROMA DIFFUSERS ---
+  { id: 12, name: "NanoPillar Diffuser", model: "A500", cat: "Floor-Standing Aroma Diffusers", path: "/product/nanopillar", images: [NanoPillar1, NanoPillar2] },
+  { id: 13, name: "Titan Diffuser", model: "A700", cat: "Floor-Standing Aroma Diffusers", path: "/product/titan", images: [Titan1, Titan2] },
+  { id: 14, name: "AeroPillar Diffuser", model: "F-Air", cat: "Floor-Standing Aroma Diffusers", path: "/product/aeropillar", images: [AeroPillar1, AeroPillar2] },
+  { id: 15, name: "AirPole Pro Diffuser", model: "G-Air", cat: "Floor-Standing Aroma Diffusers", path: "/product/airpole", images: [AirPolePro1, AirPolePro2] },
+
+  // --- LARGE AREA & HVAC AROMA DIFFUSERS ---
+  { id: 16, name: "AeroBlack Pro Diffuser", model: "Q3000Pro", cat: "Large Area & HVAC Aroma Diffusers", path: "/product/aeroblack-pro", images: [AeroBlackPro1, AeroBlackPro2] },
+  { id: 17, name: "AirPulse 150", model: "VS-160", cat: "Large Area & HVAC Aroma Diffusers", path: "/product/airpulse", images: [AirPulse1501, AirPulse1502] },
+
+  // --- PASSIVE / NO-POWER DIFFUSERS ---
+  { id: 18, name: "Natural Fragrance Diffusion", model: "M10", cat: "Passive / No-Power Diffusers", path: "/product/naturalflow", images: [NaturalFragrance1, NaturalFragrance2] },
+
+  // --- WALL-MOUNTED & CEILING AROMA DIFFUSERS ---
+  { id: 19, name: "CeilAir Pro Diffuser", model: "M45", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/product/ceilair", images: [CeilAirPro1, CeilAirPro2] },
+  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/product/aeromax-pro", images: [AeroMaxPro1, AeroMaxPro2] }
 ];
 
-const categories = ["All Systems", "Car Aroma Diffusers", "Desktop & Small Space", "Wall-Mounted & Ceiling", "Commercial Aroma Diffusers", "Large Area & HVAC", "Floor-Standing Aroma Diffusers", "Passive / No-Power"];
+
+const categories = [
+  "All Systems", 
+  "Commercial Aroma Diffusers", 
+  "Large Area & HVAC Diffusers", 
+  "Car Aroma Diffusers", 
+  "Desktop & Small Space Diffusers", 
+  "Wall-Mounted & Ceiling Diffusers", 
+  "Floor-Standing Aroma Diffusers", 
+  "Passive / No-Power Diffusers"
+];
 
 export default function ArchitectStore() {
   const [activeCat, setActiveCat] = useState("All Systems");
@@ -191,7 +264,7 @@ function ProductCard({ product }) {
             </div>
         </div>
 
-        {/* REDIRECT LINK - Visible on hover on desktop, always there but styled for touch on mobile */}
+        {/* REDIRECT LINK */}
         <Link 
           to={product.path} 
           className="absolute bottom-2 right-2 lg:bottom-5 lg:right-5 w-7 h-7 lg:w-11 lg:h-11 bg-slate-900 text-white rounded-full flex items-center justify-center lg:opacity-0 lg:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 hover:bg-blue-600 z-10 shadow-lg"

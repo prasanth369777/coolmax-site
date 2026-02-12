@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet"; // Added for SEO Meta implementation
 import { 
   WrenchScrewdriverIcon, 
   ArrowPathIcon, 
@@ -21,12 +22,26 @@ import HeroImg from "../../asset/productimg/CMwebpimg/AirPulse 150/1.webp";
 import FeatureImg1 from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/1.webp"; 
 import FeatureImg2 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/2.webp"; 
 
+/**
+ * Primary Keyword: Maintenance & Refill Support Services in UAE
+ * Meta Title: Maintenance & Refill Support Services in UAE | Cool Max
+ * Meta Description: Maintenance and refill support services in UAE for scent and hygiene systems. Reliable servicing, fragrance refills, and HVAC diffuser maintenance by Cool Max.
+ * URL: https://coolmaxscent.com/maintenance-and-refill-support-services
+ */
+
 export default function MaintenancePage() {
   const whatsappNumber = "971522286401";
 
   return (
-    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-emerald-100 overflow-x-hidden">
+    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-emerald-100 overflow-x-hidden text-left">
       
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <title>Maintenance & Refill Support Services in UAE | Cool Max</title>
+        <meta name="description" content="Maintenance and refill support services in UAE for scent and hygiene systems. Reliable servicing, fragrance refills, and HVAC diffuser maintenance by Cool Max." />
+        <link rel="canonical" href="https://coolmaxscent.com/maintenance-and-refill-support-services" />
+      </Helmet>
+
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-full lg:w-[1000px] h-[1000px] bg-slate-100/50 rounded-full blur-[150px]" />
@@ -95,7 +110,7 @@ export default function MaintenancePage() {
         </section>
 
         {/* ================= SECTION 1: INTRO ================= */}
-        <section className="py-16 border-t border-slate-100" id="explore">
+        <section className="py-16 border-t border-slate-100 text-left" id="explore">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -105,7 +120,7 @@ export default function MaintenancePage() {
             <p className="first-letter:text-6xl md:first-letter:text-7xl first-letter:font-serif first-letter:text-emerald-600 first-letter:float-left first-letter:mr-4 first-letter:leading-none text-justify">
               Installing a scent system is only the first step. To maintain consistent fragrance quality, system performance, and hygiene standards, regular maintenance and timely refilling are essential. At Cool Max Scent, we provide professional maintenance and refill support services in UAE to ensure your scent diffuser machines, commercial scent machines, and hygiene systems operate reliably every day.
             </p>
-            <div className="p-6 bg-slate-50 border-l-4 border-emerald-600 rounded-r-2xl shadow-sm">
+            <div className="p-6 bg-slate-50 border-l-4 border-emerald-600 rounded-r-2xl shadow-sm text-left">
               <p className="italic text-slate-500 font-light text-sm md:text-base">
                 Our maintenance and refill programs are designed for businesses that value consistency, efficiency, and peace of mind. Whether you use a home scent diffuser, a commercial scent diffuser, or an HVAC scent diffuser, Cool Max ensures your system continues to deliver the right fragrance at the right intensity—without disruption.
               </p>
@@ -114,7 +129,7 @@ export default function MaintenancePage() {
         </section>
 
         {/* ================= SECTION 2: WHY IT MATTERS ================= */}
-        <section className="py-16">
+        <section className="py-16 text-left">
           <div className="bg-slate-50 border border-slate-100 rounded-[3rem] p-8 md:p-16 overflow-hidden relative shadow-sm text-left">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
               <motion.div 
@@ -163,7 +178,7 @@ export default function MaintenancePage() {
         </section>
 
         {/* ================= SECTION 3: WHAT IS IT? ================= */}
-        <section className="py-16">
+        <section className="py-16 text-left">
           <div className="grid lg:grid-cols-12 gap-8 items-center text-left">
             <div className="lg:col-span-5 hidden lg:block">
                 <motion.div 
@@ -176,10 +191,10 @@ export default function MaintenancePage() {
                 </motion.div>
             </div>
 
-            <div className="lg:col-span-7">
+            <div className="lg:col-span-7 text-left">
                 <div className="mb-8">
                     <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-4 tracking-tighter leading-none">What Is Maintenance & Refill Support?</h2>
-                    <p className="text-slate-500 text-base md:text-lg font-light leading-relaxed max-w-xl">
+                    <p className="text-slate-500 text-base md:text-lg font-light leading-relaxed max-w-xl text-left">
                       Maintenance and refill support involves ongoing service care for scent and hygiene systems. At Cool Max, we offer structured maintenance programs designed to suit different environments and usage levels.
                     </p>
                 </div>
@@ -197,7 +212,7 @@ export default function MaintenancePage() {
                         className="flex items-center gap-4 p-4 bg-slate-50 border border-slate-100 hover:border-emerald-200 rounded-[2rem] transition-all duration-300 shadow-sm"
                     >
                         <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
-                           <CheckBadgeIcon className="w-5 h-5 text-emerald-600" />
+                            <CheckBadgeIcon className="w-5 h-5 text-emerald-600" />
                         </div>
                         <span className="text-slate-700 text-sm md:text-base font-medium">{item}</span>
                     </motion.div>
@@ -208,10 +223,10 @@ export default function MaintenancePage() {
         </section>
 
         {/* ================= SECTION 4: OUR SERVICES ================= */}
-        <section className="py-16 border-t border-slate-100">
+        <section className="py-16 border-t border-slate-100 text-left">
           <div className="mb-12 text-center max-w-4xl mx-auto">
-            <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-emerald-600 mb-4">Our Maintenance & Refill Support Services</h2>
-            <h3 className="text-3xl md:text-6xl font-serif text-slate-900 tracking-tighter leading-none">Comprehensive System Care</h3>
+            <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-emerald-600 mb-4 text-center">Our Maintenance & Refill Support Services</h2>
+            <h3 className="text-3xl md:text-6xl font-serif text-slate-900 tracking-tighter leading-none text-center">Comprehensive System Care</h3>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -230,15 +245,15 @@ export default function MaintenancePage() {
                 <div className="w-12 h-12 bg-white text-emerald-600 flex items-center justify-center rounded-xl mb-6 shadow-sm border border-slate-100 group-hover:bg-emerald-600 group-hover:text-white transition-all">
                   {React.cloneElement(srv.icon, { className: "w-6 h-6" })}
                 </div>
-                <h3 className="text-base font-black uppercase tracking-tight text-slate-900 mb-3 font-sans leading-tight">{srv.title}</h3>
-                <p className="text-xs text-slate-500 leading-relaxed font-light">{srv.desc}</p>
+                <h3 className="text-base font-black uppercase tracking-tight text-slate-900 mb-3 font-sans leading-tight text-left">{srv.title}</h3>
+                <p className="text-xs text-slate-500 leading-relaxed font-light text-left">{srv.desc}</p>
               </motion.div>
             ))}
           </div>
         </section>
 
         {/* ================= SECTION 5: SYSTEMS COVERED ================= */}
-        <section className="py-16">
+        <section className="py-16 text-left">
           <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center">Systems Covered Under Our Maintenance Support</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             {[
@@ -248,21 +263,21 @@ export default function MaintenancePage() {
               { title: "Home & Personal Space Diffusers", icon: <HomeIcon />, desc: "We also support home diffuser machines and scent machines for home, ensuring reliable performance." },
               { title: "Washroom Hygiene Systems", icon: <ShieldCheckIcon />, desc: "Our services include maintenance of washroom air freshening and hygiene systems in high-traffic areas." },
             ].map((sys, i) => (
-              <div key={i} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] flex flex-col hover:bg-white transition-all group shadow-sm">
+              <div key={i} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] flex flex-col hover:bg-white transition-all group shadow-sm text-left">
                 <div className="w-10 h-10 text-emerald-600 mb-6 group-hover:scale-110 transition-transform">
                    {React.cloneElement(sys.icon, { className: "w-full h-full" })}
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2 font-serif">{sys.title}</h3>
-                <p className="text-xs text-slate-500 leading-relaxed font-light">{sys.desc}</p>
+                <h3 className="text-lg font-bold text-slate-900 mb-2 font-serif text-left">{sys.title}</h3>
+                <p className="text-xs text-slate-500 leading-relaxed font-light text-left">{sys.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* ================= SECTION 6: PROCESS ================= */}
-        <section className="py-16 border-t border-slate-100">
+        <section className="py-16 border-t border-slate-100 text-left">
           <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-12 tracking-tighter text-center leading-none">How Our Maintenance Process Works</h2>
-          <div className="max-w-4xl mx-auto space-y-4">
+          <div className="max-w-4xl mx-auto space-y-4 text-left">
             {[
               { step: "Step 1", title: "Service Scheduling", desc: "We plan maintenance visits based on usage levels and client requirements." },
               { step: "Step 2", title: "On-Site Inspection", desc: "Our technicians inspect the scent air machine, check oil levels, and review system performance." },
@@ -272,12 +287,12 @@ export default function MaintenancePage() {
             ].map((proc, idx) => (
               <motion.div 
                 key={idx} 
-                className="flex flex-col md:flex-row gap-6 md:gap-10 items-center p-8 rounded-[2.5rem] border border-slate-100 bg-slate-50 hover:bg-white hover:border-emerald-200 transition-all group shadow-sm"
+                className="flex flex-col md:flex-row gap-6 md:gap-10 items-center p-8 rounded-[2.5rem] border border-slate-100 bg-slate-50 hover:bg-white hover:border-emerald-200 transition-all group shadow-sm text-left"
               >
-                <span className="text-4xl md:text-6xl font-serif text-slate-200 group-hover:text-emerald-100 transition-colors duration-500">{proc.step}</span>
-                <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-xl font-black uppercase tracking-tight text-slate-900 mb-1">{proc.title}</h3>
-                  <p className="text-sm md:text-base text-slate-500 font-light">{proc.desc}</p>
+                <span className="text-4xl md:text-6xl font-serif text-slate-200 group-hover:text-emerald-100 transition-colors duration-500 text-left">{proc.step}</span>
+                <div className="flex-1 text-center md:text-left text-left">
+                  <h3 className="text-xl font-black uppercase tracking-tight text-slate-900 mb-1 text-left">{proc.title}</h3>
+                  <p className="text-sm md:text-base text-slate-500 font-light text-left">{proc.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -285,95 +300,95 @@ export default function MaintenancePage() {
         </section>
 
         {/* ================= SECTION 7/8/9: PLANS & WHY CHOOSE ================= */}
-        <section className="py-16">
+        <section className="py-16 text-left">
           <div className="grid md:grid-cols-2 gap-8 text-left">
-            <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100 shadow-sm">
-               <h2 className="text-3xl font-serif text-slate-900 mb-6">Maintenance Plans</h2>
-               <div className="space-y-6">
-                  <div>
-                    <h3 className="text-base font-bold text-emerald-600 mb-1">Monthly Service Plans</h3>
-                    <p className="text-sm text-slate-500 leading-relaxed">Ideal for high-traffic environments such as malls, hotels, and hospitals.</p>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-emerald-600 mb-1">Quarterly Service Plans</h3>
-                    <p className="text-sm text-slate-500 leading-relaxed">Suitable for offices, clinics, and medium-use facilities.</p>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-emerald-600 mb-1">Customized Maintenance Schedules</h3>
-                    <p className="text-sm text-slate-500 leading-relaxed">We tailor service frequency based on space size, usage, and system type.</p>
-                  </div>
+            <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100 shadow-sm text-left">
+               <h2 className="text-3xl font-serif text-slate-900 mb-6 text-left">Maintenance Plans</h2>
+               <div className="space-y-6 text-left">
+                 <div className="text-left">
+                   <h3 className="text-base font-bold text-emerald-600 mb-1 text-left">Monthly Service Plans</h3>
+                   <p className="text-sm text-slate-500 leading-relaxed text-left">Ideal for high-traffic environments such as malls, hotels, and hospitals.</p>
+                 </div>
+                 <div className="text-left">
+                   <h3 className="text-base font-bold text-emerald-600 mb-1 text-left">Quarterly Service Plans</h3>
+                   <p className="text-sm text-slate-500 leading-relaxed text-left">Suitable for offices, clinics, and medium-use facilities.</p>
+                 </div>
+                 <div className="text-left">
+                   <h3 className="text-base font-bold text-emerald-600 mb-1 text-left">Customized Maintenance Schedules</h3>
+                   <p className="text-sm text-slate-500 leading-relaxed text-left">We tailor service frequency based on space size, usage, and system type.</p>
+                 </div>
                </div>
-               <p className="mt-8 text-sm text-slate-400 italic">Our flexible plans ensure businesses pay only for what they need.</p>
+               <p className="mt-8 text-sm text-slate-400 italic text-left">Our flexible plans ensure businesses pay only for what they need.</p>
             </div>
 
-            <div className="p-10 bg-slate-900 rounded-[3rem] text-white overflow-hidden relative">
+            <div className="p-10 bg-slate-900 rounded-[3rem] text-white overflow-hidden relative text-left shadow-xl">
                <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-600/10 blur-[80px]" />
-               <h2 className="text-3xl font-serif mb-8 relative z-10">Why Choose Cool Max Support?</h2>
-               <ul className="space-y-4 relative z-10">
-                  {[
-                    "UAE-based service team",
-                    "Experience across multiple industries",
-                    "Support for all scent machine for business types",
-                    "Reliable refill scheduling",
-                    "Transparent service process"
-                  ].map((point, i) => (
-                    <li key={i} className="flex items-center gap-4">
-                      <ShieldCheckIcon className="w-6 h-6 text-emerald-400 flex-shrink-0" />
-                      <span className="text-slate-300 font-medium text-sm">{point}</span>
-                    </li>
-                  ))}
+               <h2 className="text-3xl font-serif mb-8 relative z-10 text-left">Why Choose Cool Max Support?</h2>
+               <ul className="space-y-4 relative z-10 text-left">
+                 {[
+                   "UAE-based service team",
+                   "Experience across multiple industries",
+                   "Support for all scent machine for business types",
+                   "Reliable refill scheduling",
+                   "Transparent service process"
+                 ].map((point, i) => (
+                   <li key={i} className="flex items-center gap-4 text-left">
+                     <ShieldCheckIcon className="w-6 h-6 text-emerald-400 flex-shrink-0" />
+                     <span className="text-slate-300 font-medium text-sm text-left">{point}</span>
+                   </li>
+                 ))}
                </ul>
-               <p className="mt-8 text-emerald-400 font-serif italic text-lg relative z-10">"We focus on long-term partnerships, not one-time installations."</p>
+               <p className="mt-8 text-emerald-400 font-serif italic text-lg relative z-10 text-left text-justify">"We focus on long-term partnerships, not one-time installations."</p>
             </div>
           </div>
         </section>
 
         {/* ================= SECTION 10/11: CONSIDERATIONS ================= */}
         <section className="py-16 text-center">
-           <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-none">When Should You Consider Professional Support?</h2>
-           <div className="flex flex-wrap justify-center gap-4 mb-16">
-              {[
-                "Fragrance intensity has reduced",
-                "Systems are operating inconsistently",
-                "Manual refills are becoming inconvenient",
-                "Hygiene standards are critical",
-                "You want predictable service and cost control"
-              ].map((q, i) => (
-                <div key={i} className="px-6 py-4 bg-slate-50 border border-slate-100 rounded-full shadow-sm text-slate-700 text-sm font-bold">
-                  {q}
-                </div>
-              ))}
+           <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-none text-center">When Should You Consider Professional Support?</h2>
+           <div className="flex flex-wrap justify-center gap-4 mb-16 text-center">
+             {[
+               "Fragrance intensity has reduced",
+               "Systems are operating inconsistently",
+               "Manual refills are becoming inconvenient",
+               "Hygiene standards are critical",
+               "You want predictable service and cost control"
+             ].map((q, i) => (
+               <div key={i} className="px-6 py-4 bg-slate-50 border border-slate-100 rounded-full shadow-sm text-slate-700 text-sm font-bold text-center">
+                 {q}
+               </div>
+             ))}
            </div>
 
-           <div className="max-w-4xl mx-auto p-10 bg-emerald-50 rounded-[3rem] border border-emerald-100">
-              <h3 className="text-2xl md:text-4xl font-serif text-emerald-900 mb-6">Supporting Your Brand Through Consistent Scenting</h3>
-              <p className="text-emerald-800 leading-relaxed font-light">
-                A scent system is part of your environment identity. With proper maintenance, your home fragrance system, commercial scent machine, or HVAC scent diffuser continues to support comfort, hygiene, and brand perception. Cool Max ensures your scenting investment delivers long-term value.
-              </p>
+           <div className="max-w-4xl mx-auto p-10 bg-emerald-50 rounded-[3rem] border border-emerald-100 text-left">
+             <h3 className="text-2xl md:text-4xl font-serif text-emerald-900 mb-6 text-left">Supporting Your Brand Through Consistent Scenting</h3>
+             <p className="text-emerald-800 leading-relaxed font-light text-left text-justify">
+               A scent system is part of your environment identity. With proper maintenance, your home fragrance system, commercial scent machine, or HVAC scent diffuser continues to support comfort, hygiene, and brand perception. Cool Max ensures your scenting investment delivers long-term value.
+             </p>
            </div>
         </section>
 
         {/* ================= SECTION 12: MASTER CTA ================= */}
-        <section className="py-24 text-center relative px-4">
-          <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-5xl mx-auto relative z-10">
-            <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tighter leading-none">
-              Let’s Keep Your Scent Systems <br /> <span className="italic text-emerald-600 font-light">Running Smoothly</span>
+        <section className="py-24 text-center relative px-4 text-center">
+          <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-5xl mx-auto relative z-10 text-center">
+            <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-center">
+              Let’s Keep Your Scent Systems <br /> <span className="italic text-emerald-600 font-light text-center">Running Smoothly</span>
             </h2>
-            <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
+            <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center font-sans">
               Whether you manage a hotel, office, hospital, school, or commercial facility, Cool Max provides dependable maintenance and refill support services in UAE to keep your scent and hygiene systems operating at their best.
             </p>
             
-            <p className="text-sm font-black uppercase text-emerald-600 tracking-widest mb-8">Looking for reliable maintenance and refill support in UAE?</p>
+            <p className="text-sm font-black uppercase text-emerald-600 tracking-widest mb-8 text-center">Looking for reliable maintenance and refill support in UAE?</p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="/contact" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-emerald-600 transition-all shadow-xl flex items-center justify-center gap-3">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+              <a href="/contact" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-emerald-600 transition-all shadow-xl flex items-center justify-center gap-3 font-sans">
                 Contact Today <ArrowRightIcon className="w-4 h-4"/>
               </a>
               <a 
                 href={`https://wa.me/${whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3"
+                className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3 font-sans"
               >
                 <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Support
               </a>

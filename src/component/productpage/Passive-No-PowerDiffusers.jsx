@@ -14,9 +14,9 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- CORRECT IMAGE IMPORTS MAPPED TO PRODUCTS ---
-import HeroImg from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion/1.webp"; 
-import Product1 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion/2.webp"; 
-import FeatureImg from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion/4.webp"; 
+import HeroImg from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/1.webp"; 
+import Product1 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/2.webp"; 
+import FeatureImg from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/4.webp"; 
 
 // Optimized animation settings
 const smoothFadeUp = {

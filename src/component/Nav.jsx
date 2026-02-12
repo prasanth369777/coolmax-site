@@ -20,11 +20,11 @@ const navigation = [
     type: "dropdown",
     cols: 2,
     items: [
+       { label: "Commercial Diffusers", href: "/commercial-diffusers" },
+        { label: "Large Area & HVAC", href: "/large-area-diffusers" },
       { label: "Car Aroma Diffusers", href: "/car-diffusers" },
       { label: "Desktop & Small Space", href: "/desktop-small-diffusers" },
       { label: "Wall-Mounted & Ceiling", href: "/wall-mounted-diffusers" },
-      { label: "Commercial Diffusers", href: "/commercial-diffusers" },
-      { label: "Large Area & HVAC", href: "/large-area-diffusers" },
       { label: "Floor-Standing Diffusers", href: "/floor-standing-diffusers" },
       { label: "Passive/No-Power", href: "/passive-diffusers" },
     ],
@@ -45,7 +45,7 @@ const navigation = [
     ],
   },
   {
-    name: "Solutions",
+    name: "Solution",
     href: "/solution",
     type: "dropdown",
     cols: 1,

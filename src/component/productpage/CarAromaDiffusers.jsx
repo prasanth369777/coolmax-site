@@ -16,12 +16,19 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- PRODUCT IMAGES ---
-import DriveMistHero from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/1.webp"; 
-import DriveMistProduct from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/2.webp"; 
+import DriveMistHero from "../../asset/productimg/CMwebpimg//AeroMax Pro/1.webp"; 
+import DriveMistProduct from "../../asset/productimg/CMwebpimg/AeroMax Pro/2.webp"; 
 import VentoCarProduct from "../../asset/productimg/CMwebpimg/VentoCar/1.webp"; 
 import DeskScentProduct from "../../asset/productimg/CMwebpimg/DeskScent/1.webp"; 
 import NovaCarProduct from "../../asset/productimg/CMwebpimg/NovaCar Diffuser/1.webp"; 
 import FeatureImg from "../../asset/productimg/CMwebpimg/VentoCar/4.webp"; 
+
+/**
+ * Meta Data for SEO:
+ * Title: Car Aroma Diffusers in UAE | Cool Max Scent
+ * Description: Discover premium car aroma diffusers in UAE for personal and commercial vehicles. Compact, safe, and long-lasting scent solutions by Cool Max.
+ * URL: https://coolmaxscent.com/car-aroma-diffusers
+ */
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -263,9 +270,9 @@ export default function CarAromaDiffusersPage() {
         <section className="py-16 text-center">
            <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter">Related Scenting Solutions</h2>
            <div className="flex flex-wrap justify-center gap-6">
-              {["Car & Personal Space Scenting Solutions", "Desktop & Small Space Aroma Diffusers", "Maintenance & Refill Support"].map((sol, i) => (
-                <div key={i} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer">{sol}</div>
-              ))}
+             {["Car & Personal Space Scenting Solutions", "Desktop & Small Space Aroma Diffusers", "Maintenance & Refill Support"].map((sol, i) => (
+               <div key={i} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer">{sol}</div>
+             ))}
            </div>
            <p className="mt-8 text-slate-400 text-sm">These solutions help maintain freshness across all environments.</p>
         </section>

@@ -14,10 +14,10 @@ import {
 } from "@heroicons/react/24/outline";
 
 /* ================= IMAGE ASSETS ================= */
-import NaturalFragrance1 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion/1.webp";
-import NaturalFragrance2 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion/2.webp";
-import NaturalFragrance3 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion/3.webp";
-import NaturalFragrance4 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion/4.webp";
+import NaturalFragrance1 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/1.webp";
+import NaturalFragrance2 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/2.webp";
+import NaturalFragrance3 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/3.webp";
+import NaturalFragrance4 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/4.webp";
 
 const NaturalFragrancePage = () => {
   const [activeImg, setActiveImg] = useState(NaturalFragrance1);

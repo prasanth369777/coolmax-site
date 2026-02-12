@@ -15,7 +15,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORT ---
-import P8 from "../../../asset/productimg/CMwebpimg/AromaDesk LuxePanel/4.webp"; 
+import P8 from "../../../asset/productimg/CMwebpimg/AromaDesk/2.webp"; 
 
 const FloralAromaOilDetail = () => {
   // Redirection Links

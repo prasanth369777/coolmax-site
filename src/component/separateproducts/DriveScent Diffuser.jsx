@@ -16,14 +16,17 @@ import {
 } from "@heroicons/react/24/outline";
 
 /* ================= IMAGE ASSETS ================= */
-import DriveMist1 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/1.webp";
-import DriveMist2 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/2.webp";
-import DriveMist3 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/3.webp";
-import DriveMist4 from "../../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/4.webp";
+import Aeromax1 from "../../asset/productimg/CMwebpimg/AeroMax Pro/1.webp";
+import Aeromax2 from "../../asset/productimg/CMwebpimg/AeroMax Pro/1.webp"; // Note: Ensure these are unique paths if available
+import Aeromax3 from "../../asset/productimg/CMwebpimg/AeroMax Pro/1.webp";
+import Aeromax4 from "../../asset/productimg/CMwebpimg/AeroMax Pro/1.webp";
+
+// Dummy image for technical section as referenced in original code
+import DriveMist4 from "../../asset/productimg/CMwebpimg/AeroMax Pro/1.webp"; 
 
 const DriveScentPage = () => {
-  const [activeImg, setActiveImg] = useState(DriveMist1);
-  const gallery = [DriveMist1, DriveMist2, DriveMist3, DriveMist4];
+  const gallery = [Aeromax1, Aeromax2, Aeromax3, Aeromax4];
+  const [activeImg, setActiveImg] = useState(gallery[0]);
 
   // Redirection Links
   const whatsappNumber = "971522286401";
@@ -85,9 +88,9 @@ const DriveScentPage = () => {
       <section className="py-16 bg-white px-6">
         <div className="max-w-[1000px] mx-auto text-center">
           <motion.div {...fadeIn}>
-            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight">Product Overview</h2>
-            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light">
-              DriveScent Diffuser is designed for personal scenting, where space is limited but performance still matters. Its compact cylindrical body fits neatly into car cup holders or desktop setups while delivering efficient aroma diffusion without overpowering the space.
+            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Product Overview</h2>
+            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light text-justify md:text-center">
+              DriveScent Diffuser is designed for personal scenting, where space is limited but performance still matters. Its compact cylindrical body fits neatly into car cup holders or desktop setups while delivering efficient aroma diffusion without overpowering the space. 
               With intelligent timed diffusion, a built-in lithium battery, and leak-proof construction, DriveScent Diffuser is ideal for daily use—whether you’re commuting, working, or relaxing.
             </p>
           </motion.div>
@@ -119,17 +122,17 @@ const DriveScentPage = () => {
 
       {/* ================= SECTION 3: DESIGN & BUILD QUALITY ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight">Design & Build Quality</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight text-slate-900">Design & Build Quality</h2>
         
         <div className="grid gap-16">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div className="order-2 md:order-1">
-              <h3 className="text-xl font-serif mb-4">Premium Aluminum Body</h3>
+              <h3 className="text-xl font-serif mb-4 text-slate-900">Premium Aluminum Body</h3>
               <p className="text-sm text-slate-500 leading-relaxed mb-6 font-light">
-                DriveScent Diffuser features an aviation aluminum metal body with a sandblasting finish. This improves surface texture while making the diffuser more resistant to wear, scratches, and daily handling.
+                DriveScent Diffuser features an aviation aluminum metal body with a sandblasting finish. This improves surface texture while making the diffuser more resistant to wear, scratches, and daily handling. 
                 The refined metallic finish gives it a premium look that complements modern car interiors and clean desktop setups.
               </p>
-              <h3 className="text-xl font-serif mb-4">Compact & Minimal Form</h3>
+              <h3 className="text-xl font-serif mb-4 text-slate-900">Compact & Minimal Form</h3>
               <div className="grid grid-cols-2 gap-2">
                 {["Car cup holders", "Office desks", "Home workstations", "Small shelves"].map((li, i) => (
                   <div key={i} className="flex items-center gap-2 text-xs text-slate-600 font-medium p-2 bg-white rounded-lg border border-slate-100 shadow-sm">
@@ -138,18 +141,18 @@ const DriveScentPage = () => {
                 ))}
               </div>
             </div>
-            <div className="rounded-3xl bg-slate-100 p-6 order-1 md:order-2 h-64 flex items-center justify-center">
-               <img src={DriveMist2} alt="DriveScent Design" className="w-full h-full object-contain" />
+            <div className="rounded-3xl bg-slate-100 p-6 order-1 md:order-2 h-64 flex items-center justify-center border border-slate-200 shadow-inner">
+               <img src={Aeromax2} alt="DriveScent Design" className="w-full h-full object-contain" />
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="rounded-3xl bg-slate-100 p-6 h-64 flex items-center justify-center">
-               <img src={DriveMist3} alt="Battery and Power" className="w-full h-full object-contain" />
+            <div className="rounded-3xl bg-slate-100 p-6 h-64 flex items-center justify-center border border-slate-200 shadow-inner">
+               <img src={Aeromax3} alt="Battery and Power" className="w-full h-full object-contain" />
             </div>
             <div>
-              <h3 className="text-xl font-serif mb-4">Battery & Power Performance</h3>
-              <div className="bg-slate-900 text-white p-6 rounded-2xl mb-6">
+              <h3 className="text-xl font-serif mb-4 text-slate-900">Battery & Power Performance</h3>
+              <div className="bg-slate-900 text-white p-6 rounded-2xl mb-6 shadow-xl">
                 <h4 className="text-lg font-serif mb-3 text-blue-400 flex items-center gap-3">
                   <Battery100Icon className="w-6 h-6"/> 2000mAh Battery
                 </h4>
@@ -160,24 +163,24 @@ const DriveScentPage = () => {
                 </div>
               </div>
               
-              <div className="p-4 bg-blue-50 rounded-xl border border-blue-100">
-                <h4 className="font-bold text-blue-900 text-[10px] uppercase tracking-widest mb-3">Timed Spray Cycle</h4>
+              <div className="p-4 bg-blue-50 rounded-xl border border-blue-100 shadow-sm">
+                <h4 className="font-bold text-blue-900 text-[10px] uppercase tracking-widest mb-3 text-center">Timed Spray Cycle</h4>
                 <div className="flex items-center gap-4 text-blue-800">
-                  <div className="flex-1 p-2 bg-white rounded-lg text-center font-black text-xs">15s ON</div>
+                  <div className="flex-1 p-2 bg-white rounded-lg text-center font-black text-xs border border-blue-100">15s ON</div>
                   <ArrowsRightLeftIcon className="w-4 h-4 opacity-30"/>
-                  <div className="flex-1 p-2 bg-white rounded-lg text-center font-black text-xs">200s OFF</div>
+                  <div className="flex-1 p-2 bg-white rounded-lg text-center font-black text-xs border border-blue-100">200s OFF</div>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm">
+            <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow">
               <SpeakerXMarkIcon className="w-8 h-8 text-blue-600 mb-4" />
-              <h3 className="text-lg font-serif mb-2">Quiet Operation</h3>
+              <h3 className="text-lg font-serif mb-2 text-slate-900">Quiet Operation</h3>
               <p className="text-slate-500 text-xs leading-relaxed font-light">With a noise level of ≤40 dB, DriveScent works quietly in the background, ensuring no distraction while driving or working.</p>
             </div>
-            <div className="bg-blue-600 text-white p-8 rounded-[2rem] shadow-xl">
+            <div className="bg-blue-600 text-white p-8 rounded-[2rem] shadow-xl hover:bg-blue-700 transition-colors">
               <ShieldCheckIcon className="w-8 h-8 text-white mb-4" />
               <h3 className="text-lg font-serif mb-2 text-white">Leak-Proof Structure</h3>
               <p className="text-blue-100 text-xs leading-relaxed font-light">Ensures safe usage even on uneven roads. Durable aviation-grade housing protects all internal components.</p>
@@ -223,7 +226,7 @@ const DriveScentPage = () => {
 
       {/* ================= SECTION: APPLICATIONS & HOW IT WORKS ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-center">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12 tracking-tight">Ideal Applications</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 tracking-tight text-slate-900">Ideal Applications</h2>
         <div className="flex flex-wrap justify-center gap-3 mb-20">
           {["Cars & vehicles", "Office desks", "Study rooms", "Compact spaces"].map((item, i) => (
             <span key={i} className="px-6 py-3 bg-white border border-slate-100 rounded-xl shadow-sm text-[10px] font-bold text-slate-700 uppercase tracking-widest">
@@ -232,19 +235,20 @@ const DriveScentPage = () => {
           ))}
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10 items-center text-left bg-slate-900 rounded-[3rem] p-8 md:p-16 text-white">
-          <div>
+        <div className="grid lg:grid-cols-2 gap-10 items-center text-left bg-slate-900 rounded-[3rem] p-8 md:p-16 text-white shadow-2xl overflow-hidden relative">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 blur-[80px]" />
+          <div className="relative z-10">
             <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight">How DriveScent Works</h2>
             <p className="text-slate-400 text-sm leading-relaxed mb-6 font-light">
               DriveScent Diffuser uses fine atomization to convert fragrance oil into micro-sized particles, allowing the scent to disperse evenly in small spaces.
             </p>
-            <div className="space-y-2 text-[10px] font-black uppercase tracking-widest text-blue-400">
+            <div className="space-y-3 text-[10px] font-black uppercase tracking-widest text-blue-400">
                <p className="flex items-center gap-2"><CheckCircleIcon className="w-4 h-4"/> Preserves fragrance quality</p>
                <p className="flex items-center gap-2"><CheckCircleIcon className="w-4 h-4"/> Prevents residue buildup</p>
                <p className="flex items-center gap-2"><CheckCircleIcon className="w-4 h-4"/> Consistent scent intensity</p>
             </div>
           </div>
-          <div className="bg-white/5 p-8 rounded-[2rem] border border-white/10 flex flex-col items-center">
+          <div className="bg-white/5 p-8 rounded-[2rem] border border-white/10 flex flex-col items-center relative z-10 backdrop-blur-sm">
              <BeakerIcon className="w-10 h-10 text-blue-500 mb-6" />
              <img src={DriveMist4} alt="Fine Atomization Technology" className="w-full h-40 object-contain rounded-xl opacity-80" />
           </div>
@@ -253,7 +257,7 @@ const DriveScentPage = () => {
 
       {/* ================= SECTION 7: WHY CHOOSE ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight">Why Choose DriveScent?</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight text-slate-900">Why Choose DriveScent?</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             "Compact and travel-friendly design",
@@ -263,7 +267,7 @@ const DriveScentPage = () => {
             "Quiet and leak-proof operation",
             "Suitable for both cars and desktops"
           ].map((text, i) => (
-            <div key={i} className="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+            <div key={i} className="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm hover:border-blue-200 transition-colors">
               <CheckCircleIcon className="w-6 h-6 text-blue-600 mb-4" />
               <p className="text-slate-700 text-sm font-medium leading-relaxed">{text}</p>
             </div>
@@ -275,7 +279,7 @@ const DriveScentPage = () => {
       <section className="py-16 bg-slate-50 px-6">
         <div className="max-w-[1000px] mx-auto grid lg:grid-cols-2 gap-6 text-left">
           <div className="p-8 bg-white rounded-3xl shadow-sm border border-slate-100">
-            <h4 className="text-lg font-bold mb-4 flex items-center gap-2">
+            <h4 className="text-lg font-bold mb-4 flex items-center gap-2 text-slate-900">
               <WrenchScrewdriverIcon className="w-5 h-5 text-blue-600" /> Maintenance
             </h4>
             <ul className="space-y-2 text-xs text-slate-500 font-light">

@@ -12,6 +12,11 @@ import Hilton from "../asset/clientslogo/hilton.png";
 import UmmAlQuwain from "../asset/clientslogo/umm-al-quwain.png";
 import EmiratesPark from "../asset/clientslogo/emirates-park.png";
 
+// // New Client Imports (Ensure these files exist in your directory)
+// import RetreatPalm from "../asset/clientslogo/retreat-palm.png";
+// import Mercure from "../asset/clientslogo/mercure.png";
+// import PanHome from "../asset/clientslogo/pan-home.png";
+
 /* ================= LOGO ARRAY ================= */
 
 const logos = [
@@ -24,6 +29,9 @@ const logos = [
   Hilton,
   UmmAlQuwain,
   EmiratesPark,
+  // RetreatPalm,
+  // Mercure,
+  // PanHome,
 ];
 
 export default function OurClienteles() {

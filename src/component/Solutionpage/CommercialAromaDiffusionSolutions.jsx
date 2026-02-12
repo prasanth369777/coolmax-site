@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { 
   SparklesIcon, 
   CheckCircleIcon,
   AdjustmentsHorizontalIcon,
-  
   ArrowRightIcon,
   ShieldCheckIcon,
   BoltIcon,
@@ -16,7 +15,6 @@ import {
   UserGroupIcon,
   ClockIcon,
   Cog6ToothIcon,
-  
 } from "@heroicons/react/24/outline";
 
 // --- CORRECT IMAGE IMPORTS MAPPED TO PRODUCTS ---
@@ -26,8 +24,19 @@ import FeatureImg2 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser
 export default function CommercialDiffusersPage() {
   const whatsappNumber = "971522286401";
 
+  // --- SEO Implementation ---
+  useEffect(() => {
+    document.title = "Commercial Aroma Diffusion Solutions in UAE | Cool Max";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Commercial aroma diffusion solutions in UAE for offices, hotels, & healthcare spaces. Explore professional scent diffusers and HVAC aroma systems by Cool Max.");
+    }
+  }, []);
+
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden">
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://coolmaxscent.com/commercial-aroma-diffusion-solutions" />
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -46,24 +55,24 @@ export default function CommercialDiffusersPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 shadow-sm mt-16">
+              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-200 mb-6 shadow-sm mt-16">
                 <SparklesIcon className="w-4 h-4 text-blue-600" />
                 <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.3em]">
-                  Professional Scenting
+                  Commercial Aroma Diffusion Solutions in UAE
                 </span>
               </div>
               
               <h1 className="text-5xl md:text-7xl xl:text-6xl font-serif text-slate-900 tracking-tighter mb-6 leading-[0.95]">
                 Commercial Aroma <br />
-                <span className="italic text-slate-400 font-light pr-2">Diffusers in UAE</span>
+                <span className="italic text-slate-400 font-light pr-2">Diffusion in UAE</span>
               </h1>
               
               <h2 className="text-xl md:text-2xl font-sans text-slate-600 mb-6 font-medium">
                 Professional Scent Diffuser Machines for Offices & Business Spaces
               </h2>
               
-              <p className="text-lg text-slate-500 font-light max-w-xl mb-8 leading-relaxed">
-                Commercial aroma diffusers from Cool Max are designed for professional environments where consistent fragrance, reliability, and controlled diffusion are essential. These scent diffuser machines are suitable for offices, clinics, retail stores, educational institutions, and other medium-sized commercial spaces.
+              <p className="text-lg text-slate-500 font-light max-w-xl mb-8 leading-relaxed text-left">
+                Our Commercial Aroma Diffusion Solutions in UAE from Cool Max are designed for professional environments where consistent fragrance, reliability, and controlled diffusion are essential. Each Commercial Scent Diffuser we provide is suitable for offices, clinics, retail stores, and educational institutions.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -92,7 +101,7 @@ export default function CommercialDiffusersPage() {
               <div className="absolute inset-0 bg-gradient-to-tr from-slate-100 to-white rounded-[3rem] shadow-inner border border-slate-50" />
               <img 
                 src={HeroImg} 
-                alt="Commercial Aroma Diffuser" 
+                alt="Commercial Scent Diffuser Machine" 
                 className="w-full h-auto object-contain relative z-10 drop-shadow-[0_20px_30px_rgba(0,0,0,0.1)]" 
               />
             </motion.div>
@@ -102,30 +111,30 @@ export default function CommercialDiffusersPage() {
         {/* ================= SECTION 1: COLLECTION ================= */}
         <section className="py-16 border-t border-slate-100" id="collection">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-serif text-slate-900 tracking-tighter leading-none">Our Commercial Aroma Diffuser Collection</h2>
-            <p className="mt-4 text-slate-500 max-w-2xl mx-auto font-light">Explore our range of professional aroma diffusers designed for commercial and semi-commercial environments.</p>
+            <h2 className="text-4xl md:text-6xl font-serif text-slate-900 tracking-tighter leading-none text-center">Our Commercial Aroma Diffuser Collection</h2>
+            <p className="mt-4 text-slate-500 max-w-2xl mx-auto font-light text-center">Explore our range of professional aroma diffusers and HVAC Aroma Diffusion Solutions designed for commercial environments.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
             {/* Product 1 */}
             <motion.div whileHover={{ y: -10 }} className="bg-slate-50 rounded-[3rem] overflow-hidden border border-slate-100 shadow-sm flex flex-col">
               <div className="h-80 bg-white m-4 rounded-[2.5rem] flex items-center justify-center p-12">
-                <img src={FeatureImg2} alt="AeroBlack Med" className="max-h-full w-auto object-contain" />
+                <img src={FeatureImg2} alt="AeroBlack Med Commercial Diffuser" className="max-h-full w-auto object-contain" />
               </div>
               <div className="p-10 pt-4 text-left">
                 <h3 className="text-3xl font-serif text-slate-900 mb-4">AeroBlack Med – Commercial Aroma Diffuser</h3>
-                <p className="text-slate-600 mb-6 font-light leading-relaxed">
-                  A reliable commercial scent diffuser designed for continuous use in offices and business interiors. Provides even fragrance distribution without overpowering the space.
+                <p className="text-slate-600 mb-6 font-light leading-relaxed text-left">
+                  A reliable Commercial Scent Diffuser designed for continuous use in offices and business interiors. Provides even fragrance distribution without overpowering the space.
                 </p>
                 <div className="mb-8">
                   <p className="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-3">Best suited for:</p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 text-left">
                     {["Offices", "Clinics", "Training centers", "Corporate spaces"].map((tag, i) => (
                       <span key={i} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs text-slate-500">{tag}</span>
                     ))}
                   </div>
                 </div>
-                <a href="/product/aeroblack-med" className="w-full py-4 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl flex items-center justify-center gap-3 hover:bg-blue-600 transition-all">
+                <a href="/product/aeroblack-med" className="w-full py-4 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl flex items-center justify-center gap-3 hover:bg-blue-600 transition-all shadow-md">
                   View product details <ArrowRightIcon className="w-4 h-4" />
                 </a>
               </div>
@@ -134,22 +143,22 @@ export default function CommercialDiffusersPage() {
             {/* Product 2 */}
             <motion.div whileHover={{ y: -10 }} className="bg-slate-50 rounded-[3rem] overflow-hidden border border-slate-100 shadow-sm flex flex-col">
               <div className="h-80 bg-white m-4 rounded-[2.5rem] flex items-center justify-center p-12">
-                <img src={HeroImg} alt="MistBox X" className="max-h-full w-auto object-contain" />
+                <img src={HeroImg} alt="MistBox X Commercial Scent Diffuser" className="max-h-full w-auto object-contain" />
               </div>
               <div className="p-10 pt-4 text-left">
-                <h3 className="text-3xl font-serif text-slate-900 mb-4">MistBox X – Mid-Size Commercial Diffuser</h3>
-                <p className="text-slate-600 mb-6 font-light leading-relaxed">
+                <h3 className="text-3xl font-serif text-slate-900 mb-4 text-left">MistBox X – Mid-Size Commercial Diffuser</h3>
+                <p className="text-slate-600 mb-6 font-light leading-relaxed text-left">
                   A compact yet powerful aroma diffuser suitable for medium-sized commercial areas. Designed for steady performance and easy maintenance.
                 </p>
                 <div className="mb-8">
                   <p className="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-3">Best suited for:</p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 text-left">
                     {["Retail stores", "Reception areas", "Waiting lounges", "Salons"].map((tag, i) => (
                       <span key={i} className="px-4 py-1.5 bg-white border border-slate-200 rounded-full text-xs text-slate-500">{tag}</span>
                     ))}
                   </div>
                 </div>
-                <a href="/product/mistbox-x" className="w-full py-4 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl flex items-center justify-center gap-3 hover:bg-blue-600 transition-all">
+                <a href="/product/mistbox-x" className="w-full py-4 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl flex items-center justify-center gap-3 hover:bg-blue-600 transition-all shadow-md">
                   View product details <ArrowRightIcon className="w-4 h-4" />
                 </a>
               </div>
@@ -160,8 +169,8 @@ export default function CommercialDiffusersPage() {
         {/* ================= SECTION 2: WHY USE ================= */}
         <section className="py-16">
           <div className="bg-slate-900 rounded-[3rem] p-10 md:p-20 text-left relative overflow-hidden">
-            <h2 className="text-3xl md:text-5xl font-serif text-white mb-8 tracking-tighter leading-none">Why Use Commercial Aroma Diffusers?</h2>
-            <p className="text-slate-400 mb-12 text-lg max-w-3xl">Business environments require scenting solutions that go beyond basic air fresheners. Commercial aroma diffusers are designed to perform consistently throughout operating hours.</p>
+            <h2 className="text-3xl md:text-5xl font-serif text-white mb-8 tracking-tighter leading-none text-left">Why Use Commercial Aroma Diffusion Solutions in UAE?</h2>
+            <p className="text-slate-400 mb-12 text-lg max-w-3xl text-left font-light leading-relaxed">Business environments require scenting solutions that go beyond basic air fresheners. Our Commercial Scent Diffuser systems are built for long-term reliability.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { title: "Consistent Fragrance Coverage", desc: "Ensures the space remains fresh from opening to closing time.", icon: <ClockIcon /> },
@@ -169,10 +178,10 @@ export default function CommercialDiffusersPage() {
                 { title: "Designed for Daily Use", desc: "Built to handle continuous operation in busy environments.", icon: <BoltIcon /> },
                 { title: "Low Maintenance", desc: "Reduced need for frequent refills and manual intervention.", icon: <Cog6ToothIcon /> }
               ].map((item, idx) => (
-                <div key={idx} className="space-y-4">
+                <div key={idx} className="space-y-4 text-left">
                   <div className="w-10 h-10 text-blue-400">{item.icon}</div>
                   <h3 className="text-white font-bold text-lg leading-tight">{item.title}</h3>
-                  <p className="text-slate-400 text-sm font-light leading-relaxed">{item.desc}</p>
+                  <p className="text-slate-400 text-sm font-light leading-relaxed text-left">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -181,8 +190,8 @@ export default function CommercialDiffusersPage() {
 
         {/* ================= SECTION 3: WHERE USED ================= */}
         <section className="py-16 text-left">
-          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter leading-none">Where Commercial Aroma Diffusers Are Used</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter leading-none text-left">Where Commercial Aroma Diffusion Solutions in UAE Are Used</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             {[
               { title: "Corporate offices", icon: <BuildingOfficeIcon /> },
               { title: "Clinics and healthcare centers", icon: <BeakerIcon /> },
@@ -190,39 +199,39 @@ export default function CommercialDiffusersPage() {
               { title: "Educational institutions", icon: <AcademicCapIcon /> },
               { title: "Business reception areas", icon: <UserGroupIcon /> }
             ].map((space, i) => (
-              <div key={i} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] flex items-center gap-6 group hover:bg-white hover:border-blue-200 transition-all">
+              <div key={i} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] flex items-center gap-6 group hover:bg-white hover:border-blue-200 transition-all shadow-sm">
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-blue-600 shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-all">
                   {React.cloneElement(space.icon, { className: "w-6 h-6" })}
                 </div>
-                <h3 className="text-base font-bold text-slate-700">{space.title}</h3>
+                <h3 className="text-base font-bold text-slate-700 text-left">{space.title}</h3>
               </div>
             ))}
           </div>
-          <p className="mt-12 text-slate-500 font-light italic border-l-4 border-slate-100 pl-6">They are ideal for spaces where customer experience and employee comfort are important.</p>
+          <p className="mt-12 text-slate-500 font-light italic border-l-4 border-slate-100 pl-6 text-left">These Commercial Scent Diffuser systems are ideal for spaces where customer experience and employee comfort are important.</p>
         </section>
 
         {/* ================= SECTION 4: HOW IT WORKS ================= */}
         <section className="py-16">
           <div className="grid lg:grid-cols-2 gap-16 items-center text-left">
-            <div>
-              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none">How Commercial Aroma Diffusers Work</h2>
-              <p className="text-slate-500 text-lg font-light leading-relaxed mb-8">
-                Commercial aroma diffusers use controlled atomization technology to disperse fragrance evenly across the space. The system releases fine fragrance particles that remain suspended in the air, ensuring uniform scent distribution.
+            <div className="text-left">
+              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">How Commercial Aroma Diffusion Solutions in UAE Work</h2>
+              <p className="text-slate-500 text-lg font-light leading-relaxed mb-8 text-left">
+                Our HVAC Aroma Diffusion Solutions use controlled atomization technology to disperse fragrance evenly across the space. The system releases fine fragrance particles that remain suspended in the air, ensuring uniform scent distribution.
               </p>
-              <div className="space-y-4">
+              <div className="space-y-4 text-left">
                 {[
                   "Quiet operation suitable for workspaces",
                   "Adjustable fragrance intensity",
                   "Efficient fragrance oil consumption",
                   "Durable construction for long-term use"
                 ].map((feature, i) => (
-                  <div key={i} className="flex items-center gap-4">
+                  <div key={i} className="flex items-center gap-4 text-left">
                     <CheckCircleIcon className="w-5 h-5 text-blue-600" />
-                    <span className="text-slate-700 font-medium">{feature}</span>
+                    <span className="text-slate-700 font-medium text-left">{feature}</span>
                   </div>
                 ))}
               </div>
-              <p className="mt-8 text-sm text-slate-400 font-light">This technology ensures reliable and comfortable scenting for business environments.</p>
+              <p className="mt-8 text-sm text-slate-400 font-light text-left">This technology ensures reliable and comfortable scenting for business environments through advanced HVAC Aroma Diffusion Solutions.</p>
             </div>
             <div className="relative p-12 bg-slate-50 rounded-[3rem] border border-slate-100">
                <AdjustmentsHorizontalIcon className="w-full h-auto text-blue-600/10" />
@@ -235,8 +244,8 @@ export default function CommercialDiffusersPage() {
 
         {/* ================= SECTION 5: CHOOSING THE RIGHT ONE ================= */}
         <section className="py-16 border-t border-slate-100">
-          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center">Choosing the Right Commercial Aroma Diffuser</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center">Choosing the Right Commercial Scent Diffuser</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
             {[
               { title: "Space Size", desc: "Choose a diffuser that matches the area coverage requirement." },
               { title: "Foot Traffic", desc: "Higher traffic areas benefit from continuous fragrance diffusion." },
@@ -244,19 +253,19 @@ export default function CommercialDiffusersPage() {
               { title: "Maintenance Preference", desc: "Low-maintenance systems reduce operational effort." }
             ].map((pref, idx) => (
               <div key={idx} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] text-left">
-                <h3 className="text-xl font-bold text-blue-600 mb-3">{pref.title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed font-light">{pref.desc}</p>
+                <h3 className="text-xl font-bold text-blue-600 mb-3 text-left">{pref.title}</h3>
+                <p className="text-sm text-slate-500 font-light leading-relaxed text-left">{pref.desc}</p>
               </div>
             ))}
           </div>
-          <p className="mt-12 text-center text-slate-600 font-medium">Our team can help you select the right commercial aroma diffuser based on your business needs.</p>
+          <p className="mt-12 text-center text-slate-600 font-medium">Our team can help you select the right Commercial Aroma Diffusion Solutions in UAE based on your business needs.</p>
         </section>
 
         {/* ================= SECTION 6: WHY COOL MAX ================= */}
         <section className="py-16">
           <div className="bg-slate-50 rounded-[3rem] p-10 md:p-16 border border-slate-100 text-left">
-            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter">Why Choose Cool Max Commercial Aroma Diffusers?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter text-left">Why Choose Cool Max Commercial Aroma Diffusion Solutions in UAE?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
               {[
                 "UAE-based company with local support",
                 "Professional-grade commercial scent diffuser machines",
@@ -264,20 +273,20 @@ export default function CommercialDiffusersPage() {
                 "Maintenance and refill support available",
                 "Trusted by businesses across multiple industries"
               ].map((reason, i) => (
-                <div key={i} className="flex items-center gap-4 bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <div key={i} className="flex items-center gap-4 bg-white p-6 rounded-2xl border border-slate-100 shadow-sm text-left">
                   <ShieldCheckIcon className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                  <span className="text-slate-700 text-sm font-medium">{reason}</span>
+                  <span className="text-slate-700 text-sm font-medium text-left">{reason}</span>
                 </div>
               ))}
             </div>
-            <p className="mt-10 text-slate-500 font-light">We focus on providing practical solutions that support real working environments.</p>
+            <p className="mt-10 text-slate-500 font-light text-left">We focus on providing practical solutions that support real working environments.</p>
           </div>
         </section>
 
         {/* ================= SECTION 7: RELATED ================= */}
         <section className="py-16 text-center">
-           <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter">Related Scenting Solutions</h2>
-           <div className="flex flex-wrap justify-center gap-6">
+            <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter text-center">Related Scenting Solutions</h2>
+            <div className="flex flex-wrap justify-center gap-6">
               {[
                 { title: "Large Area & HVAC Aroma Diffusers", link: "/hvac-scenting" },
                 { title: "Wall-Mounted & Ceiling Diffusers", link: "/wall-mounted-diffusers" },
@@ -287,21 +296,21 @@ export default function CommercialDiffusersPage() {
                   {sol.title}
                 </a>
               ))}
-           </div>
-           <p className="mt-8 text-slate-400 text-sm">These solutions help create a complete scenting setup for business spaces.</p>
+            </div>
+            <p className="mt-8 text-slate-400 text-sm text-center">These solutions help create a complete setup for Commercial Aroma Diffusion Solutions in UAE.</p>
         </section>
 
         {/* ================= SECTION 8: MASTER CTA ================= */}
         <section className="py-24 text-center relative px-4">
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tighter leading-none">
-              Need Help Choosing the <br /> <span className="italic text-blue-600 font-light">Right Commercial Aroma Diffuser?</span>
+            <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-center">
+              Need Help Choosing the <br /> <span className="italic text-blue-600 font-light text-center">Right Commercial Aroma Diffuser?</span>
             </h2>
-            <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
-              Whether you manage a single office or multiple commercial locations, Cool Max offers dependable commercial aroma diffusers designed for professional use. Our team will help you select the right solution and ensure long-term performance.
+            <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center">
+              Whether you manage a single office or multiple commercial locations, Cool Max offers dependable Commercial Aroma Diffusion Solutions in UAE designed for professional use. Our team will help you select the right Commercial Scent Diffuser and ensure long-term performance.
             </p>
             
-            <p className="text-sm font-black uppercase text-blue-600 tracking-widest mb-8">Looking for commercial aroma diffusers in UAE?</p>
+            <p className="text-sm font-black uppercase text-blue-600 tracking-widest mb-8 text-center">Looking for commercial aroma diffusers in UAE?</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="/contact" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">

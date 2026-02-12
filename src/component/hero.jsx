@@ -4,25 +4,25 @@ import { ArrowRightIcon, ShoppingBagIcon } from "@heroicons/react/24/solid";
 import { ShieldCheckIcon } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORTS (20 PRODUCTS) ---
-import P1 from "../asset/productimg/CMwebpimg/Natural Fragrance Diffusion/2.webp"; 
+import P1 from "../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/2.webp"; 
 import P2 from "../asset/productimg/CMwebpimg/NovaCar Diffuser/2.webp"; 
 import P3 from "../asset/productimg/CMwebpimg/Titan Diffuser/1.webp"; 
 import P4 from "../asset/productimg/CMwebpimg/VentoCar/2.webp"; 
 import P5 from "../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/1.webp"; 
-import P6 from "../asset/productimg/CMwebpimg/coolmax DriveMist Car Aroma Diffuser/1.webp"; 
+import P6 from "../asset/productimg/CMwebpimg/AeroMax Pro/2.webp"; 
 import P7 from "../asset/productimg/CMwebpimg/AeroBlack Med diffuser/1.webp"; 
-import P8 from "../asset/productimg/CMwebpimg/AromaDesk LuxePanel/4.webp"; 
+import P8 from "../asset/productimg/CMwebpimg/AromaDesk/3.webp"; 
 import P9 from "../asset/productimg/CMwebpimg/DriveScent/1.webp"; 
 import P10 from "../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/2.webp"; 
 // Assuming the remaining 10 follow your standard pathing or imports
-import P11 from "../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/2.webp";
+import P11 from "../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/3.webp";
 import P12 from "../asset/productimg/CMwebpimg/AeroCube Diffuser/3.webp";
 import P13 from "../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/2.webp";
 import P14 from "../asset/productimg/CMwebpimg/Air pole Pro Floor Diffuser/4.webp";
 import P15 from "../asset/productimg/CMwebpimg/AirPulse 150/4.webp";
 import P16 from "../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/3.webp";
 import P17 from "../asset/productimg/CMwebpimg/DeskScent/3.webp";
-import P18 from "../asset/productimg/CMwebpimg/LuxePanel Diffuser/4.webp";
+import P18 from "../asset/productimg/CMwebpimg/LuxePanel Diffuser wtc/2.webp";
 import P19 from "../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/2.webp";
 import P20 from "../asset/productimg/CMwebpimg/NanoPillar Diffuser/3.webp";
 
