@@ -64,7 +64,7 @@ export default function CommercialDiffusersPage() {
               <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 shadow-sm mt-16 relative z-10">
                 <SparklesIcon className="w-4 h-4 text-blue-600" />
                 <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.3em]">
-                  **Commercial Aroma Diffusers in UAE**
+                  Commercial Aroma Diffusers in UAE
                 </span>
               </div>
               
@@ -74,12 +74,12 @@ export default function CommercialDiffusersPage() {
               </h1>
               
               <p className="text-xl md:text-2xl text-slate-500 font-light max-w-xl mb-8 leading-relaxed">
-                Elevate Your Business Ambiance with **Professional Aroma Diffusers**.
+                Elevate Your Business Ambiance with Professional Aroma Diffusers.
               </p>
 
               <div className="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] mb-8 max-w-xl shadow-sm text-left">
                 <p className="text-base text-slate-600 leading-relaxed italic">
-                  Cool Max provides advanced **Commercial Scent Diffuser Machines** that turn ordinary **Business Scent Diffusers** into memorable experiences. Designed for retail stores, spas, gyms, and corporate offices.
+                  Cool Max provides advanced Commercial Scent Diffuser Machines that turn ordinary Business Scent Diffusers into memorable experiences. Designed for retail stores, spas, gyms, and corporate offices.
                 </p>
               </div>
 
@@ -123,7 +123,7 @@ export default function CommercialDiffusersPage() {
             <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-blue-600 mb-4">Commercial Units</h2>
             <h3 className="text-4xl md:text-6xl font-serif text-slate-900 tracking-tighter">Our Scent Collection</h3>
             <p className="text-lg text-slate-500 mt-4 font-light">
-              Explore our versatile range of **Commercial Scent Diffuser Machines** designed for medium to large business environments.
+              Explore our versatile range of Commercial Scent Diffuser Machines designed for medium to large business environments.
             </p>
           </motion.div>
 
@@ -143,7 +143,7 @@ export default function CommercialDiffusersPage() {
                   <img src={product.img} alt={product.name} className="h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out" />
                 </div>
                 <h3 className="text-3xl font-serif text-slate-900 mb-1 tracking-tight">{product.name}</h3>
-                <p className="text-blue-600 font-black text-[9px] uppercase tracking-[0.3em] mb-4">**Professional Aroma Diffusers**</p>
+                <p className="text-blue-600 font-black text-[9px] uppercase tracking-[0.3em] mb-4">Professional Aroma Diffusers</p>
                 <p className="text-slate-500 mb-6 leading-relaxed font-light text-base flex-grow">
                   {product.desc}
                 </p>
@@ -221,7 +221,7 @@ export default function CommercialDiffusersPage() {
             <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-blue-600 mb-4">Presence</h2>
             <h3 className="text-4xl md:text-6xl font-serif text-slate-900 tracking-tighter">Industries We Serve</h3>
             <p className="text-lg text-slate-500 mt-4 font-light max-w-2xl mx-auto">
-              Cool Max **Commercial Scent Diffuser Machines** are engineered to perform across diverse business sectors in the UAE.
+              Cool Max Commercial Scent Diffuser Machines are engineered to perform across diverse business sectors in the UAE.
             </p>
           </motion.div>
 
@@ -256,7 +256,7 @@ export default function CommercialDiffusersPage() {
               <span className="italic text-blue-600 font-light">Atmosphere?</span>
             </h2>
             <p className="text-xl text-slate-500 mb-12 leading-relaxed font-light max-w-3xl mx-auto font-sans">
-              Whether you run a boutique, a gym, or a corporate office, Cool Max offers **Professional Aroma Diffusers** that deliver results across the emirates.
+              Whether you run a boutique, a gym, or a corporate office, Cool Max offers Professional Aroma Diffusers that deliver results across the emirates.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="/contact" className="w-full sm:w-auto px-12 py-6 bg-slate-900 text-white font-black text-xs uppercase tracking-[0.3em] rounded-2xl overflow-hidden transition-all shadow-xl hover:bg-blue-600 flex items-center justify-center gap-3">
@@ -272,7 +272,7 @@ export default function CommercialDiffusersPage() {
               </a>
             </div>
             <p className="mt-12 text-[10px] text-slate-400 font-bold uppercase tracking-widest">
-                **Commercial Aroma Diffusers in UAE** • Reliable Performance
+                Commercial Aroma Diffusers in UAE • Reliable Performance
             </p>
           </motion.div>
         </section>

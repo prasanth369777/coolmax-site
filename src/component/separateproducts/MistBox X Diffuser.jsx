@@ -14,15 +14,15 @@ import {
   ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/outline";
 
-/* ================= IMAGE ASSETS ================= */
-import Titan1 from "../../asset/productimg/CMwebpimg/Titan Diffuser/1.webp";
-import Titan2 from "../../asset/productimg/CMwebpimg/Titan Diffuser/2.webp";
-import Titan3 from "../../asset/productimg/CMwebpimg/Titan Diffuser/3.webp";
-import Titan4 from "../../asset/productimg/CMwebpimg/Titan Diffuser/4.webp";
+/* ================= IMAGE ASSETS MAPPED TO OV-10 ================= */
+import MistBox1 from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/1.webp";
+import MistBox2 from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/2.webp";
+import MistBox3 from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/3.webp";
+import MistBox4 from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/4.webp";
 
 const MistBoxXPage = () => {
-  const [activeImg, setActiveImg] = useState(Titan1);
-  const gallery = [Titan1, Titan2, Titan3, Titan4];
+  const [activeImg, setActiveImg] = useState(MistBox1);
+  const gallery = [MistBox1, MistBox2, MistBox3, MistBox4];
 
   // Redirection Links
   const whatsappNumber = "971522286401";
@@ -40,7 +40,7 @@ const MistBoxXPage = () => {
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
       
       {/* ================= HERO SECTION (REDUCED HEIGHT) ================= */}
-      <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto">
+      <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto text-left">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <motion.div {...fadeIn}>
             <div className="inline-block px-4 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-black uppercase tracking-[0.2em] mb-6">
@@ -88,7 +88,7 @@ const MistBoxXPage = () => {
         <div className="max-w-[1000px] mx-auto text-center">
           <motion.div {...fadeIn}>
             <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Product Overview</h2>
-            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light">
+            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light text-justify md:text-center">
               The MistBox X Diffuser is engineered with nano-level fine atomization technology that transforms fragrance oil into ultra-fine particles. This allows the scent to spread evenly and naturally without residue or overpowering concentration.
               Designed with industrial-grade materials and a built-in power pump, the system ensures reliable fragrance diffusion even in large commercial spaces. Its clean, modern design integrates seamlessly into professional interiors while remaining discreet and functional.
             </p>
@@ -123,7 +123,7 @@ const MistBoxXPage = () => {
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
         <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight">Key Features & Benefits</h2>
         <div className="grid gap-16">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="grid md:grid-cols-2 gap-10 items-center text-left">
             <div className="order-2 md:order-1">
               <h3 className="text-xl font-serif mb-4">Nano-Level Fine Atomization</h3>
               <p className="text-sm text-slate-500 leading-relaxed mb-4 font-light">
@@ -139,13 +139,13 @@ const MistBoxXPage = () => {
               <p className="mt-4 text-xs text-blue-600 font-bold italic">Balance and consistency for professional commercial applications.</p>
             </div>
             <div className="rounded-3xl bg-slate-100 p-6 order-1 md:order-2 h-64 flex items-center justify-center">
-               <img src={Titan2} alt="Nano Atomization" className="w-full h-full object-contain" />
+               <img src={MistBox2} alt="Nano Atomization" className="w-full h-full object-contain" />
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="grid md:grid-cols-2 gap-10 items-center text-left">
             <div className="rounded-3xl bg-slate-100 p-6 h-64 flex items-center justify-center">
-               <img src={Titan3} alt="Smart Control" className="w-full h-full object-contain" />
+               <img src={MistBox3} alt="Smart Control" className="w-full h-full object-contain" />
             </div>
             <div>
               <h3 className="text-xl font-serif mb-4 text-slate-900">WiFi & Bluetooth Remote Control</h3>
@@ -161,7 +161,7 @@ const MistBoxXPage = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 text-left">
             <div className="bg-slate-900 text-white p-8 rounded-[2rem] col-span-2">
               <h3 className="text-xl font-serif mb-4 text-blue-400">HVAC Connection Capability</h3>
               <p className="text-sm text-slate-300 leading-relaxed mb-6 font-light">Connect directly to HVAC systems to distribute fragrance through existing airflow, ensuring uniform coverage across multiple zones without fluctuation.</p>
@@ -181,7 +181,7 @@ const MistBoxXPage = () => {
       </section>
 
       {/* ================= SECTION 4: TECHNICAL SPECIFICATIONS ================= */}
-      <section className="py-16 bg-slate-50 px-6">
+      <section className="py-16 bg-slate-50 px-6 text-left">
         <div className="max-w-[800px] mx-auto">
           <h2 className="text-2xl md:text-4xl font-serif mb-10 text-center tracking-tight text-slate-900">Technical Specifications</h2>
           <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
@@ -216,7 +216,7 @@ const MistBoxXPage = () => {
 
       {/* ================= SECTION 5: APPLICATIONS & HOW IT WORKS ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-center">
-        <h2 className="text-2xl md:text-4xl font-serif mb-10 tracking-tight">Ideal Applications</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-10 tracking-tight text-slate-900">Ideal Applications</h2>
         <div className="flex flex-wrap justify-center gap-3 mb-16 max-w-4xl mx-auto">
           {[
             "Office buildings", "Hotel lobbies", "Hospitals", "Cinemas", 
@@ -269,8 +269,8 @@ const MistBoxXPage = () => {
       </section>
 
       {/* ================= MAINTENANCE & SUPPORT ================= */}
-      <section className="py-16 bg-slate-50 px-6">
-        <div className="max-w-[1000px] mx-auto grid lg:grid-cols-2 gap-6 text-left">
+      <section className="py-16 bg-slate-50 px-6 text-left">
+        <div className="max-w-[1000px] mx-auto grid lg:grid-cols-2 gap-6">
           <div className="p-8 bg-white rounded-3xl shadow-sm border border-slate-100">
             <h4 className="text-lg font-bold mb-4 flex items-center gap-2">
               <WrenchScrewdriverIcon className="w-5 h-5 text-blue-600" /> Maintenance
@@ -292,7 +292,7 @@ const MistBoxXPage = () => {
         </div>
       </section>
 
-      {/* ================= SECTION: COLLECTION (MASTER REDIRECT) ================= */}
+      {/* ================= SECTION: CTA ================= */}
       <section className="py-20 px-6">
         <div className="max-w-[1200px] mx-auto bg-[#0c101b] rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/20 blur-[100px] rounded-full" />
@@ -300,7 +300,7 @@ const MistBoxXPage = () => {
           <p className="text-slate-400 text-lg mb-10 relative z-10 max-w-2xl mx-auto leading-relaxed font-light">
             Need a commercial aroma diffuser that fits your space perfectly? Our experts will help you choose the right configuration and fragrance solution.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 relative z-10">
+          <div className="flex flex-wrap justify-center gap-4 relative z-10 font-sans">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-white text-slate-900 rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-2">
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert
             </a>

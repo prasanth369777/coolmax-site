@@ -14,7 +14,7 @@ import {
   ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/outline";
 
-/* ================= IMAGE ASSETS ================= */
+/* ================= IMAGE ASSETS MAPPED TO VS-160 ================= */
 import AirPulse1501 from "../../asset/productimg/CMwebpimg/AirPulse 150/1.webp";
 import AirPulse1502 from "../../asset/productimg/CMwebpimg/AirPulse 150/2.webp";
 import AirPulse1503 from "../../asset/productimg/CMwebpimg/AirPulse 150/3.webp";
@@ -37,16 +37,16 @@ const AirPulse150Page = () => {
   };
 
   return (
-    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
+    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
       
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}
-      <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto text-left">
+      <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <motion.div {...fadeIn}>
             <div className="inline-block px-4 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-black uppercase tracking-[0.2em] mb-6">
               Mega-Scale HVAC System
             </div>
-            <h1 className="text-4xl md:text-6xl font-serif mb-4 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-serif mb-4 leading-tight text-slate-900">
               AirPulse 150 Diffuser
             </h1>
             <p className="text-lg text-slate-600 font-medium mb-6 leading-relaxed">
@@ -55,14 +55,14 @@ const AirPulse150Page = () => {
             <p className="text-sm text-slate-500 mb-4 leading-relaxed font-light">
               The AirPulse 150 is a heavy-duty large area & HVAC aroma diffuser designed for extremely large commercial environments where standard scent machines are not sufficient. Built to handle 5,000 to 15,000 cubic meters, this system is ideal for locations that require powerful, precise, and uninterrupted fragrance diffusion across multiple zones.
             </p>
-            <p className="text-sm text-slate-500 mb-8 leading-relaxed border-l-4 border-blue-600 pl-6 italic">
+            <p className="text-sm text-slate-500 mb-8 leading-relaxed border-l-4 border-blue-600 pl-6 italic font-light text-justify md:text-left">
               With dual atomization technology, industrial-grade components, and full HVAC integration, AirPulse 150 is a premium scent air machine engineered for airports, high-end malls, large office buildings, cinemas, and entertainment venues.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mt-6">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-slate-900 text-white rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-blue-600 transition-all flex items-center gap-3 shadow-lg">
-                Consult Experts <ChatBubbleLeftRightIcon className="w-4 h-4" />
+                Talk to Scent Specialists <ChatBubbleLeftRightIcon className="w-4 h-4" />
               </a>
-              <a href={contactPath} className="px-6 py-3 border border-slate-200 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all flex items-center gap-2">
+              <a href={contactPath} className="px-6 py-3 border border-slate-200 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all flex items-center gap-2 font-sans">
                 Get Quote <ArrowRightIcon className="w-3 h-3" />
               </a>
             </div>
@@ -87,8 +87,8 @@ const AirPulse150Page = () => {
       <section className="py-16 bg-white px-6">
         <div className="max-w-[1000px] mx-auto text-center">
           <motion.div {...fadeIn}>
-            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight">Product Overview</h2>
-            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light">
+            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Product Overview</h2>
+            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light text-justify md:text-center">
               AirPulse 150 is developed for enterprise-level scenting requirements. Unlike compact commercial scent machines, this system is built to deliver stable and consistent fragrance output across very large interiors without scent fluctuation or oil degradation.
               Its modular design allows the diffuser to operate through direct HVAC connection, ensuring fragrance is evenly distributed via central air systems. With high-capacity oil support and long-life compressors, AirPulse 150 offers reliability, performance, and control for demanding environments.
             </p>
@@ -100,7 +100,7 @@ const AirPulse150Page = () => {
       <section className="py-16 bg-[#0c101b] text-white px-6">
         <div className="max-w-[1400px] mx-auto text-center">
           <h2 className="text-2xl md:text-4xl font-serif mb-12 tracking-tight">Key Highlights</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             {[
               { icon: GlobeAltIcon, text: "Ultra-large area aroma scent diffuser" },
               { icon: BeakerIcon, text: "Covers 5,000 – 15,000 m³" },
@@ -110,7 +110,7 @@ const AirPulse150Page = () => {
               { icon: CubeIcon, text: "High-capacity fragrance support" },
               { icon: BuildingOfficeIcon, text: "Designed for multi-zone commercial spaces" }
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors text-center">
+              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
                 <item.icon className="w-8 h-8 text-blue-500 mx-auto mb-4" />
                 <p className="text-[11px] font-bold uppercase tracking-widest leading-relaxed">{item.text}</p>
               </div>
@@ -120,13 +120,13 @@ const AirPulse150Page = () => {
       </section>
 
       {/* ================= SECTION 3: ADVANCED FEATURES ================= */}
-      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
-        <h2 className="text-2xl md:text-4xl font-serif mb-16 text-center tracking-tight">Advanced Features & Performance</h2>
+      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
+        <h2 className="text-2xl md:text-4xl font-serif mb-16 text-center tracking-tight text-slate-900">Advanced Features & Performance</h2>
         <div className="grid gap-16">
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="order-2 md:order-1 text-left">
-              <h3 className="text-xl font-serif mb-4">Extreme Coverage for Large Spaces</h3>
-              <p className="text-sm text-slate-500 leading-relaxed mb-4">
+            <div className="order-2 md:order-1">
+              <h3 className="text-xl font-serif mb-4 text-slate-900">Extreme Coverage for Large Spaces</h3>
+              <p className="text-sm text-slate-500 leading-relaxed mb-4 font-light text-justify md:text-left">
                 AirPulse 150 is designed for very large commercial areas where standard scent machines cannot perform effectively. Its dual-atomizer configuration ensures wide and balanced fragrance dispersion even in complex layouts.
               </p>
               <p className="text-xs text-blue-600 font-bold italic border-l-2 border-blue-600 pl-4">
@@ -139,12 +139,12 @@ const AirPulse150Page = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="rounded-3xl bg-slate-100 p-6 h-64 flex items-center justify-center">
+            <div className="rounded-3xl bg-slate-100 p-6 h-64 flex items-center justify-center order-1">
                <img src={AirPulse1503} alt="Dual Compressor System" className="w-full h-full object-contain" />
             </div>
-            <div className="text-left">
-              <h3 className="text-xl font-serif mb-4">Dual Atomization & Compressor Technology</h3>
-              <p className="text-sm text-slate-500 mb-4">The system features dual atomizers, independent compressors, and separate control panels allowing:</p>
+            <div className="order-2">
+              <h3 className="text-xl font-serif mb-4 text-slate-900">Dual Atomization & Compressor Technology</h3>
+              <p className="text-sm text-slate-500 mb-4 font-light">The system features dual atomizers, independent compressors, and separate control panels allowing:</p>
               <div className="grid grid-cols-2 gap-3">
                 {["Stable output", "Accurate control", "Reduced wastage", "Long life"].map((li, i) => (
                   <div key={i} className="flex items-center gap-2 p-3 bg-white border border-slate-100 rounded-xl shadow-sm">
@@ -157,7 +157,7 @@ const AirPulse150Page = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-slate-900 text-white p-8 rounded-[2rem] col-span-2 text-left">
+            <div className="bg-slate-900 text-white p-8 rounded-[2rem] col-span-2 shadow-xl">
               <h3 className="text-xl font-serif mb-4 text-blue-400">Full HVAC System Integration</h3>
               <p className="text-sm text-slate-300 leading-relaxed mb-6 font-light">Fragrance travels naturally through airflow, ensuring uniform coverage without localized overpowering.</p>
               <div className="grid grid-cols-3 gap-2">
@@ -166,14 +166,14 @@ const AirPulse150Page = () => {
                  ))}
               </div>
             </div>
-            <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm flex flex-col justify-center text-left">
+            <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm flex flex-col justify-center">
               <ShieldCheckIcon className="w-10 h-10 text-blue-600 mb-4" />
-              <h3 className="text-lg font-serif mb-2">Industrial Build</h3>
+              <h3 className="text-lg font-serif mb-2 text-slate-900">Industrial Build</h3>
               <p className="text-slate-500 text-xs font-light">Long-life compressor for continuous commercial operation.</p>
             </div>
           </div>
 
-          <div className="p-10 bg-blue-600 rounded-[2.5rem] text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl shadow-blue-200">
+          <div className="p-10 bg-blue-600 rounded-[2.5rem] text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl shadow-blue-100">
              <div className="max-w-xl text-left">
                <h3 className="text-xl font-serif mb-3">5L Large Oil Capacity</h3>
                <p className="text-blue-100 text-xs font-light leading-relaxed">Supports standard 500 ml × 2 or optional 5-liter external containers to reduce refill frequency.</p>
@@ -222,7 +222,7 @@ const AirPulse150Page = () => {
 
       {/* ================= SECTION 5: APPLICATIONS ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-center">
-        <h2 className="text-2xl md:text-4xl font-serif mb-10 tracking-tight">Recommended Applications</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-10 tracking-tight text-slate-900">Recommended Applications</h2>
         <div className="flex flex-wrap justify-center gap-3">
           {[
             "International airports", "High-end shopping malls", 
@@ -238,8 +238,8 @@ const AirPulse150Page = () => {
 
       {/* ================= SECTION 6: HOW IT WORKS ================= */}
       <section className="py-16 bg-slate-900 text-white px-6">
-        <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-left">
+        <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-12 items-center text-left">
+          <div>
             <h2 className="text-2xl md:text-4xl font-serif mb-6 leading-tight tracking-tight text-blue-400">How AirPulse 150 Works</h2>
             <p className="text-slate-400 text-sm leading-relaxed mb-6 font-light">
               AirPulse 150 uses cold-air atomization, converting fragrance oil into micro-particles without heat or water, ensuring purity and longevity.
@@ -250,7 +250,7 @@ const AirPulse150Page = () => {
                ))}
             </div>
           </div>
-          <div className="bg-blue-600/10 p-10 rounded-[3rem] border border-blue-500/20 text-center">
+          <div className="bg-blue-600/10 p-10 rounded-[2rem] border border-blue-500/20 text-center backdrop-blur-sm">
              <BeakerIcon className="w-12 h-12 text-blue-500 mb-6 mx-auto" />
              <h4 className="text-lg font-serif mb-4">Dual Cold-Air Atomization</h4>
              <img src={AirPulse1504} alt="Internal Mechanism" className="w-full h-40 object-contain rounded-xl opacity-80" />
@@ -260,7 +260,7 @@ const AirPulse150Page = () => {
 
       {/* ================= SECTION 7: WHY CHOOSE ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight">Why Choose AirPulse 150?</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight text-slate-900">Why Choose AirPulse 150?</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             "Designed for mega-scale scenting projects",
@@ -270,7 +270,7 @@ const AirPulse150Page = () => {
             "Reduced maintenance with large oil capacity",
             "Trusted commercial-grade performance"
           ].map((text, i) => (
-            <div key={i} className="p-8 bg-white border border-slate-100 rounded-2xl shadow-sm">
+            <div key={i} className="p-8 bg-white border border-slate-100 rounded-2xl shadow-sm hover:border-blue-200 transition-colors">
               <CheckCircleIcon className="w-6 h-6 text-blue-600 mb-4" />
               <p className="text-slate-700 text-sm font-medium leading-relaxed">{text}</p>
             </div>
@@ -279,10 +279,10 @@ const AirPulse150Page = () => {
       </section>
 
       {/* ================= SECTION 8: MAINTENANCE & SUPPORT ================= */}
-      <section className="py-16 bg-slate-50 px-6">
-        <div className="max-w-[1000px] mx-auto grid lg:grid-cols-2 gap-6 text-left">
+      <section className="py-16 bg-slate-50 px-6 text-left">
+        <div className="max-w-[1000px] mx-auto grid lg:grid-cols-2 gap-6">
           <div className="p-8 bg-white rounded-3xl shadow-sm border border-slate-100">
-            <h4 className="text-lg font-bold mb-4 flex items-center gap-3">Maintenance</h4>
+            <h4 className="text-lg font-bold mb-4 flex items-center gap-3 text-slate-900">Maintenance</h4>
             <ul className="space-y-2 text-xs text-slate-500 font-light">
                <li>• Easy oil replacement</li>
                <li>• Stable internal components</li>
@@ -300,7 +300,7 @@ const AirPulse150Page = () => {
         </div>
       </section>
 
-      {/* ================= CTA SECTION (MASTER REDIRECT) ================= */}
+      {/* ================= CTA SECTION ================= */}
       <section className="py-20 px-6">
         <div className="max-w-[1200px] mx-auto bg-[#0c101b] rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/20 blur-[100px] rounded-full" />
@@ -308,7 +308,7 @@ const AirPulse150Page = () => {
           <p className="text-slate-400 text-lg mb-10 relative z-10 max-w-2xl mx-auto leading-relaxed font-light">
             Looking for a high-capacity HVAC scent diffuser for your large facility? Our experts will help you plan the right solution.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 relative z-10">
+          <div className="flex flex-wrap justify-center gap-4 relative z-10 font-sans">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-white text-slate-900 rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-2">
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Support
             </a>

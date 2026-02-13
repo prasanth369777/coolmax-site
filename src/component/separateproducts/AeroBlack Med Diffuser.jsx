@@ -12,15 +12,16 @@ import {
   ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/outline";
 
-/* ================= IMAGE ASSETS ================= */
-import AeroBlackPro1 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/1.webp";
-import AeroBlackPro2 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/2.webp";
-import AeroBlackPro3 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/3.webp";
-import AeroBlackPro4 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/4.webp";
+/* ================= IMAGE ASSETS MAPPED TO Q500 ================= */
+import AeroBlackMed1 from "../../asset/productimg/CMwebpimg/AeroBlack Med diffuser/1.webp";
+import AeroBlackMed2 from "../../asset/productimg/CMwebpimg/AeroBlack Med diffuser/2.webp";
+import AeroBlackMed3 from "../../asset/productimg/CMwebpimg/AeroBlack Med diffuser/3.webp";
+import AeroBlackMed4 from "../../asset/productimg/CMwebpimg/AeroBlack Med diffuser/4.webp";
+import AeroBlackMed5 from "../../asset/productimg/CMwebpimg/AeroBlack Med diffuser/5.webp";
 
 const AeroBlackMedPage = () => {
-  const [activeImg, setActiveImg] = useState(AeroBlackPro1);
-  const gallery = [AeroBlackPro1, AeroBlackPro2, AeroBlackPro3, AeroBlackPro4];
+  const [activeImg, setActiveImg] = useState(AeroBlackMed1);
+  const gallery = [AeroBlackMed1, AeroBlackMed2, AeroBlackMed3, AeroBlackMed4, AeroBlackMed5];
   
   // Redirection Links
   const whatsappNumber = "971522286401";
@@ -38,7 +39,7 @@ const AeroBlackMedPage = () => {
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
       
       {/* ================= HERO SECTION (REDUCED HEIGHT) ================= */}
-      <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto">
+      <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto text-left">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <motion.div {...fadeIn}>
             <div className="inline-block px-4 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-black uppercase tracking-[0.2em] mb-6">
@@ -56,7 +57,7 @@ const AeroBlackMedPage = () => {
             <p className="text-sm text-slate-500 mb-8 leading-relaxed border-l-4 border-blue-600 pl-6 italic">
               Ideal for offices, retail spaces, clinics, showrooms, hotels, and hospitality environments, AeroBlack Med Diffuser helps create a welcoming atmosphere while supporting brand experience and comfort.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mt-6">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-slate-900 text-white rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-blue-600 transition-all flex items-center gap-3 shadow-lg">
                 Talk to a Scent Expert <ChatBubbleLeftRightIcon className="w-4 h-4" />
               </a>
@@ -118,32 +119,32 @@ const AeroBlackMedPage = () => {
       </section>
 
       {/* ================= SECTION 3: KEY FEATURES & BENEFITS ================= */}
-      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
+      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
         <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center">Key Features & Benefits</h2>
         <div className="grid gap-10">
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="order-2 md:order-1 text-left">
+            <div className="order-2 md:order-1">
               <h3 className="text-xl font-serif mb-4">Advanced Magnetic Lock Technology</h3>
               <p className="text-sm text-slate-500 leading-relaxed">
                 The AeroBlack Med Diffuser is equipped with a black technology magnetic lock, providing secure protection for essential oils. This feature is especially valuable in shared or public commercial spaces where equipment safety and oil security matter.
               </p>
             </div>
             <div className="rounded-3xl bg-slate-100 p-6 order-1 md:order-2 h-64 flex items-center justify-center">
-               <img src={AeroBlackPro2} alt="Security" className="w-full h-full object-contain" />
+               <img src={AeroBlackMed2} alt="Security" className="w-full h-full object-contain" />
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div className="rounded-3xl bg-slate-100 p-6 h-64 flex items-center justify-center">
-               <img src={AeroBlackPro3} alt="Smart Control" className="w-full h-full object-contain" />
+               <img src={AeroBlackMed3} alt="Smart Control" className="w-full h-full object-contain" />
             </div>
-            <div className="text-left">
+            <div>
               <h3 className="text-xl font-serif mb-4">Smart Touch & Bluetooth App Control</h3>
               <p className="text-sm text-slate-500 mb-4">This scent diffuser machine supports touch panel control and Bluetooth app connectivity, allowing users to:</p>
               <ul className="space-y-2">
                 {["Set working schedules", "Adjust fragrance intensity", "Customize diffusion cycles", "Manage operating time remotely"].map((li, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm text-slate-600 font-medium text-left">
-                    <CheckCircleIcon className="w-4 h-4 text-blue-600" /> {li}
+                  <li key={i} className="flex items-center gap-3 text-sm text-slate-600 font-medium">
+                    <CheckCircleIcon className="w-4 h-4 text-blue-600 shrink-0" /> {li}
                   </li>
                 ))}
               </ul>
@@ -151,7 +152,7 @@ const AeroBlackMedPage = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm col-span-2 text-left">
+            <div className="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm col-span-2">
               <h3 className="text-xl font-serif mb-4">HVAC & Flexible Installation Support</h3>
               <p className="text-sm text-slate-500 mb-6">The AeroBlack Med Diffuser can be used as a standalone unit, mounted on a wall, placed on the floor, or connected directly to an HVAC scent diffuser system.</p>
               <div className="grid grid-cols-2 gap-3">
@@ -160,7 +161,7 @@ const AeroBlackMedPage = () => {
                  ))}
               </div>
             </div>
-            <div className="bg-blue-600 p-8 rounded-[2rem] text-white flex flex-col justify-center text-left">
+            <div className="bg-blue-600 p-8 rounded-[2rem] text-white flex flex-col justify-center">
                <h3 className="text-lg font-serif mb-4 leading-tight">Efficient & Even Diffusion</h3>
                <p className="text-blue-100 text-[11px] mb-4 font-light">Built-in fan ensures even scent distribution and faster spread with no residue.</p>
                <div className="w-full h-px bg-blue-500 my-2" />
@@ -174,15 +175,15 @@ const AeroBlackMedPage = () => {
       <section className="py-16 bg-slate-50 px-6">
         <div className="max-w-[800px] mx-auto">
           <h2 className="text-2xl md:text-4xl font-serif mb-10 text-center">Technical Specifications</h2>
-          <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
+          <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm text-left">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="bg-slate-900 text-white text-left">
+                <tr className="bg-slate-900 text-white">
                   <th className="p-4 font-bold uppercase tracking-widest text-[10px]">Specification</th>
                   <th className="p-4 font-bold uppercase tracking-widest text-[10px]">Details</th>
                 </tr>
               </thead>
-              <tbody className="text-xs text-left">
+              <tbody className="text-xs">
                 {[
                   ["Product Type", "Commercial Aroma Diffuser"],
                   ["Fragrance Capacity", "250 ml"],
@@ -206,9 +207,9 @@ const AeroBlackMedPage = () => {
       </section>
 
       {/* ================= SECTION 5: WHERE IT WORKS BEST ================= */}
-      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
+      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
-          <div className="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm text-left">
+          <div className="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm">
             <h2 className="text-2xl font-serif mb-6 leading-tight">Where AeroBlack Med Works Best</h2>
             <div className="grid gap-2">
               {[
@@ -224,7 +225,7 @@ const AeroBlackMedPage = () => {
               ))}
             </div>
           </div>
-          <div className="text-left flex flex-col justify-center">
+          <div className="flex flex-col justify-center">
             <h2 className="text-2xl font-serif mb-6 leading-tight">How it Works</h2>
             <p className="text-sm text-slate-500 leading-relaxed mb-6">
               The AeroBlack Med Diffuser uses cold-air atomization technology to break fragrance oil into ultra-fine particles. These particles are dispersed evenly into the air without heat, water, or residue.
@@ -232,16 +233,16 @@ const AeroBlackMedPage = () => {
             <div className="p-6 rounded-2xl bg-blue-600 text-white shadow-xl shadow-blue-100">
                <BeakerIcon className="w-10 h-10 mb-4" />
                <h4 className="text-lg font-bold mb-1">Cold-Air Atomization</h4>
-               <p className="text-blue-100 text-xs font-light leading-relaxed text-left">Ultra-fine particles for a cleaner, longer-lasting scent experience throughout large commercial spaces.</p>
+               <p className="text-blue-100 text-xs font-light leading-relaxed">Ultra-fine particles for a cleaner, longer-lasting scent experience throughout large commercial spaces.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* ================= SECTION 7: WHY CHOOSE ================= */}
-      <section className="py-16 bg-slate-900 text-white px-6">
-        <div className="max-w-[1200px] mx-auto text-center">
-          <h2 className="text-2xl md:text-4xl font-serif mb-12">Why Choose AeroBlack Med for Your Business</h2>
+      <section className="py-16 bg-slate-900 text-white px-6 text-left">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center">Why Choose AeroBlack Med for Your Business</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               "Designed specifically for commercial scenting needs",
@@ -251,31 +252,31 @@ const AeroBlackMedPage = () => {
               "Scalable solution for growing spaces",
               "Backed by professional support from Cool Max"
             ].map((text, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors text-left">
+              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
                 <CheckCircleIcon className="w-5 h-5 text-blue-400 mb-3" />
                 <p className="text-[11px] font-light leading-relaxed">{text}</p>
               </div>
             ))}
           </div>
-          <p className="mt-10 text-blue-400 text-sm font-medium italic">This makes it a dependable scent machine for business environments.</p>
+          <p className="mt-10 text-blue-400 text-sm font-medium italic text-center">This makes it a dependable scent machine for business environments.</p>
         </div>
       </section>
 
       {/* ================= SECTION 8: MAINTENANCE ================= */}
-      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-center">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12">Maintenance & Support</h2>
-        <div className="grid md:grid-cols-2 gap-6 text-left">
+      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center">Maintenance & Support</h2>
+        <div className="grid md:grid-cols-2 gap-6">
           <div className="p-8 rounded-[2rem] bg-white border border-slate-100 shadow-sm">
-            <h4 className="text-lg font-bold mb-4 flex items-center gap-3 text-left"><WrenchScrewdriverIcon className="w-5 h-5 text-blue-600" /> Low Maintenance</h4>
-            <ul className="space-y-2 text-xs text-slate-500 text-left font-light">
+            <h4 className="text-lg font-bold mb-4 flex items-center gap-3"><WrenchScrewdriverIcon className="w-5 h-5 text-blue-600" /> Low Maintenance</h4>
+            <ul className="space-y-2 text-xs text-slate-500 font-light">
                <li>• Easy oil refilling with leak-proof design</li>
                <li>• Simple cleaning process</li>
                <li>• Long-lasting components</li>
             </ul>
           </div>
           <div className="p-8 rounded-[2rem] bg-white border border-slate-100 shadow-sm">
-            <h4 className="text-lg font-bold mb-4 flex items-center gap-3 text-blue-600 text-left"><ShieldCheckIcon className="w-5 h-5" /> Professional Service</h4>
-            <ul className="space-y-2 text-xs text-slate-500 text-left font-light">
+            <h4 className="text-lg font-bold mb-4 flex items-center gap-3 text-blue-600"><ShieldCheckIcon className="w-5 h-5" /> Professional Service</h4>
+            <ul className="space-y-2 text-xs text-slate-500 font-light">
                <li>• Installation support & Refill guidance</li>
                <li>• Ongoing maintenance assistance</li>
                <li>• Service options for commercial clients</li>
@@ -284,7 +285,7 @@ const AeroBlackMedPage = () => {
         </div>
       </section>
 
-      {/* ================= SECTION 10: CTA (MASTER REDIRECT) ================= */}
+      {/* ================= SECTION 10: CTA ================= */}
       <section className="py-20 px-6">
         <div className="max-w-[1200px] mx-auto bg-slate-900 rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/20 blur-[100px] rounded-full" />

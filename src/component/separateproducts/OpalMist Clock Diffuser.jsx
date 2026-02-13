@@ -18,10 +18,10 @@ import {
 } from "@heroicons/react/24/outline";
 
 /* ================= IMAGE ASSETS ================= */
-import AeroCube1 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/1.webp";
-import AeroCube2 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/2.webp";
-import AeroCube3 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/3.webp";
-import AeroCube4 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/4.webp";
+import AeroCube1 from "../../asset/productimg/CMwebpimg/OpalMist Clock Diffuser/1.webp";
+import AeroCube2 from "../../asset/productimg/CMwebpimg/OpalMist Clock Diffuser/2.webp";
+import AeroCube3 from "../../asset/productimg/CMwebpimg/OpalMist Clock Diffuser/3.webp";
+import AeroCube4 from "../../asset/productimg/CMwebpimg/OpalMist Clock Diffuser/4.webp";
 
 const OpalMistClockPage = () => {
   const [activeImg, setActiveImg] = useState(AeroCube1);

@@ -14,7 +14,7 @@ import DriveScent1 from "../../asset/productimg/CMwebpimg/DriveScent/1.webp";
 import DriveScent2 from "../../asset/productimg/CMwebpimg/DriveScent/2.webp";
 
 // 3. DeskScent (H19)
-import DeskScent1 from "../../asset/productimg/CMwebpimg/DeskScent/1.webp";
+import DeskScent1 from "../../asset/productimg/CMwebpimg/DeskScent/4.webp";
 import DeskScent2 from "../../asset/productimg/CMwebpimg/DeskScent/2.webp";
 
 // 4. NovaCarDiffuser (DA1004-2026)
@@ -89,7 +89,7 @@ const productList = [
   // --- CAR AROMA DIFFUSERS ---
   { id: 1, name: "Vento Car", model: "H11-B-2026", cat: "Car Aroma Diffusers", path: "/product/ventocar", images: [VentoCar1, VentoCar2] },
   { id: 2, name: "DriveScent", model: "H11-A-2026", cat: "Car Aroma Diffusers", path: "/product/drivemist", images: [DriveScent1, DriveScent2] },
-  { id: 3, name: "DeskScent", model: "H19", cat: "Car Aroma Diffusers", path: "/product/autolux", images: [DeskScent1, DeskScent2] },
+  { id: 3, name: "DeskScent", model: "H19", cat: "Car Aroma Diffusers", path: "/product/deskmist", images: [DeskScent1, DeskScent2] },
   { id: 4, name: "NovaCarDiffuser", model: "DA1004-2026", cat: "Car Aroma Diffusers", path: "/product/novacar", images: [NovaCar1, NovaCar2] },
 
   // --- COMMERCIAL AROMA DIFFUSERS ---
@@ -110,7 +110,7 @@ const productList = [
   { id: 15, name: "AirPole Pro Diffuser", model: "G-Air", cat: "Floor-Standing Aroma Diffusers", path: "/product/airpole", images: [AirPolePro1, AirPolePro2] },
 
   // --- LARGE AREA & HVAC AROMA DIFFUSERS ---
-  { id: 16, name: "AeroBlack Pro Diffuser", model: "Q3000Pro", cat: "Large Area & HVAC Aroma Diffusers", path: "/product/aeroblack-pro", images: [AeroBlackPro1, AeroBlackPro2] },
+  { id: 16, name: "AeroBlack Pro Diffuser", model: "Q3000Pro", cat: "Large Area & HVAC Aroma Diffusers", path: "/product/autolux", images: [AeroBlackPro1, AeroBlackPro2] },
   { id: 17, name: "AirPulse 150", model: "VS-160", cat: "Large Area & HVAC Aroma Diffusers", path: "/product/airpulse", images: [AirPulse1501, AirPulse1502] },
 
   // --- PASSIVE / NO-POWER DIFFUSERS ---
@@ -118,19 +118,18 @@ const productList = [
 
   // --- WALL-MOUNTED & CEILING AROMA DIFFUSERS ---
   { id: 19, name: "CeilAir Pro Diffuser", model: "M45", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/product/ceilair", images: [CeilAirPro1, CeilAirPro2] },
-  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/product/aeromax-pro", images: [AeroMaxPro1, AeroMaxPro2] }
+  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/product/aeromax", images: [AeroMaxPro1, AeroMaxPro2] }
 ];
-
 
 const categories = [
   "All Systems", 
+  "Car Aroma Diffusers",
   "Commercial Aroma Diffusers", 
-  "Large Area & HVAC Diffusers", 
-  "Car Aroma Diffusers", 
-  "Desktop & Small Space Diffusers", 
-  "Wall-Mounted & Ceiling Diffusers", 
+  "Desktop & Small Space Aroma Diffusers", 
   "Floor-Standing Aroma Diffusers", 
-  "Passive / No-Power Diffusers"
+  "Large Area & HVAC Aroma Diffusers", 
+  "Passive / No-Power Diffusers",
+  "Wall-Mounted & Ceiling Aroma Diffusers"
 ];
 
 export default function ArchitectStore() {
@@ -170,7 +169,7 @@ export default function ArchitectStore() {
             <button 
               key={cat} 
               onClick={() => setActiveCat(cat)} 
-              className={`w-full flex items-center gap-3 py-3 px-4 rounded-xl text-[10px] font-bold uppercase tracking-wider transition-all relative ${activeCat === cat ? "text-blue-600 bg-blue-50/50" : "text-slate-500 hover:text-slate-900"}`}
+              className={`w-full flex items-center gap-3 py-3 px-4 rounded-xl text-[10px] font-bold uppercase tracking-wider transition-all relative text-left ${activeCat === cat ? "text-blue-600 bg-blue-50/50" : "text-slate-500 hover:text-slate-900"}`}
             >
               <span className="truncate">{cat}</span>
             </button>
@@ -208,7 +207,7 @@ export default function ArchitectStore() {
       {/* --- MAIN CONTENT --- */}
       <main className="flex-1 p-4 lg:p-10">
         <header className="mb-6 lg:mb-10 text-left">
-          <h2 className="text-3xl md:text-6xl font-serif leading-[1.1] mb-2 tracking-tight">
+          <h2 className="text-3xl md:text-6xl font-serif leading-[1.1] mb-2 tracking-tight text-left">
             All <span className="italic text-slate-300 font-light">Products.</span>
           </h2>
           <div className="flex items-center gap-3">
@@ -280,11 +279,11 @@ function ProductCard({ product }) {
         </div>
       </div>
 
-      <div className="mt-2.5 lg:mt-4 px-1">
-        <h3 className="text-[10px] lg:text-base font-serif text-slate-900 mb-0.5 group-hover:text-blue-600 transition-colors leading-tight line-clamp-1">
+      <div className="mt-2.5 lg:mt-4 px-1 text-left">
+        <h3 className="text-[10px] lg:text-base font-serif text-slate-900 mb-0.5 group-hover:text-blue-600 transition-colors leading-tight line-clamp-1 text-left">
           {product.name}
         </h3>
-        <p className="text-[6px] lg:text-[10px] font-black uppercase tracking-[0.15em] text-slate-400">
+        <p className="text-[6px] lg:text-[10px] font-black uppercase tracking-[0.15em] text-slate-400 text-left">
           {product.cat}
         </p>
       </div>

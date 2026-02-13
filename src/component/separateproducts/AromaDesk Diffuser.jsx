@@ -14,15 +14,15 @@ import {
   ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/outline";
 
-/* ================= IMAGE ASSETS ================= */
-import DeskScent1 from "../../asset/productimg/CMwebpimg/DeskScent/1.webp";
-import DeskScent2 from "../../asset/productimg/CMwebpimg/DeskScent/2.webp";
-import DeskScent3 from "../../asset/productimg/CMwebpimg/DeskScent/3.webp";
-import DeskScent4 from "../../asset/productimg/CMwebpimg/DeskScent/4.webp";
+/* ================= IMAGE ASSETS MAPPED TO H10-A-2026 ================= */
+import AromaDesk1 from "../../asset/productimg/CMwebpimg/AromaDesk/1.webp";
+import AromaDesk2 from "../../asset/productimg/CMwebpimg/AromaDesk/2.webp";
+import AromaDesk3 from "../../asset/productimg/CMwebpimg/AromaDesk/3.webp";
+import AromaDesk4 from "../../asset/productimg/CMwebpimg/AromaDesk/4.webp";
 
 const AromaDeskPage = () => {
-  const [activeImg, setActiveImg] = useState(DeskScent1);
-  const gallery = [DeskScent1, DeskScent2, DeskScent3, DeskScent4];
+  const [activeImg, setActiveImg] = useState(AromaDesk1);
+  const gallery = [AromaDesk1, AromaDesk2, AromaDesk3, AromaDesk4];
 
   // Redirection Links
   const whatsappNumber = "971522286401";
@@ -37,10 +37,10 @@ const AromaDeskPage = () => {
   };
 
   return (
-    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
+    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
       
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}
-      <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto text-left">
+      <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <motion.div {...fadeIn}>
             <div className="inline-block px-4 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-black uppercase tracking-[0.2em] mb-6">
@@ -52,17 +52,17 @@ const AromaDeskPage = () => {
             <p className="text-lg text-slate-600 font-medium mb-6 leading-relaxed">
               Elegant Desktop Aroma Diffuser for Refined Personal Spaces
             </p>
-            <p className="text-sm text-slate-500 mb-4 leading-relaxed font-light">
+            <p className="text-sm text-slate-500 mb-4 leading-relaxed font-light text-justify md:text-left">
               The AromaDesk Diffuser is a compact desktop aroma diffuser designed for small spaces where style, simplicity, and controlled fragrance diffusion are essential. With its plug-in essential oil bottle design, intelligent timed diffusion, and unique sculptural appearance, this diffuser delivers efficient scenting while doubling as a modern décor element.
             </p>
-            <p className="text-sm text-slate-500 mb-8 italic border-l-4 border-blue-600 pl-6">
+            <p className="text-sm text-slate-500 mb-8 italic border-l-4 border-blue-600 pl-6 font-light">
               Ideal for desks, bedside tables, counters, and small commercial interiors, AromaDesk Diffuser provides a balanced home scent system for everyday environments.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-slate-900 text-white rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-blue-600 transition-all flex items-center gap-3 shadow-lg">
+            <div className="flex flex-wrap gap-4 mt-6">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-slate-900 text-white rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-blue-600 transition-all flex items-center gap-3 shadow-lg font-sans">
                 Talk to Scent Expert <ChatBubbleLeftRightIcon className="w-4 h-4" />
               </a>
-              <a href={contactPath} className="px-6 py-3 border border-slate-200 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all flex items-center gap-2">
+              <a href={contactPath} className="px-6 py-3 border border-slate-200 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all flex items-center gap-2 font-sans">
                 Contact Cool Max <ArrowRightIcon className="w-3 h-3" />
               </a>
             </div>
@@ -87,8 +87,8 @@ const AromaDeskPage = () => {
       <section className="py-16 bg-white px-6">
         <div className="max-w-[1000px] mx-auto text-center">
           <motion.div {...fadeIn}>
-            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight">Product Overview</h2>
-            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light">
+            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Product Overview</h2>
+            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light text-justify md:text-center">
               AromaDesk Diffuser is built for users who want a simple yet elegant home diffuser machine without complex installation or bulky hardware. Its direct plug-in oil bottle system allows quick fragrance changes, while the intelligent three-gear timing ensures consistent scent delivery throughout the day.
               This diffuser is designed to blend seamlessly into modern interiors while maintaining reliable aroma performance for compact spaces.
             </p>
@@ -121,12 +121,12 @@ const AromaDeskPage = () => {
 
       {/* ================= SECTION 3: DESIGN & BUILD ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight">Premium Design & Build Quality</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight text-slate-900">Premium Design & Build Quality</h2>
         <div className="grid gap-16">
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="order-2 md:order-1">
-              <h3 className="text-xl font-serif mb-4">Plug-In Essential Oil Bottle Design</h3>
-              <p className="text-sm text-slate-500 leading-relaxed mb-4 font-light">
+            <div className="order-2 md:order-1 text-left">
+              <h3 className="text-xl font-serif mb-4 text-slate-900">Plug-In Essential Oil Bottle Design</h3>
+              <p className="text-sm text-slate-500 leading-relaxed mb-4 font-light text-justify md:text-left">
                 The plug-in essential oil bottle system allows for rapid fragrance deployment and mess-free maintenance.
               </p>
               <div className="space-y-3">
@@ -139,18 +139,18 @@ const AromaDeskPage = () => {
               <p className="mt-6 text-slate-400 font-medium text-xs italic">Highly practical for both home and light commercial environments.</p>
             </div>
             <div className="rounded-3xl bg-slate-100 p-6 order-1 md:order-2 h-64 flex items-center justify-center">
-               <img src={DeskScent2} alt="Plug-in Bottle Design" className="w-full h-full object-contain" />
+               <img src={AromaDesk2} alt="Plug-in Bottle Design" className="w-full h-full object-contain" />
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="rounded-3xl bg-slate-100 p-6 h-64 flex items-center justify-center">
-               <img src={DeskScent3} alt="Timed Diffusion Control" className="w-full h-full object-contain" />
+            <div className="rounded-3xl bg-slate-100 p-6 h-64 flex items-center justify-center order-1">
+               <img src={AromaDesk3} alt="Timed Diffusion Control" className="w-full h-full object-contain" />
             </div>
-            <div>
-              <h3 className="text-xl font-serif mb-4">Intelligent Timed Diffusion</h3>
+            <div className="order-2 text-left">
+              <h3 className="text-xl font-serif mb-4 text-slate-900">Intelligent Timed Diffusion</h3>
               <h4 className="text-blue-600 font-bold uppercase tracking-widest text-[10px] mb-4">Three-Gear Control System</h4>
-              <p className="text-sm text-slate-500 font-light leading-relaxed mb-6">
+              <p className="text-sm text-slate-500 font-light leading-relaxed mb-6 text-justify md:text-left">
                 AromaDesk Diffuser features an intelligent three-gear design that controls fragrance release automatically.
               </p>
               <div className="flex gap-4">
@@ -169,15 +169,15 @@ const AromaDeskPage = () => {
           <div className="bg-slate-900 text-white p-10 rounded-[3rem] text-center relative overflow-hidden">
              <PaintBrushIcon className="w-10 h-10 text-blue-500 mx-auto mb-6" />
              <h3 className="text-2xl md:text-3xl font-serif mb-4">Compact & Unique Design</h3>
-             <p className="text-slate-400 max-w-2xl mx-auto leading-relaxed font-light text-sm">
+             <p className="text-slate-400 max-w-2xl mx-auto leading-relaxed font-light text-sm text-justify md:text-center">
                 Designed with a distinctive shape and texture, AromaDesk stand outs from traditional diffusers. Its clean white body combined with a refined top and mirror silver electroplated base reflects light and shadows to integrate naturally into any décor.
              </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 text-left">
              <div className="p-8 bg-white border border-slate-100 rounded-3xl shadow-sm text-left">
                 <SpeakerXMarkIcon className="w-8 h-8 text-blue-600 mb-4" />
-                <h3 className="text-lg font-serif mb-2">Quiet Performance</h3>
+                <h3 className="text-lg font-serif mb-2 text-slate-900">Quiet Performance</h3>
                 <p className="text-slate-500 font-light text-xs leading-relaxed">
                    Operating at ≤40 dB, AromaDesk runs quietly in the background, perfect for concentration-heavy areas.
                 </p>
@@ -189,7 +189,7 @@ const AromaDeskPage = () => {
              </div>
              <div className="p-8 bg-blue-600 text-white rounded-3xl shadow-xl text-left">
                 <ShieldCheckIcon className="w-8 h-8 text-white mb-4" />
-                <h3 className="text-lg font-serif mb-2">Leak-Proof & Safe</h3>
+                <h3 className="text-lg font-serif mb-2 text-white">Leak-Proof & Safe</h3>
                 <p className="text-blue-100 font-light text-xs leading-relaxed mb-4">
                    Includes a leak-proof certified structure ensuring clean operation and safe placement on expensive furniture.
                 </p>
@@ -206,15 +206,15 @@ const AromaDeskPage = () => {
       <section className="py-16 bg-slate-50 px-6">
         <div className="max-w-[800px] mx-auto">
           <h2 className="text-2xl md:text-4xl font-serif mb-10 text-center tracking-tight text-slate-900">Technical Specifications</h2>
-          <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
+          <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm text-left">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="bg-slate-900 text-white text-left">
+                <tr className="bg-slate-900 text-white">
                   <th className="p-4 font-bold uppercase tracking-widest text-[10px]">Specification</th>
                   <th className="p-4 font-bold uppercase tracking-widest text-[10px]">Details</th>
                 </tr>
               </thead>
-              <tbody className="text-xs text-left">
+              <tbody className="text-xs">
                 {[
                   ["Product Type", "Desktop & Small Space Aroma Diffuser"],
                   ["Fragrance Capacity", "20 ml"],
@@ -239,7 +239,7 @@ const AromaDeskPage = () => {
 
       {/* ================= SECTION: IDEAL APPLICATIONS ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-center">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12 tracking-tight">Ideal Applications</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 tracking-tight text-slate-900">Ideal Applications</h2>
         <div className="flex flex-wrap justify-center gap-3 mb-16">
           {["Home desks", "Bedrooms", "Study areas", "Small retail counters", "Personal workspaces"].map((item, i) => (
             <span key={i} className="px-6 py-3 bg-white border border-slate-100 rounded-xl shadow-sm text-[10px] font-bold text-slate-700 uppercase tracking-widest">
@@ -250,14 +250,14 @@ const AromaDeskPage = () => {
 
         <div className="grid lg:grid-cols-2 gap-10 items-center text-left">
           <div className="relative h-80">
-             <img src={DeskScent4} alt="Mirror Base Detail" className="w-full h-full object-contain rounded-[2rem] shadow-xl" />
+             <img src={AromaDesk4} alt="Mirror Base Detail" className="w-full h-full object-contain rounded-[2rem] shadow-xl" />
              <div className="absolute -bottom-4 -right-4 p-6 bg-blue-600 text-white rounded-2xl shadow-xl">
                 <span className="text-xl font-black italic">MIRROR BASE</span>
                 <p className="text-[8px] font-bold uppercase tracking-widest">Electroplated Base</p>
              </div>
           </div>
-          <div>
-            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight leading-tight">Why Choose AromaDesk Diffuser</h2>
+          <div className="text-left">
+            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight leading-tight text-slate-900">Why Choose AromaDesk Diffuser</h2>
             <div className="space-y-3">
               {[
                 "Simple plug-in oil bottle replacement",
@@ -280,13 +280,13 @@ const AromaDeskPage = () => {
       {/* ================= SECTION: COLLECTION ================= */}
       <section className="py-16 bg-slate-50 px-6">
         <div className="max-w-[1200px] mx-auto text-center border-t border-slate-100 pt-16">
-          <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight">The Desktop & Small Space Collection</h2>
+          <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">The Desktop & Small Space Collection</h2>
           <p className="text-sm text-slate-500 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
             AromaDesk Diffuser belongs to Cool Max’s Desktop & Small Space Aroma Diffusers category — focused on efficiency, simplicity, and aesthetic harmony.
           </p>
           <div className="grid md:grid-cols-3 gap-4">
             {["OpalMist Clock", "ZenBox Mini", "AeroCube Diffuser"].map((range, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white border border-slate-100 hover:border-blue-600 transition-all font-bold uppercase tracking-widest text-[9px] text-slate-500 cursor-pointer">
+              <div key={i} className="p-6 rounded-2xl bg-white border border-slate-100 hover:border-blue-600 transition-all font-bold uppercase tracking-widest text-[9px] text-slate-500 cursor-pointer text-center">
                 Explore {range}
               </div>
             ))}
@@ -294,15 +294,15 @@ const AromaDeskPage = () => {
         </div>
       </section>
 
-      {/* ================= SECTION: CTA (MASTER REDIRECT) ================= */}
+      {/* ================= SECTION: CTA ================= */}
       <section className="py-20 px-6">
         <div className="max-w-[1200px] mx-auto bg-[#0c101b] rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/20 blur-[100px] rounded-full" />
-          <h2 className="text-3xl md:text-5xl font-serif mb-6 relative z-10 tracking-tight leading-tight">Enhance Small Spaces with AromaDesk</h2>
+          <h2 className="text-3xl md:text-5xl font-serif mb-6 relative z-10 tracking-tight leading-tight text-white">Enhance Small Spaces with AromaDesk</h2>
           <p className="text-slate-400 text-lg mb-10 relative z-10 max-w-2xl mx-auto leading-relaxed font-light">
             Looking for a compact desktop aroma diffuser that delivers reliable fragrance without complexity?
           </p>
-          <div className="flex flex-wrap justify-center gap-4 relative z-10">
+          <div className="flex flex-wrap justify-center gap-4 relative z-10 font-sans">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-white text-slate-900 rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-2">
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Support
             </a>

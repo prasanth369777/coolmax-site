@@ -1,4 +1,4 @@
-import React, { useState, useMemo} from "react";
+import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
@@ -104,11 +104,11 @@ const productList = [
   { id: 6, name: "MistBox X Diffuser", model: "OV-10", cat: "Commercial Aroma Diffusers", images: [MistBoxX1, MistBoxX2], path: "/product/mistbox" },
 
   // --- DESKTOP & SMALL SPACE AROMA DIFFUSERS ---
-  { id: 7, name: "AeroCube Diffuser", model: "M41-B", cat: "Desktop & Small Space Aroma Diffusers", images: [AeroCube1, AeroCube2], path: "/product/aerocube" },
-  { id: 8, name: "ZenBox Mini Diffuser", model: "D50mini", cat: "Desktop & Small Space Aroma Diffusers", images: [ZenBoxMini1, ZenBoxMini2], path: "/product/zenbox-mini" },
-  { id: 9, name: "AromaDesk", model: "H10-A-2026", cat: "Desktop & Small Space Aroma Diffusers", images: [AromaDesk1, AromaDesk2], path: "/product/aromadesk" },
-  { id: 10, name: "LuxePanel Diffuser", model: "OV-5/5Pro", cat: "Desktop & Small Space Aroma Diffusers", images: [LuxePanel1, LuxePanel2], path: "/product/luxepanel" },
-  { id: 11, name: "OpalMist Clock Diffuser", model: "U2", cat: "Desktop & Small Space Aroma Diffusers", images: [OpalMist1, OpalMist2], path: "/product/opalmist" },
+  { id: 7, name: "AeroCube Diffuser", model: "M41-B", cat: "Desktop & Small Space", images: [AeroCube1, AeroCube2], path: "/product/aerocube" },
+  { id: 8, name: "ZenBox Mini Diffuser", model: "D50mini", cat: "Desktop & Small Space", images: [ZenBoxMini1, ZenBoxMini2], path: "/product/zenbox-mini" },
+  { id: 9, name: "AromaDesk", model: "H10-A-2026", cat: "Desktop & Small Space", images: [AromaDesk1, AromaDesk2], path: "/product/aromadesk" },
+  { id: 10, name: "LuxePanel Diffuser", model: "OV-5/5Pro", cat: "Desktop & Small Space", images: [LuxePanel1, LuxePanel2], path: "/product/luxepanel" },
+  { id: 11, name: "OpalMist Clock Diffuser", model: "U2", cat: "Desktop & Small Space", images: [OpalMist1, OpalMist2], path: "/product/opalmist" },
 
   // --- FLOOR-STANDING AROMA DIFFUSERS ---
   { id: 12, name: "NanoPillar Diffuser", model: "A500", cat: "Floor-Standing Aroma Diffusers", images: [NanoPillar1, NanoPillar2], path: "/product/nanopillar" },
@@ -117,15 +117,15 @@ const productList = [
   { id: 15, name: "AirPole Pro Diffuser", model: "G-Air", cat: "Floor-Standing Aroma Diffusers", images: [AirPolePro1, AirPolePro2], path: "/product/airpole" },
 
   // --- LARGE AREA & HVAC AROMA DIFFUSERS ---
-  { id: 16, name: "AeroBlack Pro Diffuser", model: "Q3000Pro", cat: "Large Area & HVAC Aroma Diffusers", images: [AeroBlackPro1, AeroBlackPro2], path: "/product/aeroblack-pro" },
-  { id: 17, name: "AirPulse 150", model: "VS-160", cat: "Large Area & HVAC Aroma Diffusers", images: [AirPulse1501, AirPulse1502], path: "/product/airpulse" },
+  { id: 16, name: "AeroBlack Pro Diffuser", model: "Q3000Pro", cat: "Large Area & HVAC", images: [AeroBlackPro1, AeroBlackPro2], path: "/product/aeroblack-pro" },
+  { id: 17, name: "AirPulse 150", model: "VS-160", cat: "Large Area & HVAC", images: [AirPulse1501, AirPulse1502], path: "/product/airpulse" },
 
   // --- PASSIVE / NO-POWER DIFFUSERS ---
   { id: 18, name: "Natural Fragrance Diffusion", model: "M10", cat: "Passive / No-Power Diffusers", images: [NaturalFragrance1, NaturalFragrance2], path: "/product/natural-flow" },
 
   // --- WALL-MOUNTED & CEILING AROMA DIFFUSERS ---
-  { id: 19, name: "CeilAir Pro Diffuser", model: "M45", cat: "Wall-Mounted & Ceiling Aroma Diffusers", images: [CeilAirPro1, CeilAirPro2], path: "/product/ceilair" },
-  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", images: [AeroMaxPro1, AeroMaxPro2], path: "/product/aeromax-pro" }
+  { id: 19, name: "CeilAir Pro Diffuser", model: "M45", cat: "Wall-Mounted & Ceiling", images: [CeilAirPro1, CeilAirPro2], path: "/product/ceilair" },
+  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling", images: [AeroMaxPro1, AeroMaxPro2], path: "/product/aeromax-pro" }
 ];
 
 const categories = ["All Systems", "Car Aroma Diffusers", "Desktop & Small Space", "Wall-Mounted & Ceiling", "Commercial Aroma Diffusers", "Large Area & HVAC", "Floor-Standing Aroma Diffusers", "Passive / No-Power"];
@@ -142,10 +142,10 @@ export default function ArchitectStore() {
   }, [activeCat, search]);
 
   return (
-    <div className="min-h-screen bg-[#FAF9F6] text-slate-900 font-sans">
+    <div className="min-h-screen bg-[#FAF9F6] text-slate-900 font-sans text-left">
       
       {/* ================= SECTION 1: MINIMAL HERO ================= */}
-      <section className="relative pt-32 pb-20 px-6 lg:px-16 overflow-hidden bg-white">
+      <section className="relative pt-32 pb-20 px-6 lg:px-16 overflow-hidden bg-white text-left">
         <div className="max-w-[1600px] mx-auto grid lg:grid-cols-2 items-end gap-12">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 mb-6">
@@ -153,14 +153,14 @@ export default function ArchitectStore() {
               <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">The New Standards</span>
             </div>
             <h1 className="text-6xl md:text-9xl font-serif leading-[0.9] tracking-tighter mb-8">
-              All <span className="italic text-slate-300 font-light">Products.</span>
+              All <span className="italic text-slate-300 font-light text-left">Products.</span>
             </h1>
-            <p className="text-lg text-slate-400 max-w-md leading-relaxed font-light">
+            <p className="text-lg text-slate-400 max-w-md leading-relaxed font-light text-left">
               Atmospheric technology for distinguished spaces. Engineered in 2026 for performance and olfactory precision.
             </p>
           </motion.div>
           
-          <div className="flex flex-col lg:items-end gap-6">
+          <div className="flex flex-col lg:items-end gap-6 text-left">
             <div className="relative w-full max-w-sm">
               <MagnifyingGlassIcon className="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
               <input 
@@ -195,15 +195,15 @@ export default function ArchitectStore() {
       </section>
 
       {/* ================= SECTION 3: CATEGORY EXPLORER ================= */}
-      <div className="max-w-[1600px] mx-auto px-6 lg:px-16 py-20 flex flex-col lg:flex-row gap-16">
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-16 py-20 flex flex-col lg:flex-row gap-16 text-left">
         
-        <aside className="lg:w-64 shrink-0">
-          <div className="sticky top-32">
-            <div className="flex items-center gap-3 mb-10 text-slate-400 uppercase tracking-[0.3em] text-[10px] font-black">
+        <aside className="lg:w-64 shrink-0 text-left">
+          <div className="sticky top-32 text-left">
+            <div className="flex items-center gap-3 mb-10 text-slate-400 uppercase tracking-[0.3em] text-[10px] font-black text-left">
               <AdjustmentsHorizontalIcon className="w-4 h-4" />
               <span>Filter by System</span>
             </div>
-            <nav className="flex flex-wrap lg:flex-col gap-2">
+            <nav className="flex flex-wrap lg:flex-col gap-2 text-left">
               {categories.map(cat => (
                 <button
                   key={cat}
@@ -219,10 +219,10 @@ export default function ArchitectStore() {
           </div>
         </aside>
 
-        <main className="flex-1">
-          <div className="flex items-center gap-4 mb-12">
+        <main className="flex-1 text-left">
+          <div className="flex items-center gap-4 mb-12 text-left">
             <span className="h-px w-10 bg-blue-600"></span>
-            <p className="text-[11px] font-black uppercase tracking-[0.3em] text-blue-600">
+            <p className="text-[11px] font-black uppercase tracking-[0.3em] text-blue-600 text-left">
               {activeCat} — {filtered.length} Units
             </p>
           </div>
@@ -238,24 +238,24 @@ export default function ArchitectStore() {
       </div>
 
       {/* ================= SECTION 4: END ACTION BAR ================= */}
-      <section className="mt-20 border-t border-slate-200 bg-white py-20 px-6">
+      <section className="mt-20 border-t border-slate-200 bg-white py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-serif mb-6 tracking-tight">Experience Cool Max in <span className="italic text-slate-400 font-light">Your Space.</span></h2>
-          <p className="text-slate-500 mb-12 max-w-xl mx-auto font-light">Get expert advice on choosing the perfect system for your home or business environment.</p>
+          <h2 className="text-3xl md:text-5xl font-serif mb-6 tracking-tight text-center">Experience Cool Max in <span className="italic text-slate-400 font-light text-center">Your Space.</span></h2>
+          <p className="text-slate-500 mb-12 max-w-xl mx-auto font-light text-center font-sans">Get expert advice on choosing the perfect system for your home or business environment.</p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
               href="https://wa.me/971522286401" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-full sm:w-64 flex items-center justify-center gap-3 py-5 bg-[#25D366] text-white rounded-full font-black uppercase tracking-widest text-xs hover:scale-[1.03] transition-all shadow-xl shadow-green-100"
+              className="w-full sm:w-64 flex items-center justify-center gap-3 py-5 bg-[#25D366] text-white rounded-full font-black uppercase tracking-widest text-xs hover:scale-[1.03] transition-all shadow-xl shadow-green-100 font-sans"
             >
               <FaWhatsapp size={20} />
               WhatsApp Inquiry
             </a>
             <Link 
               to="/contact"
-              className="w-full sm:w-64 flex items-center justify-center gap-3 py-5 bg-slate-900 text-white rounded-full font-black uppercase tracking-widest text-xs hover:scale-[1.03] transition-all shadow-xl shadow-slate-200"
+              className="w-full sm:w-64 flex items-center justify-center gap-3 py-5 bg-slate-900 text-white rounded-full font-black uppercase tracking-widest text-xs hover:scale-[1.03] transition-all shadow-xl shadow-slate-200 font-sans"
             >
               <EnvelopeIcon className="w-5 h-5" />
               Contact Our Experts
@@ -279,9 +279,9 @@ function ProductCard({ product }) {
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
-      className="group flex flex-col relative"
+      className="group flex flex-col relative text-left"
     >
-      <div className="relative aspect-[4/5] bg-white rounded-[2rem] md:rounded-[3rem] border border-slate-100 flex items-center justify-center p-6 md:p-12 transition-all duration-700 group-hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.06)] group-hover:-translate-y-2 overflow-hidden">
+      <div className="relative aspect-[4/5] bg-white rounded-[2rem] md:rounded-[3rem] border border-slate-100 flex items-center justify-center p-6 md:p-12 transition-all duration-700 group-hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.06)] group-hover:-translate-y-2 overflow-hidden text-left">
         <div className="absolute inset-0 bg-gradient-to-tr from-slate-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
         
         <img 
@@ -297,18 +297,18 @@ function ProductCard({ product }) {
           <ArrowUpRightIcon className="w-5 h-5 md:w-6 md:h-6" />
         </Link>
 
-        <div className="absolute top-6 left-6 md:top-10 md:left-10">
-          <span className="text-[7px] md:text-[9px] font-black text-slate-300 uppercase tracking-[0.4em]">
+        <div className="absolute top-6 left-6 md:top-10 md:left-10 text-left">
+          <span className="text-[7px] md:text-[9px] font-black text-slate-300 uppercase tracking-[0.4em] text-left">
             {product.model}
           </span>
         </div>
       </div>
 
-      <div className="mt-6 px-2">
-        <h3 className="text-sm md:text-2xl font-serif text-slate-900 mb-1 group-hover:text-blue-600 transition-colors leading-tight">
+      <div className="mt-6 px-2 text-left">
+        <h3 className="text-sm md:text-2xl font-serif text-slate-900 mb-1 group-hover:text-blue-600 transition-colors leading-tight text-left">
           {product.name}
         </h3>
-        <p className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
+        <p className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 text-left">
           {product.cat}
         </p>
       </div>

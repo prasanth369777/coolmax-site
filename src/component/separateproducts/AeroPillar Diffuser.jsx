@@ -13,7 +13,7 @@ import {
   ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/outline";
 
-/* ================= IMAGE ASSETS ================= */
+/* ================= IMAGE ASSETS MAPPED TO F-AIR ================= */
 import AeroPillar1 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/1.webp";
 import AeroPillar2 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/2.webp";
 import AeroPillar3 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/3.webp";
@@ -36,7 +36,7 @@ const AeroPillarPage = () => {
   };
 
   return (
-    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
+    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
       
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto">
@@ -54,11 +54,11 @@ const AeroPillarPage = () => {
             <p className="text-sm text-slate-500 mb-8 leading-relaxed font-light">
               The AeroPillar Diffuser is a modern floor-standing aroma diffuser designed to deliver powerful yet refined fragrance diffusion in spaces where both performance and aesthetics matter. Built with a sleek aluminum alloy body and advanced atomization technology, this diffuser blends seamlessly into interiors while providing consistent and controlled scent coverage.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mt-6">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-slate-900 text-white rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-blue-600 transition-all flex items-center gap-3 shadow-lg">
                 Talk to Scent Expert <ChatBubbleLeftRightIcon className="w-4 h-4" />
               </a>
-              <a href={contactPath} className="px-6 py-3 border border-slate-200 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all flex items-center gap-2">
+              <a href={contactPath} className="px-6 py-3 border border-slate-200 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all flex items-center gap-2 font-sans">
                 Contact Cool Max <ArrowRightIcon className="w-3 h-3" />
               </a>
             </div>
@@ -80,11 +80,11 @@ const AeroPillarPage = () => {
       </section>
 
       {/* ================= SECTION 1: PRODUCT OVERVIEW ================= */}
-      <section className="py-16 bg-white px-6 text-left">
+      <section className="py-16 bg-white px-6">
         <div className="max-w-[1000px] mx-auto text-center">
           <motion.div {...fadeIn}>
             <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight">Product Overview</h2>
-            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light">
+            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light text-justify md:text-center">
               AeroPillar Diffuser is engineered for environments that require visible elegance with professional scenting performance. Unlike wall-mounted or hidden systems, this floor-standing aroma diffuser becomes part of the interior design while delivering effective fragrance diffusion across medium to large spaces.
               With Wi-Fi and Bluetooth control, high-pressure air pump technology, and infrared oil detection, AeroPillar Diffuser offers reliability, convenience, and precise fragrance control for everyday use.
             </p>
@@ -116,13 +116,13 @@ const AeroPillarPage = () => {
       </section>
 
       {/* ================= SECTION 3: DESIGN & BUILD ================= */}
-      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
+      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
         <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight">Design & Build Quality</h2>
         <div className="grid gap-16">
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="order-2 md:order-1 text-left">
+            <div className="order-2 md:order-1">
               <h3 className="text-xl font-serif mb-4">Sculpted Floor-Standing Design</h3>
-              <p className="text-sm text-slate-500 leading-relaxed mb-6">
+              <p className="text-sm text-slate-500 leading-relaxed mb-6 font-light">
                 The AeroPillar Diffuser features a slim, vertical pillar form that fits naturally into modern interiors. Its metallic finish and clean lines allow it to function as both a fragrance system and a design element.
               </p>
               <div className="grid grid-cols-2 gap-3">
@@ -144,26 +144,26 @@ const AeroPillarPage = () => {
             </div>
             <div className="text-left">
               <h3 className="text-xl font-serif mb-4">Durable Aluminum Alloy Body</h3>
-              <p className="text-sm text-slate-500 leading-relaxed mb-4">Crafted with an aluminum alloy exterior, the diffuser offers long-term durability, heat resistance, and a premium visual appeal.</p>
+              <p className="text-sm text-slate-500 leading-relaxed mb-4 font-light">Crafted with an aluminum alloy exterior, the diffuser offers long-term durability, heat resistance, and a premium visual appeal.</p>
               <div className="bg-slate-900 text-white p-6 rounded-2xl">
                 <h4 className="text-lg font-serif mb-2 text-blue-400">High-Pressure Air Pump</h4>
-                <p className="text-slate-300 text-xs font-light">Uses a large-flow system to atomize fragrance oil into ultra-fine particles, ensuring even distribution and no wet mist.</p>
+                <p className="text-slate-300 text-xs font-light leading-relaxed">Uses a large-flow system to atomize fragrance oil into ultra-fine particles, ensuring even distribution and no wet mist.</p>
               </div>
             </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm text-left">
-              <h3 className="text-lg font-serif mb-4">Precision Atomization</h3>
-              <p className="text-slate-500 text-xs leading-relaxed">Delivers long-lasting presence and balanced intensity throughout expansive rooms.</p>
+            <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm">
+              <h3 className="text-lg font-serif mb-4 text-slate-900">Precision Atomization</h3>
+              <p className="text-slate-500 text-xs leading-relaxed font-light">Delivers long-lasting presence and balanced intensity throughout expansive rooms.</p>
             </div>
-            <div className="bg-blue-600 text-white p-8 rounded-[2rem] shadow-xl text-left">
-              <h3 className="text-lg font-serif mb-4">Infrared Oil Detection</h3>
-              <p className="text-blue-100 text-xs leading-relaxed">Monitors fragrance levels accurately to manage refills efficiently and avoid downtime.</p>
+            <div className="bg-blue-600 text-white p-8 rounded-[2rem] shadow-xl">
+              <h3 className="text-lg font-serif mb-4 text-white">Infrared Oil Detection</h3>
+              <p className="text-blue-100 text-xs leading-relaxed font-light">Monitors fragrance levels accurately to manage refills efficiently and avoid downtime.</p>
             </div>
-            <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm text-left">
-              <h3 className="text-lg font-serif mb-4">Hidden Fan System</h3>
-              <p className="text-slate-500 text-xs leading-relaxed">Enhances airflow efficiency while keeping noise levels low for sensitive environments.</p>
+            <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm">
+              <h3 className="text-lg font-serif mb-4 text-slate-900">Hidden Fan System</h3>
+              <p className="text-slate-500 text-xs leading-relaxed font-light">Enhances airflow efficiency while keeping noise levels low for sensitive environments.</p>
             </div>
           </div>
         </div>
@@ -175,7 +175,7 @@ const AeroPillarPage = () => {
             <div className="inline-block p-3 bg-blue-50 rounded-full mb-6">
               <WifiIcon className="w-8 h-8 text-blue-600" />
             </div>
-            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight">Smart Control & User Convenience</h2>
+            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Smart Control & User Convenience</h2>
             <p className="text-slate-500 max-w-2xl mx-auto mb-8 font-light text-sm">Supports remote control via Wi-Fi & Bluetooth, allowing intensity adjustments and scheduling via mobile app.</p>
             <div className="flex flex-wrap justify-center gap-3">
               {["Adjust intensity", "Set schedules", "Remote management"].map((feature, i) => (
@@ -188,7 +188,7 @@ const AeroPillarPage = () => {
       {/* ================= SECTION 4: TECHNICAL SPECIFICATIONS ================= */}
       <section className="py-16 bg-slate-50 px-6">
         <div className="max-w-[800px] mx-auto">
-          <h2 className="text-2xl md:text-4xl font-serif mb-10 text-center tracking-tight">Technical Specifications</h2>
+          <h2 className="text-2xl md:text-4xl font-serif mb-10 text-center tracking-tight text-slate-900">Technical Specifications</h2>
           <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
             <table className="w-full text-left border-collapse">
               <thead>
@@ -197,7 +197,7 @@ const AeroPillarPage = () => {
                   <th className="p-4 font-bold uppercase tracking-widest text-[10px]">Details</th>
                 </tr>
               </thead>
-              <tbody className="text-xs text-left">
+              <tbody className="text-xs">
                 {[
                   ["Product Type", "Floor-Standing Aroma Diffuser"],
                   ["Coverage Area", "Up to 2,000 m³"],
@@ -220,7 +220,7 @@ const AeroPillarPage = () => {
 
       {/* ================= APPLICATIONS & HOW IT WORKS ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-center">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12 tracking-tight">Recommended Applications</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 tracking-tight text-slate-900">Recommended Applications</h2>
         <div className="flex flex-wrap justify-center gap-3 mb-20">
           {["Homes & living rooms", "Offices", "Brand showrooms", "Boutique stores", "Interior-focused commercial spaces"].map((item, i) => (
             <span key={i} className="px-5 py-3 bg-white border border-slate-100 rounded-xl shadow-sm text-[10px] font-bold text-slate-700 uppercase tracking-widest">
@@ -229,7 +229,7 @@ const AeroPillarPage = () => {
           ))}
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10 items-center text-left bg-slate-900 rounded-[3rem] p-8 md:p-16 text-white">
+        <div className="grid lg:grid-cols-2 gap-10 items-center text-left bg-slate-900 rounded-[3rem] p-8 md:p-16 text-white shadow-2xl">
           <div>
             <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight">How it Works</h2>
             <p className="text-slate-400 text-sm leading-relaxed mb-6 font-light">
@@ -249,7 +249,7 @@ const AeroPillarPage = () => {
 
       {/* ================= SECTION 7: WHY CHOOSE ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight">Why Choose AeroPillar?</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight text-slate-900">Why Choose AeroPillar?</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             "Elegant floor-standing design",
@@ -259,7 +259,7 @@ const AeroPillarPage = () => {
             "Durable and premium build quality",
             "Suitable for both home and light commercial use"
           ].map((text, i) => (
-            <div key={i} className="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+            <div key={i} className="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm hover:border-blue-200 transition-colors">
               <CheckCircleIcon className="w-6 h-6 text-blue-600 mb-4" />
               <p className="text-slate-700 text-sm font-medium leading-relaxed">{text}</p>
             </div>
@@ -271,14 +271,14 @@ const AeroPillarPage = () => {
       <section className="py-16 bg-slate-50 px-6">
         <div className="max-w-[1000px] mx-auto grid lg:grid-cols-2 gap-6 text-left">
           <div className="p-8 bg-white rounded-3xl shadow-sm border border-slate-100">
-            <h4 className="text-lg font-bold mb-4">Maintenance</h4>
+            <h4 className="text-lg font-bold mb-4 text-slate-900">Maintenance</h4>
             <ul className="space-y-2 text-xs text-slate-500 font-light">
                <li>• Simple fragrance bottle replacement</li>
                <li>• Oil level monitoring & Stable components</li>
             </ul>
           </div>
           <div className="p-8 bg-blue-600 text-white rounded-3xl shadow-xl">
-            <h4 className="text-lg font-bold mb-4">Cool Max Support</h4>
+            <h4 className="text-lg font-bold mb-4 text-white">Cool Max Support</h4>
             <ul className="space-y-2 text-xs text-blue-50 font-light">
                <li>• Product & Fragrance consultation</li>
                <li>• Maintenance and refill assistance</li>
@@ -287,7 +287,7 @@ const AeroPillarPage = () => {
         </div>
       </section>
 
-      {/* ================= CTA (MASTER REDIRECT) ================= */}
+      {/* ================= CTA ================= */}
       <section className="py-20 px-6">
         <div className="max-w-[1200px] mx-auto bg-[#0c101b] rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/20 blur-[100px] rounded-full" />
@@ -295,7 +295,7 @@ const AeroPillarPage = () => {
           <p className="text-slate-400 text-lg mb-10 relative z-10 max-w-2xl mx-auto leading-relaxed font-light">
             Looking for a floor-standing aroma diffuser that delivers performance with elegance? Our specialists are here to help.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 relative z-10">
+          <div className="flex flex-wrap justify-center gap-4 relative z-10 font-sans">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-white text-slate-900 rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-2">
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Support
             </a>

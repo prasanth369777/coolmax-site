@@ -14,7 +14,7 @@ import {
   ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/outline";
 
-/* ================= IMAGE ASSETS ================= */
+/* ================= IMAGE ASSETS MAPPED TO M41-B ================= */
 import AeroCube1 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/1.webp";
 import AeroCube2 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/2.webp";
 import AeroCube3 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/3.webp";
@@ -37,7 +37,7 @@ const AeroCubePage = () => {
   };
 
   return (
-    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
+    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
       
       {/* ================= HERO SECTION (REDUCED HEIGHT) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto">
@@ -55,10 +55,10 @@ const AeroCubePage = () => {
             <p className="text-sm text-slate-500 mb-4 leading-relaxed font-light">
               The AeroCube Diffuser is a compact and efficient desktop & small space aroma diffuser designed for controlled fragrance diffusion in professional and residential environments. With a 300 m³ coverage capacity, low-noise operation, and a clean, modern design, AeroCube is ideal for areas that require consistent scenting without visual clutter or complex installation.
             </p>
-            <p className="text-sm text-slate-500 mb-8 italic border-l-4 border-blue-600 pl-6">
+            <p className="text-sm text-slate-500 mb-8 italic border-l-4 border-blue-600 pl-6 font-light">
               Built for reliability and ease of use, this diffuser combines high-performance atomization, adjustable working cycles, and a built-in fan system to deliver even fragrance distribution across enclosed spaces.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mt-6">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-slate-900 text-white rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-blue-600 transition-all flex items-center gap-3 shadow-lg">
                 Talk to an Expert <ChatBubbleLeftRightIcon className="w-4 h-4" />
               </a>
@@ -290,14 +290,14 @@ const AeroCubePage = () => {
         <div className="max-w-[1200px] mx-auto bg-[#0c101b] rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/20 blur-[100px] rounded-full" />
           <h2 className="text-3xl md:text-5xl font-serif mb-6 relative z-10 tracking-tight leading-tight">Create a Fresh & Welcoming Environment</h2>
-          <p className="text-slate-400 text-lg mb-10 relative z-10 max-w-2xl mx-auto leading-relaxed font-light">
+          <p className="text-slate-400 text-lg mb-10 relative z-10 max-w-2xl mx-auto leading-relaxed font-light font-sans">
             Looking for a compact aroma diffuser for offices, corridors, or washrooms? Our experts are ready to assist.
           </p>
           <div className="flex flex-wrap justify-center gap-4 relative z-10">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-white text-slate-900 rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-2">
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Support
             </a>
-            <a href={contactPath} className="px-10 py-4 bg-white/5 text-white rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-2">
+            <a href={contactPath} className="px-10 py-4 bg-white/5 text-white rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-2 font-sans">
               Contact Cool Max <ArrowRightIcon className="w-4 h-4" />
             </a>
           </div>

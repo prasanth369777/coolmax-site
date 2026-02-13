@@ -13,7 +13,7 @@ import {
   ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/outline";
 
-/* ================= IMAGE ASSETS ================= */
+/* ================= IMAGE ASSETS MAPPED TO Q3000PRO ================= */
 import AeroBlackPro1 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/1.webp";
 import AeroBlackPro2 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/2.webp";
 import AeroBlackPro3 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/3.webp";
@@ -36,7 +36,7 @@ const AeroBlackProPage = () => {
   };
 
   return (
-    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
+    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
       
       {/* ================= HERO SECTION (REDUCED HEIGHT) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto">
@@ -45,16 +45,16 @@ const AeroBlackProPage = () => {
             <div className="inline-block px-4 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-black uppercase tracking-[0.2em] mb-6">
               Industrial Grade HVAC System
             </div>
-            <h1 className="text-4xl md:text-6xl font-serif mb-4 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-serif mb-4 leading-tight text-slate-900">
               AeroBlack Pro Diffuser
             </h1>
             <p className="text-lg text-slate-600 font-medium mb-6 leading-relaxed">
               High-Capacity Large Area & HVAC Aroma Diffuser for Commercial Spaces
             </p>
-            <p className="text-sm text-slate-500 mb-4 leading-relaxed">
+            <p className="text-sm text-slate-500 mb-4 leading-relaxed font-light">
               The AeroBlack Pro Diffuser is a professional large area aroma diffuser engineered for expansive commercial environments that demand powerful, stable, and intelligent scent diffusion. Designed specifically for HVAC scenting and large standalone applications, this system delivers consistent fragrance coverage across wide indoor areas without overpowering the space.
             </p>
-            <p className="text-sm text-slate-500 mb-8 leading-relaxed border-l-4 border-blue-600 pl-6 italic">
+            <p className="text-sm text-slate-500 mb-8 leading-relaxed border-l-4 border-blue-600 pl-6 italic font-light">
               Built with advanced atomization technology and smart Bluetooth control, AeroBlack Pro Diffuser is an ideal scent air machine for airports, hotels, office buildings, cinemas, shopping malls, and high-traffic commercial venues.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -87,7 +87,7 @@ const AeroBlackProPage = () => {
         <div className="max-w-[1000px] mx-auto text-center">
           <motion.div {...fadeIn}>
             <h2 className="text-2xl md:text-4xl font-serif mb-6 text-slate-900">Product Overview</h2>
-            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light">
+            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light text-justify md:text-center">
               AeroBlack Pro Diffuser is developed for businesses that require maximum scent coverage with precise control. With its large fragrance capacity and high-performance diffusion system, it ensures smooth, even scent distribution across areas up to 4,000 m³.
               The diffuser can operate as a standalone large-area scent machine or integrate directly with HVAC air-conditioning systems, allowing fragrance to travel naturally through existing airflow. Its sleek black design blends seamlessly into modern commercial interiors while delivering industrial-grade performance.
             </p>
@@ -97,9 +97,9 @@ const AeroBlackProPage = () => {
 
       {/* ================= SECTION 2: KEY HIGHLIGHTS ================= */}
       <section className="py-16 bg-[#0c101b] text-white px-6">
-        <div className="max-w-[1400px] mx-auto">
-          <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center">Key Highlights</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="max-w-[1400px] mx-auto text-center">
+          <h2 className="text-2xl md:text-4xl font-serif mb-12">Key Highlights</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             {[
               { icon: BuildingOfficeIcon, text: "Large area aroma scent diffuser" },
               { icon: BeakerIcon, text: "Covers up to 4,000 m³" },
@@ -109,7 +109,7 @@ const AeroBlackProPage = () => {
               { icon: LockClosedIcon, text: "Magnetic lock system for oil security" },
               { icon: SpeakerXMarkIcon, text: "Quiet operation for public spaces" }
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors text-center">
+              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
                 <item.icon className="w-8 h-8 text-blue-500 mx-auto mb-4" />
                 <p className="text-[11px] font-bold uppercase tracking-widest leading-relaxed">{item.text}</p>
               </div>
@@ -119,13 +119,13 @@ const AeroBlackProPage = () => {
       </section>
 
       {/* ================= SECTION 3: CORE FEATURES ================= */}
-      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
+      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
         <h2 className="text-2xl md:text-4xl font-serif mb-16 text-center">Core Features & Advantages</h2>
         <div className="grid gap-16">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div className="order-2 md:order-1 text-left">
-              <h3 className="text-xl font-serif mb-4">Large-Area Coverage Performance</h3>
-              <p className="text-sm text-slate-500 leading-relaxed mb-4">
+              <h3 className="text-xl font-serif mb-4 text-slate-900">Large-Area Coverage Performance</h3>
+              <p className="text-sm text-slate-500 leading-relaxed mb-4 font-light">
                 AeroBlack Pro Diffuser is designed to scent large commercial spaces efficiently. Its powerful internal system ensures fragrance spreads evenly, making it suitable for open areas, multi-zone facilities, and high ceilings.
               </p>
               <p className="text-xs text-blue-600 font-bold italic border-l-2 border-blue-600 pl-4">
@@ -142,12 +142,12 @@ const AeroBlackProPage = () => {
                <img src={AeroBlackPro3} alt="Smart Control" className="w-full h-full object-contain" />
             </div>
             <div className="text-left">
-              <h3 className="text-xl font-serif mb-4">Smart Touch Screen & Bluetooth Control</h3>
-              <p className="text-sm text-slate-500 mb-4">The diffuser is equipped with a touch screen interface and Bluetooth app control, allowing facility managers to:</p>
+              <h3 className="text-xl font-serif mb-4 text-slate-900">Smart Touch Screen & Bluetooth Control</h3>
+              <p className="text-sm text-slate-500 mb-4 font-light">The diffuser is equipped with a touch screen interface and Bluetooth app control, allowing facility managers to:</p>
               <div className="grid grid-cols-2 gap-3 mb-4">
                 {["Set working schedules", "Adjust scent intensity", "Control working cycles", "Monitor usage easily"].map((li, i) => (
                    <div key={i} className="flex items-center gap-2 p-3 bg-white border border-slate-100 rounded-xl shadow-sm">
-                      <CheckCircleIcon className="w-4 h-4 text-blue-600" />
+                      <CheckCircleIcon className="w-4 h-4 text-blue-600 shrink-0" />
                       <span className="text-slate-700 text-[10px] font-bold uppercase tracking-tight">{li}</span>
                    </div>
                 ))}
@@ -157,8 +157,8 @@ const AeroBlackProPage = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-slate-900 text-white p-8 rounded-[2rem] col-span-2 text-left">
-              <h3 className="text-xl font-serif mb-4">HVAC System Integration</h3>
-              <p className="text-sm text-slate-400 mb-6 leading-relaxed">AeroBlack Pro Diffuser supports direct HVAC connection, enabling fragrance to be distributed through central air-conditioning systems for uniform coverage.</p>
+              <h3 className="text-xl font-serif mb-4 text-blue-400">HVAC System Integration</h3>
+              <p className="text-sm text-slate-400 mb-6 leading-relaxed font-light">AeroBlack Pro Diffuser supports direct HVAC connection, enabling fragrance to be distributed through central air-conditioning systems for uniform coverage.</p>
               <div className="grid grid-cols-3 gap-3">
                  {["Uniform coverage", "Efficient usage", "Seamless integration"].map((item, i) => (
                     <div key={i} className="p-3 bg-white/5 rounded-lg text-[9px] font-black uppercase tracking-widest text-center border border-white/10">{item}</div>
@@ -177,16 +177,16 @@ const AeroBlackProPage = () => {
       {/* ================= SECTION 4: TECHNICAL SPECIFICATIONS ================= */}
       <section className="py-16 bg-slate-50 px-6">
         <div className="max-w-[800px] mx-auto">
-          <h2 className="text-2xl md:text-4xl font-serif mb-10 text-center">Technical Specifications</h2>
-          <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
+          <h2 className="text-2xl md:text-4xl font-serif mb-10 text-center text-slate-900">Technical Specifications</h2>
+          <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm text-left">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="bg-slate-900 text-white text-left">
+                <tr className="bg-slate-900 text-white">
                   <th className="p-4 font-bold uppercase tracking-widest text-[10px]">Specification</th>
                   <th className="p-4 font-bold uppercase tracking-widest text-[10px]">Details</th>
                 </tr>
               </thead>
-              <tbody className="text-xs text-left">
+              <tbody className="text-xs">
                 {[
                   ["Product Type", "Large Area & HVAC Aroma Diffuser"],
                   ["Fragrance Capacity", "1000 ml"],
@@ -210,7 +210,7 @@ const AeroBlackProPage = () => {
 
       {/* ================= IDEAL APPLICATIONS ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-center">
-        <h2 className="text-2xl md:text-4xl font-serif mb-10 leading-tight">Ideal Applications</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-10 leading-tight text-slate-900">Ideal Applications</h2>
         <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
           {[
             "Airports & transportation hubs", "Hotels & hospitality spaces", 
@@ -226,9 +226,9 @@ const AeroBlackProPage = () => {
       </section>
 
       {/* ================= WHY CHOOSE ================= */}
-      <section className="py-16 bg-slate-900 text-white px-6">
-        <div className="max-w-[1200px] mx-auto text-center">
-          <h2 className="text-2xl md:text-4xl font-serif mb-12">Why Choose AeroBlack Pro?</h2>
+      <section className="py-16 bg-slate-900 text-white px-6 text-left">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center">Why Choose AeroBlack Pro?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               "Designed for large-scale scenting projects",
@@ -238,29 +238,29 @@ const AeroBlackProPage = () => {
               "Professional performance for demanding venues",
               "Backed by Cool Max technical expertise"
             ].map((text, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors text-left">
+              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
                 <CheckCircleIcon className="w-5 h-5 text-blue-400 mb-3" />
                 <p className="text-xs leading-relaxed font-light">{text}</p>
               </div>
             ))}
           </div>
-          <p className="mt-10 text-blue-400 text-sm font-medium italic font-serif">Dependable large area scent machines for professional marketing.</p>
+          <p className="mt-10 text-blue-400 text-sm font-medium italic font-serif text-center">Dependable large area scent machines for professional marketing.</p>
         </div>
       </section>
 
       {/* ================= MAINTENANCE ================= */}
-      <section className="py-16 bg-slate-50 px-6">
+      <section className="py-16 bg-slate-50 px-6 text-left">
         <div className="max-w-[1000px] mx-auto grid lg:grid-cols-2 gap-6">
-          <div className="p-8 bg-white rounded-[2rem] shadow-sm border border-slate-100 text-left">
-            <h4 className="text-lg font-bold mb-6 flex items-center gap-3">Maintenance</h4>
+          <div className="p-8 bg-white rounded-[2rem] shadow-sm border border-slate-100">
+            <h4 className="text-lg font-bold mb-6 flex items-center gap-3 text-slate-900">Maintenance</h4>
             <ul className="space-y-3 text-xs text-slate-500 font-light">
                <li>• Simple oil replacement process</li>
                <li>• Durable internal components</li>
                <li>• Minimal routine servicing</li>
             </ul>
           </div>
-          <div className="p-8 bg-blue-600 text-white rounded-[2rem] shadow-xl text-left">
-            <h4 className="text-lg font-bold mb-6 flex items-center gap-3">Technical Support</h4>
+          <div className="p-8 bg-blue-600 text-white rounded-[2rem] shadow-xl">
+            <h4 className="text-lg font-bold mb-6 flex items-center gap-3 text-white">Technical Support</h4>
             <ul className="space-y-3 text-xs text-blue-50 font-light">
                <li>• HVAC Installation & Planning</li>
                <li>• Custom Fragrance Strategy</li>
@@ -270,12 +270,12 @@ const AeroBlackProPage = () => {
         </div>
       </section>
 
-      {/* ================= CTA (MASTER REDIRECT) ================= */}
+      {/* ================= CTA ================= */}
       <section className="py-20 px-6">
         <div className="max-w-[1200px] mx-auto bg-[#0c101b] rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/20 blur-[100px] rounded-full" />
-          <h2 className="text-3xl md:text-5xl font-serif mb-6 relative z-10">Talk to Our Scent Experts</h2>
-          <p className="text-slate-400 text-lg mb-10 relative z-10 max-w-2xl mx-auto leading-relaxed font-light">
+          <h2 className="text-3xl md:text-5xl font-serif mb-6 relative z-10 text-white">Talk to Our Scent Experts</h2>
+          <p className="text-slate-400 text-lg mb-10 relative z-10 max-w-2xl mx-auto leading-relaxed font-light font-sans">
             Looking for a large area HVAC scent diffuser tailored to your space? 
             Our team will help you plan the right configuration and fragrance solution.
           </p>

@@ -13,7 +13,7 @@ import {
   ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/outline";
 
-/* ================= IMAGE ASSETS ================= */
+/* ================= IMAGE ASSETS MAPPED TO A500 ================= */
 import NanoPillar1 from "../../asset/productimg/CMwebpimg/NanoPillar Diffuser/1.webp";
 import NanoPillar2 from "../../asset/productimg/CMwebpimg/NanoPillar Diffuser/2.webp";
 import NanoPillar3 from "../../asset/productimg/CMwebpimg/NanoPillar Diffuser/3.webp";
@@ -36,7 +36,7 @@ const NanoPillarPage = () => {
   };
 
   return (
-    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
+    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
       
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto text-left">
@@ -51,14 +51,14 @@ const NanoPillarPage = () => {
             <p className="text-lg text-slate-600 font-medium mb-6 leading-relaxed">
               Compact Floor-Standing Aroma Diffuser for Homes & Boutique Spaces
             </p>
-            <p className="text-sm text-slate-500 mb-8 leading-relaxed font-light">
+            <p className="text-sm text-slate-500 mb-8 leading-relaxed font-light text-justify md:text-left">
               The NanoPillar Diffuser is a compact, elegant floor-standing aroma diffuser designed for smaller commercial environments and premium residential interiors. With its slim pillar design and ultra-quiet operation, NanoPillar Diffuser delivers consistent fragrance diffusion without visual or acoustic disturbance.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-slate-900 text-white rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-blue-600 transition-all flex items-center gap-3 shadow-lg">
+            <div className="flex flex-wrap gap-4 mt-6">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-slate-900 text-white rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-blue-600 transition-all flex items-center gap-3 shadow-lg font-sans text-center">
                 Talk to Scent Expert <ChatBubbleLeftRightIcon className="w-4 h-4" />
               </a>
-              <a href={contactPath} className="px-6 py-3 border border-slate-200 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all flex items-center gap-2">
+              <a href={contactPath} className="px-6 py-3 border border-slate-200 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all flex items-center gap-2 font-sans text-center">
                 Contact Cool Max <ArrowRightIcon className="w-3 h-3" />
               </a>
             </div>
@@ -84,7 +84,7 @@ const NanoPillarPage = () => {
         <div className="max-w-[1000px] mx-auto text-center">
           <motion.div {...fadeIn}>
             <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Product Overview</h2>
-            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light">
+            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light text-justify md:text-center text-left">
               NanoPillar Diffuser combines minimalist aesthetics with professional aroma diffusion technology. Its slender, upright design allows it to blend effortlessly into modern interiors while providing reliable fragrance coverage for small to medium spaces.
               With optional lithium battery support, smart app control, and low noise operation, NanoPillar Diffuser offers flexibility for both residential and light commercial scenting needs.
             </p>
@@ -96,7 +96,7 @@ const NanoPillarPage = () => {
       <section className="py-16 bg-[#0c101b] text-white px-6">
         <div className="max-w-[1400px] mx-auto text-center">
           <h2 className="text-2xl md:text-4xl font-serif mb-12 tracking-tight">Key Highlights</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             {[
               { icon: SparklesIcon, text: "Compact floor-standing aroma diffuser with slim pillar design" },
               { icon: BeakerIcon, text: "Covers up to 300 m³" },
@@ -106,9 +106,9 @@ const NanoPillarPage = () => {
               { icon: ShieldCheckIcon, text: "Suspended base design for visual elegance" },
               { icon: BeakerIcon, text: "Ideal for homes and boutique commercial spaces" }
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
-                <item.icon className="w-8 h-8 text-blue-500 mx-auto mb-4" />
-                <p className="text-[11px] font-bold uppercase tracking-widest leading-relaxed">{item.text}</p>
+              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors flex flex-col items-center">
+                <item.icon className="w-8 h-8 text-blue-500 mb-4" />
+                <p className="text-[11px] font-bold uppercase tracking-widest leading-relaxed text-center">{item.text}</p>
               </div>
             ))}
           </div>
@@ -117,12 +117,12 @@ const NanoPillarPage = () => {
 
       {/* ================= SECTION 3: DESIGN & BUILD ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight">Design & Aesthetic Appeal</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight text-slate-900">Design & Aesthetic Appeal</h2>
         <div className="grid gap-16">
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 text-left">
               <h3 className="text-xl font-serif mb-4 text-slate-900">Slim Pillar Form Factor</h3>
-              <p className="text-sm text-slate-500 leading-relaxed mb-6 font-light">
+              <p className="text-sm text-slate-500 leading-relaxed mb-6 font-light text-justify md:text-left text-left">
                 NanoPillar Diffuser features a tall, cylindrical pillar design that occupies minimal floor space. Its clean vertical lines make it suitable for modern interiors without drawing unnecessary attention.
               </p>
               <div className="grid grid-cols-2 gap-2">
@@ -133,21 +133,21 @@ const NanoPillarPage = () => {
                 ))}
               </div>
             </div>
-            <div className="rounded-3xl bg-slate-100 p-6 order-1 md:order-2 h-64 flex items-center justify-center">
+            <div className="rounded-3xl bg-slate-100 p-6 order-1 md:order-2 h-64 flex items-center justify-center border border-slate-200">
                <img src={NanoPillar2} alt="NanoPillar Form" className="w-full h-full object-contain" />
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="rounded-3xl bg-slate-100 p-6 h-64 flex items-center justify-center">
+            <div className="rounded-3xl bg-slate-100 p-6 h-64 flex items-center justify-center order-1 border border-slate-200">
                <img src={NanoPillar3} alt="Premium Finish" className="w-full h-full object-contain" />
             </div>
-            <div>
+            <div className="order-2 text-left">
               <h3 className="text-xl font-serif mb-4 text-slate-900">Premium Metallic Finish</h3>
-              <p className="text-sm text-slate-500 leading-relaxed mb-6 font-light">
+              <p className="text-sm text-slate-500 leading-relaxed mb-6 font-light text-left">
                 Finished in a silvery metallic tone, the NanoPillar Diffuser complements contemporary interiors and luxury décor.
               </p>
-              <div className="bg-slate-900 text-white p-6 rounded-2xl">
+              <div className="bg-slate-900 text-white p-6 rounded-2xl text-left">
                 <h4 className="text-lg font-serif mb-3 text-blue-400">Smart Control</h4>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
@@ -163,7 +163,7 @@ const NanoPillarPage = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 text-left">
             <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm text-left">
               <Battery100Icon className="w-10 h-10 text-blue-600 mb-4" />
               <h3 className="text-lg font-serif mb-2">Battery Support</h3>
@@ -176,7 +176,7 @@ const NanoPillarPage = () => {
             </div>
             <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm text-left">
               <BeakerIcon className="w-10 h-10 text-blue-600 mb-4" />
-              <h3 className="text-lg font-serif mb-2">Efficient Usage</h3>
+              <h3 className="text-lg font-serif mb-2 text-blue-900">Efficient Usage</h3>
               <p className="text-slate-500 text-xs leading-relaxed">Controlled oil consumption maintains balance while keeping costs low.</p>
             </div>
           </div>
@@ -187,7 +187,7 @@ const NanoPillarPage = () => {
       <section className="py-16 bg-slate-50 px-6">
         <div className="max-w-[800px] mx-auto">
           <h2 className="text-2xl md:text-4xl font-serif mb-10 text-center tracking-tight text-slate-900">Technical Specifications</h2>
-          <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
+          <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm text-left">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-slate-900 text-white">
@@ -195,7 +195,7 @@ const NanoPillarPage = () => {
                   <th className="p-4 font-bold uppercase tracking-widest text-[10px]">Details</th>
                 </tr>
               </thead>
-              <tbody className="text-xs text-left">
+              <tbody className="text-xs">
                 {[
                   ["Product Type", "Floor-Standing Aroma Diffuser"],
                   ["Fragrance Capacity", "110 ml"],
@@ -207,8 +207,8 @@ const NanoPillarPage = () => {
                   ["Finish Color", "Silvery Silky Finish"]
                 ].map((row, i) => (
                   <tr key={i} className="border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                    <td className="p-4 font-bold text-slate-400 uppercase tracking-widest text-[9px]">{row[0]}</td>
-                    <td className="p-4 text-slate-700 font-medium">{row[1]}</td>
+                    <td className="p-4 font-bold text-slate-400 uppercase tracking-widest text-[9px] text-left">{row[0]}</td>
+                    <td className="p-4 text-slate-700 font-medium text-left">{row[1]}</td>
                   </tr>
                 ))}
               </tbody>
@@ -219,7 +219,7 @@ const NanoPillarPage = () => {
 
       {/* ================= APPLICATIONS & HOW IT WORKS ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-center">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12 tracking-tight">Recommended Applications</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 tracking-tight text-slate-900">Recommended Applications</h2>
         <div className="flex flex-wrap justify-center gap-3 mb-20">
           {["Living spaces", "Clothing stores", "Meeting rooms", "Wellness centers", "Boutique Interiors"].map((item, i) => (
             <span key={i} className="px-5 py-3 bg-white border border-slate-100 rounded-xl shadow-sm text-[10px] font-bold text-slate-700 uppercase tracking-widest">
@@ -228,16 +228,16 @@ const NanoPillarPage = () => {
           ))}
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10 items-center text-left bg-slate-900 rounded-[3rem] p-8 md:p-16 text-white">
-          <div>
+        <div className="grid lg:grid-cols-2 gap-10 items-center text-left bg-slate-900 rounded-[3rem] p-8 md:p-16 text-white shadow-2xl">
+          <div className="text-left">
             <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight">How it Works</h2>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+            <p className="text-slate-400 text-sm leading-relaxed mb-6 font-light text-left">
               NanoPillar Diffuser uses advanced cold-air atomization to convert fragrance oil into micro-particles, dispersed evenly throughout the space.
             </p>
-            <div className="space-y-2 text-[10px] font-black uppercase tracking-widest text-blue-400">
-               <p className="flex items-center gap-2"><CheckCircleIcon className="w-4 h-4"/> Preserves oil quality</p>
-               <p className="flex items-center gap-2"><CheckCircleIcon className="w-4 h-4"/> No residue buildup</p>
-               <p className="flex items-center gap-2"><CheckCircleIcon className="w-4 h-4"/> Consistent diffusion</p>
+            <div className="space-y-2 text-[10px] font-black uppercase tracking-widest text-blue-400 text-left">
+               <p className="flex items-center gap-2 text-left"><CheckCircleIcon className="w-4 h-4"/> Preserves oil quality</p>
+               <p className="flex items-center gap-2 text-left"><CheckCircleIcon className="w-4 h-4"/> No residue buildup</p>
+               <p className="flex items-center gap-2 text-left"><CheckCircleIcon className="w-4 h-4"/> Consistent diffusion</p>
             </div>
             <p className="text-slate-500 mt-6 text-[10px] italic font-light">Suspended base design maintains stability and airflow balance.</p>
           </div>
@@ -250,7 +250,7 @@ const NanoPillarPage = () => {
 
       {/* ================= SECTION 7: WHY CHOOSE ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight">Why Choose NanoPillar?</h2>
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight text-slate-900">Why Choose NanoPillar?</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             "Slim and elegant floor-standing design",
@@ -260,7 +260,7 @@ const NanoPillarPage = () => {
             "Easy control via app or manual button",
             "Low maintenance and efficient performance"
           ].map((text, i) => (
-            <div key={i} className="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+            <div key={i} className="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm hover:border-blue-200 transition-colors">
               <CheckCircleIcon className="w-6 h-6 text-blue-600 mb-4" />
               <p className="text-slate-700 text-sm font-medium leading-relaxed">{text}</p>
             </div>
@@ -270,13 +270,13 @@ const NanoPillarPage = () => {
       </section>
 
       {/* ================= MAINTENANCE ================= */}
-      <section className="py-16 bg-slate-50 px-6">
-        <div className="max-w-[1000px] mx-auto grid lg:grid-cols-2 gap-6 text-left">
+      <section className="py-16 bg-slate-50 px-6 text-left">
+        <div className="max-w-[1000px] mx-auto grid lg:grid-cols-2 gap-6">
           <div className="p-8 bg-white rounded-3xl shadow-sm border border-slate-100">
-            <h4 className="text-lg font-bold mb-4 flex items-center gap-2">
+            <h4 className="text-lg font-bold mb-4 flex items-center gap-2 text-slate-900">
               <WrenchScrewdriverIcon className="w-5 h-5 text-blue-600" /> Maintenance
             </h4>
-            <ul className="space-y-2 text-xs text-slate-500 font-light">
+            <ul className="space-y-2 text-xs text-slate-500 font-light text-left">
                <li>• Simple fragrance refill process</li>
                <li>• Durable internal components</li>
                <li>• Stable long-term performance</li>
@@ -286,7 +286,7 @@ const NanoPillarPage = () => {
             <h4 className="text-lg font-bold mb-4 flex items-center gap-2">
               <ShieldCheckIcon className="w-5 h-5" /> Cool Max Support
             </h4>
-            <ul className="space-y-2 text-xs text-blue-50 font-light">
+            <ul className="space-y-2 text-xs text-blue-50 font-light text-left">
                <li>• Fragrance selection assistance</li>
                <li>• Maintenance and refill support</li>
                <li>• Product consultation</li>
@@ -296,15 +296,15 @@ const NanoPillarPage = () => {
       </section>
 
       {/* ================= SECTION: COLLECTION ================= */}
-      <section className="py-16 bg-white px-6">
-        <div className="max-w-[1200px] mx-auto text-center border-t border-slate-100 pt-16">
-          <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight">The Floor-Standing Collection</h2>
-          <p className="text-sm text-slate-500 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
+      <section className="py-16 bg-white px-6 text-center">
+        <div className="max-w-[1200px] mx-auto border-t border-slate-100 pt-16">
+          <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-center">The Floor-Standing Collection</h2>
+          <p className="text-sm text-slate-500 max-w-3xl mx-auto mb-10 leading-relaxed font-light text-center">
             NanoPillar Diffuser is part of Cool Max’s Floor-Standing collection, created to meet different space sizes and aesthetic requirements.
           </p>
           <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto">
             {["AeroPillar Diffuser", "AirPole Pro Diffuser", "Titan Diffuser"].map((range, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-600 transition-all font-bold uppercase tracking-widest text-[9px] text-slate-500 cursor-pointer">
+              <div key={i} className="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-600 transition-all font-bold uppercase tracking-widest text-[9px] text-slate-500 cursor-pointer text-center">
                 Explore {range}
               </div>
             ))}
@@ -312,19 +312,19 @@ const NanoPillarPage = () => {
         </div>
       </section>
 
-      {/* ================= SECTION 10: CTA (MASTER REDIRECT) ================= */}
-      <section className="py-20 px-6">
+      {/* ================= SECTION 10: CTA ================= */}
+      <section className="py-20 px-6 text-center">
         <div className="max-w-[1200px] mx-auto bg-[#0c101b] rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/20 blur-[100px] rounded-full" />
-          <h2 className="text-3xl md:text-5xl font-serif mb-6 relative z-10 tracking-tight leading-tight">Talk to Our Scent Experts</h2>
-          <p className="text-slate-400 text-lg mb-10 relative z-10 max-w-2xl mx-auto leading-relaxed font-light">
+          <h2 className="text-3xl md:text-5xl font-serif mb-6 relative z-10 text-center">Talk to Our Scent Experts</h2>
+          <p className="text-slate-400 text-lg mb-10 relative z-10 max-w-2xl mx-auto leading-relaxed font-light text-center">
             Looking for a compact floor-standing aroma diffuser that fits perfectly into your space? Our specialists are here to guide you.
           </p>
           <div className="flex flex-wrap justify-center gap-4 relative z-10">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-white text-slate-900 rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-2">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-white text-slate-900 rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-2 font-sans">
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert
             </a>
-            <a href={contactPath} className="px-10 py-4 bg-white/5 text-white rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-2">
+            <a href={contactPath} className="px-10 py-4 bg-white/5 text-white rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-2 font-sans">
               Contact Cool Max <ArrowRightIcon className="w-4 h-4" />
             </a>
           </div>

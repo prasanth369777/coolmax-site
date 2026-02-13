@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { 
   SparklesIcon, 
-  CheckBadgeIcon, 
   ArrowRightIcon, 
   BuildingOffice2Icon,
   HomeIcon,
@@ -12,11 +11,11 @@ import {
   ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/outline";
 
-// --- ASSET IMPORTS ---
-import P1 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/2.webp"; 
-import P2 from "../../asset/productimg/CMwebpimg/NovaCar Diffuser/2.webp"; 
-import P3 from "../../asset/productimg/CMwebpimg/Titan Diffuser/1.webp"; 
-import P4 from "../../asset/productimg/CMwebpimg/VentoCar/2.webp"; 
+// --- CORRECTED ASSET IMPORTS FROM AROMA OILS IMG FOLDER ---
+import P1 from "../../asset/Aroma oils img/ADDRESS.webp"; 
+import P2 from "../../asset/Aroma oils img/ARABIAN PENSUILA.webp"; 
+import P3 from "../../asset/Aroma oils img/ARABIAN  BAKHOOR.webp"; 
+import P4 from "../../asset/Aroma oils img/EMAAR.webp"; 
 
 const OrientalAromaOilsPage = () => {
   // Redirection Links
@@ -97,7 +96,7 @@ const OrientalAromaOilsPage = () => {
         {/* ================= HERO SECTION ================= */}
         <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto text-center">
           <motion.div {...fadeUp}>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-[10px] font-bold uppercase tracking-[0.3em] mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-[10px] font-bold uppercase tracking-[0.3em] mb-8 text-center">
               <SparklesIcon className="w-4 h-4" /> Luxury Commercial Series
             </div>
             <h1 className="text-5xl md:text-7xl font-serif text-slate-950 mb-6 leading-[1.1] tracking-tighter uppercase text-center">
@@ -132,7 +131,7 @@ const OrientalAromaOilsPage = () => {
                 <motion.div 
                   key={idx} 
                   {...fadeUp}
-                  className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:border-blue-200 transition-all group flex flex-col h-full"
+                  className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:border-blue-200 transition-all group flex flex-col h-full text-left"
                 >
                   <div className="aspect-square bg-slate-50 rounded-3xl mb-8 flex items-center justify-center relative overflow-hidden">
                      <img 
@@ -145,11 +144,11 @@ const OrientalAromaOilsPage = () => {
                      </div>
                   </div>
                   
-                  <h3 className="text-2xl font-serif text-slate-900 mb-2 group-hover:text-blue-700 transition-colors tracking-tight italic">Product Card – {oil.name}</h3>
-                  <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Category: {oil.category}</p>
-                  <p className="text-[10px] font-bold text-blue-600 uppercase tracking-[0.2em] mb-6">Item Code: {oil.code}</p>
+                  <h3 className="text-2xl font-serif text-slate-900 mb-2 group-hover:text-blue-700 transition-colors tracking-tight italic text-left">{oil.name}</h3>
+                  <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1 text-left">Category: {oil.category}</p>
+                  <p className="text-[10px] font-bold text-blue-600 uppercase tracking-[0.2em] mb-6 text-left">Item Code: {oil.code}</p>
                   
-                  <div className="space-y-5 mb-10 flex-grow">
+                  <div className="space-y-5 mb-10 flex-grow text-left">
                     <h4 className="text-[11px] font-black uppercase text-slate-900 border-b border-slate-100 pb-2">Fragrance Notes:</h4>
                      <div className="pb-3 border-b border-slate-100">
                        <p className="text-[9px] font-bold uppercase text-slate-400 mb-1.5 tracking-widest text-left">Top Notes</p>
@@ -181,10 +180,10 @@ const OrientalAromaOilsPage = () => {
         <section className="py-32 bg-white px-6">
           <div className="max-w-[1000px] mx-auto text-center">
             <motion.div {...fadeUp}>
-              <h2 className="text-3xl md:text-6xl font-serif mb-10 tracking-tight text-slate-950 leading-tight uppercase">
+              <h2 className="text-3xl md:text-6xl font-serif mb-10 tracking-tight text-slate-950 leading-tight uppercase text-center">
                 About Our <span className="italic font-light text-slate-700">Oriental Aroma Oils</span>
               </h2>
-              <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8 font-sans">
+              <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8 font-sans text-center">
                 Our oriental aroma oils are professional-grade fragrances designed for use with advanced scent diffuser systems. Each fragrance is carefully selected to deliver consistent diffusion, balanced intensity, and long-lasting performance across different space sizes.
               </p>
               <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light font-sans text-justify md:text-center">
@@ -197,41 +196,19 @@ const OrientalAromaOilsPage = () => {
         {/* ================= SECTION 3: BEST USED FOR ================= */}
         <section className="py-24 bg-slate-950 text-white px-6">
           <div className="max-w-[1200px] mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase">Best Used For</h2>
+            <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase text-center">Best Used For</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
               {[
-                { icon: BuildingOffice2Icon, label: "Hotels & Resorts" },
-                { icon: ShoppingBagIcon, label: "Luxury Showrooms" },
-                { icon: BuildingOffice2Icon, label: "Premium Offices" },
-                { icon: HomeIcon, label: "High-end Residential Spaces" }
+                { icon: BuildingOffice2Icon, label: "Hotels & resorts" },
+                { icon: ShoppingBagIcon, label: "Luxury showrooms" },
+                { icon: BuildingOffice2Icon, label: "Premium offices" },
+                { icon: HomeIcon, label: "High-end residential spaces" }
               ].map((item, i) => (
                 <div key={i} className="p-12 rounded-[3.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-6 hover:bg-blue-600/10 transition-colors group">
                    <item.icon className="w-14 h-14 text-blue-500 group-hover:scale-110 transition-transform duration-500" />
                    <span className="text-[11px] font-bold uppercase tracking-[0.3em] text-slate-200 font-sans text-center">{item.label}</span>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ================= MAINTENANCE & CERTIFICATION ================= */}
-        <section className="py-32 bg-slate-50 px-6">
-          <div className="max-w-[1100px] mx-auto grid lg:grid-cols-2 gap-12 text-left font-sans">
-            <div className="p-12 bg-white rounded-[3rem] shadow-sm border border-slate-100 text-left">
-              <h4 className="text-2xl font-serif font-bold mb-6 flex items-center gap-3 text-slate-950 italic text-left">
-                <CheckBadgeIcon className="w-8 h-8 text-blue-600" /> IFRA Certified
-              </h4>
-              <p className="text-base text-slate-500 font-light leading-relaxed text-left text-justify">
-                All our Oriental aroma oils meet international safety standards, ensuring they are safe for high-traffic public areas and residential use.
-              </p>
-            </div>
-            <div className="p-12 bg-blue-600 text-white rounded-[3rem] shadow-2xl shadow-blue-200 text-left">
-              <h4 className="text-2xl font-serif font-bold mb-6 flex items-center gap-3 text-white italic text-left">
-                <SparklesIcon className="w-8 h-8 text-blue-100" /> Signature Blends
-              </h4>
-              <p className="text-base text-blue-50 font-light leading-relaxed text-left text-justify">
-                Tailored for UAE's climate, these oils maintain their aromatic profile even in large, air-conditioned environments.
-              </p>
             </div>
           </div>
         </section>
@@ -245,10 +222,10 @@ const OrientalAromaOilsPage = () => {
               Ready to elevate your space with our premium Oriental oils? Our scent experts are ready to assist you.
             </p>
             <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-center">
                  <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
               </a>
-              <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all flex items-center gap-3">
+              <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all flex items-center gap-3 text-center">
                 Contact Cool Max <ArrowRightIcon className="w-5 h-5" />
               </Link>
             </div>
