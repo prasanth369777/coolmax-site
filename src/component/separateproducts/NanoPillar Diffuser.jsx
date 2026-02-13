@@ -64,11 +64,12 @@ const NanoPillarPage = () => {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="relative">
-            <div className="aspect-[4/5] bg-white rounded-[2.5rem] border border-slate-100 shadow-xl flex items-center justify-center p-8 overflow-hidden">
+          {/* HERO IMAGE SECTION - Adjusted max-w to make image smaller as requested */}
+          <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="relative flex flex-col items-center">
+            <div className="aspect-[4/5] bg-white rounded-[2.5rem] border border-slate-100 shadow-xl flex items-center justify-center p-12 overflow-hidden w-full max-w-[400px]">
               <img src={activeImg} alt="NanoPillar Diffuser" className="w-full h-full object-contain transition-all duration-700 hover:scale-110" />
             </div>
-            <div className="flex gap-3 mt-4 justify-center">
+            <div className="flex gap-3 mt-6 justify-center">
               {gallery.map((img, i) => (
                 <button key={i} onClick={() => setActiveImg(img)} className={`w-14 h-14 rounded-lg border-2 overflow-hidden transition-all ${activeImg === img ? "border-blue-600 shadow-md" : "border-transparent opacity-60 hover:opacity-100"}`}>
                   <img src={img} className="w-full h-full object-cover" alt="NanoPillar variant thumb" />

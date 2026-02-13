@@ -14,7 +14,7 @@ import DriveScent1 from "../../asset/productimg/CMwebpimg/DriveScent/1.webp";
 import DriveScent2 from "../../asset/productimg/CMwebpimg/DriveScent/2.webp";
 
 // 3. DeskScent (H19)
-import DeskScent1 from "../../asset/productimg/CMwebpimg/DeskScent/4.webp";
+import DeskScent1 from "../../asset/productimg/CMwebpimg/DeskScent/1.webp";
 import DeskScent2 from "../../asset/productimg/CMwebpimg/DeskScent/2.webp";
 
 // 4. NovaCarDiffuser (DA1004-2026)
@@ -78,8 +78,8 @@ import NaturalFragrance1 from "../../asset/productimg/CMwebpimg/Natural Fragranc
 import NaturalFragrance2 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/2.webp";
 
 // 19. CeilAir Pro Diffuser (M45)
-import CeilAirPro1 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/1.webp";
-import CeilAirPro2 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/2.webp";
+import CeilAirPro1 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/5.webp";
+import CeilAirPro2 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/4.webp";
 
 // 20. AeroMax Pro (A315L)
 import AeroMaxPro1 from "../../asset/productimg/CMwebpimg/AeroMax Pro/1.webp";
@@ -118,7 +118,7 @@ const productList = [
 
   // --- WALL-MOUNTED & CEILING AROMA DIFFUSERS ---
   { id: 19, name: "CeilAir Pro Diffuser", model: "M45", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/product/ceilair", images: [CeilAirPro1, CeilAirPro2] },
-  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/product/aeromax", images: [AeroMaxPro1, AeroMaxPro2] }
+  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/product/autolux", images: [AeroMaxPro1, AeroMaxPro2] }
 ];
 
 const categories = [

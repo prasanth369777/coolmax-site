@@ -10,7 +10,6 @@ import {
   ChatBubbleLeftRightIcon,
   SpeakerXMarkIcon,
   WrenchScrewdriverIcon
-
 } from "@heroicons/react/24/outline";
 
 // --- CORRECT IMAGE IMPORTS MAPPED TO PRODUCTS ---
@@ -42,7 +41,7 @@ export default function PassiveDiffusersPage() {
       <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-16">
 
         {/* ================= HERO SECTION ================= */}
-        <section className="min-h-[75vh] flex flex-col lg:flex-row items-center pt-24 lg:pt-12 gap-12 text-left">
+        <section className="min-h-[75vh] flex flex-col lg:flex-row items-center pt-24 lg:pt-12 pb-12 gap-12 text-left">
           <div className="lg:w-1/2 flex flex-col items-start z-20">
             <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
               <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 shadow-sm mt-16">
@@ -66,7 +65,7 @@ export default function PassiveDiffusersPage() {
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 font-sans">
                 <a href="#collection" className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl">Request Solution</a>
                 <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3">
                   <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Us
@@ -101,9 +100,9 @@ export default function PassiveDiffusersPage() {
                 </p>
                 <div className="bg-white border border-slate-100 rounded-2xl p-6 mb-8">
                   <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest block mb-3">Best suited for:</span>
-                  <p className="text-sm font-bold text-slate-700 leading-relaxed">Washrooms • Elevators • Corridors • Small offices • Toilets • Utility areas</p>
+                  <p className="text-sm font-bold text-slate-700 leading-relaxed font-sans">Washrooms • Elevators • Corridors • Small offices • Toilets • Utility areas</p>
                 </div>
-                <button className="w-full py-4 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-blue-600 transition-all">View product details</button>
+                <a href="/product/naturalflow" className="block w-full py-4 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-blue-600 transition-all text-center font-sans">View product details</a>
               </div>
             </motion.div>
           </div>
@@ -119,7 +118,7 @@ export default function PassiveDiffusersPage() {
                 {["No electricity", "No battery", "No noise", "No programming"].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 p-4 bg-white rounded-2xl border border-slate-100 shadow-sm">
                     <CheckCircleIcon className="w-5 h-5 text-blue-600" />
-                    <span className="text-xs font-bold text-slate-700 uppercase">{item}</span>
+                    <span className="text-xs font-bold text-slate-700 uppercase font-sans">{item}</span>
                   </div>
                 ))}
               </div>
@@ -138,8 +137,8 @@ export default function PassiveDiffusersPage() {
                   <li key={i} className="flex gap-5">
                     <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-blue-400 border border-white/5">{item.icon}</div>
                     <div>
-                      <h4 className="font-bold text-lg leading-tight">{item.title}</h4>
-                      <p className="text-slate-400 text-sm font-light mt-1">{item.desc}</p>
+                      <h4 className="font-bold text-lg leading-tight font-sans">{item.title}</h4>
+                      <p className="text-slate-400 text-sm font-light mt-1 font-sans">{item.desc}</p>
                     </div>
                   </li>
                 ))}
@@ -151,7 +150,7 @@ export default function PassiveDiffusersPage() {
         {/* ================= SECTION 4: WHERE USED ================= */}
         <section className="py-20 text-left">
           <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center">Where Passive / No-Power Diffusers Are Used</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 font-sans">
             {[
               { title: "Public and office washrooms", icon: <SparklesIcon /> },
               { title: "Elevators and lift cabins", icon: <BuildingOffice2Icon /> },
@@ -176,16 +175,16 @@ export default function PassiveDiffusersPage() {
               <p className="text-slate-500 text-lg font-light leading-relaxed mb-8">
                 Natural Fragrance Diffusion works through controlled exposure and evaporation. The fragrance is slowly released into the air over time, creating a consistent and gentle scent.
               </p>
-              <div className="grid grid-cols-2 gap-4 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {["Continuous fragrance release", "No mechanical parts", "No power dependency", "Long-lasting performance"].map((f, i) => (
-                  <div key={i} className="flex items-center gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                  <div key={i} className="flex items-center gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100 font-sans">
                     <CheckCircleIcon className="w-5 h-5 text-blue-600 flex-shrink-0" />
                     <span className="text-sm font-bold text-slate-700">{f}</span>
                   </div>
                 ))}
               </div>
               <h3 className="text-2xl font-serif text-slate-900 mb-4">When Should You Choose This Solution?</h3>
-              <ul className="space-y-3">
+              <ul className="space-y-3 font-sans">
                 {[
                   "Power supply is not available",
                   "Silence is important",
@@ -208,7 +207,7 @@ export default function PassiveDiffusersPage() {
         {/* ================= SECTION 7: COMPARISON ================= */}
         <section className="py-16 overflow-x-auto">
           <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 text-center tracking-tighter">Passive / No-Power vs Powered Diffusers</h2>
-          <div className="bg-white border border-slate-100 rounded-[2.5rem] shadow-xl max-w-4xl mx-auto min-w-[600px]">
+          <div className="bg-white border border-slate-100 rounded-[2.5rem] shadow-xl max-w-4xl mx-auto min-w-[600px] font-sans">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="border-b border-slate-100 text-[10px] uppercase tracking-[0.2em] text-slate-400 bg-slate-50 font-black">
@@ -237,8 +236,8 @@ export default function PassiveDiffusersPage() {
         </section>
 
         {/* ================= SECTION 8: WHY COOL MAX ================= */}
-        <section className="py-16">
-          <div className="bg-slate-50 rounded-[3rem] p-10 md:p-16 border border-slate-100 text-left">
+        <section className="py-16 font-sans">
+          <div className="bg-slate-50 rounded-[3rem] p-10 md:p-16 border border-slate-100 text-left shadow-sm">
             <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-none text-center">Why Choose Cool Max for Passive Diffusers?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
@@ -248,7 +247,7 @@ export default function PassiveDiffusersPage() {
                 "Consistent fragrance performance",
                 "Trusted by commercial and institutional clients"
               ].map((reason, i) => (
-                <div key={i} className="flex items-center gap-4 bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <div key={i} className="flex items-center gap-4 bg-white p-6 rounded-2xl border border-slate-100 shadow-sm transition-all hover:border-blue-100">
                   <ShieldCheckIcon className="w-6 h-6 text-blue-600 flex-shrink-0" />
                   <span className="text-slate-700 text-sm font-medium">{reason}</span>
                 </div>
@@ -259,19 +258,23 @@ export default function PassiveDiffusersPage() {
         </section>
 
         {/* ================= SECTION 9: RELATED ================= */}
-        <section className="py-16 text-center">
+        <section className="py-16 text-center font-sans">
            <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter">Related Scenting Solutions</h2>
            <div className="flex flex-wrap justify-center gap-6">
-              {["Desktop & Small Space Aroma Diffusers", "Washroom Hygiene Solutions", "Maintenance & Refill Support"].map((sol, i) => (
-                <div key={i} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer">{sol}</div>
+              {[
+                { name: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser" },
+                { name: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/wall-mounted-and-ceiling-aroma-diffuser" },
+                { name: "Maintenance & Refill Support", path: "/contact" }
+              ].map((sol, i) => (
+                <a href={sol.path} key={i} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer">{sol.name}</a>
               ))}
            </div>
-           <p className="mt-8 text-slate-400 text-sm">These solutions complement passive fragrance diffusion where more control is required.</p>
+           <p className="mt-8 text-slate-400 text-sm italic">These solutions complement passive fragrance diffusion where more control is required.</p>
         </section>
 
         {/* ================= SECTION 10: MASTER CTA ================= */}
         <section className="py-24 text-center relative px-4">
-          <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-5xl mx-auto relative z-10">
+          <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-5xl mx-auto relative z-10 text-center font-sans">
             <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tighter leading-none">
               Looking for Passive / <br /> <span className="italic text-blue-600 font-light">No-Power Diffusers in UAE?</span>
             </h2>

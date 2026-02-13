@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { 
- 
   CheckBadgeIcon, 
   ArrowRightIcon, 
   BuildingOffice2Icon,
@@ -13,11 +12,10 @@ import {
   ShoppingBagIcon,
   UserGroupIcon,
   StarIcon,
- 
 } from "@heroicons/react/24/outline";
 
-// --- ASSET IMPORT ---
-import P16 from "../../../asset/productimg/CMwebpimg/AirPulse 150/1.webp"; 
+// --- CORRECTED ASSET IMPORT ---
+import P16 from "../../../asset/Aroma oils img/STORY.webp"; 
 
 const StoryAromaOilDetail = () => {
   // Redirection Links
@@ -33,12 +31,12 @@ const StoryAromaOilDetail = () => {
   };
 
   return (
-    <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight">
+    <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <motion.div {...fadeUp} className="order-2 lg:order-1">
+          <motion.div {...fadeUp} className="order-2 lg:order-1 text-left">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-[10px] font-bold uppercase tracking-[0.3em] mb-8 font-sans">
               <StarIcon className="w-4 h-4" /> Category: Perfumers Choice
             </div>
@@ -58,18 +56,18 @@ const StoryAromaOilDetail = () => {
             <p className="text-base text-slate-500 leading-relaxed font-light mb-10 italic font-sans">
               It is ideal for spaces that prefer subtle elegance with a lasting impression.
             </p>
-            <div className="flex flex-wrap gap-5">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-slate-900 transition-all flex items-center gap-2 shadow-lg shadow-blue-100 font-sans">
+            <div className="flex flex-wrap gap-5 font-sans">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-slate-900 transition-all flex items-center gap-2 shadow-lg shadow-blue-100">
                 <ChatBubbleLeftRightIcon className="w-4 h-4" /> For Order Now
               </a>
-              <Link to={contactPath} className="px-10 py-4 border border-slate-200 text-slate-900 rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-blue-50 transition-all font-sans">
+              <Link to={contactPath} className="px-10 py-4 border border-slate-200 text-slate-900 rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-blue-50 transition-all">
                 Contact Expert
               </Link>
             </div>
           </motion.div>
 
           <motion.div {...fadeUp} className="order-1 lg:order-2 flex justify-center">
-            <div className="relative group">
+            <div className="relative group font-sans">
                 <div className="absolute -inset-4 bg-blue-100/50 rounded-[4rem] blur-2xl group-hover:bg-blue-200/50 transition-all duration-1000"></div>
                 <img 
                     src={P16} 
@@ -82,12 +80,12 @@ const StoryAromaOilDetail = () => {
       </section>
 
       {/* ================= SECTION 1: FRAGRANCE PROFILE ================= */}
-      <section className="py-24 bg-slate-50 px-6 lg:px-12 font-sans">
-        <div className="max-w-[1200px] mx-auto text-center">
+      <section className="py-24 bg-slate-50 px-6 lg:px-12 text-center">
+        <div className="max-w-[1200px] mx-auto font-sans">
           <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase">
             Fragrance <span className="italic font-light text-blue-700 font-serif">Profile</span>
           </h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-3 gap-8 mb-16 font-sans">
              {[
                { label: "Top Notes", notes: "Citrus Zest, Pink Pepper, Bergamot", color: "bg-blue-400" },
                { label: "Middle Notes", notes: "Jasmine Petals, Rosewood, Cardamom", color: "bg-blue-600" },
@@ -102,7 +100,7 @@ const StoryAromaOilDetail = () => {
                </div>
              ))}
           </div>
-          <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic font-sans">
+          <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic font-sans text-center">
             "This fragrance opens with bright citrus and soft spice, develops into a warm floral-woody heart, and finishes with a creamy, musky base that feels smooth and inviting."
           </p>
         </div>
@@ -111,7 +109,7 @@ const StoryAromaOilDetail = () => {
       {/* ================= SECTION 2: EXPERIENCE ================= */}
       <section className="py-24 bg-white px-6 font-sans">
         <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-           <div>
+           <div className="text-left">
              <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase">
                 Fragrance <br/><span className="italic font-light text-slate-700 font-serif">Experience</span>
              </h2>
@@ -130,16 +128,16 @@ const StoryAromaOilDetail = () => {
                 Story Aroma Oil creates a welcoming environment that feels professional, calm, and refined.
              </p>
            </div>
-           <div className="grid grid-cols-2 gap-6">
-              <div className="aspect-square bg-slate-950 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500">
+           <div className="grid grid-cols-2 gap-6 text-left">
+              <div className="aspect-square bg-slate-950 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500 font-sans">
                 <BuildingOffice2Icon className="w-12 h-12 text-blue-400 group-hover:text-white" />
-                <span className="text-[11px] font-bold uppercase text-slate-200 font-sans">Corporate Interiors</span>
+                <span className="text-[11px] font-bold uppercase text-slate-200">Corporate Interiors</span>
               </div>
               <div className="aspect-square bg-blue-50 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500 font-sans">
                 <HomeIcon className="w-12 h-12 text-blue-600 group-hover:text-white" />
-                <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-50">Residences</span>
+                <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Residences</span>
               </div>
-              <div className="aspect-square bg-slate-100 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500 font-sans">
+              <div className="aspect-square bg-slate-100 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 font-sans">
                 <ShoppingBagIcon className="w-12 h-12 text-blue-600 group-hover:text-white" />
                 <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-50">Retail Environments</span>
               </div>
@@ -153,8 +151,8 @@ const StoryAromaOilDetail = () => {
 
       {/* ================= SECTION 4: WHY CHOOSE ================= */}
       <section className="py-24 bg-slate-950 text-white px-6 font-sans">
-        <div className="max-w-[1200px] mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase">Why Choose Story Aroma?</h2>
+        <div className="max-w-[1200px] mx-auto text-center font-sans">
+            <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase text-center">Why Choose Story Aroma?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {[
                     { title: "Balanced Diffusion", desc: "Medium strength intensity designed for perfectly controlled area coverage." },
@@ -163,7 +161,7 @@ const StoryAromaOilDetail = () => {
                     { title: "Consistent Presence", desc: "Formulated to maintain its refined character steadily throughout the day." },
                     { title: "System Compatible", desc: "Optimized for all professional Cool Max automated scent delivery diffuser systems." }
                 ].map((item, i) => (
-                    <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors">
+                    <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-left">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
                         <h4 className="text-base font-bold uppercase tracking-widest text-white font-serif italic">{item.title}</h4>
                         <p className="text-sm text-slate-400 leading-relaxed font-sans font-light">{item.desc}</p>
@@ -180,7 +178,7 @@ const StoryAromaOilDetail = () => {
                 <div className="w-24 h-24 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
                     <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                 </div>
-                <div>
+                <div className="text-left">
                     <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight ">Professional Usage & <span className="italic font-light">Safety</span></h2>
                     <p className="text-slate-500 font-light leading-relaxed font-sans">
                         Story Aroma Oil is a professional fragrance oil intended for use with automated scent diffuser machines. Diffusion intensity can be adjusted according to space size and airflow for optimal comfort.
@@ -191,11 +189,11 @@ const StoryAromaOilDetail = () => {
       </section>
 
       {/* ================= SECTION 6: CTA ================= */}
-      <section className="py-24 px-6 font-sans">
+      <section className="py-24 px-6 text-center">
         <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl font-sans">
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full font-sans"></div>
-          <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase  text-slate-100 ">Interested in <br/><span className="italic font-light text-slate-300 font-serif">this fragrance?</span></h2>
-          <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
+          <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Interested in <br/><span className="italic font-light text-slate-300 font-serif">this fragrance?</span></h2>
+          <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
             Our team can help you select the right diffuser system and customize fragrance intensity for your space.
           </p>
           <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans">

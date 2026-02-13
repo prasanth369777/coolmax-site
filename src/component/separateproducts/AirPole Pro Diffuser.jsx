@@ -38,11 +38,11 @@ const AirPoleProPage = () => {
   };
 
   return (
-    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
+<div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
       
-      {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}
+      {/* ================= HERO SECTION (OPTIMIZED HEIGHT & SMALLER IMAGE) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto">
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
+        <div className="grid lg:grid-cols-[1.2fr,0.8fr] gap-10 items-center">
           <motion.div {...fadeIn}>
             <div className="inline-block px-4 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-black uppercase tracking-[0.2em] mb-6">
               Premium Commercial Floor-Standing
@@ -66,13 +66,22 @@ const AirPoleProPage = () => {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="relative">
-            <div className="aspect-[4/5] bg-white rounded-[2.5rem] border border-slate-100 shadow-xl flex items-center justify-center p-8 overflow-hidden">
-              <img src={activeImg} alt="AirPole Pro Diffuser" className="w-full h-full object-contain transition-all duration-700 hover:scale-105" />
+          {/* --- Image Container Adjusted for Smaller Size --- */}
+          <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="relative flex flex-col items-center">
+            <div className="aspect-square w-full max-w-[400px] bg-white rounded-[2.5rem] border border-slate-100 shadow-xl flex items-center justify-center p-12 overflow-hidden">
+              <img 
+                src={activeImg} 
+                alt="AirPole Pro Diffuser" 
+                className="w-full h-full object-contain transition-all duration-700 hover:scale-105" 
+              />
             </div>
-            <div className="flex gap-3 mt-4 justify-center">
+            <div className="flex gap-3 mt-6 justify-center">
               {gallery.map((img, i) => (
-                <button key={i} onClick={() => setActiveImg(img)} className={`w-14 h-14 rounded-lg border-2 overflow-hidden transition-all ${activeImg === img ? "border-blue-600 shadow-md" : "border-transparent opacity-60 hover:opacity-100"}`}>
+                <button 
+                    key={i} 
+                    onClick={() => setActiveImg(img)} 
+                    className={`w-12 h-12 rounded-lg border-2 overflow-hidden transition-all ${activeImg === img ? "border-blue-600 shadow-md" : "border-transparent opacity-60 hover:opacity-100"}`}
+                >
                   <img src={img} className="w-full h-full object-cover" alt="variant-thumb" />
                 </button>
               ))}
@@ -80,6 +89,7 @@ const AirPoleProPage = () => {
           </motion.div>
         </div>
       </section>
+
 
       {/* ================= SECTION 1: PRODUCT OVERVIEW ================= */}
       <section className="py-16 bg-white px-6">

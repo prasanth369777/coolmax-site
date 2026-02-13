@@ -84,6 +84,8 @@ import AirPole from "./component/separateproducts/AirPole Pro Diffuser";
 import NanoPillar from "./component/separateproducts/NanoPillar Diffuser";
 import NaturalFlow from "./component/separateproducts/Natural Fragrance Diffuser";
 import Solution from "./component/Solutionpage/Solution";
+import AeroCubePage from "./component/separateproducts/AeroCube Diffuser";
+
 
 // --- HELPER: SCROLL TO TOP ---
 const ScrollToTop = () => {
@@ -164,6 +166,7 @@ function App() {
         <Route path="/product/nanopillar" element={<NanoPillar />} />
         <Route path="/product/naturalflow" element={<NaturalFlow />} />
         <Route path="/product/titan" element={<Titan />} />
+        <Route path="/product/aerocube" element={<AeroCubePage />} />
 
         {/* --- AROMA DETAILED PAGES ROUTES --- */}
         <Route path="/aroma/address" element={<AddressAromaOilDetail/>} />

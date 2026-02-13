@@ -16,7 +16,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORT ---
-import P15 from "../../../asset/productimg/CMwebpimg/AirPulse 150/4.webp"; 
+import P15 from "../../../asset/Aroma oils img/TUSCAN LEATHER.webp"; 
 
 const TuscanLeatherAromaOilDetail = () => {
   // Redirection Links

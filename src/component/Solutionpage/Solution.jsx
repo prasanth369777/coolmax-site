@@ -13,18 +13,12 @@ import {
   ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/outline";
 
-// --- CORRECTED IMAGE IMPORTS BASED ON PRODUCT MAPPING ---
-// 1. Scent Marketing -> AeroBlack Pro (Q3000Pro)
+// --- CORRECTED IMAGE IMPORTS BASED ON CATEGORY MAPPING ---
 import MarketingImg from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/1.webp"; 
-// 2. Commercial Diffusion -> MistBox X (OV-10)
 import CommercialImg from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/1.webp";
-// 3. HVAC Scenting -> AirPulse 150 (VS-160)
 import HVACImg from "../../asset/productimg/CMwebpimg/AirPulse 150/1.webp"; 
-// 4. Washroom Hygiene -> CeilAir Pro (M45)
 import WashroomImg from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/1.webp";
-// 5. Car & Personal -> NovaCar (DA1004-2026)
 import PersonalImg from "../../asset/productimg/CMwebpimg/NovaCar Diffuser/1.webp";
-// 6. Maintenance -> Titan (A700) - Representative of high-performance service
 import MaintenanceImg from "../../asset/productimg/CMwebpimg/Titan Diffuser/1.webp";
 
 export default function AllSolutionsPage() {
@@ -48,7 +42,7 @@ export default function AllSolutionsPage() {
       focus: "Our scent marketing solutions focus on consistency, not overpowering fragrance, ensuring comfort for everyone in the space.",
       image: MarketingImg,
       icon: <SparklesIcon />,
-      link: "/scent-marketing-solutions"
+      link: "/scent-marketing"
     },
     {
       id: "commercial",
@@ -58,7 +52,7 @@ export default function AllSolutionsPage() {
       focus: "These systems are ideal for businesses looking for a professional alternative to manual air fresheners.",
       image: CommercialImg,
       icon: <BuildingOffice2Icon />,
-      link: "/commercial-aroma-diffusion-solutions"
+      link: "/commercial-diffusion"
     },
     {
       id: "hvac",
@@ -68,7 +62,7 @@ export default function AllSolutionsPage() {
       focus: "Using professional HVAC scent diffusers, fragrance is distributed discreetly and consistently without visible machines.",
       image: HVACImg,
       icon: <CloudIcon />,
-      link: "/hvac-scenting-solutions"
+      link: "/hvac-scenting"
     },
     {
       id: "washroom",
@@ -78,7 +72,7 @@ export default function AllSolutionsPage() {
       usage: "Offices, Schools and colleges, Hospitals and clinics, Restaurants and food chains, Shopping malls.",
       image: WashroomImg,
       icon: <BoltIcon />,
-      link: "/washroom-hygiene-solutions"
+      link: "/washroom-hygiene"
     },
     {
       id: "personal",
@@ -88,7 +82,7 @@ export default function AllSolutionsPage() {
       focus: "Our car aroma diffusers and compact home diffuser machines offer convenience, portability, and subtle fragrance output.",
       image: PersonalImg,
       icon: <TruckIcon />,
-      link: "/car-and-personal-space-scenting-solutions"
+      link: "/car-scenting"
     },
     {
       id: "maintenance",
@@ -98,7 +92,7 @@ export default function AllSolutionsPage() {
       focus: "Whether you use a hotel scent diffuser, commercial scent machine, or home fragrance system, our service team ensures reliable performance.",
       image: MaintenanceImg,
       icon: <WrenchScrewdriverIcon />,
-      link: "/maintenance-and-refill-support-services"
+      link: "/maintenance"
     }
   ];
 
@@ -171,13 +165,13 @@ export default function AllSolutionsPage() {
         {/* ================= INTRO SECTION ================= */}
         <section className="py-16 border-t border-slate-100 text-left">
           <div className="max-w-4xl">
-            <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8">
+            <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8 text-justify md:text-left">
               Creating a clean, fresh, and welcoming environment is no longer optional—it is an essential part of how people experience spaces. At Cool Max, we provide a complete range of Professional Scent & Hygiene Solutions in UAE, helping businesses and homeowners maintain pleasant indoor environments using reliable technology and consistent service.
             </p>
-            <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8">
+            <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8 text-justify md:text-left">
               From Commercial Scent Solutions UAE and HVAC Scenting Solutions UAE to Washroom Hygiene Solutions UAE and car & personal space scenting, our solutions are designed to work in real environments. We focus on practical implementation, long-term performance, and easy maintenance rather than temporary fixes.
             </p>
-            <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light">
+            <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light text-justify md:text-left">
               This Solutions page gives you an overview of how Cool Max, your trusted Scent Diffuser Supplier Dubai, supports different spaces and requirements. Each solution is backed by professional equipment, expert guidance, and ongoing support.
             </p>
           </div>
@@ -190,7 +184,7 @@ export default function AllSolutionsPage() {
             <p className="text-lg text-slate-500 font-light mb-10 max-w-3xl">
               Every space is different. An office, hotel, hospital, shopping mall, or personal vehicle has unique requirements when it comes to fragrance, hygiene, and air quality. That is why Cool Max does not offer one-size-fits-all products.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 font-sans">
               {[
                 "Understanding the space and usage",
                 "Recommending the right scent diffuser machine",
@@ -198,7 +192,7 @@ export default function AllSolutionsPage() {
                 "Providing ongoing maintenance & refill support"
               ].map((step, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center flex-shrink-0 text-xs font-bold">{i+1}</div>
+                  <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center flex-shrink-0 text-xs font-bold font-sans">{i+1}</div>
                   <p className="text-slate-700 font-medium text-sm leading-snug">{step}</p>
                 </div>
               ))}
@@ -230,30 +224,30 @@ export default function AllSolutionsPage() {
 
               <div className="w-full lg:w-1/2 text-left space-y-6">
                 <h3 className="text-4xl font-serif text-slate-900 tracking-tight leading-none">{sol.title}</h3>
-                <p className="text-slate-600 text-base leading-relaxed">{sol.content}</p>
+                <p className="text-slate-600 text-base leading-relaxed text-justify md:text-left">{sol.content}</p>
                 
                 {sol.usage && (
                   <div className="bg-white border border-slate-100 p-4 rounded-2xl shadow-sm">
-                    <p className="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-2">Commonly used in:</p>
-                    <p className="text-sm text-slate-500 font-medium">{sol.usage}</p>
+                    <p className="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-2 font-sans">Commonly used in:</p>
+                    <p className="text-sm text-slate-500 font-medium font-sans">{sol.usage}</p>
                   </div>
                 )}
 
                 {sol.designedFor && (
                   <div className="bg-white border border-slate-100 p-4 rounded-2xl shadow-sm">
-                    <p className="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-2">Designed for:</p>
-                    <p className="text-sm text-slate-500 font-medium">{sol.designedFor}</p>
+                    <p className="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-2 font-sans">Designed for:</p>
+                    <p className="text-sm text-slate-500 font-medium font-sans">{sol.designedFor}</p>
                   </div>
                 )}
 
                 {sol.includes && (
                   <div className="bg-white border border-slate-100 p-4 rounded-2xl shadow-sm">
-                    <p className="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-2">Includes:</p>
-                    <p className="text-sm text-slate-500 font-medium">{sol.includes}</p>
+                    <p className="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-2 font-sans">Includes:</p>
+                    <p className="text-sm text-slate-500 font-medium font-sans">{sol.includes}</p>
                   </div>
                 )}
 
-                <div className="pt-4">
+                <div className="pt-4 font-sans">
                   <a href={sol.link} className="inline-flex items-center gap-3 text-sm font-bold text-slate-900 hover:text-blue-600 transition-colors border-b-2 border-slate-100 pb-1 font-sans">
                     Explore This Solution <ArrowRightIcon className="w-4 h-4" />
                   </a>
@@ -265,7 +259,7 @@ export default function AllSolutionsPage() {
 
         {/* ================= WHY CHOOSE SECTION ================= */}
         <section className="py-16">
-          <div className="bg-slate-900 rounded-[4rem] p-10 md:p-20 relative overflow-hidden shadow-2xl text-left">
+          <div className="bg-slate-900 rounded-[4rem] p-10 md:p-20 relative overflow-hidden shadow-2xl text-left font-sans">
             <h2 className="text-4xl md:text-5xl font-serif text-white mb-10 tracking-tight">Why Choose Cool Max Solutions?</h2>
             <p className="text-slate-400 text-lg mb-12 max-w-2xl font-light">
               Businesses choose Cool Max because we focus on long-term reliability and provide the most effective Scent Marketing Solutions UAE.
@@ -279,7 +273,7 @@ export default function AllSolutionsPage() {
                 "Ongoing maintenance and refill programs",
                 "Experience across multiple industries"
               ].map((point, i) => (
-                <div key={i} className="flex items-center gap-3 bg-white/5 p-5 rounded-2xl border border-white/10">
+                <div key={i} className="flex items-center gap-3 bg-white/5 p-5 rounded-2xl border border-white/10 text-left">
                   <ShieldCheckIcon className="w-6 h-6 text-blue-400 flex-shrink-0" />
                   <span className="text-white text-sm font-medium">{point}</span>
                 </div>
@@ -290,7 +284,7 @@ export default function AllSolutionsPage() {
         </section>
 
         {/* ================= FINAL CTA ================= */}
-        <section className="py-24 text-center px-4">
+        <section className="py-24 text-center px-4 font-sans">
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-6 tracking-tighter leading-none text-center">One Partner. <br/><span className="italic text-blue-600 font-light">Complete Professional Scent & Hygiene Solutions in UAE</span></h2>
             <p className="text-xl text-slate-500 mb-10 leading-relaxed font-light font-sans text-center">

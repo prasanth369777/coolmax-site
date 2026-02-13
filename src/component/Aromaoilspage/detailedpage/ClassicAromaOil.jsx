@@ -14,8 +14,8 @@ import {
     ClockIcon
 } from "@heroicons/react/24/outline";
 
-// --- ASSET IMPORT ---
-import P13 from "../../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/2.webp"; 
+// --- CORRECTED ASSET IMPORT ---
+import P13 from "../../../asset/Aroma oils img/CLASSIC.webp"; 
 
 const ClassicAromaOilDetail = () => {
     // Redirection Links
@@ -31,7 +31,7 @@ const ClassicAromaOilDetail = () => {
     };
 
     return (
-        <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight">
+        <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
         
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
@@ -80,8 +80,8 @@ const ClassicAromaOilDetail = () => {
             </section>
 
             {/* ================= SECTION 1: FRAGRANCE PROFILE ================= */}
-            <section className="py-24 bg-slate-50 px-6 lg:px-12">
-                <div className="max-w-[1200px] mx-auto text-center">
+            <section className="py-24 bg-slate-50 px-6 lg:px-12 text-center">
+                <div className="max-w-[1200px] mx-auto">
                     <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase">
                         Fragrance <span className="italic font-light text-blue-700">Profile</span>
                     </h2>
@@ -91,7 +91,7 @@ const ClassicAromaOilDetail = () => {
                             { label: "Middle Notes", notes: "Indian Jasmine, Orange Blossom, Rose Absolute, Frankincense", color: "bg-blue-600" },
                             { label: "Base Notes", notes: "Amberwood, Sandalwood, Patchouli, Vanilla Bean, Musk", color: "bg-blue-800" }
                         ].map((note, i) => (
-                            <div key={i} className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-blue-300 transition-all group">
+                            <div key={i} className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-blue-300 transition-all group text-center">
                                 <div className={`w-12 h-12 rounded-full ${note.color} mx-auto mb-6 flex items-center justify-center text-white`}>
                                     <BeakerIcon className="w-6 h-6" />
                                 </div>
@@ -109,7 +109,7 @@ const ClassicAromaOilDetail = () => {
             {/* ================= SECTION 2: EXPERIENCE ================= */}
             <section className="py-24 bg-white px-6">
                 <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-                    <div>
+                    <div className="text-left">
                         <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase">
                             Fragrance <br/><span className="italic font-light text-slate-700">Experience</span>
                         </h2>
@@ -128,7 +128,7 @@ const ClassicAromaOilDetail = () => {
                             Classic Aroma Oil creates a calm yet premium environment that feels welcoming and refined.
                         </p>
                     </div>
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid grid-cols-2 gap-6 text-left">
                         <div className="aspect-square bg-slate-950 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500">
                             <BuildingOffice2Icon className="w-12 h-12 text-blue-400 group-hover:text-white" />
                             <span className="text-[11px] font-bold uppercase text-slate-200">Luxury Hotels</span>
@@ -150,7 +150,7 @@ const ClassicAromaOilDetail = () => {
             </section>
 
             {/* ================= SECTION 4: WHY CHOOSE ================= */}
-            <section className="py-24 bg-slate-950 text-white px-6">
+            <section className="py-24 bg-slate-950 text-white px-6 text-left">
                 <div className="max-w-[1200px] mx-auto text-center">
                     <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase">Why Choose Classic Aroma?</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -163,8 +163,8 @@ const ClassicAromaOilDetail = () => {
                         ].map((item, i) => (
                             <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors">
                                 <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
-                                <h4 className="text-base font-bold uppercase tracking-widest text-white font-serif italic">{item.title}</h4>
-                                <p className="text-sm text-slate-400 leading-relaxed font-light">{item.desc}</p>
+                                <h4 className="text-base font-bold uppercase tracking-widest text-white font-serif italic text-center">{item.title}</h4>
+                                <p className="text-sm text-slate-400 leading-relaxed font-light text-center">{item.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -189,18 +189,18 @@ const ClassicAromaOilDetail = () => {
             </section>
 
             {/* ================= SECTION 6: CTA ================= */}
-            <section className="py-24 px-6">
+            <section className="py-24 px-6 text-center">
                 <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
                     <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100">Interested in <br/><span className="italic font-light text-slate-300">this fragrance?</span></h2>
-                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light">
+                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans">
                         Our team can help you select the right diffuser system and customize fragrance intensity for your space.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6 relative z-10">
-                        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">
+                        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 font-sans">
                             <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
                         </a>
-                        <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3">
+                        <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 font-sans">
                             Consultation & Installation <ArrowRightIcon className="w-5 h-5" />
                         </Link>
                     </div>

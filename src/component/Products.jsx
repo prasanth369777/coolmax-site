@@ -85,8 +85,8 @@ import NaturalFragrance1 from "../asset/productimg/CMwebpimg/Natural Fragrance D
 import NaturalFragrance2 from "../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/2.webp";
 
 // 19. CeilAir Pro Diffuser (M45)
-import CeilAirPro1 from "../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/1.webp";
-import CeilAirPro2 from "../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/2.webp";
+import CeilAirPro1 from "../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/4.webp";
+import CeilAirPro2 from "../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/5.webp";
 
 // 20. AeroMax Pro (A315L)
 import AeroMaxPro1 from "../asset/productimg/CMwebpimg/AeroMax Pro/1.webp";
@@ -125,7 +125,7 @@ const productList = [
 
   // --- WALL-MOUNTED & CEILING AROMA DIFFUSERS ---
   { id: 19, name: "CeilAir Pro Diffuser", model: "M45", cat: "Wall-Mounted & Ceiling", images: [CeilAirPro1, CeilAirPro2], path: "/product/ceilair" },
-  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling", images: [AeroMaxPro1, AeroMaxPro2], path: "/product/aeromax-pro" }
+  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling", images: [AeroMaxPro1, AeroMaxPro2 ], path: "/product/aeromax-pro" }
 ];
 
 // CORRECTED CATEGORY ORDER BASED ON PROVIDED IMAGE

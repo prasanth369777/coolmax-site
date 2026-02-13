@@ -11,11 +11,10 @@ import {
   ChatBubbleLeftRightIcon,
   BeakerIcon,
   ShieldCheckIcon,
-
 } from "@heroicons/react/24/outline";
 
-// --- ASSET IMPORT ---
-import P1 from "../../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/4.webp"; 
+// --- CORRECTED ASSET IMPORT ---
+import P1 from "../../../asset/Aroma oils img/ADDRESS.webp"; 
 
 const AddressAromaOilDetail = () => {
   // Redirection Links
@@ -31,7 +30,7 @@ const AddressAromaOilDetail = () => {
   };
 
   return (
-    <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight">
+    <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
@@ -82,7 +81,7 @@ const AddressAromaOilDetail = () => {
       {/* ================= SECTION 1: FRAGRANCE PROFILE ================= */}
       <section className="py-24 bg-slate-50 px-6 lg:px-12">
         <div className="max-w-[1200px] mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase">
+          <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase text-center">
             Fragrance <span className="italic font-light">Profile</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -91,16 +90,16 @@ const AddressAromaOilDetail = () => {
                { label: "Middle Notes", notes: "Agarwood (Oud), Patchouli, Amber, Musk", color: "bg-blue-700" },
                { label: "Base Notes", notes: "Passionfruit, Lemon, Cardamom", color: "bg-blue-800" }
              ].map((note, i) => (
-               <div key={i} className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-blue-200 transition-all group">
+               <div key={i} className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-blue-200 transition-all group text-left">
                  <div className={`w-12 h-12 rounded-full ${note.color} mx-auto mb-6 flex items-center justify-center text-white`}>
                     <BeakerIcon className="w-6 h-6" />
                  </div>
-                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">{note.label}</h3>
-                 <p className="text-lg font-serif text-slate-900 leading-snug">{note.notes}</p>
+                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 text-center">{note.label}</h3>
+                 <p className="text-lg font-serif text-slate-900 leading-snug text-center">{note.notes}</p>
                </div>
              ))}
           </div>
-          <p className="text-lg md:text-xl text-slate-500 max-w-4xl mx-auto leading-relaxed font-light italic">
+          <p className="text-lg md:text-xl text-slate-500 max-w-4xl mx-auto leading-relaxed font-light italic text-center">
             "This layered fragrance opens with a soft fruity-spicy freshness, transitions into rich oud and amber tones, and finishes with a smooth, slightly citrusy base that lingers pleasantly in the space."
           </p>
         </div>
@@ -109,7 +108,7 @@ const AddressAromaOilDetail = () => {
       {/* ================= SECTION 2: EXPERIENCE ================= */}
       <section className="py-24 bg-white px-6">
         <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-           <div>
+           <div className="text-left">
              <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase">
                 Fragrance <br/><span className="italic font-light text-slate-700">Experience</span>
              </h2>
@@ -129,19 +128,19 @@ const AddressAromaOilDetail = () => {
              </p>
            </div>
            <div className="grid grid-cols-2 gap-4">
-              <div className="aspect-square bg-blue-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500">
+              <div className="aspect-square bg-blue-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left">
                 <BuildingOffice2Icon className="w-10 h-10 text-blue-600 group-hover:text-white" />
                 <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Hospitality</span>
               </div>
-              <div className="aspect-square bg-slate-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500">
+              <div className="aspect-square bg-slate-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left">
                 <ShoppingBagIcon className="w-10 h-10 text-blue-600 group-hover:text-white" />
                 <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Retail</span>
               </div>
-              <div className="aspect-square bg-slate-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500">
+              <div className="aspect-square bg-slate-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left">
                 <HomeIcon className="w-10 h-10 text-blue-600 group-hover:text-white" />
                 <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Residential</span>
               </div>
-              <div className="aspect-square bg-blue-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500">
+              <div className="aspect-square bg-blue-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left">
                 <SparklesIcon className="w-10 h-10 text-blue-600 group-hover:text-white" />
                 <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Showrooms</span>
               </div>
@@ -150,7 +149,7 @@ const AddressAromaOilDetail = () => {
       </section>
 
       {/* ================= SECTIONS 3 & 4: WHY & PLACEMENT ================= */}
-      <section className="py-24 bg-slate-950 text-white px-6">
+      <section className="py-24 bg-slate-950 text-white px-6 text-left">
         <div className="max-w-[1200px] mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase">Why Choose Address?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -171,7 +170,7 @@ const AddressAromaOilDetail = () => {
       </section>
 
       {/* ================= SECTION 5: SAFETY & USAGE ================= */}
-      <section className="py-28 bg-slate-50 px-6">
+      <section className="py-28 bg-slate-50 px-6 text-left">
         <div className="max-w-[1000px] mx-auto">
             <div className="bg-white rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center">
                 <div className="w-24 h-24 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
@@ -188,18 +187,18 @@ const AddressAromaOilDetail = () => {
       </section>
 
       {/* ================= SECTION 6: CTA ================= */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 text-center">
         <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full" />
           <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase">Interested in <br/><span className="italic font-light text-slate-300">this fragrance?</span></h2>
-          <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans">
+          <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
             Our team can help you select the right diffuser system and customize the fragrance intensity based on your space requirements.
           </p>
-          <div className="flex flex-wrap justify-center gap-6 relative z-10">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 font-sans">
+          <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
             </a>
-            <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 font-sans">
+            <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all flex items-center gap-3">
               Contact Cool Max <ArrowRightIcon className="w-5 h-5" />
             </Link>
           </div>

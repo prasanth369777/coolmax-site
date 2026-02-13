@@ -13,8 +13,8 @@ import {
   ShoppingBagIcon
 } from "@heroicons/react/24/outline";
 
-// --- ASSET IMPORT ---
-import P11 from "../../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/2.webp"; 
+// --- CORRECTED ASSET IMPORT ---
+import P11 from "../../../asset/Aroma oils img/TRUE COFFEE.webp"; 
 
 const BubbleGumAromaOilDetail = () => {
   // Redirection Links
@@ -30,11 +30,11 @@ const BubbleGumAromaOilDetail = () => {
   };
 
   return (
-    <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight">
+    <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center text-left">
           <motion.div {...fadeUp} className="order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-[10px] font-bold uppercase tracking-[0.3em] mb-8">
               <FaceSmileIcon className="w-4 h-4" /> Category: Food & Beverage
@@ -47,7 +47,7 @@ const BubbleGumAromaOilDetail = () => {
             </p>
             <div className="flex gap-6 mb-8 text-[11px] font-bold uppercase tracking-widest text-slate-400">
                 <span>Item Code: <span className="text-slate-900">CM-0105-OR</span></span>
-                <span>Strength: <span className="text-blue-500 font-black">Medium</span></span>
+                <span>Strength: <span className="text-blue-700 font-black">Medium</span></span>
             </div>
             <p className="text-base md:text-lg text-slate-500 leading-relaxed font-light mb-8">
               Bubble Gum Aroma Oil is a playful and sweet fragrance inspired by the nostalgic scent of classic bubble gum. Designed to create a fun, energetic, and happy atmosphere, this fragrance adds a touch of joy and vibrancy to any space.
@@ -59,7 +59,7 @@ const BubbleGumAromaOilDetail = () => {
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-slate-900 transition-all flex items-center gap-2 shadow-lg shadow-blue-100">
                 <ChatBubbleLeftRightIcon className="w-4 h-4" /> For Order Now
               </a>
-              <Link to={contactPath} className="px-10 py-4 border border-slate-200 text-slate-900 rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-blue-50 transition-all">
+              <Link to={contactPath} className="px-10 py-4 border border-slate-200 text-slate-900 rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-blue-50 transition-all text-center">
                 Contact Expert
               </Link>
             </div>
@@ -79,9 +79,9 @@ const BubbleGumAromaOilDetail = () => {
       </section>
 
       {/* ================= SECTION 1: FRAGRANCE PROFILE ================= */}
-      <section className="py-24 bg-slate-50 px-6 lg:px-12">
-        <div className="max-w-[1200px] mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase">
+      <section className="py-24 bg-slate-50 px-6 lg:px-12 text-center">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase text-center">
             Fragrance <span className="italic font-light text-blue-700">Profile</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -90,20 +90,16 @@ const BubbleGumAromaOilDetail = () => {
                { label: "Middle Notes", notes: "Candy Accord, Cherry", color: "bg-blue-600" },
                { label: "Base Notes", notes: "Vanilla, Sugar, Soft Musk", color: "bg-blue-800" }
              ].map((note, i) => (
-               <div key={i} className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-blue-300 transition-all group">
-                 <div className={`w-12 h-12 rounded-full ${note.color} mx-auto mb-6 flex items-center justify-center text-white`}>
+               <div key={i} className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-blue-300 transition-all group text-center">
+                 <div className={`w-12 h-12 rounded-full ${note.color} mx-auto mb-6 flex items-center justify-center text-white text-center`}>
                     <BeakerIcon className="w-6 h-6" />
                  </div>
-                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">
-                    {note.label}
-                 </h3>
-                 <p className="text-xl font-serif text-slate-900 leading-snug">
-                    {note.notes}
-                 </p>
+                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">{note.label}</h3>
+                 <p className="text-xl font-serif text-slate-900 leading-snug">{note.notes}</p>
                </div>
              ))}
           </div>
-          <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic">
+          <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic text-center">
             "This fragrance opens with a burst of sweet fruits, develops into a sugary candy heart, and finishes with a soft vanilla base that feels cheerful and comforting."
           </p>
         </div>
@@ -111,12 +107,12 @@ const BubbleGumAromaOilDetail = () => {
 
       {/* ================= SECTION 2: EXPERIENCE ================= */}
       <section className="py-24 bg-white px-6">
-        <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center text-left">
            <div>
-             <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase">
+             <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase text-left">
                 Fragrance <br/><span className="italic font-light text-slate-700">Experience</span>
              </h2>
-             <ul className="space-y-6">
+             <ul className="space-y-6 text-left">
                 {[
                     "Bright and cheerful opening",
                     "Playful candy and fruit character",
@@ -127,24 +123,24 @@ const BubbleGumAromaOilDetail = () => {
                     </li>
                 ))}
              </ul>
-             <p className="mt-10 text-slate-500 leading-relaxed font-light">
+             <p className="mt-10 text-slate-500 leading-relaxed font-light text-left">
                 Bubble Gum Aroma Oil creates a joyful environment that feels welcoming and full of positive energy.
              </p>
            </div>
-           <div className="grid grid-cols-2 gap-6">
-              <div className="aspect-square bg-slate-950 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500">
+           <div className="grid grid-cols-2 gap-6 text-left">
+              <div className="aspect-square bg-slate-950 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500 text-left">
                 <SparklesIcon className="w-12 h-12 text-blue-400 group-hover:text-white" />
                 <span className="text-[11px] font-bold uppercase text-slate-200">Creative Zones</span>
               </div>
-              <div className="aspect-square bg-blue-50 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500">
+              <div className="aspect-square bg-blue-50 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500 text-left">
                 <FaceSmileIcon className="w-12 h-12 text-blue-600 group-hover:text-white" />
                 <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-50">Play Areas</span>
               </div>
-              <div className="aspect-square bg-slate-100 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500">
+              <div className="aspect-square bg-slate-100 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500 text-left">
                 <ShoppingBagIcon className="w-12 h-12 text-blue-600 group-hover:text-white" />
                 <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-50">Retail Stores</span>
               </div>
-              <div className="aspect-square bg-blue-600 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-slate-950 transition-all duration-500">
+              <div className="aspect-square bg-blue-600 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-slate-950 transition-all duration-500 text-left">
                 <UserGroupIcon className="w-12 h-12 text-white" />
                 <span className="text-[11px] font-bold uppercase text-blue-50">Event Spaces</span>
               </div>
@@ -153,9 +149,9 @@ const BubbleGumAromaOilDetail = () => {
       </section>
 
       {/* ================= SECTION 4: WHY CHOOSE ================= */}
-      <section className="py-24 bg-slate-950 text-white px-6">
+      <section className="py-24 bg-slate-950 text-white px-6 text-left">
         <div className="max-w-[1200px] mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase">Why Choose Bubble Gum Aroma?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase text-center">Why Choose Bubble Gum Aroma?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {[
                     { title: "Balanced Diffusion", desc: "Medium strength intensity designed for perfectly controlled aromatic presence in any space." },
@@ -164,10 +160,10 @@ const BubbleGumAromaOilDetail = () => {
                     { title: "Consistent Presence", desc: "High-performance formula that maintains its joyful aroma steadily throughout the day." },
                     { title: "System Compatible", desc: "Optimized for all professional Cool Max automated scent delivery systems." }
                 ].map((item, i) => (
-                    <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors">
+                    <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-left">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
-                        <h4 className="text-base font-bold uppercase tracking-widest text-white font-serif italic">{item.title}</h4>
-                        <p className="text-sm text-slate-400 leading-relaxed font-light">{item.desc}</p>
+                        <h4 className="text-base font-bold uppercase tracking-widest text-white font-serif italic text-left">{item.title}</h4>
+                        <p className="text-sm text-slate-400 leading-relaxed font-light text-left">{item.desc}</p>
                     </div>
                 ))}
             </div>
@@ -175,15 +171,15 @@ const BubbleGumAromaOilDetail = () => {
       </section>
 
       {/* ================= SECTION 5: SAFETY & USAGE ================= */}
-      <section className="py-28 bg-slate-50 px-6 text-left">
+      <section className="py-28 bg-slate-50 px-6 text-left font-sans">
         <div className="max-w-[1000px] mx-auto">
-            <div className="bg-white rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center">
+            <div className="bg-white rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-left">
                 <div className="w-24 h-24 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
                     <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                 </div>
-                <div>
-                    <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Professional Usage & <span className="italic font-light">Safety</span></h2>
-                    <p className="text-slate-500 font-light leading-relaxed">
+                <div className="text-left">
+                    <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Professional Usage & <span className="italic font-light text-left">Safety</span></h2>
+                    <p className="text-slate-500 font-light leading-relaxed text-left">
                         Bubble Gum Aroma Oil is a professional fragrance oil intended for use with automated scent diffuser machines. Diffusion intensity can be adjusted according to space size and airflow to maintain a pleasant and cheerful environment.
                     </p>
                 </div>
@@ -192,18 +188,18 @@ const BubbleGumAromaOilDetail = () => {
       </section>
 
       {/* ================= SECTION 6: CTA ================= */}
-      <section className="py-24 px-6">
-        <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
-          <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100">Interested in <br/><span className="italic font-light text-slate-300">this fragrance?</span></h2>
-          <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light">
+      <section className="py-24 px-6 text-center">
+        <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl text-center">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full text-center"></div>
+          <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Interested in <br/><span className="italic font-light text-slate-300 text-center">this fragrance?</span></h2>
+          <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light text-center">
             Our team can help you select the right diffuser system and customize fragrance intensity for your space.
           </p>
-          <div className="flex flex-wrap justify-center gap-6 relative z-10">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">
+          <div className="flex flex-wrap justify-center gap-6 relative z-10 text-center">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-center">
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
             </a>
-            <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 font-sans">
+            <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-center">
               Consultation & Installation <ArrowRightIcon className="w-5 h-5" />
             </Link>
           </div>

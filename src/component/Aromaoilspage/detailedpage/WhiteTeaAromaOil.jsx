@@ -15,7 +15,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORT ---
-import P7 from "../../../asset/productimg/CMwebpimg/AeroBlack Med diffuser/1.webp"; 
+import P7 from "../../../asset/Aroma oils img/WHITE TEA.webp"; 
 
 const WhiteTeaAromaOilDetail = () => {
   // Redirection Links
