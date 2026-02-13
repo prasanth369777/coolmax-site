@@ -128,7 +128,7 @@ const productList = [
   { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling", images: [AeroMaxPro1, AeroMaxPro2], path: "/product/aeromax-pro" }
 ];
 
-const categories = ["All Systems", "Car Aroma Diffusers", "Desktop & Small Space", "Wall-Mounted & Ceiling", "Commercial Aroma Diffusers", "Large Area & HVAC", "Floor-Standing Aroma Diffusers", "Passive / No-Power"];
+const categories = ["All Systems", "Car Aroma Diffusers", "Desktop & Small Space", "Wall-Mounted & Ceiling", "Commercial Aroma Diffusers", "Large Area & HVAC", "Floor-Standing Aroma Diffusers", "Passive / No-Power Diffusers"];
 
 export default function ArchitectStore() {
   const [activeCat, setActiveCat] = useState("All Systems");
@@ -152,7 +152,7 @@ export default function ArchitectStore() {
               <SparklesIcon className="w-4 h-4 text-blue-600" />
               <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">The New Standards</span>
             </div>
-            <h1 className="text-6xl md:text-9xl font-serif leading-[0.9] tracking-tighter mb-8">
+            <h1 className="text-6xl md:text-9xl font-serif leading-[0.9] tracking-tighter mb-8 text-left">
               All <span className="italic text-slate-300 font-light text-left">Products.</span>
             </h1>
             <p className="text-lg text-slate-400 max-w-md leading-relaxed font-light text-left">
@@ -186,8 +186,8 @@ export default function ArchitectStore() {
             {[...productList, ...productList].map((product, idx) => (
               <div key={idx} className="w-48 h-64 bg-[#F8F8F8] rounded-3xl p-6 flex flex-col items-center justify-center shrink-0 border border-slate-50 group-hover:grayscale transition-all duration-700 hover:!grayscale-0 hover:border-blue-200">
                 <img src={product.images[0]} alt="" className="w-full h-32 object-contain mix-blend-multiply mb-4" />
-                <span className="text-[9px] font-black text-slate-300 uppercase tracking-widest">{product.model}</span>
-                <span className="text-xs font-bold text-slate-900 mt-1">{product.name}</span>
+                <span className="text-[9px] font-black text-slate-300 uppercase tracking-widest text-center">{product.model}</span>
+                <span className="text-xs font-bold text-slate-900 mt-1 text-center">{product.name}</span>
               </div>
             ))}
           </motion.div>
