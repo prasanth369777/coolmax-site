@@ -7,7 +7,7 @@ import {
   ArrowRightIcon, 
   BuildingOffice2Icon,
   HomeIcon,
-  ShoppingBagIcon,
+ 
   ChatBubbleLeftRightIcon,
   BeakerIcon,
   ShieldCheckIcon,
@@ -47,7 +47,7 @@ const AddressAromaOilDetail = () => {
             </p>
             <div className="flex gap-6 mb-8 text-[11px] font-bold uppercase tracking-widest text-slate-400">
                 <span>Item Code: <span className="text-slate-900">CM-0101-OR</span></span>
-                <span>Strength: <span className="text-blue-600">Medium</span></span>
+                <span>Strength: <span className="text-blue-600 font-black">Medium</span></span>
             </div>
             <p className="text-base md:text-lg text-slate-500 leading-relaxed font-light mb-8 font-sans">
               Address Aroma Oil is a sophisticated oriental fragrance designed to create a warm, elegant, and welcoming atmosphere. With a balanced blend of fruity, floral, and woody notes, this fragrance delivers a premium scent experience without being overpowering.
@@ -57,10 +57,10 @@ const AddressAromaOilDetail = () => {
             </p>
             <div className="flex flex-wrap gap-5">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-slate-900 transition-all flex items-center gap-2 shadow-lg shadow-blue-100">
-                <ChatBubbleLeftRightIcon className="w-4 h-4" /> Order via WhatsApp
+                <ChatBubbleLeftRightIcon className="w-4 h-4" /> For Order Now
               </a>
               <Link to={contactPath} className="px-10 py-4 border border-slate-200 text-slate-900 rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-blue-50 transition-all">
-                Request Quote
+                Contact Expert
               </Link>
             </div>
           </motion.div>
@@ -79,8 +79,8 @@ const AddressAromaOilDetail = () => {
       </section>
 
       {/* ================= SECTION 1: FRAGRANCE PROFILE ================= */}
-      <section className="py-24 bg-slate-50 px-6 lg:px-12">
-        <div className="max-w-[1200px] mx-auto text-center">
+      <section className="py-24 bg-slate-50 px-6 lg:px-12 text-center">
+        <div className="max-w-[1200px] mx-auto">
           <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase text-center">
             Fragrance <span className="italic font-light">Profile</span>
           </h2>
@@ -107,9 +107,9 @@ const AddressAromaOilDetail = () => {
 
       {/* ================= SECTION 2: EXPERIENCE ================= */}
       <section className="py-24 bg-white px-6">
-        <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-           <div className="text-left">
-             <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase">
+        <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center text-left">
+           <div>
+             <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase text-left">
                 Fragrance <br/><span className="italic font-light text-slate-700">Experience</span>
              </h2>
              <ul className="space-y-6">
@@ -118,29 +118,29 @@ const AddressAromaOilDetail = () => {
                     "Rich and elegant oriental character",
                     "Smooth, balanced finish with lasting comfort"
                 ].map((text, i) => (
-                    <li key={i} className="flex items-center gap-4 text-lg text-slate-600 font-light">
+                    <li key={i} className="flex items-center gap-4 text-lg text-slate-600 font-light text-left">
                         <div className="w-2 h-2 rounded-full bg-blue-600" /> {text}
                     </li>
                 ))}
              </ul>
-             <p className="mt-10 text-slate-500 leading-relaxed font-sans">
+             <p className="mt-10 text-slate-500 leading-relaxed font-sans text-left">
                 Address Aroma Oil is designed to enhance the ambiance without overwhelming the environment, making it suitable for continuous daily use.
              </p>
            </div>
            <div className="grid grid-cols-2 gap-4">
-              <div className="aspect-square bg-blue-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left">
+              <div className="aspect-square bg-blue-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left text-left">
                 <BuildingOffice2Icon className="w-10 h-10 text-blue-600 group-hover:text-white" />
-                <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Hospitality</span>
+                <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Hotels & Hospitality</span>
               </div>
-              <div className="aspect-square bg-slate-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left">
-                <ShoppingBagIcon className="w-10 h-10 text-blue-600 group-hover:text-white" />
-                <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Retail</span>
+              <div className="aspect-square bg-slate-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left text-left">
+                <BuildingOffice2Icon className="w-10 h-10 text-blue-600 group-hover:text-white" />
+                <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100 font-sans">Premium Offices</span>
               </div>
-              <div className="aspect-square bg-slate-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left">
+              <div className="aspect-square bg-slate-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left text-left">
                 <HomeIcon className="w-10 h-10 text-blue-600 group-hover:text-white" />
-                <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Residential</span>
+                <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Luxury Residential</span>
               </div>
-              <div className="aspect-square bg-blue-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left">
+              <div className="aspect-square bg-blue-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left text-left">
                 <SparklesIcon className="w-10 h-10 text-blue-600 group-hover:text-white" />
                 <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Showrooms</span>
               </div>
@@ -148,20 +148,20 @@ const AddressAromaOilDetail = () => {
         </div>
       </section>
 
-      {/* ================= SECTIONS 3 & 4: WHY & PLACEMENT ================= */}
+      {/* ================= SECTION 4: WHY CHOOSE ================= */}
       <section className="py-24 bg-slate-950 text-white px-6 text-left">
         <div className="max-w-[1200px] mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase">Why Choose Address?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase text-center">Why Choose Address Aroma Oil?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
-                    { title: "Balanced Diffusion", desc: "Medium strength for perfectly controlled aromatic presence." },
-                    { title: "Professional Grade", desc: "Highest quality oils formulated for advanced scent systems." },
-                    { title: "Consistent Performance", desc: "Long-lasting fragrance profile that doesn't fade over time." },
-                    { title: "Dual Use", desc: "Designed for both prestigious corporate and luxury residential spaces." }
+                    { title: "Balanced Diffusion", desc: "Medium strength for balanced diffusion across your space." },
+                    { title: "Professional Quality", desc: "Professional-grade fragrance quality for commercial and residential use." },
+                    { title: "Scent System Ready", desc: "Works seamlessly with advanced automated Cool Max scent diffuser systems." },
+                    { title: "Consistent Performance", desc: "Designed for consistent and long-lasting fragrance performance." }
                 ].map((item, i) => (
-                    <div key={i} className="p-8 rounded-[2rem] bg-white/5 border border-white/10 text-left flex flex-col gap-4">
+                    <div key={i} className="p-8 rounded-[2rem] bg-white/5 border border-white/10 text-left flex flex-col gap-4 text-left">
                         <CheckBadgeIcon className="w-8 h-8 text-blue-500" />
-                        <h4 className="text-sm font-bold uppercase tracking-widest text-slate-100">{item.title}</h4>
+                        <h4 className="text-sm font-bold uppercase tracking-widest text-slate-100 font-sans">{item.title}</h4>
                         <p className="text-xs text-slate-400 leading-relaxed font-sans">{item.desc}</p>
                     </div>
                 ))}
@@ -172,13 +172,13 @@ const AddressAromaOilDetail = () => {
       {/* ================= SECTION 5: SAFETY & USAGE ================= */}
       <section className="py-28 bg-slate-50 px-6 text-left">
         <div className="max-w-[1000px] mx-auto">
-            <div className="bg-white rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center">
+            <div className="bg-white rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-left">
                 <div className="w-24 h-24 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
                     <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                 </div>
                 <div>
-                    <h2 className="text-2xl font-serif font-bold mb-4 uppercase">Professional Usage & <span className="italic font-light">Safety</span></h2>
-                    <p className="text-slate-500 font-light leading-relaxed font-sans">
+                    <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-left">Professional Usage & <span className="italic font-light">Safety</span></h2>
+                    <p className="text-slate-500 font-light leading-relaxed font-sans text-left">
                         Address Aroma Oil is a professional fragrance oil intended for use with automated scent diffuser machines. The fragrance intensity and diffusion level can be customized based on space size and airflow to ensure a pleasant and controlled scent experience.
                     </p>
                 </div>
@@ -189,17 +189,17 @@ const AddressAromaOilDetail = () => {
       {/* ================= SECTION 6: CTA ================= */}
       <section className="py-24 px-6 text-center">
         <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full" />
-          <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase">Interested in <br/><span className="italic font-light text-slate-300">this fragrance?</span></h2>
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full text-center" />
+          <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-center text-slate-100">Interested in <br/><span className="italic font-light text-slate-300 text-center">this fragrance?</span></h2>
           <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
             Our team can help you select the right diffuser system and customize the fragrance intensity based on your space requirements.
           </p>
           <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 font-sans">
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
             </a>
-            <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all flex items-center gap-3">
-              Contact Cool Max <ArrowRightIcon className="w-5 h-5" />
+            <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all flex items-center gap-3 font-sans text-center">
+              Consultation & Installation <ArrowRightIcon className="w-5 h-5" />
             </Link>
           </div>
         </div>

@@ -34,7 +34,7 @@ import AeroCube1 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/1.webp
 import AeroCube2 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/2.webp";
 
 // 8. ZenBox Mini Diffuser (D50mini)
-import ZenBoxMini1 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/1.webp";
+import ZenBoxMini1 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/6.webp";
 import ZenBoxMini2 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/2.webp";
 
 // 9. AromaDesk (H10-A-2026)
@@ -81,9 +81,9 @@ import NaturalFragrance2 from "../../asset/productimg/CMwebpimg/Natural Fragranc
 import CeilAirPro1 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/5.webp";
 import CeilAirPro2 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/4.webp";
 
-// 20. AeroMax Pro (A315L)
-import AeroMaxPro1 from "../../asset/productimg/CMwebpimg/AeroMax Pro/1.webp";
-import AeroMaxPro2 from "../../asset/productimg/CMwebpimg/AeroMax Pro/2.webp";
+// // 20. AeroMax Pro (A315L)
+// import AeroMaxPro1 from "../../asset/productimg/CMwebpimg/AeroMax Pro/1.webp";
+// import AeroMaxPro2 from "../../asset/productimg/CMwebpimg/AeroMax Pro/2.webp";
 
 const productList = [
   // --- CAR AROMA DIFFUSERS ---
@@ -118,7 +118,7 @@ const productList = [
 
   // --- WALL-MOUNTED & CEILING AROMA DIFFUSERS ---
   { id: 19, name: "CeilAir Pro Diffuser", model: "M45", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/product/ceilair", images: [CeilAirPro1, CeilAirPro2] },
-  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/contact", images: [AeroMaxPro1, AeroMaxPro2] }
+  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/contact", images: [CeilAirPro1, CeilAirPro2] }
 ];
 
 const categories = [
