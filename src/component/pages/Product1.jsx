@@ -89,7 +89,7 @@ const productList = [
   // --- CAR AROMA DIFFUSERS ---
   { id: 1, name: "Vento Car", model: "H11-B-2026", cat: "Car Aroma Diffusers", path: "/product/ventocar", images: [VentoCar1, VentoCar2] },
   { id: 2, name: "DriveScent", model: "H11-A-2026", cat: "Car Aroma Diffusers", path: "/product/drivemist", images: [DriveScent1, DriveScent2] },
-  { id: 3, name: "DeskScent", model: "H19", cat: "Car Aroma Diffusers", path: "/product/deskmist", images: [DeskScent1, DeskScent2] },
+  { id: 3, name: "DeskScent", model: "H19", cat: "Car Aroma Diffusers", path: "/product/deskscent", images: [DeskScent1, DeskScent2] },
   { id: 4, name: "NovaCarDiffuser", model: "DA1004-2026", cat: "Car Aroma Diffusers", path: "/product/novacar", images: [NovaCar1, NovaCar2] },
 
   // --- COMMERCIAL AROMA DIFFUSERS ---
@@ -118,7 +118,7 @@ const productList = [
 
   // --- WALL-MOUNTED & CEILING AROMA DIFFUSERS ---
   { id: 19, name: "CeilAir Pro Diffuser", model: "M45", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/product/ceilair", images: [CeilAirPro1, CeilAirPro2] },
-  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/product/autolux", images: [AeroMaxPro1, AeroMaxPro2] }
+  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/contact", images: [AeroMaxPro1, AeroMaxPro2] }
 ];
 
 const categories = [
