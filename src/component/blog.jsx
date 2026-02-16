@@ -13,7 +13,7 @@ const blogPosts = [
     category: "Scent Marketing",
     date: "Mar 15, 2025",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1555529771-835f59fc5efe?q=80&w=900",
+    image: "https://plus.unsplash.com/premium_photo-1664303418178-b8767b25f646?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZSUyMHNjZW50fGVufDB8fDB8fHww",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const blogPosts = [
     category: "Technology",
     date: "Mar 10, 2025",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=900",
+    image: "https://images.unsplash.com/photo-1508090228729-c062eefc9bef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 3,
@@ -49,7 +49,7 @@ const blogPosts = [
     category: "Sustainability",
     date: "Feb 10, 2025",
     readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1555529771-835f59fc5efe?q=80&w=900",
+    image: "https://media.istockphoto.com/id/1265249156/photo/portrait-of-a-beautiful-woman-enjoying-the-smell-of-fresh-flowers.webp?a=1&b=1&s=612x612&w=0&k=20&c=MH8YmLhSjKnY2T6kQ93z_WRzf_lOEg-L1P7WNaNaW8c=",
   },
   {
     id: 6,
