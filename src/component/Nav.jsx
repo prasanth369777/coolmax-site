@@ -88,15 +88,15 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 inset-x-0 z-50 flex justify-center py-4 lg:py-6 transition-all duration-300 pointer-events-none">
+      <header className="fixed top-0 inset-x-0 z-50 flex justify-center py-0 lg:py-0 transition-all duration-300 pointer-events-none text-left">
         <div 
           className={`relative pointer-events-auto flex items-center justify-between transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]
-          ${scrolled 
-            ? "w-[95%] lg:w-[90%] max-w-[1400px] bg-[#0f111a]/90 backdrop-blur-xl border border-white/10 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] rounded-full py-2 px-6" 
-            : "w-[95%] lg:w-[90%] max-w-[1600px] bg-transparent border-transparent py-4 px-4 lg:px-0"
+        ${scrolled 
+            ? "w-[95%] lg:w-[90%] max-w-[1400px] bg-white/95 backdrop-blur-xl border border-slate-200 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] rounded-lg py-2 px-6" 
+            : "w-full bg-white border-b border-slate-100 py-4 px-6 lg:px-12"
           }`}
         >
-          {/* LOGO */}
+          {/* LOGO - Filters removed to show original colors */}
           <div className="flex-shrink-0 z-50">
             <Link to="/" onClick={() => setMobileMenuOpen(false)}>
               <img src={Logo} alt="CoolMax" className={`object-contain transition-all duration-300 ${scrolled ? "h-7" : "h-8 lg:h-10"}`} />
@@ -104,18 +104,18 @@ export default function Header() {
           </div>
 
           {/* DESKTOP NAV */}
-          <nav className="hidden xl:flex items-center gap-1">
+          <nav className="hidden xl:flex items-center gap-1 text-left">
             {navigation.map((item, idx) => (
               <div
                 key={idx}
-                className="relative group px-1"
+                className="relative group px-1 text-left"
                 onMouseEnter={() => setActiveDropdown(idx)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <Link
                   to={item.href || "/"}
                   className={`relative px-4 py-2.5 rounded-full flex items-center gap-2 text-[13px] font-bold uppercase tracking-wider transition-all duration-300 ${
-                    activeDropdown === idx ? "text-white bg-blue-500/60" : "text-slate-600 hover:text-blue-900"
+                    activeDropdown === idx ? "text-blue-600 bg-blue-50" : "text-slate-600 hover:text-blue-900"
                   }`}
                 >
                   {item.name}
@@ -125,26 +125,26 @@ export default function Header() {
                 </Link>
 
                 {item.type === "dropdown" && (
-                  <div className={`absolute top-full left-1/2 -translate-x-1/2 pt-6 transition-all duration-300 transform origin-top
+                  <div className={`absolute top-full left-1/2 -translate-x-1/2 pt-6 transition-all duration-300 transform origin-top text-left
                     ${activeDropdown === idx ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-4"}
                     ${item.cols > 1 ? "w-[580px]" : "w-72"}`}
                   >
-                    <div className="bg-[#0c101b] rounded-2xl border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.6)] overflow-hidden">
+                    <div className="bg-white rounded-2xl border border-slate-200 shadow-[0_20px_60px_rgba(0,0,0,0.1)] overflow-hidden text-left">
                       <div className={`p-6 grid ${item.cols === 2 ? "grid-cols-2 gap-x-8 gap-y-2" : "grid-cols-1 gap-2"}`}>
                         {item.items.map((sub, subIdx) => (
-                          <Link key={subIdx} to={sub.href} className="group/link flex items-center justify-between p-3 rounded-lg hover:bg-white/5 transition-all">
-                            <span className="text-sm font-medium text-slate-400 group-hover/link:text-blue-300 transition-colors">{sub.label}</span>
+                          <Link key={subIdx} to={sub.href} className="group/link flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition-all text-left">
+                            <span className="text-sm font-medium text-slate-500 group-hover/link:text-blue-600 transition-colors">{sub.label}</span>
                             <span className="relative w-4 h-4 flex items-center justify-center">
-                                <span className="absolute w-1 h-1 rounded-full bg-slate-600 group-hover/link:scale-0 transition-all" />
-                                <ArrowRightIcon className="w-3.5 h-3.5 text-blue-400 scale-0 group-hover/link:scale-100 transition-all" />
+                                <span className="absolute w-1 h-1 rounded-full bg-slate-300 group-hover/link:scale-0 transition-all" />
+                                <ArrowRightIcon className="w-3.5 h-3.5 text-blue-500 scale-0 group-hover/link:scale-100 transition-all" />
                             </span>
                           </Link>
                         ))}
                       </div>
-                      <Link to={item.href} className="bg-black/40 px-6 py-3 border-t border-white/5 flex items-center justify-between hover:bg-blue-600/10 transition-colors group/all">
-                        <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest group-all:text-blue-500">View All {item.name}</span>
+                      <Link to={item.href} className="bg-slate-50 px-6 py-3 border-t border-slate-100 flex items-center justify-between hover:bg-blue-50 transition-colors group/all">
+                        <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest group-all:text-blue-600">View All {item.name}</span>
                         <span className="flex items-center gap-1.5">
-                          <SparklesIcon className="w-3.5 h-3.5 text-blue-500/60 group-all:text-blue-400" />
+                          <SparklesIcon className="w-3.5 h-3.5 text-blue-400 group-all:text-blue-600" />
                         </span>
                       </Link>
                     </div>
@@ -155,15 +155,15 @@ export default function Header() {
           </nav>
 
           {/* RIGHT ACTIONS */}
-          <div className="flex items-center gap-4">
-            <div className="hidden lg:flex items-center gap-3 border-r border-white/10 pr-4 mr-1">
+          <div className="flex items-center gap-4 text-left">
+            <div className="hidden lg:flex items-center gap-3 border-r border-slate-200 pr-4 mr-1">
               {socialLinks.map((item, i) => (
                 <a 
                   key={i} 
                   href={item.href} 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-slate-400 hover:text-blue-400 transition-colors hover:scale-110 transform duration-200"
+                  className="text-slate-400 hover:text-blue-600 transition-colors hover:scale-110 transform duration-200"
                 >
                   <item.icon size={14} />
                 </a>
@@ -172,45 +172,45 @@ export default function Header() {
             <Link
               to="/contact"
               className={`hidden lg:flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-widest transition-all duration-300
-                ${scrolled ? "bg-blue-600 text-white hover:bg-blue-500 shadow-lg shadow-blue-900/20" : "bg-white text-black hover:bg-slate-400"}`}
+                ${scrolled ? "bg-blue-600 text-white hover:bg-blue-700 shadow-lg shadow-blue-900/10" : "bg-slate-900 text-white hover:bg-blue-600"}`}
             >
               <PhoneIcon className="w-3.5 h-3.5" />
               <span>Get Quote</span>
             </Link>
-            {/* UPDATED HAMBURGER COLOR TO BLUE */}
-            <button onClick={() => setMobileMenuOpen(true)} className="xl:hidden p-2 rounded-full transition-colors text-blue-500">
-              <Bars3Icon className="w-6 h-6 stroke-2 stroke-blue-500" />
+            <button onClick={() => setMobileMenuOpen(true)} className="xl:hidden p-2 rounded-full transition-colors text-blue-600">
+              <Bars3Icon className="w-6 h-6 stroke-2 stroke-blue-600" />
             </button>
           </div>
         </div>
-      </header>
+      </header> 
 
       {/* MOBILE DRAWER */}
       <div className={`fixed inset-0 z-[100] transition-all duration-500 ${mobileMenuOpen ? "visible" : "invisible pointer-events-none"}`}>
-        <div className={`absolute inset-0 bg-[#000000]/80 backdrop-blur-sm transition-opacity duration-500 ${mobileMenuOpen ? "opacity-100" : "opacity-0"}`} onClick={() => setMobileMenuOpen(false)} />
-        <div className={`absolute top-0 right-0 h-full w-full sm:w-[420px] bg-[#0f111a] transform transition-transform duration-500 flex flex-col ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
+        <div className={`absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity duration-500 ${mobileMenuOpen ? "opacity-100" : "opacity-0"}`} onClick={() => setMobileMenuOpen(false)} />
+        <div className={`absolute top-0 right-0 h-full w-full sm:w-[420px] bg-white transform transition-transform duration-500 flex flex-col ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
           <div className="flex items-center justify-between px-6 pt-6 pb-4">
+            {/* Logo filters removed here as well */}
             <img src={Logo} alt="CoolMax" className="h-8 object-contain" />
-            <button onClick={() => setMobileMenuOpen(false)} className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/5"><XMarkIcon className="w-5 h-5 text-slate-300" /></button>
+            <button onClick={() => setMobileMenuOpen(false)} className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 border border-slate-200"><XMarkIcon className="w-5 h-5 text-slate-600" /></button>
           </div>
-          <div className="flex-1 overflow-y-auto px-4 pb-24">
-            <div className="flex flex-col gap-3 mt-2">
+          <div className="flex-1 overflow-y-auto px-4 pb-24 text-left">
+            <div className="flex flex-col gap-3 mt-2 text-left">
               {navigation.map((item, idx) => (
-                <div key={idx} className="rounded-2xl border border-white/5 overflow-hidden bg-white/[0.02]">
-                  <div className="flex items-center">
-                    <Link to={item.href} onClick={() => setMobileMenuOpen(false)} className="flex-1 px-5 py-4 text-[16px] font-semibold text-slate-200">{item.name}</Link>
+                <div key={idx} className="rounded-2xl border border-slate-100 overflow-hidden bg-slate-50/50 text-left">
+                  <div className="flex items-center text-left">
+                    <Link to={item.href} onClick={() => setMobileMenuOpen(false)} className="flex-1 px-5 py-4 text-[16px] font-semibold text-slate-700">{item.name}</Link>
                     {item.type === "dropdown" && (
-                      <button onClick={() => setMobileActive(mobileActive === idx ? null : idx)} className="px-5 py-4 border-l border-white/5">
-                        <ChevronDownIcon className={`w-5 h-5 text-slate-500 transition-transform ${mobileActive === idx ? "rotate-180 text-blue-400" : ""}`} />
+                      <button onClick={() => setMobileActive(mobileActive === idx ? null : idx)} className="px-5 py-4 border-l border-slate-100">
+                        <ChevronDownIcon className={`w-5 h-5 text-slate-400 transition-transform ${mobileActive === idx ? "rotate-180 text-blue-600" : ""}`} />
                       </button>
                     )}
                   </div>
                   {item.type === "dropdown" && (
-                    <div className={`grid transition-all duration-500 ${mobileActive === idx ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
-                      <div className="overflow-hidden bg-black/20">
-                        <div className="flex flex-col py-2">
+                    <div className={`grid transition-all duration-500 text-left ${mobileActive === idx ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+                      <div className="overflow-hidden bg-white/60 text-left">
+                        <div className="flex flex-col py-2 text-left">
                           {item.items.map((sub, i) => (
-                            <Link key={i} to={sub.href} onClick={() => setMobileMenuOpen(false)} className="px-10 py-3 text-sm text-slate-400 hover:text-white border-l-2 border-transparent hover:border-blue-500">{sub.label}</Link>
+                            <Link key={i} to={sub.href} onClick={() => setMobileMenuOpen(false)} className="px-10 py-3 text-sm text-slate-500 hover:text-blue-600 border-l-2 border-transparent hover:border-blue-600 text-left">{sub.label}</Link>
                           ))}
                         </div>
                       </div>
@@ -220,9 +220,9 @@ export default function Header() {
               ))}
             </div>
           </div>
-          <div className="absolute bottom-0 left-0 right-0 p-6 bg-[#0f111a]">
+          <div className="absolute bottom-0 left-0 right-0 p-6 bg-white border-t border-slate-100">
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
-              <button className="w-full py-4 bg-white text-black font-bold uppercase tracking-widest text-xs rounded-xl shadow-xl">Get A Quote</button>
+              <button className="w-full py-4 bg-slate-900 text-white font-bold uppercase tracking-widest text-xs rounded-xl shadow-lg">Get A Quote</button>
             </Link>
           </div>
         </div>
