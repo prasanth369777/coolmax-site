@@ -16,7 +16,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- UPDATED IMAGE IMPORTS ---
-import HeroImg from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/4.webp"; 
+import HeroImg from "../../asset/productimg/CMwebpimg/Air pole Pro Floor Diffuser/3.webp"; 
 import FeatureImg1 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/4.webp"; 
 import FeatureImg2 from "../../asset/productimg/CMwebpimg/Titan Diffuser/1.webp"; 
 

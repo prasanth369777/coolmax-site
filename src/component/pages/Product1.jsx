@@ -86,49 +86,49 @@ import CeilAirPro2 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/4
 // import AeroMaxPro2 from "../../asset/productimg/CMwebpimg/AeroMax Pro/2.webp";
 
 const productList = [
-  // --- CAR AROMA DIFFUSERS ---
-  { id: 1, name: "Vento Car", model: "H11-B-2026", cat: "Car Aroma Diffusers", path: "/car-aroma-diffusers/vento-car-diffuser/", images: [VentoCar1, VentoCar2] },
-  { id: 2, name: "DriveScent", model: "H11-A-2026", cat: "Car Aroma Diffusers", path: "/car-aroma-diffusers/drive-scent-diffuser/", images: [DriveScent1, DriveScent2] },
-  { id: 3, name: "DeskScent", model: "H19", cat: "Car Aroma Diffusers", path: "/car-aroma-diffusers/desk-scent-diffuser/", images: [DeskScent1, DeskScent2] },
-  { id: 4, name: "NovaCarDiffuser", model: "DA1004-2026", cat: "Car Aroma Diffusers", path: "/car-aroma-diffusers/nova-car-diffuser/", images: [NovaCar1, NovaCar2] },
-
-  // --- COMMERCIAL AROMA DIFFUSERS ---
+  // --- 1. COMMERCIAL AROMA DIFFUSERS ---
   { id: 5, name: "AeroBlack Med diffuser", model: "Q500", cat: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffusers/aeroblack-med-diffuser/", images: [AeroBlackMed1, AeroBlackMed2] },
   { id: 6, name: "MistBox X Diffuser", model: "OV-10", cat: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffusers/mistbox-x-diffuser/", images: [MistBoxX1, MistBoxX2] },
 
-  // --- DESKTOP & SMALL SPACE AROMA DIFFUSERS ---
-  { id: 7, name: "AeroCube Diffuser", model: "M41-B", cat: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/aero-cube-diffuser/", images: [AeroCube1, AeroCube2] },
-  { id: 8, name: "ZenBox Mini Diffuser", model: "D50mini", cat: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/Zembox-mini-diffuser/", images: [ZenBoxMini1, ZenBoxMini2] },
-  { id: 9, name: "AromaDesk", model: "H10-A-2026", cat: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/aroma-desk-diffuser/", images: [AromaDesk1, AromaDesk2] },
-  { id: 10, name: "LuxePanel Diffuser", model: "OV-5/5Pro", cat: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/luxepanel-diffuser/", images: [LuxePanel1, LuxePanel2] },
-  { id: 11, name: "OpalMist Clock Diffuser", model: "U2", cat: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/opalmist-clock-diffuser/", images: [OpalMist1, OpalMist2] },
+  // --- 2. LARGE AREA & HVAC AROMA DIFFUSERS ---
+  { id: 16, name: "AeroBlack Pro Diffuser", model: "Q3000Pro", cat: "Large Area & HVAC Aroma Diffusers", path: "/commercial-aroma-diffusers/aeroblack-pro/", images: [AeroBlackPro1, AeroBlackPro2] },
+  { id: 17, name: "AirPulse 150", model: "VS-160", cat: "Large Area & HVAC Aroma Diffusers", path: "/large-area-and-hvac-aroma-diffusers/air-pulse-150-diffuser/", images: [AirPulse1501, AirPulse1502] },
 
-  // --- FLOOR-STANDING AROMA DIFFUSERS ---
+  // --- 3. FLOOR-STANDING AROMA DIFFUSERS ---
   { id: 12, name: "NanoPillar Diffuser", model: "A500", cat: "Floor-Standing Aroma Diffusers", path: "/floor-standing-aroma-diffuser/nano-pillar-diffuser/", images: [NanoPillar1, NanoPillar2] },
   { id: 13, name: "Titan Diffuser", model: "A700", cat: "Floor-Standing Aroma Diffusers", path: "/floor-standing-aroma-diffuser/titan-diffuser/", images: [Titan1, Titan2] },
   { id: 14, name: "AeroPillar Diffuser", model: "F-Air", cat: "Floor-Standing Aroma Diffusers", path: "/floor-standing-aroma-diffuser/aeropillar-diffuser/", images: [AeroPillar1, AeroPillar2] },
   { id: 15, name: "AirPole Pro Diffuser", model: "G-Air", cat: "Floor-Standing Aroma Diffusers", path: "/floor-standing-aroma-diffuser/airpole-pro-diffuser/", images: [AirPolePro1, AirPolePro2] },
 
-  // --- LARGE AREA & HVAC AROMA DIFFUSERS ---
-  { id: 16, name: "AeroBlack Pro Diffuser", model: "Q3000Pro", cat: "Large Area & HVAC Aroma Diffusers", path: "/commercial-aroma-diffusers/aeroblack-pro/", images: [AeroBlackPro1, AeroBlackPro2] },
-  { id: 17, name: "AirPulse 150", model: "VS-160", cat: "Large Area & HVAC Aroma Diffusers", path: "/large-area-and-hvac-aroma-diffusers/air-pulse-150-diffuser/", images: [AirPulse1501, AirPulse1502] },
+  // --- 4. CAR AROMA DIFFUSERS ---
+  { id: 1, name: "Vento Car", model: "H11-B-2026", cat: "Car Aroma Diffusers", path: "/car-aroma-diffusers/vento-car-diffuser/", images: [VentoCar1, VentoCar2] },
+  { id: 2, name: "DriveScent", model: "H11-A-2026", cat: "Car Aroma Diffusers", path: "/car-aroma-diffusers/drive-scent-diffuser/", images: [DriveScent1, DriveScent2] },
+  { id: 3, name: "DeskScent", model: "H19", cat: "Car Aroma Diffusers", path: "/car-aroma-diffusers/desk-scent-diffuser/", images: [DeskScent1, DeskScent2] },
+  { id: 4, name: "NovaCarDiffuser", model: "DA1004-2026", cat: "Car Aroma Diffusers", path: "/car-aroma-diffusers/nova-car-diffuser/", images: [NovaCar1, NovaCar2] },
 
-  // --- PASSIVE / NO-POWER DIFFUSERS ---
-  { id: 18, name: "Natural Fragrance Diffusion", model: "M10", cat: "Passive / No-Power Diffusers", path: "/no-power-diffuser/natural-fragrance-diffuser/", images: [NaturalFragrance1, NaturalFragrance2] },
-
-  // --- WALL-MOUNTED & CEILING AROMA DIFFUSERS ---
+  // --- 5. WALL-MOUNTED & CEILING AROMA DIFFUSERS ---
+  { id: 7, name: "AeroCube Diffuser", model: "M41-B", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/aero-cube-diffuser/", images: [AeroCube1, AeroCube2] },
+  { id: 8, name: "ZenBox Mini Diffuser", model: "D50mini", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/Zembox-mini-diffuser/", images: [ZenBoxMini1, ZenBoxMini2] },
+  { id: 10, name: "LuxePanel Diffuser", model: "OV-5/5Pro", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/luxepanel-diffuser/", images: [LuxePanel1, LuxePanel2] },
   { id: 19, name: "CeilAir Pro Diffuser", model: "M45", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/wall-mounted-and-ceiling-aroma-diffuser/ceil-air-pro-diffuser/", images: [CeilAirPro1, CeilAirPro2] },
-  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/wall-mounted-and-ceiling-aroma-diffuser/aeromax-pro-diffuser/", images: [CeilAirPro1, CeilAirPro2] }
+  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/wall-mounted-and-ceiling-aroma-diffuser/aeromax-pro-diffuser/", images: [CeilAirPro1, CeilAirPro2] },
+
+  // --- 6. DESKTOP & SMALL SPACE AROMA DIFFUSERS ---
+  { id: 9, name: "AromaDesk", model: "H10-A-2026", cat: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/aroma-desk-diffuser/", images: [AromaDesk1, AromaDesk2] },
+  { id: 11, name: "OpalMist Clock Diffuser", model: "U2", cat: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/opalmist-clock-diffuser/", images: [OpalMist1, OpalMist2] },
+
+  // --- 7. PASSIVE / NO-POWER DIFFUSERS ---
+  { id: 18, name: "Natural Fragrance Diffusion", model: "M10", cat: "Passive / No-Power Diffusers", path: "/no-power-diffuser/natural-fragrance-diffuser/", images: [NaturalFragrance1, NaturalFragrance2] }
 ];
 
 const categories = [
   "All Systems", 
   "Commercial Aroma Diffusers", 
   "Large Area & HVAC Aroma Diffusers", 
-  "Car Aroma Diffusers",
-  "Desktop & Small Space Aroma Diffusers", 
-  "Wall-Mounted & Ceiling Aroma Diffusers",
   "Floor-Standing Aroma Diffusers", 
+  "Car Aroma Diffusers",
+  "Wall-Mounted & Ceiling Aroma Diffusers",
+  "Desktop & Small Space Aroma Diffusers", 
   "Passive / No-Power Diffusers",
 ];
 
@@ -148,7 +148,7 @@ export default function ArchitectStore() {
       
       {/* --- DESKTOP SIDEBAR --- */}
       <aside className="hidden lg:flex w-72 flex-col border-r border-slate-200/50 sticky top-16 h-[calc(100vh-64px)] bg-white z-20">
-        <div className="p-8 pb-4">
+        <div className="p-8 pb-4 text-left">
           <h1 className="text-xl font-black tracking-tighter uppercase italic text-left">COOLMAX<span className="text-blue-600">.</span></h1>
           <p className="text-[9px] font-bold text-slate-400 mt-1 uppercase tracking-[0.2em] text-left">Atmospheric Tech 2026</p>
         </div>
@@ -164,7 +164,7 @@ export default function ArchitectStore() {
             />
           </div>
         </div>
-        <nav className="flex-1 px-4 py-2 space-y-0.5 overflow-y-auto no-scrollbar">
+        <nav className="flex-1 px-4 py-2 space-y-0.5 overflow-y-auto no-scrollbar text-left">
           {categories.map(cat => (
             <button 
               key={cat} 
@@ -205,10 +205,10 @@ export default function ArchitectStore() {
       </div>
 
       {/* --- MAIN CONTENT --- */}
-      <main className="flex-1 p-4 lg:p-10">
+      <main className="flex-1 p-4 lg:p-10 text-left">
         <header className="mb-6 lg:mb-10 text-left">
           <h2 className="text-3xl md:text-6xl font-serif leading-[1.1] mb-2 tracking-tight text-left">
-            All <span className="italic text-slate-300 font-light">Products.</span>
+            All <span className="italic text-slate-300 font-light text-left">Products.</span>
           </h2>
           <div className="flex items-center gap-3">
              <span className="h-px w-6 lg:w-10 bg-blue-600"></span>
