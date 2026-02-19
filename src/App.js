@@ -87,7 +87,7 @@ import Solution from "./component/Solutionpage/Solution";
 import AeroCubePage from "./component/separateproducts/AeroCube Diffuser";
 import Aeromaxpro from "./component/separateproducts/AeroMax Pro";
 import DeskScentPage from "./component/separateproducts/DeskScent";
-
+import AerosolDispensersPage from "./component/productpage/Aerosol Dispensers";
 
 // --- HELPER: SCROLL TO TOP ---
 const ScrollToTop = () => {
@@ -141,6 +141,7 @@ function App() {
         <Route path="/large-area-and-hvac-aroma-diffusers/" element={<Largearea />} />
         <Route path="/no-power-diffuser/" element={<Passivenopower />} />
         <Route path="/wall-mounted-and-ceiling-aroma-diffuser/" element={<WallmountedD />} />
+        <Route path="/aerosoldispensers/" element={<AerosolDispensersPage />} />
 
         {/* --- AROMA CATEGORY ROUTES --- */}
         <Route path="/oriental-aroma-oil/" element={<OrientalFragrances />} />

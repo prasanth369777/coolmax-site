@@ -88,6 +88,10 @@ import NaturalFragrance2 from "../asset/productimg/CMwebpimg/Natural Fragrance D
 import CeilAirPro1 from "../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/4.webp";
 import CeilAirPro2 from "../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/5.webp";
 
+// 21. Aerosol Dispensers (Aerosol assets)
+import Aerosol1 from "../asset/productimg/CMwebpimg/Aerosol Dispensers/1.webp";
+import Aerosol2 from "../asset/productimg/CMwebpimg/Aerosol Dispensers/2.webp";
+
 const productList = [
   // --- 1. COMMERCIAL AROMA DIFFUSERS ---
   { id: 5, name: "AeroBlack Med diffuser", model: "Q500", cat: "Commercial Aroma Diffusers", images: [AeroBlackMed1, AeroBlackMed2], path: "/commercial-aroma-diffusers/aeroblack-med-diffuser/" },
@@ -121,7 +125,10 @@ const productList = [
   { id: 11, name: "OpalMist Clock Diffuser", model: "U2", cat: "Desktop & Small Space", images: [OpalMist1, OpalMist2], path: "/desktop-and-small-space-aroma-diffuser/opalmist-clock-diffuser/" },
 
   // --- 7. PASSIVE / NO-POWER DIFFUSERS ---
-  { id: 18, name: "Natural Fragrance Diffusion", model: "M10", cat: "Passive / No-Power Diffusers", images: [NaturalFragrance1, NaturalFragrance2], path: "/no-power-diffuser/natural-fragrance-diffuser/" }
+  { id: 18, name: "Natural Fragrance Diffusion", model: "M10", cat: "Passive / No-Power Diffusers", images: [NaturalFragrance1, NaturalFragrance2], path: "/no-power-diffuser/natural-fragrance-diffuser/" },
+
+  // --- 8. AEROSOL DISPENSERS ---
+  { id: 21, name: "Aerosol Dispenser LCD", model: "LCD-AD", cat: "Aerosol Dispensers", path: "/aerosoldispensers/", images: [Aerosol1, Aerosol2] }
 ];
 
 const categories = [
@@ -132,7 +139,8 @@ const categories = [
   "Car Aroma Diffusers", 
   "Wall-Mounted & Ceiling", 
   "Desktop & Small Space", 
-  "Passive / No-Power Diffusers"
+  "Passive / No-Power Diffusers",
+  "Aerosol Dispensers"
 ];
 
 export default function ArchitectStore() {

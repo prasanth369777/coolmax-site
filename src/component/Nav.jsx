@@ -27,6 +27,7 @@ const navigation = [
       { label: "Wall-Mounted & Ceiling", href: "/wall-mounted-and-ceiling-aroma-diffuser/" },
       { label: "Floor-Standing Diffusers", href: "/floor-standing-aroma-diffuser/" },
       { label: "Passive/No-Power", href: "/no-power-diffuser/" },
+      { label: "AeroAerosolDispensers", href: "/aerosolDispensers/" },
     ],
   },
   {

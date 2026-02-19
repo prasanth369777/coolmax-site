@@ -81,9 +81,9 @@ import NaturalFragrance2 from "../../asset/productimg/CMwebpimg/Natural Fragranc
 import CeilAirPro1 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/5.webp";
 import CeilAirPro2 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/4.webp";
 
-// // 20. AeroMax Pro (A315L)
-// import AeroMaxPro1 from "../../asset/productimg/CMwebpimg/AeroMax Pro/1.webp";
-// import AeroMaxPro2 from "../../asset/productimg/CMwebpimg/AeroMax Pro/2.webp";
+// 21. Aerosol Dispensers (Aerosol assets)
+import Aerosol1 from "../../asset/productimg/CMwebpimg/Aerosol Dispensers/1.webp";
+import Aerosol2 from "../../asset/productimg/CMwebpimg/Aerosol Dispensers/2.webp";
 
 const productList = [
   // --- 1. COMMERCIAL AROMA DIFFUSERS ---
@@ -111,14 +111,16 @@ const productList = [
   { id: 8, name: "ZenBox Mini Diffuser", model: "D50mini", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/Zembox-mini-diffuser/", images: [ZenBoxMini1, ZenBoxMini2] },
   { id: 10, name: "LuxePanel Diffuser", model: "OV-5/5Pro", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/luxepanel-diffuser/", images: [LuxePanel1, LuxePanel2] },
   { id: 19, name: "CeilAir Pro Diffuser", model: "M45", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/wall-mounted-and-ceiling-aroma-diffuser/ceil-air-pro-diffuser/", images: [CeilAirPro1, CeilAirPro2] },
-  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/wall-mounted-and-ceiling-aroma-diffuser/aeromax-pro-diffuser/", images: [CeilAirPro1, CeilAirPro2] },
 
   // --- 6. DESKTOP & SMALL SPACE AROMA DIFFUSERS ---
   { id: 9, name: "AromaDesk", model: "H10-A-2026", cat: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/aroma-desk-diffuser/", images: [AromaDesk1, AromaDesk2] },
   { id: 11, name: "OpalMist Clock Diffuser", model: "U2", cat: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser/opalmist-clock-diffuser/", images: [OpalMist1, OpalMist2] },
 
   // --- 7. PASSIVE / NO-POWER DIFFUSERS ---
-  { id: 18, name: "Natural Fragrance Diffusion", model: "M10", cat: "Passive / No-Power Diffusers", path: "/no-power-diffuser/natural-fragrance-diffuser/", images: [NaturalFragrance1, NaturalFragrance2] }
+  { id: 18, name: "Natural Fragrance Diffusion", model: "M10", cat: "Passive / No-Power Diffusers", path: "/no-power-diffuser/natural-fragrance-diffuser/", images: [NaturalFragrance1, NaturalFragrance2] },
+
+  // --- 8. AEROSOL DISPENSERS ---
+  { id: 21, name: "Aerosol Dispenser LCD", model: "LCD-AD", cat: "Aerosol Dispensers", path: "/aerosoldispensers/", images: [Aerosol1, Aerosol2] }
 ];
 
 const categories = [
@@ -130,6 +132,7 @@ const categories = [
   "Wall-Mounted & Ceiling Aroma Diffusers",
   "Desktop & Small Space Aroma Diffusers", 
   "Passive / No-Power Diffusers",
+  "Aerosol Dispensers",
 ];
 
 export default function ArchitectStore() {
