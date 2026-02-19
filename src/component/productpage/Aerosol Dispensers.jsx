@@ -16,7 +16,7 @@ import {
 
 // --- IMAGE ASSETS ---
 import HeroImg from "../../asset/productimg/CMwebpimg/Aerosol Dispensers/2.webp"; 
-import DispenserWhiteLCD from "../../asset/productimg/CMwebpimg/Aerosol Dispensers/1.webp"; 
+import Dispenser from "../../asset/productimg/CMwebpimg/Aerosol Dispensers/1.webp"; 
 import DispenserBlackLCD from "../../asset/productimg/CMwebpimg/Aerosol Dispensers/4.webp"; 
 import DispenserWhiteLED from "../../asset/productimg/CMwebpimg/Aerosol Dispensers/5.webp"; 
 import FeatureImg from "../../asset/productimg/CMwebpimg/Aerosol Dispensers/3.webp"; 
@@ -129,9 +129,9 @@ export default function AerosolDispensersPage() {
             {/* Product 1: White LCD (H3) */}
             <motion.div {...fadeInUp} className="group p-8 rounded-[3rem] bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-2xl text-left flex flex-col h-full">
               <div className="h-72 w-full bg-white rounded-[2rem] mb-8 flex items-center justify-center p-12 border border-slate-100">
-                <img src={DispenserWhiteLCD} alt="Aerosol Dispenser White LCD" className="h-full object-contain transition-transform group-hover:scale-105" />
+                <img src={Dispenser} alt="Aerosol Dispenser White LCD" className="h-full object-contain transition-transform group-hover:scale-105" />
               </div>
-              <h3 className="text-2xl font-serif text-slate-900 mb-4 text-left">Aerosol Dispenser – White</h3>
+              <h3 className="text-2xl font-serif text-slate-900 mb-4 text-left">Aerosol Dispenser</h3>
               <p className="text-slate-500 mb-6 font-light leading-relaxed text-justify">
                 A sleek automatic aerosol dispenser with LCD display, designed for controlled fragrance release in professional environments.
               </p>
@@ -162,7 +162,7 @@ export default function AerosolDispensersPage() {
             {/* Product 2: Black LCD (H3) */}
             <motion.div {...fadeInUp} className="group p-8 rounded-[3rem] bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-2xl text-left flex flex-col h-full">
               <div className="h-72 w-full bg-white rounded-[2rem] mb-8 flex items-center justify-center p-12 border border-slate-100">
-                <img src={DispenserBlackLCD} alt="Aerosol Dispenser Black LCD" className="h-full object-contain transition-transform group-hover:scale-105" />
+                <img src={DispenserWhiteLED} alt="Aerosol Dispenser Black LCD" className="h-full object-contain transition-transform group-hover:scale-105" />
               </div>
               <h3 className="text-2xl font-serif text-slate-900 mb-4 text-left">Aerosol Dispenser – Black</h3>
               <p className="text-slate-500 mb-6 font-light leading-relaxed text-justify">
@@ -195,7 +195,7 @@ export default function AerosolDispensersPage() {
             {/* Product 3: White LED (H3) */}
             <motion.div {...fadeInUp} className="group p-8 rounded-[3rem] bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-2xl text-left flex flex-col h-full">
               <div className="h-72 w-full bg-white rounded-[2rem] mb-8 flex items-center justify-center p-12 border border-slate-100">
-                <img src={DispenserWhiteLED} alt="Aerosol Dispenser White LED" className="h-full object-contain transition-transform group-hover:scale-105" />
+                <img src={DispenserBlackLCD} alt="Aerosol Dispenser White LED" className="h-full object-contain transition-transform group-hover:scale-105" />
               </div>
               <h3 className="text-2xl font-serif text-slate-900 mb-4 text-left">Aerosol Dispenser – White</h3>
               <p className="text-slate-500 mb-6 font-light leading-relaxed text-justify">
