@@ -52,7 +52,7 @@ export default function WallMountedDiffusersPage() {
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
       {/* ================= SEO METADATA ================= */}
      
-        <link rel="canonical" href="https://www.coolmaxscent.com/wall-mounted-and-ceiling-aroma-diffurers/" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/wall-mounted-and-ceiling-aroma-diffusers/"/>
    
       
       {/* ================= GLOBAL BACKGROUND ================= */}

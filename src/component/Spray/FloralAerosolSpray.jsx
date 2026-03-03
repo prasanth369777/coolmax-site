@@ -37,7 +37,7 @@ const FloralAerosolSprayDetail = () => {
          
                 <title>Floral Aerosol Spray | Citrus Lily Air Freshener</title>
                 <meta name="description" content="Floral Aerosol Spray by Cool Max blends Sicilian orange, lily of the valley, musk, and cedar for a soft citrus-floral freshness with lasting comfort." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/floral-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/floral-aerosol-spray/" />
            
 
             {/* ================= HERO SECTION ================= */}

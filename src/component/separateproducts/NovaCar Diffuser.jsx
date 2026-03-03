@@ -42,7 +42,7 @@ const NovaCarPage = () => {
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
     
-  <link rel="canonical" href="https://www.coolmaxscent.com/car-aroma-diffurers/nova-car-diffuser/" />
+  <link rel="canonical" href="https://www.coolmaxscent.com/car-aroma-diffusers/nova-car-diffuser/"/>
 
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto text-left">

@@ -36,7 +36,7 @@ const FloraAerosolSprayDetail = () => {
          
                 <title>Flora Aerosol Spray | Fresh Floral Air Freshener</title>
                 <meta name="description" content="Flora Aerosol Spray by Cool Max delivers a fresh floral fragrance for washrooms, offices, and hotels. Compatible with LED & LCD dispensers." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/flora-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/flora-aerosol-spray/" />
           
 
             {/* ================= HERO SECTION ================= */}

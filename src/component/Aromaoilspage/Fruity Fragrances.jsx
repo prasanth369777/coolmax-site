@@ -53,7 +53,7 @@ const FruityAromaOilsPage = () => {
 
         <title>Fruity Aroma Oils for Retail & Lively Space | Cool Max Scent</title>
         <meta name="description" content="Explore fruity aroma oils by Cool Max Scent, featuring fresh and vibrant fragrances like Crystal. Ideal for retail stores, malls, & energetic commercial spaces." />
-        <link rel="canonical" href="https://www.coolmaxscent.com/fruity-aroma-oil" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/fruity-aroma-oil/" />
     
 
       {/* ================= GLOBAL BACKGROUND ================= */}

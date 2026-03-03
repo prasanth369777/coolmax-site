@@ -37,7 +37,7 @@ const FreshBakhoorAerosolSprayDetail = () => {
          
                 <title>Fresh Bakhoor Aerosol Spray | Oriental Air Freshener</title>
                 <meta name="description" content="Fresh Bakhoor Aerosol Spray by Cool Max blends jasmine, rose, saffron, clove, vanilla, and pineapple for a rich oriental fragrance with lasting freshness." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/fresh-bakhoor-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/fresh-bakhoor-aerosol-spray/" />
         
 
             {/* ================= HERO SECTION ================= */}

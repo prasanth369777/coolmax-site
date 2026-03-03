@@ -37,7 +37,7 @@ const PassionAerosolSprayDetail = () => {
         
                 <title>Passion Aerosol Spray | Fresh Citrus Floral Air Freshener</title>
                 <meta name="description" content="Passion Aerosol Spray by Cool Max Scent blends lime, mandarin, lily-of-the-valley, and bois de rose for a fresh, uplifting fragrance with lasting comfort." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/passion-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/passion-aerosol-spray/" />
         
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">

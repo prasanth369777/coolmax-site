@@ -36,7 +36,7 @@ const VarillaIceCreamAerosolSprayDetail = () => {
         
                 <title>Varilla Ice-Cream Aerosol Spray | Sweet Dessert Air Freshener</title>
                 <meta name="description" content="Varilla Ice-Cream Aerosol Spray by Cool Max Scent blends vanilla, caramel, coconut, and berries to create a playful, long-lasting sweet fragrance for interiors." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/varilla-ice-cream-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/varilla-ice-cream-aerosol-spray/" />
            
 
             {/* ================= HERO SECTION ================= */}

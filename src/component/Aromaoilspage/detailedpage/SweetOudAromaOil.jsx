@@ -36,7 +36,7 @@ const SweetOudAromaOilDetail = () => {
      
         <title>Sweet Oud Aroma Oil for Luxury Spaces | Cool Max Scent</title>
         <meta name="description" content="Explore Sweet Oud aroma oil by Cool Max Scent, a strong oriental fragrance with rich oud, praline, clove, and rose notes, ideal for hotels and premium spaces." />
-        <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/sweet-oud" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/sweet-oud/" />
  
       
       {/* ================= HERO SECTION ================= */}

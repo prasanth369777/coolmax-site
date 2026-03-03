@@ -37,7 +37,7 @@ const SenseAerosolSprayDetail = () => {
         
                 <title>Sense Aerosol Spray | Fresh Citrus Floral Air Freshener</title>
                 <meta name="description" content="Sense Aerosol Spray by Cool Max Scent delivers a refreshing blend of bergamot, sweet nectarine, and jasmine blossom for clean, long-lasting freshness." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/sense-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/sense-aerosol-spray/" />
            
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">

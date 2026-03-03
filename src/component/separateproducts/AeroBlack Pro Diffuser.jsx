@@ -39,7 +39,7 @@ const AeroBlackProPage = () => {
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
     
-  <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffurers/aeroblack-pro/" />
+  <link rel="canonical" href="https://www.coolmaxscent.com/large-area-and-hvac-aroma-diffusers/aeroblack-pro-diffuser/" />
 
       {/* ================= HERO SECTION (REDUCED HEIGHT) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto">

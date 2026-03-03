@@ -47,7 +47,7 @@ export default function CommercialDiffusersPage() {
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
       {/* ================= SEO METADATA ================= */}
     
-        <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffurers/" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffusers/" />
 
       
       {/* ================= GLOBAL BACKGROUND ================= */}

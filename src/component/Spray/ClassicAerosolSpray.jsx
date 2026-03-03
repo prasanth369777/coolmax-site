@@ -37,7 +37,7 @@ const ClassicAerosolSprayDetail = () => {
  
                 <title>Classic Aerosol Spray | Citrus Floral Air Freshener</title>
                 <meta name="description" content="Classic Aerosol Spray by Cool Max blends lemon zest, lavender, rose, and soft woods to deliver balanced, long-lasting freshness for professional spaces." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/classic-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/classic-aerosol-spray/" />
   
 
             {/* ================= HERO SECTION ================= */}

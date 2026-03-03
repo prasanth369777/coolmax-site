@@ -40,7 +40,7 @@ const ZenBoxMiniPage = () => {
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
     
-  <link rel="canonical" href="https://www.coolmaxscent.com/desktop-and-small-space-aroma-diffurers/zembox-mini-diffuser/" />
+  <link rel="canonical" href="https://www.coolmaxscent.com/wall-mounted-and-ceiling-aroma-diffusers/zenbox-mini-diffuser/"/>
 
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto text-left">

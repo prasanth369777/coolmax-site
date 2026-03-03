@@ -38,7 +38,7 @@ const StrawberryAerosolSprayDetail = () => {
        
                 <title>Strawberry Aerosol Spray | Sweet Berry Air Freshener</title>
                 <meta name="description" content="Strawberry Aerosol Spray by Cool Max blends ripe strawberry, red berries, vanilla, and musk to create a warm, sweet, long-lasting fragrance for daily freshness." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/strawberry-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/strawberry-aerosol-spray/" />
    
 
             {/* ================= HERO SECTION ================= */}

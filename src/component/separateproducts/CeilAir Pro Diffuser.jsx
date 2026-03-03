@@ -42,7 +42,7 @@ const CeilAirProPage = () => {
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
      
-  <link rel="canonical" href="https://www.coolmaxscent.com/wall-mounted-and-ceiling-aroma-diffurers/ceil-air-pro-diffuser/" />
+  <link rel="canonical" href="https://www.coolmaxscent.com/wall-mounted-and-ceiling-aroma-diffusers/ceil-air-pro-diffuser/"/>
 
 
 

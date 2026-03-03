@@ -41,7 +41,7 @@ const AirPoleProPage = () => {
   return (
 <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
  
-  <link rel="canonical" href="https://www.coolmaxscent.com/floor-standing-aroma-diffurers/airpole-pro-diffuser/" />
+  <link rel="canonical" href="https://www.coolmaxscent.com/floor-standing-aroma-diffusers/airpole-pro-diffuser/" />
 
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT & SMALLER IMAGE) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto">

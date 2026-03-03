@@ -36,7 +36,7 @@ const AuraAerosolSprayDetail = () => {
         
                 <title>Aura Aerosol Spray | Fresh Citrus Musk Air Freshener</title>
                 <meta name="description" content="Aura Aerosol Spray by Cool Max blends bergamot, lavender, white musk, and sandalwood with citrus notes for clean, balanced freshness." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/aura-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/aura-aerosol-spray/" />
       
 
             {/* ================= HERO SECTION ================= */}

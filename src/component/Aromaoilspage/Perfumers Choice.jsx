@@ -159,7 +159,7 @@ const PerfumersChoiceOilsPage = () => {
      
         <title>Perfumers Choice Aroma Oils for Offices & Homes | Cool Max</title>
         <meta name="description" content="Explore Perfumers Choice aroma oils by Cool Max Scent. Discover elegant, balanced fragrances like Harmony, Event, Gold, Tuscan Leather, and more." />
-        <link rel="canonical" href="https://www.coolmaxscent.com/perfumers-choice-aroma-oil" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/perfumers-choice-aroma-oil/" />
    
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-slate-100/50 rounded-full blur-[150px]" />

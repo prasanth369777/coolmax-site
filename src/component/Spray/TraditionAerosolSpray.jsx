@@ -36,7 +36,7 @@ const TraditionAerosolSprayDetail = () => {
             
                 <title>Tradition Aerosol Spray | Rich Oriental Air Freshener</title>
                 <meta name="description" content="Tradition Aerosol Spray by Cool Max blends bergamot, oud, patchouli, musk, sandalwood, and vanilla for a deep, warm, long-lasting oriental fragrance." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/tradition-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/tradition-aerosol-spray/" />
            
 
             {/* ================= HERO SECTION ================= */}

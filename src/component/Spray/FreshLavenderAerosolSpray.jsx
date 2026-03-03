@@ -37,7 +37,7 @@ const FreshLavenderAerosolSprayDetail = () => {
   
                 <title>Fresh Lavender Aerosol Spray | Clean Herbal Air Freshener</title>
                 <meta name="description" content="Fresh Lavender Aerosol Spray by Cool Max blends eucalyptus, lavender, and thyme for a calm, herbal freshness ideal for daily professional use." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/fresh-lavender-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/fresh-lavender-aerosol-spray/" />
       
 
             {/* ================= HERO SECTION ================= */}

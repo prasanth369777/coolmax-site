@@ -37,7 +37,7 @@ const ForYouAerosolSprayDetail = () => {
      
                 <title>For You Aerosol Spray | Soft Floral Air Freshener</title>
                 <meta name="description" content="For You Aerosol Spray by Cool Max Scent offers a soft floral fragrance for offices, hotels, and washrooms. Compatible with LED & LCD aerosol dispensers." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/for-you-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/for-you-aerosol-spray/" />
     
 
             {/* ================= HERO SECTION ================= */}

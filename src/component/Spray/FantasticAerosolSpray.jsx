@@ -37,7 +37,7 @@ const FantasticAerosolSprayDetail = () => {
     
                 <title>Fantastic Aerosol Spray | Fresh Citrus Apple Air Freshener</title>
                 <meta name="description" content="Fantastic Aerosol Spray by Cool Max blends lemon zest, orange peel, green apple, jasmine, and light lavender for bright, refreshing freshness." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/fantastic-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/fantastic-aerosol-spray/" />
       
 
             {/* ================= HERO SECTION ================= */}

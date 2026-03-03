@@ -37,7 +37,7 @@ const RoseAerosolSprayDetail = () => {
        
                 <title>Rose Aerosol Spray | Fresh Floral Air Freshener</title>
                 <meta name="description" content="Rose Aerosol Spray by Cool Max blends fresh rose petals, green leaves, jasmine, and sandalwood to deliver a soft, elegant, and long-lasting floral freshness." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/rose-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/rose-aerosol-spray/" />
         
 
             {/* ================= HERO SECTION ================= */}

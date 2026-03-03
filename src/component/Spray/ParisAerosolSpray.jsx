@@ -37,7 +37,7 @@ const ParisAerosolSprayDetail = () => {
     
                 <title>Paris Aerosol Spray | Elegant Floral Air Freshener</title>
                 <meta name="description" content="Paris Aerosol Spray by Cool Max Scent blends rose de Paris, jasmine, pear, and bergamot to create a soft, elegant floral fragrance with lasting freshness." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/paris-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/paris-aerosol-spray/" />
          
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">

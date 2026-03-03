@@ -37,7 +37,7 @@ const VoyageAerosolSprayDetail = () => {
         
                 <title>Voyage Aerosol Spray | Fresh Apple Air Freshener</title>
                 <meta name="description" content="Voyage Aerosol Spray by Cool Max delivers a crisp fresh apple fragrance for clean, uplifting, long-lasting freshness in professional spaces." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/voyage-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/spray/voyage-aerosol-spray/" />
          
 
             {/* ================= HERO SECTION ================= */}

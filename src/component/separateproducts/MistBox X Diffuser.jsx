@@ -40,7 +40,7 @@ const MistBoxXPage = () => {
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
     
-  <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffurers/mistbox-x-diffuser/" />
+  <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffusers/mistbox-x-diffuser/"/>
 
       
       {/* ================= HERO SECTION (REDUCED HEIGHT) ================= */}

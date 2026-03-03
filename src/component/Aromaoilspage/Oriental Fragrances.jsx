@@ -100,7 +100,7 @@ const OrientalAromaOilsPage = () => {
     
         <title>Oriental Aroma Oils for Hotels & Luxury Spaces | Cool Max Scent</title>
         <meta name="description" content="Explore premium oriental aroma oils by Cool Max Scent. Discover rich, long-lasting fragrances designed for hotels, offices, and luxury commercial spaces." />
-        <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/" />
     
 
       {/* ================= GLOBAL BACKGROUND ================= */}
