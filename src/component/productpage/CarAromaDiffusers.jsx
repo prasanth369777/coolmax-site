@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async"; // Added for SEO
+
 import { 
   TruckIcon, 
   ComputerDesktopIcon, 
@@ -47,9 +47,9 @@ export default function CarAromaDiffusersPage() {
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+   
         <link rel="canonical" href="https://www.coolmaxscent.com/car-aroma-diffusers/" />
-      </Helmet>
+      
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 import { 
     CheckBadgeIcon, 
     ArrowRightIcon, 
@@ -34,11 +34,11 @@ const FreshBakhoorAerosolSprayDetail = () => {
 
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
-            <Helmet>
+         
                 <title>Fresh Bakhoor Aerosol Spray | Oriental Air Freshener</title>
                 <meta name="description" content="Fresh Bakhoor Aerosol Spray by Cool Max blends jasmine, rose, saffron, clove, vanilla, and pineapple for a rich oriental fragrance with lasting freshness." />
                 <link rel="canonical" href="https://www.coolmaxscent.com/fresh-bakhoor-aerosol-spray" />
-            </Helmet>
+        
 
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">

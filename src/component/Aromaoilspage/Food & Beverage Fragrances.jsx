@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 import { 
   SparklesIcon, 
   ArrowRightIcon, 
@@ -50,12 +50,12 @@ const FoodAndBeverageOilsPage = () => {
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
     {/* ================= SEO METADATA ================= */}
-      <Helmet>
+    
         <title>Food & Beverage Aroma Oils | Cool Max Scent</title>
         <meta name="description" content="Explore Food & Beverage aroma oils by Cool Max Scent, featuring warm and inviting fragrances like True Coffee, ideal for cafes, restaurants, bakeries & etc." />
         {/* Updated with www and trailing slash to match sitemap exactness */}
         <link rel="canonical" href="https://www.coolmaxscent.com/food-and-beverage-aroma-oil/" />
-      </Helmet>
+     
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-slate-100/50 rounded-full blur-[150px]" />

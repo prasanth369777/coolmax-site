@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 import { 
     CheckBadgeIcon, 
     ArrowRightIcon, 
@@ -34,11 +34,11 @@ const FreshJasmineAerosolSprayDetail = () => {
 
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
-            <Helmet>
+         
                 <title>Fresh Jasmine Aerosol Spray | Floral Air Freshener</title>
                 <meta name="description" content="Fresh Jasmine Aerosol Spray by Cool Max delivers a soft blend of jasmine, gardenia, and white florals for clean, calming, long-lasting freshness." />
                 <link rel="canonical" href="https://www.coolmaxscent.com/fresh-jasmine-aerosol-spray" />
-            </Helmet>
+         
 
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">

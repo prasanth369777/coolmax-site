@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async"; // Added for SEO
+
 import { 
   SparklesIcon, 
   CheckBadgeIcon, 
@@ -33,9 +33,8 @@ const AddressAromaOilDetail = () => {
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
       {/* ================= SEO METADATA ================= */}
-     <Helmet>
+   
   <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/address/" />
-</Helmet>
 
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">

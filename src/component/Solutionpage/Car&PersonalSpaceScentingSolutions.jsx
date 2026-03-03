@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async"; // Added for SEO
+
 import { 
   TruckIcon, 
   ComputerDesktopIcon, 
@@ -37,9 +37,9 @@ export default function CarPersonalScentingPage() {
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden">
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+  
         <link rel="canonical" href="https://www.coolmaxscent.com/car-and-personal-space-scenting-solutions/" />
-      </Helmet>
+    
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+
 import { 
   WrenchScrewdriverIcon, 
   ArrowPathIcon, 
@@ -36,11 +36,11 @@ export default function MaintenancePage() {
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-emerald-100 overflow-x-hidden text-left">
       
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+ 
         <title>Maintenance & Refill Support Services in UAE | Cool Max</title>
         <meta name="description" content="Maintenance and refill support services in UAE for scent and hygiene systems. Reliable servicing, fragrance refills, and HVAC diffuser maintenance by Cool Max." />
         <link rel="canonical" href="https://www.coolmaxscent.com/maintenance-and-refill-support-services/" />
-      </Helmet>
+
 
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

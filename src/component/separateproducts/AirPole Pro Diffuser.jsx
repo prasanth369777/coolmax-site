@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async"; // Added for SEO
+
 import { 
   WifiIcon, 
   BoltIcon, 
@@ -40,9 +40,9 @@ const AirPoleProPage = () => {
 
   return (
 <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
-   <Helmet>
+ 
   <link rel="canonical" href="https://www.coolmaxscent.com/floor-standing-aroma-diffurers/airpole-pro-diffuser/" />
-</Helmet>   
+
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT & SMALLER IMAGE) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto">
         <div className="grid lg:grid-cols-[1.2fr,0.8fr] gap-10 items-center">

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async"; // Added for SEO Meta implementation
+
 import { 
   SparklesIcon, 
   BuildingOffice2Icon, 
@@ -35,9 +35,9 @@ export default function ScentMarketingPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
-      <Helmet>
+     
         <link rel="canonical" href="https://www.coolmaxscent.com/scent-marketing-solutions/" />
-      </Helmet>
+   
 
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0 text-left">

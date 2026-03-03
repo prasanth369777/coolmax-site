@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { 
   SparklesIcon, 
   ArrowRightIcon, 
@@ -97,11 +96,11 @@ const FreshAromaOilsPage = () => {
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+    
         <title>Fresh Aroma Oils for Home, Spas & Wellness Space | Cool Max</title>
         <meta name="description" content="Discover fresh aroma oils by Cool Max Scent, featuring clean, calming fragrances like Lavender, English Lavender, & etch for homes, clinics, and wellness space." />
         <link rel="canonical" href="https://www.coolmaxscent.com/fresh-aroma-oil" />
-      </Helmet>
+   
 
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

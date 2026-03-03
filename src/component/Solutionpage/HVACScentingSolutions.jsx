@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async"; // Added for dynamic canonical link
+
 import { 
   CloudIcon, 
   ArrowsPointingOutIcon, 
@@ -34,10 +34,9 @@ export default function HVACSolutionsPage() {
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-cyan-100 overflow-x-hidden">
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+   
         <link rel="canonical" href="https://www.coolmaxscent.com/hvac-scenting-solutions/" />
-      </Helmet>
-
+      
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-full lg:w-[1000px] h-[1000px] bg-slate-100/50 rounded-full blur-[150px]" />

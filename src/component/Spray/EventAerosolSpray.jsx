@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 import { 
     CheckBadgeIcon, 
     ArrowRightIcon, 
@@ -34,11 +34,11 @@ const EventAerosolSprayDetail = () => {
 
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
-            <Helmet>
+       
                 <title>Event Aerosol Spray | Fresh Woody Amber Air Freshener</title>
                 <meta name="description" content="Event Aerosol Spray by Cool Max Scent blends bergamot, birch, and ambergris to deliver a refined, long-lasting fragrance for professional spaces." />
                 <link rel="canonical" href="https://www.coolmaxscent.com/event-aerosol-spray" />
-            </Helmet>
+       
 
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">

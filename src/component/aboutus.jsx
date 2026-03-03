@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom"; 
-import { Helmet } from "react-helmet-async"; 
+
 import { 
   SparklesIcon, 
   UserGroupIcon, 
@@ -36,10 +36,9 @@ export default function AboutUs() {
     <section id="about" className="relative bg-white overflow-hidden font-sans selection:bg-indigo-500 selection:text-white text-slate-600">
       
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+    
         <link rel="canonical" href="https://www.coolmaxscent.com/about-us/" />
-      </Helmet>
-
+   
       {/* ================= GLOBAL BACKGROUND (White & Grey Gradient) ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-[-10%] right-[-10%] w-[800px] h-[800px] bg-slate-100 rounded-full blur-[120px]" />

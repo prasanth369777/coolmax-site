@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async"; // Added for SEO
+
 import { 
   BuildingOffice2Icon, 
   ShoppingBagIcon, 
@@ -49,9 +49,9 @@ export default function FloorStandingDiffusersPage() {
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+      
         <link rel="canonical" href="https://www.coolmaxscent.com/floor-standing-aroma-diffurers/" />
-      </Helmet>
+     
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

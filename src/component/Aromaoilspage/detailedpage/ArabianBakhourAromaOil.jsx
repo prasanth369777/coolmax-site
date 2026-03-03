@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async"; // Added for SEO
+
 import { 
   CheckBadgeIcon, 
   ArrowRightIcon, 
@@ -35,9 +35,9 @@ const ArabianBakhourAromaOilDetail = () => {
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
 
-      <Helmet>
+     
   <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/arabian-bakhour/" />
-</Helmet>
+
 
 
       {/* ================= HERO SECTION ================= */}

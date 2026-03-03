@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 import { 
   SparklesIcon, 
   ArrowRightIcon, 
@@ -62,11 +62,11 @@ const PremiumCollectionOilsPage = () => {
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+    
         <title>Premium Aroma Oils for Luxury Hotels | Cool Max Scent</title>
         <meta name="description" content="Explore the Premium Collection aroma oils by Cool Max Scent, featuring signature fragrances like Taj Sunset & Classic crafted for luxury hotels, premium brands." />
         <link rel="canonical" href="https://www.coolmaxscent.com/premium-aroma-oil" />
-      </Helmet>
+     
 
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

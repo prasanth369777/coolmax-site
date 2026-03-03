@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 import { 
   SparklesIcon, 
   ChatBubbleLeftRightIcon, 
@@ -37,11 +37,11 @@ export default function ChooseCommercialDiffuserBlog() {
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left pt-16">
       
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+     
         <title>How to Choose a Commercial Aroma Diffuser in UAE | Cool Max Scent</title>
         <meta name="description" content="Learn what to consider when choosing a commercial aroma diffuser in UAE, including coverage, HVAC compatibility, maintenance, and long-term ROI." />
         <link rel="canonical" href="https://www.coolmaxscent.com/blog/choose-commercial-aroma-diffuser-uae" />
-      </Helmet>
+
 
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

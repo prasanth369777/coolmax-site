@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async"; // Added for SEO
+
 import { 
   WifiIcon, 
   ClockIcon, 
@@ -42,9 +42,9 @@ const OpalMistClockPage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
-     <Helmet>
+     
   <link rel="canonical" href="https://www.coolmaxscent.com/desktop-and-small-space-aroma-diffurers/opalmist-clock-diffuser/" />
-</Helmet> 
+
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto text-left">
         <div className="grid lg:grid-cols-2 gap-10 items-center">

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 
 import { 
   CheckBadgeIcon, 
@@ -33,11 +33,11 @@ const SweetOudAromaOilDetail = () => {
 
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
-      <Helmet>
+     
         <title>Sweet Oud Aroma Oil for Luxury Spaces | Cool Max Scent</title>
         <meta name="description" content="Explore Sweet Oud aroma oil by Cool Max Scent, a strong oriental fragrance with rich oud, praline, clove, and rose notes, ideal for hotels and premium spaces." />
         <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/sweet-oud" />
-      </Helmet>
+ 
       
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">

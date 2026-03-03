@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 import { 
   SparklesIcon, 
   ArrowRightIcon, 
@@ -50,11 +50,11 @@ const FruityAromaOilsPage = () => {
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-50 overflow-hidden tracking-tight text-left">
       
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+
         <title>Fruity Aroma Oils for Retail & Lively Space | Cool Max Scent</title>
         <meta name="description" content="Explore fruity aroma oils by Cool Max Scent, featuring fresh and vibrant fragrances like Crystal. Ideal for retail stores, malls, & energetic commercial spaces." />
         <link rel="canonical" href="https://www.coolmaxscent.com/fruity-aroma-oil" />
-      </Helmet>
+    
 
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

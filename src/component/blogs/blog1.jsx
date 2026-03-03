@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 import { 
   SparklesIcon, 
   ChatBubbleLeftRightIcon, 
@@ -36,12 +36,11 @@ export default function HotelScentMarketingBlog() {
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left pt-16">
       
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+     
         <title>Scent Marketing for Hotels in UAE | Cool Max Scent</title>
         <meta name="description" content="Discover how hotels in UAE use scent marketing solutions to improve guest experience, brand recall, and loyalty with professional aroma diffusers." />
         <link rel="canonical" href="https://www.coolmaxscent.com/blog/scent-marketing-hotels-uae" />
-      </Helmet>
-
+     
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-slate-50 rounded-full blur-[150px]" />

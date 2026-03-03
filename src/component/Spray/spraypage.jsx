@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+
 import { Link } from "react-router-dom"; 
 import { 
   MagnifyingGlassIcon, 
@@ -67,12 +67,12 @@ export default function SprayCollectionPage() {
 
   return (
     <div className="min-h-screen bg-[#fcfcfc] text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden">
-      <Helmet>
+   
         <title>Aerosol Spray Collection | Cool Max Scent Solutions</title>
         <meta name="description" content="Explore our wide range of premium aerosol sprays in UAE. From Fresh Bakhoor to Floral Jasmine, find the perfect scent for your space." />
         {/* CORRECT CANONICAL LINK RE-IMPLEMENTED HERE */}
         <link rel="canonical" href="https://www.coolmaxscent.com/spray/" />
-      </Helmet>
+    
 
       {/* ================= HERO SECTION (SMALLER TYPOGRAPHY) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-16 overflow-hidden bg-white">

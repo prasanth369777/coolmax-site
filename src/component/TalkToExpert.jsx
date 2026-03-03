@@ -1,6 +1,6 @@
 import React, { useState } from "react"; // Added useState
 import { useNavigate } from "react-router-dom"; // Added useNavigate
-import { Helmet } from "react-helmet-async"; // Added for SEO
+
 import {
   PhoneIcon,
   EnvelopeIcon,
@@ -49,9 +49,9 @@ export default function TalkToExpert() {
     <section id="contact" className="relative bg-white py-24 lg:py-32 overflow-hidden selection:bg-blue-100 selection:text-blue-900">
       
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+   
         <link rel="canonical" href="https://www.coolmaxscent.com/contact/" />
-      </Helmet>
+    
 
       {/* ================= BACKGROUND ATMOSPHERE (WHITE & GREY GRADIENT) ================= */}
       <div className="absolute inset-0 pointer-events-none">

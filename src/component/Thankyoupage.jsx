@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 import { 
   CheckBadgeIcon, 
   ArrowLeftIcon, 
@@ -21,11 +21,11 @@ export default function ThankYouPage() {
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden flex items-center justify-center pt-20">
       
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+   
         <title>Thank You | Cool Max Scent Solutions</title>
         <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://www.coolmaxscent.com/thank-you/" />
-      </Helmet>
+   
 
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

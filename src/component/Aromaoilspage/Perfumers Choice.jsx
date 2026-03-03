@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 import { 
   SparklesIcon, 
   ArrowRightIcon, 
@@ -156,12 +156,11 @@ const PerfumersChoiceOilsPage = () => {
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
-      <Helmet>
+     
         <title>Perfumers Choice Aroma Oils for Offices & Homes | Cool Max</title>
         <meta name="description" content="Explore Perfumers Choice aroma oils by Cool Max Scent. Discover elegant, balanced fragrances like Harmony, Event, Gold, Tuscan Leather, and more." />
         <link rel="canonical" href="https://www.coolmaxscent.com/perfumers-choice-aroma-oil" />
-      </Helmet>
-
+   
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-slate-100/50 rounded-full blur-[150px]" />
         <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-blue-50/30 rounded-full blur-[120px]" />

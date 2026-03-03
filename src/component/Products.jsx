@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async"; // Added for SEO
+
 import {
   MagnifyingGlassIcon,
   ArrowUpRightIcon,
@@ -161,9 +161,9 @@ export default function ArchitectStore() {
     <div className="min-h-screen bg-[#FAF9F6] text-slate-900 font-sans text-left">
       
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+    
         <link rel="canonical" href="https://www.coolmaxscent.com/products/" />
-      </Helmet>
+    
 
       {/* ================= SECTION 1: MINIMAL HERO ================= */}
       <section className="relative pt-32 pb-20 px-6 lg:px-16 overflow-hidden bg-white text-left">

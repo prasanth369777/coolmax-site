@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 import { 
   SparklesIcon, 
   ArrowRightIcon, 
@@ -97,11 +97,11 @@ const OrientalAromaOilsPage = () => {
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+    
         <title>Oriental Aroma Oils for Hotels & Luxury Spaces | Cool Max Scent</title>
         <meta name="description" content="Explore premium oriental aroma oils by Cool Max Scent. Discover rich, long-lasting fragrances designed for hotels, offices, and luxury commercial spaces." />
         <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil" />
-      </Helmet>
+    
 
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async"; // Added for SEO
+
 import { 
   ComputerDesktopIcon, 
   BriefcaseIcon, 
@@ -46,10 +46,9 @@ export default function DesktopSmallSpacePage() {
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
       {/* ================= SEO METADATA ================= */}
-      <Helmet>
+   
         <link rel="canonical" href="https://www.coolmaxscent.com/desktop-and-small-space-aroma-diffusers/" />
-      </Helmet>
-      
+    
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-slate-100/50 rounded-full blur-[150px]" />
