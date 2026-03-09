@@ -47,12 +47,12 @@ const blogPosts = [
   },
   {
     id: 5,
-    title: "Sustainable Scenting: Eco-Friendly Solutions",
-    excerpt: "As businesses go green, fragrance follows. Explore our commitment to non-toxic, hypoallergenic, and sustainably sourced aroma oils.",
-    category: "Sustainability",
+    title: "How to Choose the Best Scent Diffuser Machine for Homes, Offices, and Commercial Spaces",
+    excerpt: "Many homes, offices, hotels, and retail spaces struggle with maintaining a pleasant and consistent atmosphere.",
+    category: "scent diffuser machines",
     date: "Feb 10, 2025",
     readTime: "4 min read",
-    path: "/blog/scent-marketing-hotels-uae/",
+    path: "/blog/how-to-choose-best-scent-diffuser-machine/",
     image: "https://media.istockphoto.com/id/1265249156/photo/portrait-of-a-beautiful-woman-enjoying-the-smell-of-fresh-flowers.webp?a=1&b=1&s=612x612&w=0&k=20&c=MH8YmLhSjKnY2T6kQ93z_WRzf_lOEg-L1P7WNaNaW8c=",
   },
   {
