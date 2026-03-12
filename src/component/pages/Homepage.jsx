@@ -13,14 +13,7 @@ import Clear1 from "../pages/clear1";
 export default function Homepage() {
   return (
     <main>
-      {/* SEO Metadata: React 19 hoists these to the <head> automatically */}
-      <title>Cool Max | Premium Scenting Solutions for Homes & Businesses</title>
-      <meta 
-        name="description" 
-        content="Cool Max provides premium scent diffusers and fragrance solutions for homes, hotels, offices, retail spaces, and HVAC systems across UAE & Qatar." 
-      />
-      <link rel="canonical" href="https://www.coolmaxscent.com/" />
-
+    
      
       <HeroSection />
       <Product1 />

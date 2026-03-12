@@ -131,19 +131,6 @@ const ScrollToTop = () => {
   return null;
 };
 
-// --- NEW SEO HELPER: CANONICAL URL ---
-const CanonicalURL = () => {
-  const location = useLocation();
-  const siteUrl = "https://www.coolmaxscent.com";
-  // Ensure the URL doesn't end with double slashes if pathname is "/"
-  const cleanPath = location.pathname === "/" ? "" : location.pathname;
-  const canonicalUrl = `${siteUrl}${cleanPath}${location.pathname.endsWith('/') ? '' : '/'}`;
-  
-  return (
-    <link rel="canonical" href={canonicalUrl} />
-  );
-};
-
 const ProductPage = () => (
   <Suspense fallback={<PageLoader />}>
     <Products />
@@ -160,8 +147,6 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      {/* Dynamic Canonical Link for every route */}
-      <CanonicalURL />
       
       <Nav />
       <WhatsAppFloating />
